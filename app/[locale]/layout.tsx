@@ -5,8 +5,8 @@ import { routing } from "@/i18n/routing";
 import { getMessages, setRequestLocale } from "next-intl/server";
 import NavigationBar from "@/app/components/navigation";
 
-function transformMessages(messages: Record<string, any>) {
-  const transformed: Record<string, any> = {};
+function transformMessages(messages: Record<string, unknown>) {
+  const transformed: Record<string, unknown> = {};
   Object.entries(messages).forEach(([key, value]) => {
     set(transformed, key, value);
   });
