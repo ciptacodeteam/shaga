@@ -18,10 +18,9 @@ export default async function LocaleLayout({
   params
 }: {
   children: React.ReactNode;
-  params: Promise<{ locale: string }>; // Tetap gunakan Promise
+  params: Promise<{ locale: string }>; 
 }) {
-  const resolvedParams = await params; // Tunggu params selesai
-  // console.log("resolvedParams:", resolvedParams);
+  const resolvedParams = await params; 
 
   const { locale } = resolvedParams;
 
