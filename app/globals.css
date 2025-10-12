@@ -27,3 +27,19 @@
 .bg-secondary {
   background-color: var(--color-secondary);
 }
+
+.swiper-pagination {
+  position: relative;
+}
+
+.swiper-pagination-bullet {
+  width: 40px !important;
+  height: 6px !important;
+  background-color: #556996 !important;
+  border-radius: 4px !important;
+  transition: all 0.3s ease !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #E0E6F3 !important;
+}

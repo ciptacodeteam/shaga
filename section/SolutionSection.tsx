@@ -11,7 +11,7 @@ export default function SolutionSection() {
                                 <span className="relative inline-flex size-3 rounded-full bg-secondary"></span>
                             </span>
                             <p className="text-sm font-medium text-primary uppercase font-manrope">
-                                Layanan Pengiriman Kami
+                                Solusi Logistik Kami
                             </p>
                         </div>
 

@@ -7,5 +7,6 @@ export const config = {
   matcher: [
     '/',
     '/(id|en|zh)/:path*'
+    
   ]
 };
