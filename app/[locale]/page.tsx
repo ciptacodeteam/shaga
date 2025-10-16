@@ -1,15 +1,15 @@
 'use client';
 
-import GetInTouch from "@/section/GetInTouchSection";
-import HeroSection from "@/section/HeroSection";
-import PartnerClient from "@/section/PartnerClient";
-import ServicesSection from "@/section/ServiceSection";
-import SolutionSection from "@/section/SolutionSection";
-import TestimonialSection from "@/section/TestimonialSection";
-import TransformSection from "@/section/TransformingSection";
-import ValueSection from "@/section/ValuesSection";
-import VisionMissionSection from "@/section/VisionMisionSection";
-import WorkSection from "@/section/WorkSection";
+import GetInTouch from "@/section/beranda/GetInTouchSection";
+import HeroSection from "@/section/beranda/HeroSection";
+import PartnerClient from "@/section/beranda/PartnerClient";
+import ServicesSection from "@/section/beranda/ServiceSection";
+import SolutionSection from "@/section/beranda/SolutionSection";
+import TestimonialSection from "@/section/beranda/TestimonialSection";
+import TransformSection from "@/section/beranda/TransformingSection";
+import ValueSection from "@/section/beranda/ValuesSection";
+import VisionMissionSection from "@/section/beranda/VisionMisionSection";
+import WorkSection from "@/section/beranda/WorkSection";
 
 export default function HomePage() {
   return (
