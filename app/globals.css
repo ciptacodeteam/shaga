@@ -28,11 +28,29 @@
   background-color: var(--color-secondary);
 }
 
+/* bullet2 */
 .swiper-pagination {
   position: relative;
 }
 
-.swiper-pagination-bullet {
+.swiper-section-2 .swiper-pagination-bullet {
+  width: 40px !important;
+  height: 6px !important;
+  background-color: #808EB0 !important;
+  border-radius: 4px !important;
+  transition: all 0.3s ease !important;
+}
+
+.swiper-section-2 .swiper-pagination-bullet-active {
+  background-color: #0B55A7 !important;
+}
+
+/* bullet3 */
+.swiper-pagination {
+  position: relative;
+}
+
+.swiper-section-3 .swiper-pagination-bullet {
   width: 40px !important;
   height: 6px !important;
   background-color: #556996 !important;
@@ -40,6 +58,6 @@
   transition: all 0.3s ease !important;
 }
 
-.swiper-pagination-bullet-active {
+.swiper-section-3 .swiper-pagination-bullet-active {
   background-color: #E0E6F3 !important;
 }

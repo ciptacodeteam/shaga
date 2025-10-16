@@ -6,6 +6,7 @@ import "swiper/css/pagination";
 import { useEffect, useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
+
 import Image from "next/image";
 
 export default function WorkSection() {
@@ -93,7 +94,7 @@ export default function WorkSection() {
                         1024: { slidesPerView: 2.6 },
                     }}
                     onSwiper={(swiper) => (swiperRef.current = swiper)}
-                    className="px-6 md:px-16 !pb-20"
+                    className="px-6 md:px-16 !pb-20 swiper-section-3"
                 >
                     {steps.map((step) => (
                         <SwiperSlide key={step.number}>

@@ -1,6 +1,8 @@
 'use client';
 
+import GetInTouch from "@/section/GetInTouchSection";
 import HeroSection from "@/section/HeroSection";
+import PartnerClient from "@/section/PartnerClient";
 import ServicesSection from "@/section/ServiceSection";
 import SolutionSection from "@/section/SolutionSection";
 import TestimonialSection from "@/section/TestimonialSection";
@@ -19,7 +21,9 @@ export default function HomePage() {
       <TransformSection />
       <WorkSection />
       <ServicesSection />
+      <PartnerClient />
       <TestimonialSection />
+      <GetInTouch />
     </>
   );
 }

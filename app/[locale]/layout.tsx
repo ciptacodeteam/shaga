@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import { getMessages, setRequestLocale } from "next-intl/server";
 import NavigationBar from "@/app/components/navigation";
+import FooterSection from "../components/footer";
 
 function transformMessages(messages: Record<string, unknown>) {
   const transformed: Record<string, unknown> = {};
@@ -37,6 +38,7 @@ export default async function LocaleLayout({
       <NextIntlClientProvider locale={locale} messages={messages}>
         <NavigationBar />
         {children}
+        <FooterSection />
       </NextIntlClientProvider>
     </div>
   );
