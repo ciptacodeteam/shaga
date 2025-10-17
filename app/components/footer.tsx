@@ -38,7 +38,7 @@ export default function FooterSection() {
                                             className="group flex items-center bg-white rounded-full px-2 py-2 transition-all duration-300 w-fit"
                                         >
                                             <span className="text-primary font-manrope ms-3 me-3 transition-all duration-300 group-hover:translate-x-1">
-                                                Konsultasi Gratis
+                                                Mulai Kirim Sekarang
                                             </span>
 
                                             <div className="flex items-center justify-center w-8 h-8 rounded-full bg-primary transition-transform duration-300 group-hover:rotate-45">

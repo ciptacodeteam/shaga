@@ -6,7 +6,7 @@ export default function MilestoneSection() {
     return (
         <>
             <section>
-                <div className="bg-[#001E62] mb-30 py-24">
+                <div className="bg-primary mb-30 py-24">
                     <div className="max-w-7xl mx-auto">
                         <div className="flex flex-col justify-center items-center">
                             <div className="flex justify-center items-center gap-2">

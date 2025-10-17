@@ -1,3 +1,5 @@
+import CtaSection from "@/section/layanankami/CallToAction";
+import GallerySection from "@/section/layanankami/Galery";
 import HeroAbout from "@/section/layanankami/HeroAbout";
 import MilestoneSection from "@/section/layanankami/Milestone";
 import NumberSection from "@/section/layanankami/NumberSection";
@@ -10,6 +12,8 @@ export default function TentangKami() {
             <WhoAreWeSection />
             <NumberSection />
             <MilestoneSection />
+            <GallerySection />
+            <CtaSection />
         </>
     )
 }

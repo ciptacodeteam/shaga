@@ -1,6 +1,7 @@
 import Image from "next/image";
 
 import sea from "@/public/img/sea.webp"
+
 import { BsPatchCheck } from "react-icons/bs";
 import { IoPeopleOutline } from "react-icons/io5";
 import { HiOutlineLightBulb } from "react-icons/hi";
@@ -12,7 +13,7 @@ export default function WhoAreWeSection() {
             <section className="relative mb-30">
                 <div className="max-w-7xl mx-auto">
                     <div className="flex gap-16">
-                        {/* Text Section */}
+                        
                         <div className="w-3/5 flex flex-col justify-center">
                             <div className="flex items-center gap-2 mb-3">
                                 <span className="relative flex size-3">
