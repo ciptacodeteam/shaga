@@ -1,4 +1,6 @@
+import { AiOutlineDeploymentUnit } from "react-icons/ai";
 import { BsPatchCheck } from "react-icons/bs";
+import { HiOutlineLightBulb } from "react-icons/hi";
 import { IoPeopleOutline } from "react-icons/io5";
 
 export default function ValueSection() {
@@ -64,7 +66,7 @@ export default function ValueSection() {
                                 <div className="row-span-2 border border-[#E0E6F3] p-6 rounded-xl flex flex-col justify-between h-full">
                                     <div className="flex items-start justify-between text-sm">
                                         <div className="bg-[#E0E6F3] rounded-full p-3 flex-shrink-0 flex items-center justify-center">
-                                            <BsPatchCheck className="text-primary w-6 h-6" />
+                                            <HiOutlineLightBulb className="text-primary w-6 h-6" />
                                         </div>
                                         <p className="font-manrope rounded-full text-primary bg-[#E0E6F3] py-1 font-semibold px-4">
                                             Inovasi
@@ -78,7 +80,7 @@ export default function ValueSection() {
                                 <div className="col-span-1 border border-[#E0E6F3] p-6 rounded-xl flex flex-col justify-between h-full">
                                     <div className="flex items-start justify-between text-sm">
                                         <div className="bg-[#E0E6F3] rounded-full p-3 flex-shrink-0 flex items-center justify-center">
-                                            <BsPatchCheck className="text-primary w-6 h-6" />
+                                            <AiOutlineDeploymentUnit className="text-primary w-6 h-6" />
                                         </div>
                                         <p className="font-manrope rounded-full text-primary bg-[#E0E6F3] py-1 font-semibold px-4">
                                             Keberlanjutan

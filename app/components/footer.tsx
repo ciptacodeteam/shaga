@@ -153,7 +153,7 @@ export default function FooterSection() {
                         </div>
 
                         <div className="text-center">
-                            <p className="font-manrope text-white text-sm mt-8"> ©{new Date().getFullYear()} Shaga. All Rights Reserved. Designed & Developed by <span><Link href={""}>Ciptacode</Link></span></p>
+                            <p className="font-manrope text-white text-sm mt-8"> ©{new Date().getFullYear()} Shaga. All Rights Reserved. Designed & Developed by <span><Link href={""}>Ciptacode</Link></span>.</p>
                         </div>
                     </div>
                 </div>
