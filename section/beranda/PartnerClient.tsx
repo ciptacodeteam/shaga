@@ -1,5 +1,6 @@
 export default function PartnerClient() {
     const partners = [
+        // update
         {
             id: 1,
             name: "liqui",
