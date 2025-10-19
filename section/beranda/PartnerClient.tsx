@@ -1,7 +1,5 @@
 export default function PartnerClient() {
     const partners = [
-        // update
-        // testing
         {
             id: 1,
             name: "liqui",
@@ -50,12 +48,12 @@ export default function PartnerClient() {
         {
             id: 10,
             name: "alltech",
-            logo: "/img/logo/alltech.webp",
+            logo: "/img/logo/alltech1.webp",
         },
         {
             id: 11,
             name: "sti",
-            logo: "/img/logo/sti.png",
+            logo: "/img/logo/sti1.png",
         },
         {
             id: 12,

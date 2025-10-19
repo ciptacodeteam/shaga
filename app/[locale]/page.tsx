@@ -5,7 +5,6 @@ import HeroSection from "@/section/beranda/HeroSection";
 import PartnerClient from "@/section/beranda/PartnerClient";
 import ServicesSection from "@/section/beranda/ServiceSection";
 import SolutionSection from "@/section/beranda/SolutionSection";
-import TestimonialSection from "@/section/beranda/TestimonialSection";
 import TransformSection from "@/section/beranda/TransformingSection";
 import ValueSection from "@/section/beranda/ValuesSection";
 import VisionMissionSection from "@/section/beranda/VisionMisionSection";
@@ -22,7 +21,6 @@ export default function HomePage() {
       <WorkSection />
       <ServicesSection />
       <PartnerClient />
-      {/* <TestimonialSection /> */}
       <GetInTouch />
     </>
   );
