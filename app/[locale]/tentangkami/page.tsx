@@ -1,9 +1,9 @@
-import CtaSection from "@/section/layanankami/CallToAction";
-import GallerySection from "@/section/layanankami/Galery";
-import HeroAbout from "@/section/layanankami/HeroAbout";
-import MilestoneSection from "@/section/layanankami/Milestone";
-import NumberSection from "@/section/layanankami/NumberSection";
-import WhoAreWeSection from "@/section/layanankami/WhoAreWe";
+import CtaSection from "@/section/tentangkami/CallToAction";
+import GallerySection from "@/section/tentangkami/Galery";
+import HeroAbout from "@/section/tentangkami/HeroAbout";
+import MilestoneSection from "@/section/tentangkami/Milestone";
+import NumberSection from "@/section/tentangkami/NumberSection";
+import WhoAreWeSection from "@/section/tentangkami/WhoAreWe";
 
 export default function TentangKami() {
     return (

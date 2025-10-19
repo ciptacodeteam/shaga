@@ -24,7 +24,7 @@ export default function SolutionSection() {
 
                     <div>
                         <div className="grid grid-cols-2 gap-8">
-                            <div className="w-full h-[450px] relative rounded-xl overflow-hidden p-12 group">
+                            {/* <div className="w-full h-[450px] relative rounded-xl overflow-hidden p-12 group">
                                 <div
                                     className="absolute inset-0 bg-[url('/img/air.webp')] bg-cover bg-center z-0 transition-transform duration-700 ease-out group-hover:scale-110"
                                 ></div>
@@ -38,7 +38,7 @@ export default function SolutionSection() {
                                 <div>
                                     <p className="relative font-manrope text-white text-4xl z-20 leading-tight">Pengiriman cepat dan andal untuk barang prioritas tinggi ke seluruh dunia.</p>
                                 </div>
-                            </div>
+                            </div> */}
 
                             <div className="w-full h-[450px] relative rounded-xl overflow-hidden p-12 group">
                                 <div
@@ -56,7 +56,7 @@ export default function SolutionSection() {
                                 </div>
                             </div>
                             
-                            <div className="w-full h-[450px] relative rounded-xl overflow-hidden p-12 group">
+                            {/* <div className="w-full h-[450px] relative rounded-xl overflow-hidden p-12 group">
                                 <div
                                     className="absolute inset-0 bg-[url('/img/rail.webp')] bg-cover bg-center z-0 transition-transform duration-700 ease-out group-hover:scale-110"
                                 ></div>
@@ -70,7 +70,7 @@ export default function SolutionSection() {
                                 <div>
                                     <p className="relative font-manrope text-white text-4xl z-20 leading-tight">Ekonomis dan ideal untuk pengiriman dalam jumlah besar dan jarak jauh.</p>
                                 </div>
-                            </div>
+                            </div> */}
 
                             <div className="w-full h-[450px] relative rounded-xl overflow-hidden p-12 group">
                                 <div

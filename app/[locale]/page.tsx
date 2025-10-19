@@ -22,7 +22,7 @@ export default function HomePage() {
       <WorkSection />
       <ServicesSection />
       <PartnerClient />
-      <TestimonialSection />
+      {/* <TestimonialSection /> */}
       <GetInTouch />
     </>
   );
