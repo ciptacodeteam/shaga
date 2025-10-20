@@ -3,13 +3,13 @@ import { IoIosArrowRoundForward } from 'react-icons/io';
 
 const DiscussionCtaSection = () => {
   return (
-    <section className='relative mb-20'>
+    <section className='relative my-16 max-w-7xl mx-auto'>
       <div className='mx-8 relative rounded-xl overflow-hidden z-0'>
         <div className="absolute inset-0 bg-[url('/img/imghero.webp')] bg-cover bg-center"></div>
 
         <div className='absolute inset-0 bg-[#0B55A7]/80 z-10'></div>
 
-        <div className='relative z-20 flex flex-col px-16 py-28 text-white justify-center items-start text-center gap-5'>
+        <div className='relative z-20 flex flex-col px-16 py-14 text-white justify-center items-start text-center gap-5'>
           <h3 className='text-white mb-10 font-manrope text-5xl leading-snug text-left max-w-5xl'>
             Contact us to discuss how our services can support your business and
             streamline your logistics needs.
