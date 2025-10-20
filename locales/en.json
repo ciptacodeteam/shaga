@@ -1,0 +1,57 @@
+{
+  "metadata": {
+    "locale": "en",
+    "language": "English",
+    "country": "United States",
+    "flag": "🇺🇸"
+  },
+  "flagIcon": {
+    "src": "/flags/en.svg",
+    "alt": "English"
+  },
+  "languageList": [
+    {
+      "text": "Indonesia",
+      "icon": {
+        "src": "/flags/id.svg",
+        "alt": "Indonesia"
+      },
+      "link": "/id"
+    },
+    {
+      "text": "English",
+      "icon": {
+        "src": "/flags/en.svg",
+        "alt": "English"
+      },
+      "link": "/en"
+    },
+    {
+      "text": "中文",
+      "icon": {
+        "src": "/flags/zh.svg",
+        "alt": "中文"
+      },
+      "link": "/zh"
+    }
+  ],
+  "contactCtaText": "Contact Us",
+  "navList": [
+    {
+      "text": "Home",
+      "link": "/en"
+    },
+    {
+      "text": "About Us",
+      "link": "/en/about-us"
+    },
+    {
+      "text": "Services",
+      "link": "/en/services"
+    },
+    {
+      "text": "Contact",
+      "link": "/en/contact"
+    }
+  ]
+}

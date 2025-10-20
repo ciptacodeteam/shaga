@@ -1,0 +1,57 @@
+{
+  "metadata": {
+    "locale": "zh",
+    "language": "中文",
+    "country": "中国",
+    "flag": "🇨🇳"
+  },
+  "flagIcon": {
+    "src": "/flags/cn.svg",
+    "alt": "中文"
+  },
+  "languageList": [
+    {
+      "text": "Indonesia",
+      "icon": {
+        "src": "/flags/id.svg",
+        "alt": "Indonesia"
+      },
+      "link": "/id"
+    },
+    {
+      "text": "English",
+      "icon": {
+        "src": "/flags/en.svg",
+        "alt": "English"
+      },
+      "link": "/en"
+    },
+    {
+      "text": "中文",
+      "icon": {
+        "src": "/flags/zh.svg",
+        "alt": "中文"
+      },
+      "link": "/zh"
+    }
+  ],
+  "contactCtaText": "联系我们",
+  "navList": [
+    {
+      "text": "主页",
+      "link": "/zh"
+    },
+    {
+      "text": "关于我们",
+      "link": "/zh/about-us"
+    },
+    {
+      "text": "服务",
+      "link": "/zh/services"
+    },
+    {
+      "text": "联系我们",
+      "link": "/zh/contact"
+    }
+  ]
+}

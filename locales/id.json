@@ -1,0 +1,57 @@
+{
+  "metadata": {
+    "locale": "id",
+    "language": "Bahasa Indonesia",
+    "country": "Indonesia",
+    "flag": "🇮🇩"
+  },
+  "flagIcon": {
+    "src": "/flags/id.svg",
+    "alt": "Bahasa Indonesia"
+  },
+  "languageList": [
+    {
+      "text": "Indonesia",
+      "icon": {
+        "src": "/flags/id.svg",
+        "alt": "Indonesia"
+      },
+      "link": "/id"
+    },
+    {
+      "text": "English",
+      "icon": {
+        "src": "/flags/en.svg",
+        "alt": "English"
+      },
+      "link": "/en"
+    },
+    {
+      "text": "中文",
+      "icon": {
+        "src": "/flags/zh.svg",
+        "alt": "中文"
+      },
+      "link": "/zh"
+    }
+  ],
+  "contactCtaText": "Hubungi Kami",
+  "navList": [
+    {
+      "text": "Beranda",
+      "link": "/id"
+    },
+    {
+      "text": "Tentang Kami",
+      "link": "/id/about-us"
+    },
+    {
+      "text": "Layanan",
+      "link": "/id/services"
+    },
+    {
+      "text": "Kontak",
+      "link": "/id/contact"
+    }
+  ]
+}

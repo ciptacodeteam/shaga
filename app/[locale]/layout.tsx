@@ -1,10 +1,11 @@
-import set from "lodash/set";
-import { NextIntlClientProvider, hasLocale } from "next-intl";
-import { notFound } from "next/navigation";
-import { routing } from "@/i18n/routing";
-import { getMessages, setRequestLocale } from "next-intl/server";
-import NavigationBar from "@/app/components/navigation";
-import FooterSection from "../components/footer";
+import set from 'lodash/set';
+import { NextIntlClientProvider, hasLocale } from 'next-intl';
+import { notFound } from 'next/navigation';
+import { routing } from '@/i18n/routing';
+import { getMessages, setRequestLocale } from 'next-intl/server';
+import NavigationBar from '@/components/navigation';
+import FooterSection from '@/components/footer';
+import FloatingLanguageSelector from '@/components/FloatingLanguageSelector';
 
 function transformMessages(messages: Record<string, unknown>) {
   const transformed: Record<string, unknown> = {};
@@ -16,12 +17,12 @@ function transformMessages(messages: Record<string, unknown>) {
 
 export default async function LocaleLayout({
   children,
-  params
+  params,
 }: {
   children: React.ReactNode;
-  params: Promise<{ locale: string }>; 
+  params: Promise<{ locale: string }>;
 }) {
-  const resolvedParams = await params; 
+  const resolvedParams = await params;
 
   const { locale } = resolvedParams;
 
@@ -34,10 +35,13 @@ export default async function LocaleLayout({
   setRequestLocale(locale);
 
   return (
-    <div className="overflow-x-hidden">
+    <div className='overflow-x-hidden'>
       <NextIntlClientProvider locale={locale} messages={messages}>
         <NavigationBar />
-        {children}
+        <main className='relative'>
+          {children}
+          <FloatingLanguageSelector />
+        </main>
         <FooterSection />
       </NextIntlClientProvider>
     </div>
