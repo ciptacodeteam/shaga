@@ -13,7 +13,6 @@ import WorkSection from '@/section/beranda/WorkSection';
 export default function HomePage() {
   return (
     <>
-      <div className='pt-28' />
       <HeroSection />
       <VisionMissionSection />
       <SolutionSection />
