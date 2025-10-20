@@ -36,6 +36,7 @@
     }
   ],
   "contactCtaText": "Contact Us",
+  "contactCtaLink": "/en/contact",
   "navList": [
     {
       "text": "Home",

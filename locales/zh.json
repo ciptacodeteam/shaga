@@ -36,6 +36,7 @@
     }
   ],
   "contactCtaText": "联系我们",
+  "contactCtaLink": "/zh/contact",
   "navList": [
     {
       "text": "主页",

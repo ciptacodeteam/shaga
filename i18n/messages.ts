@@ -1,9 +1,7 @@
-import set from "lodash/set";
-
-export function transformMessages(messages: Record<string, any>) {
-    const transformed: Record<string, any> = {};
-    Object.entries(messages).forEach(([key, value]) => {
-        set(transformed, key, value);
-    });
-    return transformed;
+export function transformMessages(messages: Record<string, any>): any[] {
+  const transformed: Record<string, any>[] = [];
+  Object.entries(messages).forEach(([_, value]) => {
+    transformed.push(value);
+  });
+  return transformed;
 }
