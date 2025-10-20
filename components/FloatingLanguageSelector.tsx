@@ -114,7 +114,7 @@ export default function FloatingLanguageSelector({
           transition={{ type: 'spring', stiffness: 400, damping: 20 }}
           className={cx(
             'w-12 h-12 rounded-full flex items-center justify-center text-xl',
-            'bg-gray-900 text-white dark:bg-zinc-100 dark:text-zinc-900',
+            '!bg-gray-900/50 text-white dark:bg-zinc-100 dark:text-zinc-900',
             'focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500'
           )}
         >
