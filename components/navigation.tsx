@@ -17,25 +17,24 @@ export default function NavigationBar() {
   const messages = useMessages();
   const menus = transformMessages(messages.navList);
 
-  const [prevScrollPos, setPrevScrollPos] = useState(0);
   const [isTop, setIsTop] = useState(true);
   const [visible, setVisible] = useState(true);
+  const [mobileOpen, setMobileOpen] = useState(false);
 
   useEffect(() => {
+    // track scroll with a local previous value to avoid stale closures
+    let prev = 0;
     const handleScroll = () => {
-      const currentScrollPos = window.scrollY;
-      if (currentScrollPos > prevScrollPos && prevScrollPos > 400) {
-        setVisible(false);
-      } else {
-        setVisible(true);
-      }
-      setPrevScrollPos(currentScrollPos);
-      setIsTop(currentScrollPos === 0);
+      const current = window.scrollY;
+      if (current > prev && prev > 400) setVisible(false);
+      else setVisible(true);
+      prev = current;
+      setIsTop(current === 0);
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
-  });
+  }, []);
 
   return (
     <header
@@ -45,7 +44,7 @@ export default function NavigationBar() {
         visible ? 'translate-y-0' : '-translate-y-full'
       )}
     >
-      <div className='max-w-7xl mx-auto py-4'>
+      <div className='max-w-7xl mx-auto py-4 px-4 md:px-0'>
         <div className='flex items-center justify-between'>
           {/* Logo */}
           <div>
@@ -53,16 +52,15 @@ export default function NavigationBar() {
               <Image
                 src={logo}
                 alt='Logo'
-                className='w-42'
+                className='w-32 md:w-42'
                 priority
                 width={300}
                 height={100}
               />
             </Link>
           </div>
-
-          <nav className='flex gap-8 items-center'>
-            {/* Menu Navigasi */}
+          {/* Desktop nav */}
+          <nav className='hidden md:flex gap-8 items-center'>
             <ul className='flex items-center gap-8'>
               {menus.map(
                 (menu: { text: string; link: string }, idx: number) => {
@@ -84,24 +82,93 @@ export default function NavigationBar() {
                 }
               )}
             </ul>
+
+            {/* Tombol Kontak (desktop) */}
+            <div>
+              <Link
+                href={t('contactCtaLink')}
+                className='group flex items-center bg-primary rounded-full px-3 py-2 transition-all duration-300'
+              >
+                <span className='text-white font-manrope mr-3 transition-all duration-300 group-hover:translate-x-1'>
+                  {t('contactCtaText')}
+                </span>
+
+                <div className='rounded-full bg-white p-1 transition-transform duration-300 group-hover:rotate-45'>
+                  <IoIosArrowRoundForward className='text-primary w-6 h-6 transition-colors duration-300' />
+                </div>
+              </Link>
+            </div>
           </nav>
-          {/* Tombol Kontak */}
-          <div>
+
+          {/* Mobile menu button */}
+          <div className='md:hidden'>
+            <button
+              aria-label='Toggle menu'
+              aria-expanded={mobileOpen}
+              onClick={() => setMobileOpen((s) => !s)}
+              className='inline-flex items-center justify-center p-2 rounded-md text-gray-700 bg-white/0 hover:bg-gray-100 focus:outline-none'
+            >
+              {/* hamburger / close icon */}
+              <svg
+                className='w-6 h-6'
+                fill='none'
+                stroke='currentColor'
+                viewBox='0 0 24 24'
+                xmlns='http://www.w3.org/2000/svg'
+              >
+                {mobileOpen ? (
+                  <path
+                    strokeLinecap='round'
+                    strokeLinejoin='round'
+                    strokeWidth='2'
+                    d='M6 18L18 6M6 6l12 12'
+                  />
+                ) : (
+                  <path
+                    strokeLinecap='round'
+                    strokeLinejoin='round'
+                    strokeWidth='2'
+                    d='M4 6h16M4 12h16M4 18h16'
+                  />
+                )}
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      {/* Mobile menu overlay */}
+      {mobileOpen && (
+        <div className='md:hidden fixed inset-x-4 top-20 z-40 bg-white rounded-lg shadow-lg p-4'>
+          <ul className='flex flex-col gap-3'>
+            {menus.map((menu: { text: string; link: string }, idx: number) => (
+              <li key={idx}>
+                <Link
+                  href={menu.link}
+                  onClick={() => setMobileOpen(false)}
+                  className='block font-manrope font-medium text-[#344565] py-2'
+                >
+                  {menu.text}
+                </Link>
+              </li>
+            ))}
+          </ul>
+
+          <div className='mt-4'>
             <Link
               href={t('contactCtaLink')}
-              className='group flex items-center bg-primary rounded-full px-2 py-2 transition-all duration-300'
+              onClick={() => setMobileOpen(false)}
+              className='group inline-flex items-center bg-primary rounded-full px-4 py-2 transition-all duration-300'
             >
-              <span className='text-white font-manrope ms-3 me-3 transition-all duration-300 group-hover:translate-x-1'>
+              <span className='text-white font-manrope mr-3'>
                 {t('contactCtaText')}
               </span>
-
-              <div className='rounded-full bg-white p-1 transition-transform duration-300 group-hover:rotate-45'>
-                <IoIosArrowRoundForward className='text-primary w-6 h-6 transition-colors duration-300' />
+              <div className='rounded-full bg-white p-1'>
+                <IoIosArrowRoundForward className='text-primary w-5 h-5' />
               </div>
             </Link>
           </div>
         </div>
-      </div>
+      )}
     </header>
   );
 }

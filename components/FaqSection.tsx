@@ -28,21 +28,21 @@ const faqData = [
 const FaqSection = () => {
   return (
     <section className='max-w-4xl mx-auto px-6 py-16 pt-5'>
-      <header className='flex flex-col justify-center items-center text-center'>
+      <header className='flex flex-col justify-center items-center text-center px-2 md:px-0'>
         <div className='flex items-center gap-2 mb-3'>
-          <span className='relative flex size-3'>
-            <span className='absolute inline-flex h-full w-full animate-ping rounded-full bg-secondary opacity-75'></span>
-            <span className='relative inline-flex size-3 rounded-full bg-secondary'></span>
+          <span className='relative flex'>
+            <span className='absolute inline-flex h-3 w-3 md:h-4 md:w-4 animate-ping rounded-full bg-secondary opacity-75' />
+            <span className='relative inline-flex h-3 w-3 md:h-4 md:w-4 rounded-full bg-secondary' />
           </span>
+
           <p className='text-sm font-medium text-primary uppercase font-manrope'>
             Frequently Asked Questions
           </p>
         </div>
 
-        <div className='mb-4'>
-          <p className='font-manrope text-5xl leading-tight text-primary mx-auto w-3/4'>
-            Common
-            <span className='text-secondary'>Questions</span> About Our
+        <div className='mb-4 w-full'>
+          <p className='font-manrope text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-tight text-primary mx-auto max-w-full sm:max-w-3xl md:max-w-4xl'>
+            Common <span className='text-secondary'>Questions</span> About Our
             Services.
           </p>
         </div>
