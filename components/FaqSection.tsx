@@ -54,7 +54,7 @@ const FaqSection = () => {
             {({ open }) => (
               <div className='border-b last:border-b-0 border-slate-200'>
                 <h4 className='m-0'>
-                  <Disclosure.Button className='w-full text-left px-6 py-6 flex items-center justify-between gap-4 focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400'>
+                  <Disclosure.Button className='w-full text-left px-2 lg:px-6 py-6 flex items-center justify-between gap-4 focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400'>
                     <span className='text-lg md:text-xl text-sky-700 font-medium'>
                       {item.question}
                     </span>
