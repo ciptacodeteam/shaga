@@ -1,11 +1,13 @@
 'use client';
 
 import { transformMessages } from '@/i18n/messages';
+import { cn } from '@/lib/utils';
 import logo from '@/public/svg/logo.svg';
 import { useMessages, useTranslations } from 'next-intl';
 import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import { useEffect, useState } from 'react';
 import { IoIosArrowRoundForward } from 'react-icons/io';
 
 export default function NavigationBar() {
@@ -15,8 +17,34 @@ export default function NavigationBar() {
   const messages = useMessages();
   const menus = transformMessages(messages.navList);
 
+  const [prevScrollPos, setPrevScrollPos] = useState(0);
+  const [isTop, setIsTop] = useState(true);
+  const [visible, setVisible] = useState(true);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollPos = window.scrollY;
+      if (currentScrollPos > prevScrollPos && prevScrollPos > 400) {
+        setVisible(false);
+      } else {
+        setVisible(true);
+      }
+      setPrevScrollPos(currentScrollPos);
+      setIsTop(currentScrollPos === 0);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  });
+
   return (
-    <header>
+    <header
+      className={cn(
+        'fixed top-0 left-0 right-0 w-full bg-white z-30 transition-transform duration-300 ease-in-out',
+        isTop ? 'shadow-none' : 'shadow-md',
+        visible ? 'translate-y-0' : '-translate-y-full'
+      )}
+    >
       <div className='max-w-7xl mx-auto py-4'>
         <div className='flex items-center justify-between'>
           {/* Logo */}
