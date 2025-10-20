@@ -9,7 +9,7 @@ export default function FooterSection() {
         <>
             <section>
                 <div className="bg-primary">
-                    <div className="max-w-7xl mx-auto pt-20 pb-10">
+                    <div className="max-w-7xl mx-auto pt-20 pb-8">
                         <div className="flex justify-between">
                             <div>
                                 <Image
