@@ -7,22 +7,28 @@ type Props = {
   url?: string;
   text?: string;
   size?: 'sm' | 'md' | 'lg';
-  variant?: 'primary' | 'secondary' | 'outline' | 'outline-primary';
+  variant?:
+    | 'primary'
+    | 'secondary'
+    | 'outline'
+    | 'outline-primary'
+    | 'outline-white';
   onClick?: () => void;
 };
 
 const CTAButton = ({ url, text, size, variant, onClick }: Props) => {
   const sizes = {
-    sm: 'px-2 py-2 text-sm',
-    md: 'px-3 py-3 text-base',
-    lg: 'px-3.5 py-3.5 text-lg',
+    sm: 'p-1 md:p-2 text-sm',
+    md: 'p-2 md:p-3 text-xs sm:text-sm md:text-base',
+    lg: 'p-2 md:p-3.5 text-base md:text-lg',
   };
 
   const variants = {
     primary: 'bg-white text-primary',
     secondary: 'bg-primary text-white',
-    outline: 'border border-white text-white bg-transparent',
+    outline: 'border border-primary text-primary bg-transparent',
     'outline-primary': 'border border-primary text-primary bg-transparent',
+    'outline-white': 'border border-white text-white bg-transparent',
   };
 
   return (
@@ -43,18 +49,22 @@ const CTAButton = ({ url, text, size, variant, onClick }: Props) => {
         className={cn(
           'flex items-center justify-center w-8 h-8 rounded-full transition-all duration-300 group-hover:rotate-45',
           variant === 'secondary' ? 'bg-white' : 'bg-primary',
-          variant === 'outline' ? 'bg-white/20 group-hover:bg-white' : '',
+          variant === 'outline' ? 'bg-primary/20 group-hover:bg-primary' : '',
           variant === 'outline-primary'
             ? 'bg-primary/20 group-hover:bg-primary'
-            : ''
+            : '',
+          variant === 'outline-white' ? 'bg-white group-hover:bg-primary' : ''
         )}
       >
         <IoIosArrowRoundForward
           className={cn(
             'w-5 h-5 transition-colors duration-300',
             variant === 'secondary' ? 'text-primary' : 'text-white',
-            variant === 'outline' ? 'text-white group-hover:text-primary' : '',
+            variant === 'outline' ? 'text-primary group-hover:text-white' : '',
             variant === 'outline-primary'
+              ? 'text-primary group-hover:!text-white'
+              : '',
+            variant === 'outline-white'
               ? 'text-primary group-hover:!text-white'
               : ''
           )}
