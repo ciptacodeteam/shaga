@@ -39,7 +39,7 @@ export default async function LocaleLayout({
       <NextIntlClientProvider locale={locale} messages={messages}>
         <NavigationBar />
         <main className='relative'>
-          <div className='pt-28' />
+          <div className='pt-24' />
           {children}
           <FloatingLanguageSelector />
         </main>
