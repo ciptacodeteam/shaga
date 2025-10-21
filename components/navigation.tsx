@@ -1,6 +1,7 @@
 'use client';
 
 import { transformMessages } from '@/i18n/messages';
+import { Link } from '@/i18n/navigation';
 import { cn } from '@/lib/utils';
 import logo from '@/public/svg/logo.svg';
 import { useMessages, useTranslations } from 'next-intl';
@@ -8,7 +9,6 @@ import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import CTAButton from './CTAButton';
-import { Link } from '@/i18n/navigation';
 
 export default function NavigationBar() {
   const pathname = usePathname();
@@ -64,16 +64,21 @@ export default function NavigationBar() {
             <ul className='flex items-center gap-8'>
               {menus.map(
                 (menu: { text: string; link: string }, idx: number) => {
-                  const isActive = pathname === menu.link;
+                  const isActive =
+                    pathname.replace(`/${t('metadata.locale')}`, '') ===
+                      menu.link ||
+                    (menu.link === '/' &&
+                      pathname === `/${t('metadata.locale')}`);
                   return (
                     <li key={idx}>
                       <Link
                         href={menu.link}
-                        className={`font-manrope font-medium transition-colors duration-200 ${
+                        className={cn(
+                          `font-manrope font-medium transition-colors duration-200`,
                           isActive
                             ? 'text-primary'
                             : 'text-[#7686ab] hover:text-primary'
-                        }`}
+                        )}
                       >
                         {menu.text}
                       </Link>
