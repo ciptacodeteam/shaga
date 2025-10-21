@@ -32,7 +32,7 @@ export default function HeroSection() {
 
           {/* Tombol CTA */}
           <div className='flex flex-col lg:flex-row lg:justify-between gap-4 lg:items-end'>
-            <div className='flex gap-3 sm:gap-6'>
+            <div className='flex gap-3 sm:gap-6 mt-4 md:mt-0'>
               <div>
                 <CTAButton text='Konsultasi Gratis' size='md' />
               </div>
@@ -46,7 +46,7 @@ export default function HeroSection() {
               </div>
             </div>
 
-            <div className='bg-white rounded-lg py-4 px-5 flex items-center gap-4 w-full sm:w-[400px] h-auto mt-10 lg:mt-0'>
+            <div className='bg-white rounded-lg py-4 px-5 flex items-center gap-4 w-full sm:w-[400px] h-auto mt-8 lg:mt-0'>
               <div className='md:w-1/2 w-2/3'>
                 <div className='mb-4'>
                   <p className='text-primary font-semibold font-manrope text-sm md:text-base'>

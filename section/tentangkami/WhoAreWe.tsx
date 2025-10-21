@@ -10,7 +10,7 @@ import { AiOutlineDeploymentUnit } from 'react-icons/ai';
 export default function WhoAreWeSection() {
   return (
     <>
-      <section className='relative mb-30'>
+      <section className='relative mb-16 md:mb-30'>
         <div className='max-w-7xl mx-auto px-4'>
           <div className='flex flex-col md:flex-row gap-8 md:gap-16 items-start'>
             <div className='w-full md:w-3/5 flex flex-col justify-center'>

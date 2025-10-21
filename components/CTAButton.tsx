@@ -20,7 +20,7 @@ type Props = {
 const CTAButton = ({ url, text, size, variant, onClick, className }: Props) => {
   const sizes = {
     sm: 'p-1 md:px-2 md:py-1.5 text-sm',
-    md: 'p-2 text-xs sm:text-sm md:text-base',
+    md: 'p-2 text-sm  md:text-base',
     lg: 'p-2 md:px-3.5 md:py-2.5 text-base md:text-lg',
   };
 
