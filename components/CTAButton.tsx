@@ -14,9 +14,10 @@ type Props = {
     | 'outline-primary'
     | 'outline-white';
   onClick?: () => void;
+  className?: string;
 };
 
-const CTAButton = ({ url, text, size, variant, onClick }: Props) => {
+const CTAButton = ({ url, text, size, variant, onClick, className }: Props) => {
   const sizes = {
     sm: 'p-1 md:p-2 text-sm',
     md: 'p-2 md:p-3 text-xs sm:text-sm md:text-base',
@@ -38,7 +39,8 @@ const CTAButton = ({ url, text, size, variant, onClick }: Props) => {
       className={cn(
         'group flex items-center bg-white rounded-full px-2 py-2 transition-all duration-300 w-fit',
         sizes[size || 'md'],
-        variants[variant || 'primary']
+        variants[variant || 'primary'],
+        className
       )}
     >
       <span className='font-manrope ms-3 me-3 transition-all duration-300 group-hover:translate-x-1'>
