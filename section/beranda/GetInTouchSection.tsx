@@ -22,7 +22,7 @@ export default function GetInTouch() {
                 </p>
 
                 <div className='w-full md:w-auto'>
-                  <CTAButton text='Konsultasi Gratis' size='lg' />
+                  <CTAButton text='Konsultasi Gratis' size='md' />
                 </div>
               </div>
             </div>

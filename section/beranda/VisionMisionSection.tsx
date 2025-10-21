@@ -8,7 +8,7 @@ export default function VisionMissionSection() {
       <section className='relative mb-[450px] md:mb-[600px] lg:mb-38'>
         <div className='max-w-7xl mx-auto'>
           <div className='flex items-center flex-col lg:flex-row'>
-            <div className='w-full lg:w-1/2 px-8 lg:pr-0'>
+            <div className='w-full lg:w-1/2 px-8 xl:px-0'>
               <div className='flex items-center gap-2 mb-3'>
                 <span className='relative flex size-3'>
                   <span className='absolute inline-flex h-full w-full animate-ping rounded-full bg-secondary opacity-75'></span>
@@ -19,7 +19,7 @@ export default function VisionMissionSection() {
                 </p>
               </div>
               <div className='mb-12'>
-                <p className='font-manrope md:text-2xl lg:text-3xl text-xl leading-relaxed xl:text-5xl lg:leading-tight text-primary'>
+                <p className='font-manrope md:text-3xl  text-xl leading-relaxed xl:text-5xl lg:leading-tight text-primary'>
                   Kami menyediakan{' '}
                   <span className='text-secondary'>layanan logistik</span> untuk
                   pengiriman yang{' '}

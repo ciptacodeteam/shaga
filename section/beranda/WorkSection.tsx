@@ -56,10 +56,10 @@ export default function WorkSection() {
   }, []);
 
   return (
-    <section className='bg-[#001E62] py-12 md:py-16 mb-10'>
-      <div className='max-w-7xl mx-auto px-4'>
+    <section className='bg-[#001E62] py-12 md:py-10 md:mb-30 mb-10'>
+      <div className='max-w-7xl mx-auto px-4 lg:px-0'>
         <div className='mb-10 md:mb-16'>
-          <div className='flex items-center gap-2 mb-4'>
+          <div className='flex items-center gap-2 md:mb-6'>
             <span className='relative flex size-3'>
               <span className='absolute inline-flex h-full w-full animate-ping rounded-full bg-green-400 opacity-75'></span>
               <span className='relative inline-flex size-3 rounded-full bg-green-400'></span>
@@ -69,8 +69,8 @@ export default function WorkSection() {
             </p>
           </div>
 
-          <div className='flex flex-col md:flex-row md:items-end md:justify-between gap-4 md:gap-0'>
-            <h1 className='font-manrope text-2xl md:text-5xl text-white'>
+          <div className='flex flex-col md:flex-row md:justify-between gap-6 md:gap-0'>
+            <h1 className='font-manrope text-2xl md:text-4xl lg:text-5xl text-white'>
               Proses Kerja Kami
             </h1>
             <p className='text-white font-manrope md:w-2/5 text-sm md:text-base'>
@@ -141,9 +141,9 @@ export default function WorkSection() {
                       <Image
                         src={isActive ? step.iconActive : step.icon}
                         alt={step.title}
-                        width={220}
-                        height={60}
-                        className='mt-4 mx-auto'
+                        width={500}
+                        height={400}
+                        className='mt-10 w-[300px] h-auto md:w-[500px] md:h-auto'
                       />
                     </div>
                   </div>

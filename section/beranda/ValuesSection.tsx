@@ -7,7 +7,7 @@ export default function ValueSection() {
   return (
     <>
       <section>
-        <div className='max-w-7xl mx-auto mb-24 px-4'>
+        <div className='max-w-7xl mx-auto mb-36 px-4'>
           <div className='flex flex-col md:flex-row gap-8 md:gap-12'>
             <div className='w-full md:w-1/3'>
               <div className='flex flex-col'>
@@ -37,8 +37,8 @@ export default function ValueSection() {
             </div>
 
             <div className='w-full md:w-2/3'>
-              <div className='grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8'>
-                <div className='border border-[#E0E6F3] p-6 rounded-xl flex flex-col justify-between'>
+              <div className='grid grid-flow-row grid-cols-1 md:grid-cols-2 gap-6 h-[700px]'>
+                <div className='col-span-1 border border-[#E0E6F3] p-6 rounded-xl flex flex-col justify-between h-full'>
                   <div className='flex items-start justify-between text-sm'>
                     <div className='bg-[#E0E6F3] rounded-full p-3 flex-shrink-0 flex items-center justify-center'>
                       <BsPatchCheck className='text-primary w-6 h-6' />
@@ -47,13 +47,13 @@ export default function ValueSection() {
                       Dipercaya
                     </p>
                   </div>
-                  <h1 className='font-manrope text-primary mt-6 text-base md:text-lg'>
+                  <h1 className='font-manrope text-primary mt-8 text-lg'>
                     Kami memastikan setiap pengiriman memenuhi standar tinggi
                     kami, dari awal hingga akhir.
                   </h1>
                 </div>
 
-                <div className='border border-[#E0E6F3] p-6 rounded-xl flex flex-col justify-between'>
+                <div className='row-span-2 border border-[#E0E6F3] p-6 rounded-xl flex flex-col justify-between h-full'>
                   <div className='flex items-start justify-between text-sm'>
                     <div className='bg-[#E0E6F3] rounded-full p-3 flex-shrink-0 flex items-center justify-center'>
                       <IoPeopleOutline className='text-primary w-6 h-6' />
@@ -62,13 +62,13 @@ export default function ValueSection() {
                       Prioritas
                     </p>
                   </div>
-                  <h1 className='font-manrope text-primary mt-6 text-base md:text-lg'>
+                  <h1 className='font-manrope text-primary mt-8 text-lg'>
                     Kebutuhan Anda adalah prioritas kami di setiap langkah
                     perjalanan.
                   </h1>
                 </div>
 
-                <div className='border border-[#E0E6F3] p-6 rounded-xl flex flex-col justify-between'>
+                <div className='row-span-2 border border-[#E0E6F3] p-6 rounded-xl flex flex-col justify-between h-full'>
                   <div className='flex items-start justify-between text-sm'>
                     <div className='bg-[#E0E6F3] rounded-full p-3 flex-shrink-0 flex items-center justify-center'>
                       <HiOutlineLightBulb className='text-primary w-6 h-6' />
@@ -77,13 +77,13 @@ export default function ValueSection() {
                       Inovasi
                     </p>
                   </div>
-                  <h1 className='font-manrope text-primary mt-6 text-base md:text-lg'>
+                  <h1 className='font-manrope text-primary mt-8 text-lg'>
                     Mengadopsi teknologi terbaru untuk menghadirkan pengalaman
                     logistik yang mulus.
                   </h1>
                 </div>
 
-                <div className='border border-[#E0E6F3] p-6 rounded-xl flex flex-col justify-between'>
+                <div className='col-span-1 border border-[#E0E6F3] p-6 rounded-xl flex flex-col justify-between h-full'>
                   <div className='flex items-start justify-between text-sm'>
                     <div className='bg-[#E0E6F3] rounded-full p-3 flex-shrink-0 flex items-center justify-center'>
                       <AiOutlineDeploymentUnit className='text-primary w-6 h-6' />
@@ -92,7 +92,7 @@ export default function ValueSection() {
                       Keberlanjutan
                     </p>
                   </div>
-                  <h1 className='font-manrope text-primary mt-6 text-base md:text-lg'>
+                  <h1 className='font-manrope text-primary mt-8 text-lg'>
                     Berkomitmen pada praktik ramah lingkungan di setiap aspek
                     layanan kami.
                   </h1>

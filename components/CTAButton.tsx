@@ -20,7 +20,7 @@ type Props = {
 const CTAButton = ({ url, text, size, variant, onClick, className }: Props) => {
   const sizes = {
     sm: 'p-1 md:px-2 md:py-1.5 text-sm',
-    md: 'p-2 md:px-3 md:py-2.5 text-xs sm:text-sm md:text-base',
+    md: 'p-2 text-xs sm:text-sm md:text-base',
     lg: 'p-2 md:px-3.5 md:py-2.5 text-base md:text-lg',
   };
 
@@ -29,7 +29,8 @@ const CTAButton = ({ url, text, size, variant, onClick, className }: Props) => {
     secondary: 'bg-primary text-white',
     outline: 'border border-primary text-primary bg-transparent',
     'outline-primary': 'border border-primary text-primary bg-transparent',
-    'outline-white': 'border border-white text-white bg-transparent',
+    'outline-white':
+      'border border-white text-white bg-transparent  hover:bg-white/10',
   };
 
   return (
@@ -55,7 +56,7 @@ const CTAButton = ({ url, text, size, variant, onClick, className }: Props) => {
           variant === 'outline-primary'
             ? 'bg-primary/20 group-hover:bg-primary'
             : '',
-          variant === 'outline-white' ? 'bg-white group-hover:bg-primary' : ''
+          variant === 'outline-white' ? 'bg-white/20 group-hover:bg-white' : ''
         )}
       >
         <IoIosArrowRoundForward
@@ -67,7 +68,7 @@ const CTAButton = ({ url, text, size, variant, onClick, className }: Props) => {
               ? 'text-primary group-hover:!text-white'
               : '',
             variant === 'outline-white'
-              ? 'text-primary group-hover:!text-white'
+              ? 'text-white group-hover:text-primary'
               : ''
           )}
         />

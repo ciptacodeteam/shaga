@@ -67,7 +67,7 @@ export default function PartnerClient() {
   return (
     <>
       <section>
-        <div className='max-w-7xl mx-auto mb-24 px-4 md:px-8'>
+        <div className='max-w-7xl mx-auto mb-24 md:mb-42 px-4 md:px-8'>
           <div className='flex flex-col justify-center items-center text-center'>
             <div className='flex items-center gap-2 mb-3'>
               <span className='relative flex size-3'>

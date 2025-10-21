@@ -9,7 +9,7 @@ import { Link } from '@/i18n/navigation';
 
 export default function HeroSection() {
   return (
-    <section className='relative mb-12'>
+    <section className='relative mb-12 lg:mb-20'>
       <div className='mx-4 md:mx-8 relative min-h-[420px] md:h-[600px] lg:h-[700px] rounded-xl overflow-hidden z-0'>
         {/* Gambar Background */}
         <div className="absolute inset-0 bg-[url('/img/imghero.webp')] bg-cover bg-center"></div>
@@ -23,7 +23,7 @@ export default function HeroSection() {
             <h1 className='text-2xl sm:text-3xl md:text-5xl lg:text-6xl leading-tight font-medium mb-4 font-manrope max-w-xs sm:max-w-none'>
               Menjangkau Dunia Lewat Darat, Laut, dan Udara
             </h1>
-            <p className='text-sm sm:text-base text-white mb-6 font-manrope lg:max-w-md xl:max-w-lg'>
+            <p className='text-sm sm:text-base text-white mb-6 font-manrope'>
               Kami menghadirkan solusi logistik melalui jalur darat, laut, dan
               udara, memastikan setiap pengiriman tiba tepat waktu, dengan
               keamanan dan pelayanan terbaik di setiap langkahnya.
@@ -57,9 +57,11 @@ export default function HeroSection() {
                 </div>
                 <div>
                   <Link href='/contact'>
-                    <button className='text-white bg-primary text-xs py-2 px-5 rounded-full cursor-pointer transition-all duration-300 hover:brightness-110 hover:-translate-y-0.5 font-manrope text-start md:text-center inline-flex gap-1'>
-                      <span className='hidden md:block'>Mulai</span> Kirim
-                      Sekarang
+                    <button className='text-white bg-primary  py-2 px-4 rounded-full cursor-pointer transition-all duration-300 hover:brightness-110 hover:-translate-y-0.5 font-manrope text-start md:text-center'>
+                      <p className='text-xs md:text-sm block'>
+                        <span className='hidden sm:inline'>Mulai</span> Kirim
+                        Sekarang
+                      </p>
                     </button>
                   </Link>
                 </div>
@@ -88,7 +90,7 @@ export default function HeroSection() {
             <Image
               src={tracking1}
               alt='Tracking'
-              className='absolute top-32 right-24 lg:right-64 w-44 h-44 mb-4 mr-4 z-10'
+              className='absolute top-32 right-24 lg:right-64 w-44 h-44 lg:w-52 lg:h-52 mb-4 mr-4 z-10'
             />
           </div>
 
@@ -96,7 +98,7 @@ export default function HeroSection() {
             <Image
               src={tracking2}
               alt='Tracking'
-              className='absolute top-72 right-40 lg:right-96 w-44 h-44 mb-4 mr-4 z-10'
+              className='absolute top-72 right-40 lg:right-96 w-44 h-44 lg:w-52 lg:h-52 mb-4 mr-4 z-10'
             />
           </div>
         </div>
