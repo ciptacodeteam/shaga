@@ -1,14 +1,14 @@
 export default function HeroAbout() {
   return (
     <>
-      <section className='relative mb-12'>
+      <section className='relative mb-20'>
         <div className='mx-4 md:mx-8 relative rounded-xl overflow-hidden z-0'>
           <div className="absolute inset-0 bg-[url('/img/imghero.webp')] bg-cover bg-center"></div>
 
           <div className='absolute inset-0 bg-[#0B55A7]/80 z-10'></div>
 
           <div className='relative z-20 flex flex-col px-6 sm:px-10 md:px-16 py-16 sm:py-20 md:py-28 text-white justify-center items-center text-center'>
-            <h1 className='text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-medium mb-6 md:mb-8 font-manrope'>
+            <h1 className='text-3xl sm:text-4xl md:text-6xl lg:text-7xl xl:text-8xl font-medium mb-6 md:mb-8 font-manrope'>
               Tentang Shaga
             </h1>
 

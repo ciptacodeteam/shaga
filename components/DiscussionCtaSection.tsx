@@ -17,7 +17,7 @@ const DiscussionCtaSection = () => {
           </div>
 
           <div className='w-full md:w-1/3 flex md:justify-start'>
-            <CTAButton text='Hubungi Kami' size='lg' />
+            <CTAButton text='Hubungi Kami' size='md' />
           </div>
         </div>
       </div>

@@ -1,5 +1,6 @@
 'use client';
 
+import { cn } from '@/lib/utils';
 import Image from 'next/image';
 
 import { useState } from 'react';
@@ -41,7 +42,7 @@ export default function WorkProcess() {
   return (
     <>
       <section>
-        <div className='max-w-7xl mx-auto px-4 mb-12'>
+        <div className='max-w-7xl mx-auto px-4 mb-12 lg:mb-30'>
           <div className='flex items-center gap-2 mb-3'>
             <span className='relative flex size-3'>
               <span className='absolute inline-flex h-full w-full animate-ping rounded-full bg-secondary opacity-75'></span>
@@ -52,7 +53,7 @@ export default function WorkProcess() {
             </p>
           </div>
 
-          <div className='mb-6'>
+          <div className='mb-6 lg:mb-10'>
             <p className='font-manrope text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-tight text-primary'>
               <span className='text-secondary'>Proses Teruji</span> Kami untuk
               Meraih Keunggulan
@@ -61,13 +62,13 @@ export default function WorkProcess() {
 
           <div className='flex flex-col md:flex-row gap-8 md:gap-16'>
             <div className='w-full md:w-1/2'>
-              <p className='text-[#2A437C] font-manrope mb-6'>
+              <p className='text-[#2A437C] font-manrope mb-6 md:mb-0'>
                 Proses kami sederhana namun efektif. Setiap proyek memang
                 berbeda, tetapi kami telah menangani ribuan proyek sejak pertama
                 kali berdiri. Pengalaman kami adalah aset berharga bagi Anda.
               </p>
 
-              <div className='mt-8 md:mt-16'>
+              <div className='mt-8 md:mt-16 py-0 md:py-2'>
                 <Image
                   src={activeStep.icon}
                   alt={activeStep.title}
@@ -78,7 +79,7 @@ export default function WorkProcess() {
               </div>
             </div>
 
-            <div className='w-full md:w-1/2 space-y-6'>
+            <div className='w-full md:w-1/2 space-y-6 md:space-y-8'>
               {steps.map((step) => (
                 <div
                   key={step.number}
@@ -89,26 +90,29 @@ export default function WorkProcess() {
                   }}
                   role='button'
                   tabIndex={0}
-                  className={`cursor-pointer group py-4 relative focus:outline-none focus:ring-2 focus:ring-secondary rounded-lg px-2 ${
+                  className={cn(
+                    `cursor-pointer group py-4 md:py-6 relative focus:outline-none focus:ring-2 focus:ring-secondary rounded-lg px-2`,
                     activeStep.number === step.number ? 'bg-white/5' : ''
-                  }`}
+                  )}
                 >
                   {/* Garis atas */}
                   <span
-                    className={`absolute left-0 top-0 w-full h-[1px] bg-[#E0E6F3] transition-all origin-left ${
+                    className={cn(
+                      `absolute left-0 top-0 w-full h-[1px] bg-[#E0E6F3] transition-all origin-left `,
                       activeStep.number === step.number
                         ? 'scale-x-100'
                         : 'scale-x-0 group-hover:scale-x-100'
-                    }`}
+                    )}
                   ></span>
 
                   {/* Garis bawah */}
                   <span
-                    className={`absolute left-0 bottom-0 w-full h-[1px] bg-[#E0E6F3] transition-all origin-left ${
+                    className={cn(
+                      `absolute left-0 bottom-0 w-full h-[1px] bg-[#E0E6F3] transition-all origin-left`,
                       activeStep.number === step.number
                         ? 'scale-x-100'
                         : 'scale-x-0 group-hover:scale-x-100'
-                    }`}
+                    )}
                   ></span>
 
                   <div className='flex items-start gap-6 md:gap-10'>
@@ -124,7 +128,7 @@ export default function WorkProcess() {
                       <h3 className='text-primary font-medium text-lg md:text-2xl font-manrope mb-1 md:mb-2'>
                         {step.title}
                       </h3>
-                      <p className='text-[#2A437C] font-manrope text-sm md:text-base'>
+                      <p className='text-[#2A437C] font-manrope text-sm'>
                         {step.description}
                       </p>
                     </div>

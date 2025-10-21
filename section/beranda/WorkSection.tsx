@@ -56,7 +56,7 @@ export default function WorkSection() {
   }, []);
 
   return (
-    <section className='bg-[#001E62] py-12 md:py-10 md:mb-30 mb-10'>
+    <section className='bg-[#001E62] py-12 md:py-10 md:mb-30 mb-24'>
       <div className='max-w-7xl mx-auto px-4 lg:px-0'>
         <div className='mb-10 md:mb-16'>
           <div className='flex items-center gap-2 md:mb-6'>

@@ -21,7 +21,7 @@ export default function GetinQuote() {
               </div>
 
               <div>
-                <CTAButton text='Dapatkan Penawaran' size='md' />
+                <CTAButton text='Konsultasi Gratis' size='md' />
               </div>
             </div>
           </div>

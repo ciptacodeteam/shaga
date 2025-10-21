@@ -31,8 +31,8 @@ const FaqSection = () => {
       <header className='flex flex-col justify-center items-center text-center px-2 md:px-0'>
         <div className='flex items-center gap-2 mb-3'>
           <span className='relative flex'>
-            <span className='absolute inline-flex h-3 w-3 md:h-4 md:w-4 animate-ping rounded-full bg-secondary opacity-75' />
-            <span className='relative inline-flex h-3 w-3 md:h-4 md:w-4 rounded-full bg-secondary' />
+            <span className='absolute inline-flex size-3 animate-ping rounded-full bg-secondary opacity-75' />
+            <span className='relative inline-flex size-3 rounded-full bg-secondary' />
           </span>
 
           <p className='text-sm font-medium text-primary uppercase font-manrope'>
@@ -55,7 +55,7 @@ const FaqSection = () => {
               <div className='border-b last:border-b-0 border-slate-200'>
                 <h4 className='m-0'>
                   <Disclosure.Button className='w-full text-left px-2 lg:px-6 py-6 flex items-center justify-between gap-4 focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400'>
-                    <span className='text-lg md:text-xl text-sky-700 font-medium'>
+                    <span className='text-lg md:text-xl text-sky-700 font-medium font-manrope'>
                       {item.question}
                     </span>
 
@@ -80,7 +80,7 @@ const FaqSection = () => {
                 </h4>
 
                 <Disclosure.Panel className='px-6 py-4'>
-                  <p className='text-slate-500 text-base leading-relaxed'>
+                  <p className='text-slate-500 text-base leading-relaxed font-manrope'>
                     {item.answer}
                   </p>
                 </Disclosure.Panel>

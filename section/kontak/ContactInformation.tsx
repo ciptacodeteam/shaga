@@ -53,18 +53,18 @@ export default function ContactInformation() {
   return (
     <>
       <section>
-        <div className='max-w-7xl mx-auto mb-20 lg:mb-30 px-4'>
+        <div className='max-w-7xl mx-auto mb-20 lg:mb-30 px-4 lg:px-0'>
           <div className='flex items-center gap-2 mb-3'>
             <span className='relative flex'>
-              <span className='absolute inline-flex h-3 w-3 md:h-4 md:w-4 animate-ping rounded-full bg-secondary opacity-75'></span>
-              <span className='relative inline-flex h-3 w-3 md:h-4 md:w-4 rounded-full bg-secondary'></span>
+              <span className='absolute inline-flex size-3 animate-ping rounded-full bg-secondary opacity-75'></span>
+              <span className='relative inline-flex size-3 rounded-full bg-secondary'></span>
             </span>
             <p className='text-sm font-medium text-primary uppercase font-manrope'>
               informasi kontak
             </p>
           </div>
 
-          <div className='grid grid-cols-1 md:grid-cols-2 gap-8'>
+          <div className='grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12'>
             <div>
               <div className='mb-6 md:mb-8'>
                 <p className='font-manrope text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-tight text-primary'>
@@ -84,7 +84,7 @@ export default function ContactInformation() {
 
               <div className='grid grid-cols-1 sm:grid-cols-2 gap-4'>
                 <div className='border border-[#E0E6F3] p-4 md:p-6 rounded-xl flex flex-col justify-between h-full'>
-                  <div className='flex items-center gap-3'>
+                  <div className='flex items-center gap-3 lg:gap-4'>
                     <div className='bg-[#E0E6F3] rounded-full p-2 md:p-3 flex-shrink-0 flex items-center justify-center'>
                       <LuPhone className='text-primary w-5 h-5 md:w-6 md:h-6' />
                     </div>
@@ -95,15 +95,15 @@ export default function ContactInformation() {
                       </h1>
                     </div>
                   </div>
-                  <h1 className='font-manrope font-medium text-primary mt-3 text-base md:text-lg'>
+                  <h1 className='font-manrope font-medium text-primary mt-3 md:mt-4 text-base md:text-lg'>
                     +62 811 6383 887
                   </h1>
                 </div>
 
                 <div className='border border-[#E0E6F3] p-4 md:p-6 rounded-xl flex flex-col justify-between h-full'>
-                  <div className='flex items-center gap-3'>
+                  <div className='flex items-center gap-3 md:gap-4'>
                     <div className='bg-[#E0E6F3] rounded-full p-2 md:p-3 flex-shrink-0 flex items-center justify-center'>
-                      <HiOutlineMail className='text-primary w-5 h-5 md:w-6 md:h-6' />
+                      <HiOutlineMail className='text-primary size-5 md:size-6' />
                     </div>
 
                     <div>
@@ -112,7 +112,7 @@ export default function ContactInformation() {
                       </h1>
                     </div>
                   </div>
-                  <h1 className='font-manrope font-medium text-primary mt-3 text-base md:text-lg'>
+                  <h1 className='font-manrope font-medium text-primary mt-3 md:mt-4 text-base md:text-lg'>
                     shaga3729@gmail.com
                   </h1>
                 </div>
@@ -129,7 +129,7 @@ export default function ContactInformation() {
                       </h1>
                     </div>
                   </div>
-                  <h1 className='font-manrope font-medium text-primary mt-3 text-base md:text-lg'>
+                  <h1 className='font-manrope font-medium text-primary mt-3 md:mt-4 text-base md:text-lg'>
                     Jl. Mengkara No.2, Petisah Tengah, Kec. Medan Petisah, Kota
                     Medan, Sumatera Utara 20111
                   </h1>
@@ -147,7 +147,7 @@ export default function ContactInformation() {
                       </h1>
                     </div>
                   </div>
-                  <h1 className='font-manrope font-medium text-primary mt-3 text-base md:text-lg'>
+                  <h1 className='font-manrope font-medium text-primary mt-3 md:mt-4 text-base md:text-lg'>
                     Senin - Sabtu, 8:30 - 17:00 WIB
                   </h1>
                 </div>
@@ -156,12 +156,12 @@ export default function ContactInformation() {
 
             <div>
               <div className='border border-[#E0E6F3] p-6 md:p-8 rounded-xl flex flex-col justify-between h-full'>
-                <p className='font-manrope text-[#556996] text-xl md:text-2xl xl:text-3xl xl:max-w-md xl:leading-relaxed leading-tight mb-4'>
+                <p className='font-manrope text-[#556996] text-xl md:text-2xl lg:text-3xl xl:text-4xl leading-tight mb-4'>
                   Silakan isi formulir di bawah ini, dan tim kami akan segera
                   menghubungi Anda.
                 </p>
 
-                <form onSubmit={handleSubmit} className='mt-6 space-y-4'>
+                <form onSubmit={handleSubmit} className='mt-6 space-y-6'>
                   <div className='grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4'>
                     <div>
                       <label className='block text-sm font-medium text-primary font-manrope mb-2'>
@@ -292,7 +292,7 @@ export default function ContactInformation() {
                   <div>
                     <button
                       type='submit'
-                      className='w-full bg-primary text-white py-3 rounded-full transition font-manrope cursor-pointer text-sm md:text-base font-medium'
+                      className='w-full bg-primary text-white py-3 rounded-full transition font-manrope cursor-pointer text-sm md:text-base lg:text-lg font-medium'
                     >
                       Hubungi Kami
                     </button>
