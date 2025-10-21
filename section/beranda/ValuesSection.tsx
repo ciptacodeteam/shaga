@@ -1,9 +1,12 @@
+import { useTranslations } from 'next-intl';
 import { AiOutlineDeploymentUnit } from 'react-icons/ai';
 import { BsPatchCheck } from 'react-icons/bs';
 import { HiOutlineLightBulb } from 'react-icons/hi';
 import { IoPeopleOutline } from 'react-icons/io5';
 
 export default function ValueSection() {
+  const t = useTranslations();
+
   return (
     <>
       <section>
@@ -17,21 +20,21 @@ export default function ValueSection() {
                     <span className='relative inline-flex size-3 rounded-full bg-secondary'></span>
                   </span>
                   <p className='text-sm font-medium text-primary uppercase font-manrope'>
-                    NILAI-NILAI UTAMA
+                    {t('valuesSection.heading')}
                   </p>
                 </div>
 
                 <div className='mb-6 md:mb-8'>
-                  <p className='font-manrope text-2xl md:text-4xl lg:text-5xl leading-tight text-primary'>
-                    Dibangun atas dasar{' '}
-                    <span className='text-secondary'>Kepercayaan</span> dan{' '}
-                    <span className='text-secondary'>Keunggulan</span>.
-                  </p>
+                  <p
+                    className='font-manrope text-2xl md:text-4xl lg:text-5xl leading-tight text-primary [&>span]:text-secondary'
+                    dangerouslySetInnerHTML={{
+                      __html: t.raw('valuesSection.title'),
+                    }}
+                  ></p>
                 </div>
 
                 <p className='font-manrope text-primary text-sm md:text-base'>
-                  Kami membangun hubungan yang kuat pada nilai-nilai integritas,
-                  kualitas, dan akuntabilitas.
+                  {t('valuesSection.subtitle')}
                 </p>
               </div>
             </div>
@@ -44,12 +47,11 @@ export default function ValueSection() {
                       <BsPatchCheck className='text-primary w-6 h-6' />
                     </div>
                     <p className='font-manrope rounded-full text-primary bg-[#E0E6F3] py-1 font-semibold px-4'>
-                      Dipercaya
+                      {t('valuesSection.trustItem.badge')}
                     </p>
                   </div>
                   <h1 className='font-manrope text-primary mt-8 text-lg'>
-                    Kami memastikan setiap pengiriman memenuhi standar tinggi
-                    kami, dari awal hingga akhir.
+                    {t('valuesSection.trustItem.content')}
                   </h1>
                 </div>
 
@@ -59,12 +61,11 @@ export default function ValueSection() {
                       <IoPeopleOutline className='text-primary w-6 h-6' />
                     </div>
                     <p className='font-manrope rounded-full text-primary bg-[#E0E6F3] py-1 font-semibold px-4'>
-                      Prioritas
+                      {t('valuesSection.customerCentricItem.badge')}
                     </p>
                   </div>
                   <h1 className='font-manrope text-primary mt-8 text-lg'>
-                    Kebutuhan Anda adalah prioritas kami di setiap langkah
-                    perjalanan.
+                    {t('valuesSection.customerCentricItem.content')}
                   </h1>
                 </div>
 
@@ -74,12 +75,11 @@ export default function ValueSection() {
                       <HiOutlineLightBulb className='text-primary w-6 h-6' />
                     </div>
                     <p className='font-manrope rounded-full text-primary bg-[#E0E6F3] py-1 font-semibold px-4'>
-                      Inovasi
+                      {t('valuesSection.innovationItem.badge')}
                     </p>
                   </div>
                   <h1 className='font-manrope text-primary mt-8 text-lg'>
-                    Mengadopsi teknologi terbaru untuk menghadirkan pengalaman
-                    logistik yang mulus.
+                    {t('valuesSection.innovationItem.content')}
                   </h1>
                 </div>
 
@@ -89,12 +89,11 @@ export default function ValueSection() {
                       <AiOutlineDeploymentUnit className='text-primary w-6 h-6' />
                     </div>
                     <p className='font-manrope rounded-full text-primary bg-[#E0E6F3] py-1 font-semibold px-4'>
-                      Keberlanjutan
+                      {t('valuesSection.sustainabilityItem.badge')}
                     </p>
                   </div>
                   <h1 className='font-manrope text-primary mt-8 text-lg'>
-                    Berkomitmen pada praktik ramah lingkungan di setiap aspek
-                    layanan kami.
+                    {t('valuesSection.sustainabilityItem.content')}
                   </h1>
                 </div>
               </div>

@@ -1,13 +1,13 @@
 import Image from 'next/image';
 
-import tracking1 from '@/public/svg/tracking1.svg';
-import tracking2 from '@/public/svg/tracking2.svg';
-
 import CTAButton from '@/components/CTAButton';
-import { BiMapPin } from 'react-icons/bi';
 import { Link } from '@/i18n/navigation';
+import { useTranslations } from 'next-intl';
+import { BiMapPin } from 'react-icons/bi';
 
 export default function HeroSection() {
+  const t = useTranslations();
+
   return (
     <section className='relative mb-12 lg:mb-20'>
       <div className='mx-4 md:mx-8 relative min-h-[420px] md:h-[600px] lg:h-[700px] rounded-xl overflow-hidden z-0'>
@@ -21,12 +21,10 @@ export default function HeroSection() {
         <div className='relative z-20 flex flex-col justify-between h-full px-6 md:px-16 text-white py-8 md:py-16'>
           <div className='max-w-xl md:max-w-2xl'>
             <h1 className='text-2xl sm:text-3xl md:text-5xl lg:text-6xl leading-tight font-medium mb-4 font-manrope max-w-xs sm:max-w-none'>
-              Menjangkau Dunia Lewat Darat, Laut, dan Udara
+              {t('heroSection.title')}
             </h1>
             <p className='text-sm sm:text-base text-white mb-6 font-manrope'>
-              Kami menghadirkan solusi logistik melalui jalur darat, laut, dan
-              udara, memastikan setiap pengiriman tiba tepat waktu, dengan
-              keamanan dan pelayanan terbaik di setiap langkahnya.
+              {t('heroSection.subtitle')}
             </p>
           </div>
 
@@ -34,12 +32,17 @@ export default function HeroSection() {
           <div className='flex flex-col lg:flex-row lg:justify-between gap-4 lg:items-end'>
             <div className='flex gap-3 sm:gap-6 mt-4 md:mt-0'>
               <div>
-                <CTAButton text='Konsultasi Gratis' size='md' />
+                <CTAButton
+                  text={t('heroSection.ctaText')}
+                  url={t('heroSection.ctaLink')}
+                  size='md'
+                />
               </div>
 
               <div>
                 <CTAButton
-                  text={'Pelajari Lebih Lanjut'}
+                  text={t('heroSection.cta2Text')}
+                  url={t('heroSection.cta2Link')}
                   size='md'
                   variant='outline-white'
                 />
@@ -49,19 +52,22 @@ export default function HeroSection() {
             <div className='bg-white rounded-lg py-4 px-5 flex items-center gap-4 w-full sm:w-[400px] h-auto mt-8 lg:mt-0'>
               <div className='md:w-1/2 w-2/3'>
                 <div className='mb-4'>
-                  <p className='text-primary font-semibold font-manrope text-sm md:text-base'>
-                    Kami <span className='text-secondary'>menjangkau</span>{' '}
-                    pengiriman ke seluruh{' '}
-                    <span className='text-secondary'>dunia</span>.
-                  </p>
+                  <p
+                    className='text-primary font-semibold font-manrope text-sm md:text-base [&>span]:text-secondary'
+                    dangerouslySetInnerHTML={{
+                      __html: t.raw('heroSection.locationText'),
+                    }}
+                  ></p>
                 </div>
                 <div>
-                  <Link href='/contact'>
+                  <Link href={t('heroSection.locationButtonLink')}>
                     <button className='text-white bg-primary  py-2 px-4 rounded-full cursor-pointer transition-all duration-300 hover:brightness-110 hover:-translate-y-0.5 font-manrope text-start md:text-center'>
-                      <p className='text-xs md:text-sm block'>
-                        <span className='hidden sm:inline'>Mulai</span> Kirim
-                        Sekarang
-                      </p>
+                      <p
+                        className='text-xs md:text-sm block [&>span]:hidden sm:[&>span]:inline'
+                        dangerouslySetInnerHTML={{
+                          __html: t.raw('heroSection.locationButtonText'),
+                        }}
+                      ></p>
                     </button>
                   </Link>
                 </div>
@@ -79,7 +85,7 @@ export default function HeroSection() {
               <BiMapPin className='text-primary w-5 h-5 transition-colors duration-300' />
             </div>
             <div className='bg-white font-manrope text-primary h-10 rounded-full font-semibold items-center px-4 hidden lg:flex'>
-              Pelabuhan di Belawan
+              {t('heroSection.locationMapText')}
             </div>
           </div>
         </div>
@@ -88,16 +94,20 @@ export default function HeroSection() {
         <div className='hidden xl:block'>
           <div>
             <Image
-              src={tracking1}
-              alt='Tracking'
+              src={t('heroSection.locationMarker1Image.src')}
+              alt={t('heroSection.locationMarker1Image.alt')}
+              width={400}
+              height={200}
               className='absolute top-32 right-24 lg:right-64 w-44 h-44 lg:w-52 lg:h-52 mb-4 mr-4 z-10'
             />
           </div>
 
           <div>
             <Image
-              src={tracking2}
-              alt='Tracking'
+              src={t('heroSection.locationMarker2Image.src')}
+              alt={t('heroSection.locationMarker2Image.alt')}
+              width={400}
+              height={200}
               className='absolute top-72 right-40 lg:right-96 w-44 h-44 lg:w-52 lg:h-52 mb-4 mr-4 z-10'
             />
           </div>

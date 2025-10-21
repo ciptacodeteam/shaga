@@ -1,6 +1,9 @@
 import CTAButton from '@/components/CTAButton';
+import { useTranslations } from 'next-intl';
 
 export default function GetInTouch() {
+  const t = useTranslations();
+
   return (
     <>
       <section className='px-4 lg:px-0'>
@@ -12,17 +15,20 @@ export default function GetInTouch() {
 
             <div className='relative p-6 md:p-16'>
               <h1 className='text-white font-manrope text-2xl md:text-5xl font-medium max-w-full md:max-w-xl leading-tight mb-6 md:mb-10 z-10'>
-                Permudah Proses Logistik Anda Hari Ini!
+                {t('getInTouchSection.title')}
               </h1>
 
               <div className='flex flex-col md:flex-row md:justify-between md:items-end gap-6'>
                 <p className='text-[#EEEEEE] font-manrope w-full md:w-2/5 z-10 text-sm md:text-base'>
-                  Temukan dunia logistik yang mudah dan tanpa hambatan, siap
-                  mengubah cara Anda melangkah maju.
+                  {t('getInTouchSection.content')}
                 </p>
 
                 <div className='w-full md:w-auto'>
-                  <CTAButton text='Konsultasi Gratis' size='md' />
+                  <CTAButton
+                    text={t('getInTouchSection.ctaText')}
+                    url={t('getInTouchSection.ctaLink')}
+                    size='md'
+                  />
                 </div>
               </div>
             </div>

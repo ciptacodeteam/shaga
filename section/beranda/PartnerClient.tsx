@@ -1,6 +1,9 @@
+import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 
 export default function PartnerClient() {
+  const t = useTranslations();
+
   const partners = [
     {
       id: 1,
@@ -75,17 +78,17 @@ export default function PartnerClient() {
                 <span className='relative inline-flex size-3 rounded-full bg-secondary'></span>
               </span>
               <p className='text-sm font-medium text-primary uppercase font-manrope'>
-                Partner & Client
+                {t('partnerClient.heading')}
               </p>
             </div>
 
             <div className='mb-8 md:mb-16'>
-              <p className='font-manrope text-2xl sm:text-3xl lg:text-4xl xl:text-5xl leading-relaxed lg:leading-tight text-primary mx-auto md:max-w-3/4'>
-                Bermitra dengan klien{' '}
-                <span className='text-secondary'>terpercaya</span> untuk
-                menghadirkan{' '}
-                <span className='text-secondary'>layanan terbaik</span>.
-              </p>
+              <p
+                className='font-manrope text-2xl sm:text-3xl lg:text-4xl xl:text-5xl leading-relaxed lg:leading-tight text-primary mx-auto md:max-w-3/4 [&>span]:text-secondary'
+                dangerouslySetInnerHTML={{
+                  __html: t.raw('partnerClient.title'),
+                }}
+              ></p>
             </div>
           </div>
 

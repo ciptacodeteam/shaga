@@ -9,42 +9,14 @@ import { Pagination } from 'swiper/modules';
 
 import Image from 'next/image';
 import { cn } from '@/lib/utils';
+import { useMessages, useTranslations } from 'next-intl';
+import { transformMessages } from '@/i18n/messages';
 
 export default function WorkSection() {
-  const steps = [
-    {
-      number: '01',
-      title: 'Konsultasi Mendalam',
-      description:
-        'Penilaian strategis terhadap kebutuhan logistik Anda guna menghadirkan solusi yang optimal dan sesuai dengan tujuan bisnis Anda.',
-      icon: '/img/1nonactive.webp',
-      iconActive: '/img/1active.webp',
-    },
-    {
-      number: '02',
-      title: 'Perencanaan Strategis',
-      description:
-        'Menyusun strategi terpadu guna menjamin proses pengiriman barang yang efektif, efisien, dan tepat waktu.',
-      icon: '/img/2nonactive.webp',
-      iconActive: '/img/2active.webp',
-    },
-    {
-      number: '03',
-      title: 'Eksekusi Efisien',
-      description:
-        'Mengoordinasikan setiap detail proses pengiriman dengan cermat untuk memastikan pelaksanaan yang lancar dan tepat waktu.',
-      icon: '/img/3nonactive.webp',
-      iconActive: '/img/3active.webp',
-    },
-    {
-      number: '04',
-      title: 'Pengiriman Tepat Waktu',
-      description:
-        'Pendekatan mendalam terhadap kebutuhan logistik Anda guna menghadirkan solusi yang paling efektif dan andal.',
-      icon: '/img/4nonactive.webp',
-      iconActive: '/img/4active.webp',
-    },
-  ];
+  const t = useTranslations();
+
+  const messages = useMessages();
+  const steps = transformMessages(messages.workSection.steps);
 
   const swiperRef = useRef<any>(null);
 
@@ -65,19 +37,16 @@ export default function WorkSection() {
               <span className='relative inline-flex size-3 rounded-full bg-green-400'></span>
             </span>
             <p className='text-sm font-medium text-white uppercase font-manrope'>
-              proses kerja
+              {t('workSection.heading')}
             </p>
           </div>
 
           <div className='flex flex-col md:flex-row md:justify-between gap-6 md:gap-0'>
             <h1 className='font-manrope text-2xl md:text-4xl lg:text-5xl text-white'>
-              Proses Kerja Kami
+              {t('workSection.title')}
             </h1>
             <p className='text-white font-manrope md:w-2/5 text-sm md:text-base'>
-              Proses kami sederhana namun efektif. Mulai dari konsultasi awal
-              untuk memahami kebutuhan logistik Anda, hingga perencanaan dan
-              pelaksanaan yang matang, kami memastikan setiap detail ditangani
-              dengan presisi.
+              {t('workSection.subtitle')}
             </p>
           </div>
         </div>
@@ -141,7 +110,7 @@ export default function WorkSection() {
                       <Image
                         src={isActive ? step.iconActive : step.icon}
                         alt={step.title}
-                        width={500}
+                        width={400}
                         height={400}
                         className='mt-10 w-[300px] h-auto md:w-[500px] md:h-auto'
                       />

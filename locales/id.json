@@ -54,5 +54,213 @@
       "text": "Kontak",
       "link": "/contact"
     }
-  ]
+  ],
+  "heroSection": {
+    "title": "Menjangkau Dunia Lewat Darat, Laut, dan Udara",
+    "subtitle": "Kami menghadirkan solusi logistik melalui jalur darat, laut, dan udara, memastikan setiap pengiriman tiba tepat waktu, dengan keamanan dan pelayanan terbaik di setiap langkahnya.",
+    "ctaText": "Konsultasi Gratis",
+    "ctaLink": "/contact",
+    "cta2Text": "Pelajari Lebih Lanjut",
+    "cta2Link": "/about-us",
+    "locationText": "Kami <span>menjangkau</span> pengiriman ke seluruh <span>dunia</span>.",
+    "locationButtonText": "<span>Mulai</span> Kirim Sekarang",
+    "locationButtonLink": "/contact",
+    "locationMapText": "Pelabuhan di Belawan",
+    "locationMarker1Image": {
+      "src": "/svg/tracking1.svg",
+      "alt": "Marker 1"
+    },
+    "locationMarker2Image": {
+      "src": "/svg/tracking2.svg",
+      "alt": "Marker 2"
+    }
+  },
+  "visionMissionSection": {
+    "heading": "SHAGA SIAP MELAYANI ANDA",
+    "title": "Kami menyediakan <span>layanan logistik</span> untuk pengiriman yang <span>tepat waktu dan aman.</span>",
+    "visionNumber": "01",
+    "visionTitle": "Visi",
+    "visionDescription": "Menjadi pemimpin global dalam industri logistik dengan menghadirkan solusi yang lancar, andal, dan inovatif untuk mendorong kesuksesan serta pertumbuhan berkelanjutan bagi bisnis di seluruh dunia.",
+    "missionNumber": "02",
+    "missionTitle": "Misi",
+    "missionDescription": "Kami menghubungkan bisnis dengan rantai pasok yang efisien dan terpadu melalui solusi logistik yang inovatif dan bertanggung jawab, yang meningkatkan kinerja operasional, mengurangi biaya, serta mendorong pertumbuhan di pasar global yang dinamis."
+  },
+  "solutionSection": {
+    "heading": "Solusi Logistik Kami",
+    "title": "Dikelola <span>secara profesional</span>, mulai dari pengiriman hingga pergudangan.",
+    "seaShipping": {
+      "badge": "Pengiriman Laut",
+      "content": "Solusi hemat biaya untuk barang dalam jumlah besar dari pelabuhan."
+    },
+    "landShipping": {
+      "badge": "Pengiriman Darat",
+      "content": "Transportasi yang efisien untuk pengiriman regional dengan jadwal yang fleksibel."
+    }
+  },
+  "valuesSection": {
+    "heading": "NILAI-NILAI UTAMA",
+    "title": "Dibangun atas dasar <span>Kepercayaan</span> dan <span>Keunggulan</span>.",
+    "subtitle": "Kami membangun hubungan yang kuat pada nilai-nilai integritas, kualitas, dan akuntabilitas.",
+    "trustItem": {
+      "badge": "Dipercaya",
+      "content": "Kami memastikan setiap pengiriman memenuhi standar tinggi kami, dari awal hingga akhir."
+    },
+    "customerCentricItem": {
+      "badge": "Prioritas",
+      "content": "Kebutuhan Anda adalah prioritas kami di setiap langkah perjalanan."
+    },
+    "innovationItem": {
+      "badge": "Inovasi",
+      "content": "Mengadopsi teknologi terbaru untuk menghadirkan pengalaman logistik yang mulus."
+    },
+    "sustainabilityItem": {
+      "badge": "Keberlanjutan",
+      "content": "Berkomitmen pada praktik ramah lingkungan di setiap aspek layanan kami."
+    }
+  },
+  "transformingSection": {
+    "title": "Kami menghadirkan inovasi strategis dalam logistik untuk mendukung pertumbuhan pasar yang berkelanjutan.",
+    "content": "Mentransformasi logistik dengan solusi inovatif melalui pemanfaatan teknologi canggih dan strategi berbasis data untuk meningkatkan efisiensi, menekan biaya, serta memenuhi permintaan pasar yang terus berkembang.",
+    "ctaText": "Pelajari Lebih Lanjut",
+    "ctaLink": "/services"
+  },
+  "workSection": {
+    "heading": "Proses Kerja",
+    "title": "Proses Kerja Kami",
+    "subtitle": "Proses kami sederhana namun efektif. Mulai dari konsultasi awal untuk memahami kebutuhan logistik Anda, hingga perencanaan dan pelaksanaan yang matang, kami memastikan setiap detail ditangani dengan presisi.",
+    "steps": [
+      {
+        "number": "01",
+        "title": "Konsultasi Mendalam",
+        "description": "Penilaian strategis terhadap kebutuhan logistik Anda guna menghadirkan solusi yang optimal dan sesuai dengan tujuan bisnis Anda.",
+        "icon": "/img/1nonactive.webp",
+        "iconActive": "/img/1active.webp"
+      },
+      {
+        "number": "02",
+        "title": "Perencanaan Strategis",
+        "description": "Menyusun strategi terpadu guna menjamin proses pengiriman barang yang efektif, efisien, dan tepat waktu.",
+        "icon": "/img/2nonactive.webp",
+        "iconActive": "/img/2active.webp"
+      },
+      {
+        "number": "03",
+        "title": "Eksekusi Efisien",
+        "description": "Mengoordinasikan setiap detail proses pengiriman dengan cermat untuk memastikan pelaksanaan yang lancar dan tepat waktu.",
+        "icon": "/img/3nonactive.webp",
+        "iconActive": "/img/3active.webp"
+      },
+      {
+        "number": "04",
+        "title": "Pengiriman Tepat Waktu",
+        "description": "Pendekatan mendalam terhadap kebutuhan logistik Anda guna menghadirkan solusi yang paling efektif dan andal.",
+        "icon": "/img/4nonactive.webp",
+        "iconActive": "/img/4active.webp"
+      }
+    ]
+  },
+  "servicesSection": {
+    "heading": "Layanan Logistik Kami",
+    "title": "Layanan Logistik yang <span>Komprehensif</span> untuk Memenuhi <span>Kebutuhan</span> Anda.",
+    "list": [
+      {
+        "key": "service-1",
+        "title": "Jasa Kepabeanan",
+        "desc": "Memastikan proses kepabeanan berjalan lancar, sehingga barang Anda dapat melewati perbatasan dengan cepat dan sesuai peraturan."
+      },
+      {
+        "key": "service-2",
+        "title": "Pergudangan & Distribusi",
+        "desc": "Solusi penyimpanan yang aman dan distribusi yang efisien untuk menjaga kelancaran alur persediaan Anda."
+      },
+      {
+        "key": "service-3",
+        "title": "Manajemen Rantai Pasok",
+        "desc": "Mengoptimalkan setiap langkah dalam rantai pasok Anda untuk operasi yang lebih efisien dan hemat biaya."
+      },
+      {
+        "key": "service-4",
+        "title": "Solusi Lintas Batas",
+        "desc": "Layanan logistik lintas batas yang lancar untuk menghubungkan bisnis Anda dengan pasar internasional."
+      },
+      {
+        "key": "service-5",
+        "title": "Pengiriman Last-Mile",
+        "desc": "Layanan pengiriman tahap akhir yang andal untuk memastikan produk Anda tiba di depan pintu pelanggan dengan tepat dan akurat."
+      },
+      {
+        "key": "service-6",
+        "title": "Penanganan Kargo Proyek",
+        "desc": "Penanganan khusus untuk pengiriman berukuran besar atau kompleks, dengan solusi logistik yang disesuaikan."
+      }
+    ]
+  },
+  "partnerClient": {
+    "heading": "Partner & Client",
+    "title": "Bermitra dengan klien <span>terpercaya</span> untuk menghadirkan <span>layanan terbaik</span>."
+  },
+  "getInTouchSection": {
+    "title": "Permudah Proses Logistik Anda Hari Ini!",
+    "content": "Temukan dunia logistik yang mudah dan tanpa hambatan, siap mengubah cara Anda melangkah maju.",
+    "ctaText": "Konsultasi Gratis",
+    "ctaLink": "/contact"
+  },
+  "footerSection": {
+    "tagline": "Masa Depan Pengiriman di Perkotaan Dimulai Dari Sini",
+    "stayConnected": "Tetap Terhubung Dengan Kami",
+    "stayConnectedDesc": "Bergabunglah dengan komunitas kami untuk mendapatkan wawasan eksklusif dan solusi inovatif untuk semua kebutuhan logistik Anda.",
+    "ctaText": "Hubungi Kami",
+    "ctaLink": "/contact",
+    "companyNavList": {
+      "heading": "Perusahaan",
+      "links": [
+        {
+          "text": "Beranda",
+          "link": "/"
+        },
+        {
+          "text": "Tentang Kami",
+          "link": "/about-us"
+        },
+        {
+          "text": "Layanan",
+          "link": "/services"
+        },
+        {
+          "text": "Kontak",
+          "link": "/contact"
+        }
+      ]
+    },
+    "supportNavList": {
+      "heading": "Dukungan",
+      "links": [
+        {
+          "text": "FAQ",
+          "link": "/faq"
+        },
+        {
+          "text": "Dukungan Pelanggan",
+          "link": "/support"
+        },
+        {
+          "text": "Pelacakan",
+          "link": "/tracking"
+        }
+      ]
+    },
+    "servicesNavList": {
+      "heading": "Layanan",
+      "links": [
+        {
+          "text": "Darat",
+          "link": "/services/land"
+        },
+        {
+          "text": "Laut",
+          "link": "/services/sea"
+        }
+      ]
+    }
+  }
 }

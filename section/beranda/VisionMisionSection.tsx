@@ -1,8 +1,11 @@
 import Image from 'next/image';
 
 import truck from '@/public/img/truck.webp';
+import { useTranslations } from 'next-intl';
 
 export default function VisionMissionSection() {
+  const t = useTranslations();
+
   return (
     <>
       <section className='relative mb-[450px] md:mb-[600px] lg:mb-38'>
@@ -15,34 +18,31 @@ export default function VisionMissionSection() {
                   <span className='relative inline-flex size-3 rounded-full bg-secondary'></span>
                 </span>
                 <p className='text-sm font-medium text-primary uppercase font-manrope'>
-                  SHAGA SIAP MELAYANI ANDA
+                  {t('visionMissionSection.heading')}
                 </p>
               </div>
               <div className='mb-12'>
-                <p className='font-manrope md:text-3xl  text-xl leading-relaxed xl:text-5xl lg:leading-tight text-primary'>
-                  Kami menyediakan{' '}
-                  <span className='text-secondary'>layanan logistik</span> untuk
-                  pengiriman yang{' '}
-                  <span className='text-secondary'>tepat waktu dan aman.</span>
-                </p>
+                <p
+                  className='font-manrope md:text-3xl  text-xl leading-relaxed xl:text-5xl lg:leading-tight text-primary [&>span]:text-secondary'
+                  dangerouslySetInnerHTML={{
+                    __html: t.raw('visionMissionSection.title'),
+                  }}
+                ></p>
               </div>
 
               <div className='space-y-12'>
                 <div className='grid grid-cols-5 gap-20'>
                   <div className='col-span-1'>
                     <p className='text-secondary font-semibold text-lg font-manrope'>
-                      01
+                      {t('visionMissionSection.visionNumber')}
                     </p>
                     <p className='text-secondary font-semibold text-lg font-manrope'>
-                      Visi
+                      {t('visionMissionSection.visionTitle')}
                     </p>
                   </div>
                   <div className='col-span-4'>
                     <p className='text-primary font-manrope'>
-                      Menjadi pemimpin global dalam industri logistik dengan
-                      menghadirkan solusi yang lancar, andal, dan inovatif untuk
-                      mendorong kesuksesan serta pertumbuhan berkelanjutan bagi
-                      bisnis di seluruh dunia.
+                      {t('visionMissionSection.visionDescription')}
                     </p>
                   </div>
                 </div>
@@ -50,19 +50,15 @@ export default function VisionMissionSection() {
                 <div className='grid grid-cols-5 gap-20'>
                   <div className='col-span-1'>
                     <p className='text-secondary font-semibold text-lg font-manrope'>
-                      02
+                      {t('visionMissionSection.missionNumber')}
                     </p>
                     <p className='text-secondary font-semibold text-lg font-manrope'>
-                      Misi
+                      {t('visionMissionSection.missionTitle')}
                     </p>
                   </div>
                   <div className='col-span-4'>
                     <p className='text-primary font-manrope'>
-                      Kami menghubungkan bisnis dengan rantai pasok yang efisien
-                      dan terpadu melalui solusi logistik yang inovatif dan
-                      bertanggung jawab, yang meningkatkan kinerja operasional,
-                      mengurangi biaya, serta mendorong pertumbuhan di pasar
-                      global yang dinamis.
+                      {t('visionMissionSection.missionDescription')}
                     </p>
                   </div>
                 </div>

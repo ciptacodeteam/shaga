@@ -1,4 +1,8 @@
+import { useTranslations } from 'next-intl';
+
 export default function SolutionSection() {
+  const t = useTranslations();
+
   return (
     <>
       <section>
@@ -10,16 +14,17 @@ export default function SolutionSection() {
                 <span className='relative inline-flex size-3 rounded-full bg-secondary'></span>
               </span>
               <p className='text-sm font-medium text-primary uppercase font-manrope'>
-                Solusi Logistik Kami
+                {t('solutionSection.heading')}
               </p>
             </div>
 
             <div className='mb-10 md:mb-16'>
-              <p className='font-manrope text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-tight text-primary mx-auto max-w-3xl lg:max-w-3/4'>
-                Dikelola{' '}
-                <span className='text-secondary'>secara profesional</span>,
-                mulai dari pengiriman hingga pergudangan.
-              </p>
+              <p
+                className='font-manrope text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-tight text-primary mx-auto max-w-3xl lg:max-w-3/4 [&>span]:text-secondary'
+                dangerouslySetInnerHTML={{
+                  __html: t.raw('solutionSection.title'),
+                }}
+              ></p>
             </div>
           </div>
 
@@ -32,14 +37,13 @@ export default function SolutionSection() {
 
                 <div className='relative bg-[#E0E6F3]/40 w-fit px-4 py-2 rounded-full mb-6 md:mb-10'>
                   <h3 className='font-manrope font-semibold text-white z-10'>
-                    Pengiriman Laut
+                    {t('solutionSection.seaShipping.badge')}
                   </h3>
                 </div>
 
                 <div>
                   <p className='relative font-manrope text-white text-2xl lg:text-4xl z-20 leading-snug lg:leading-tight'>
-                    Solusi hemat biaya untuk barang dalam jumlah besar dari
-                    pelabuhan.
+                    {t('solutionSection.seaShipping.content')}
                   </p>
                 </div>
               </div>
@@ -51,14 +55,13 @@ export default function SolutionSection() {
 
                 <div className='relative bg-[#E0E6F3]/40 w-fit px-4 py-2 rounded-full mb-6 md:mb-10'>
                   <h3 className='font-manrope font-semibold text-white z-10'>
-                    Pengiriman Darat
+                    {t('solutionSection.landShipping.badge')}
                   </h3>
                 </div>
 
                 <div>
                   <p className='relative font-manrope text-white text-2xl lg:text-4xl z-20 leading-snug lg:leading-tight'>
-                    Transportasi yang efisien untuk pengiriman regional dengan
-                    jadwal yang fleksibel.
+                    {t('solutionSection.landShipping.content')}
                   </p>
                 </div>
               </div>

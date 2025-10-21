@@ -54,5 +54,213 @@
       "text": "Contact",
       "link": "/contact"
     }
-  ]
+  ],
+  "heroSection": {
+    "title": "Reaching the World by Land, Sea, and Air",
+    "subtitle": "We provide logistics solutions via land, sea, and air routes, ensuring every shipment arrives on time, with the best security and service at every step.",
+    "ctaText": "Free Consultation",
+    "ctaLink": "/contact",
+    "cta2Text": "Learn More",
+    "cta2Link": "/about-us",
+    "locationText": "We <span>reach</span> shipments to all over the <span>world</span>.",
+    "locationButtonText": "<span>Start</span> Shipping Now",
+    "locationButtonLink": "/contact",
+    "locationMapText": "Port in Belawan",
+    "locationMarker1Image": {
+      "src": "/svg/tracking1.svg",
+      "alt": "Marker 1"
+    },
+    "locationMarker2Image": {
+      "src": "/svg/tracking2.svg",
+      "alt": "Marker 2"
+    }
+  },
+  "visionMissionSection": {
+    "heading": "SHAGA IS READY TO SERVE YOU",
+    "title": "We provide <span>logistics services</span> for <span>timely and secure</span> deliveries.",
+    "visionNumber": "01",
+    "visionTitle": "Vision",
+    "visionDescription": "To become a global leader in the logistics industry by delivering seamless, reliable, and innovative solutions that drive success and sustainable growth for businesses worldwide.",
+    "missionNumber": "02",
+    "missionTitle": "Mission",
+    "missionDescription": "We connect businesses with efficient and integrated supply chains through innovative and responsible logistics solutions that enhance operational performance, reduce costs, and drive growth in a dynamic global market."
+  },
+  "solutionSection": {
+    "heading": "Our Logistics Solutions",
+    "title": "Professionally <span>managed</span>, from shipping to warehousing.",
+    "seaShipping": {
+      "badge": "Sea Shipping",
+      "content": "Cost-effective solutions for large quantities of goods from the port."
+    },
+    "landShipping": {
+      "badge": "Land Shipping",
+      "content": "Efficient transportation for regional deliveries with flexible schedules."
+    }
+  },
+  "valuesSection": {
+    "heading": "CORE VALUES",
+    "title": "Built on <span>Trust</span> and <span>Excellence</span>.",
+    "subtitle": "We build strong relationships based on integrity, quality, and accountability.",
+    "trustItem": {
+      "badge": "Trusted",
+      "content": "We ensure every shipment meets our high standards, from start to finish."
+    },
+    "customerCentricItem": {
+      "badge": "Priority",
+      "content": "Your needs are our priority at every step of the journey."
+    },
+    "innovationItem": {
+      "badge": "Innovation",
+      "content": "Adopting the latest technology to deliver a seamless logistics experience."
+    },
+    "sustainabilityItem": {
+      "badge": "Sustainability",
+      "content": "Committed to environmentally friendly practices in every aspect of our service."
+    }
+  },
+  "transformingSection": {
+    "title": "We bring strategic innovation in logistics to support sustainable market growth.",
+    "content": "Transforming logistics with innovative solutions through advanced technology and data-driven strategies to increase efficiency, reduce costs, and meet the ever-evolving demands of the market.",
+    "ctaText": "Learn More",
+    "ctaLink": "/services"
+  },
+  "workSection": {
+    "heading": "Work Process",
+    "title": "Our Work Process",
+    "subtitle": "Our process is simple yet effective. From the initial consultation to understand your logistics needs, to thorough planning and execution, we ensure every detail is handled with precision.",
+    "steps": [
+      {
+        "number": "01",
+        "title": "In-depth Consultation",
+        "description": "Strategic assessment of your logistics needs to deliver optimal solutions tailored to your business goals.",
+        "icon": "/img/1nonactive.webp",
+        "iconActive": "/img/1active.webp"
+      },
+      {
+        "number": "02",
+        "title": "Strategic Planning",
+        "description": "Developing integrated strategies to ensure effective, efficient, and timely delivery processes.",
+        "icon": "/img/2nonactive.webp",
+        "iconActive": "/img/2active.webp"
+      },
+      {
+        "number": "03",
+        "title": "Efficient Execution",
+        "description": "Coordinating every detail of the delivery process carefully to ensure smooth and timely execution.",
+        "icon": "/img/3nonactive.webp",
+        "iconActive": "/img/3active.webp"
+      },
+      {
+        "number": "04",
+        "title": "On-time Delivery",
+        "description": "A thorough approach to your logistics needs to deliver the most effective and reliable solutions.",
+        "icon": "/img/4nonactive.webp",
+        "iconActive": "/img/4active.webp"
+      }
+    ]
+  },
+  "servicesSection": {
+    "heading": "Our Logistics Services",
+    "title": "Comprehensive <span>Logistics Services</span> to Meet Your <span>Needs</span>.",
+    "list": [
+      {
+        "key": "service-1",
+        "title": "Customs Services",
+        "desc": "Ensuring smooth customs processes so your goods can cross borders quickly and in compliance with regulations."
+      },
+      {
+        "key": "service-2",
+        "title": "Warehousing & Distribution",
+        "desc": "Secure storage solutions and efficient distribution to keep your supply chain running smoothly."
+      },
+      {
+        "key": "service-3",
+        "title": "Supply Chain Management",
+        "desc": "Optimizing every step in your supply chain for more efficient and cost-effective operations."
+      },
+      {
+        "key": "service-4",
+        "title": "Cross-Border Solutions",
+        "desc": "Seamless cross-border logistics services to connect your business with international markets."
+      },
+      {
+        "key": "service-5",
+        "title": "Last-Mile Delivery",
+        "desc": "Reliable last-mile delivery services to ensure your products reach customers’ doors accurately and on time."
+      },
+      {
+        "key": "service-6",
+        "title": "Project Cargo Handling",
+        "desc": "Specialized handling for large or complex shipments, with tailored logistics solutions."
+      }
+    ]
+  },
+  "partnerClient": {
+    "heading": "Partner & Client",
+    "title": "Partnering with <span>trusted clients</span> to deliver the <span>best services</span>."
+  },
+  "getInTouchSection": {
+    "title": "Simplify Your Logistics Process Today!",
+    "content": "Discover a world of easy and seamless logistics, ready to transform the way you move forward.",
+    "ctaText": "Free Consultation",
+    "ctaLink": "/contact"
+  },
+  "footerSection": {
+    "tagline": "The Future of Urban Shipping Starts Here",
+    "stayConnected": "Stay Connected With Us",
+    "stayConnectedDesc": "Join our community for exclusive insights and innovative solutions for all your logistics needs.",
+    "ctaText": "Contact Us",
+    "ctaLink": "/contact",
+    "companyNavList": {
+      "heading": "Company",
+      "links": [
+        {
+          "text": "Home",
+          "link": "/"
+        },
+        {
+          "text": "About Us",
+          "link": "/about-us"
+        },
+        {
+          "text": "Services",
+          "link": "/services"
+        },
+        {
+          "text": "Contact",
+          "link": "/contact"
+        }
+      ]
+    },
+    "supportNavList": {
+      "heading": "Support",
+      "links": [
+        {
+          "text": "FAQ",
+          "link": "/faq"
+        },
+        {
+          "text": "Customer Support",
+          "link": "/support"
+        },
+        {
+          "text": "Tracking",
+          "link": "/tracking"
+        }
+      ]
+    },
+    "servicesNavList": {
+      "heading": "Services",
+      "links": [
+        {
+          "text": "Land",
+          "link": "/services/land"
+        },
+        {
+          "text": "Sea",
+          "link": "/services/sea"
+        }
+      ]
+    }
+  }
 }
