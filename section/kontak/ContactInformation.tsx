@@ -156,7 +156,7 @@ export default function ContactInformation() {
 
             <div>
               <div className='border border-[#E0E6F3] p-6 md:p-8 rounded-xl flex flex-col justify-between h-full'>
-                <p className='font-manrope text-[#556996] text-xl md:text-2xl leading-tight mb-4'>
+                <p className='font-manrope text-[#556996] text-xl md:text-2xl xl:text-3xl xl:max-w-md xl:leading-relaxed leading-tight mb-4'>
                   Silakan isi formulir di bawah ini, dan tim kami akan segera
                   menghubungi Anda.
                 </p>

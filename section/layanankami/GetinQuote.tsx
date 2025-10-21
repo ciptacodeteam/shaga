@@ -1,6 +1,4 @@
-import Link from 'next/link';
-
-import { IoIosArrowRoundForward } from 'react-icons/io';
+import CTAButton from '@/components/CTAButton';
 
 export default function GetinQuote() {
   return (
@@ -23,18 +21,7 @@ export default function GetinQuote() {
               </div>
 
               <div>
-                <Link
-                  href='/kontak'
-                  className='group inline-flex items-center justify-center bg-white rounded-full px-4 py-3 sm:px-6 sm:py-3 transition-all duration-300 w-full sm:w-auto'
-                >
-                  <span className='text-primary font-manrope mr-3 transition-all duration-300 group-hover:translate-x-1 text-sm md:text-base font-medium'>
-                    Konsultasi Gratis
-                  </span>
-
-                  <div className='flex items-center justify-center w-8 h-8 rounded-full bg-primary transition-transform duration-300 group-hover:rotate-45 '>
-                    <IoIosArrowRoundForward className='text-white w-5 h-5 transition-colors duration-300' />
-                  </div>
-                </Link>
+                <CTAButton text='Dapatkan Penawaran' size='md' />
               </div>
             </div>
           </div>

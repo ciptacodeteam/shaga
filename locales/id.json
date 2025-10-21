@@ -36,23 +36,23 @@
     }
   ],
   "contactCtaText": "Hubungi Kami",
-  "contactCtaLink": "/id/contact",
+  "contactCtaLink": "/contact",
   "navList": [
     {
       "text": "Beranda",
-      "link": "/id"
+      "link": "/"
     },
     {
       "text": "Tentang Kami",
-      "link": "/id/about-us"
+      "link": "/about-us"
     },
     {
       "text": "Layanan",
-      "link": "/id/services"
+      "link": "/services"
     },
     {
       "text": "Kontak",
-      "link": "/id/contact"
+      "link": "/contact"
     }
   ]
 }

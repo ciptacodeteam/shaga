@@ -36,23 +36,23 @@
     }
   ],
   "contactCtaText": "Contact Us",
-  "contactCtaLink": "/en/contact",
+  "contactCtaLink": "/contact",
   "navList": [
     {
       "text": "Home",
-      "link": "/en"
+      "link": "/"
     },
     {
       "text": "About Us",
-      "link": "/en/about-us"
+      "link": "/about-us"
     },
     {
       "text": "Services",
-      "link": "/en/services"
+      "link": "/services"
     },
     {
       "text": "Contact",
-      "link": "/en/contact"
+      "link": "/contact"
     }
   ]
 }

@@ -1,5 +1,4 @@
-import Link from 'next/link';
-import { IoIosArrowRoundForward } from 'react-icons/io';
+import CTAButton from '@/components/CTAButton';
 
 export default function FindUsSection() {
   return (
@@ -39,19 +38,7 @@ export default function FindUsSection() {
                 </div>
 
                 <div>
-                  <Link
-                    href='/kontak'
-                    className='group inline-flex items-center bg-white rounded-full px-4 py-2 md:px-6 md:py-3 transition-all duration-300 shadow-sm'
-                    aria-label='Jalan Menuju Shaga'
-                  >
-                    <span className='text-primary font-manrope mr-3 transition-all duration-300 group-hover:translate-x-1 text-sm md:text-base font-medium'>
-                      Jalan Menuju Shaga
-                    </span>
-
-                    <div className='flex items-center justify-center w-8 h-8 rounded-full bg-primary transition-transform duration-300 group-hover:rotate-45'>
-                      <IoIosArrowRoundForward className='text-white w-5 h-5 transition-colors duration-300' />
-                    </div>
-                  </Link>
+                  <CTAButton text='Jalan Menuju Shaga' />
                 </div>
               </div>
             </div>

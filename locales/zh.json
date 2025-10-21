@@ -36,23 +36,23 @@
     }
   ],
   "contactCtaText": "联系我们",
-  "contactCtaLink": "/zh/contact",
+  "contactCtaLink": "/contact",
   "navList": [
     {
       "text": "主页",
-      "link": "/zh"
+      "link": "/"
     },
     {
       "text": "关于我们",
-      "link": "/zh/about-us"
+      "link": "/about-us"
     },
     {
       "text": "服务",
-      "link": "/zh/services"
+      "link": "/services"
     },
     {
       "text": "联系我们",
-      "link": "/zh/contact"
+      "link": "/contact"
     }
   ]
 }

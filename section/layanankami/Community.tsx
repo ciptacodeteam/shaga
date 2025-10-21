@@ -1,5 +1,4 @@
-import Link from 'next/link';
-import { IoIosArrowRoundForward } from 'react-icons/io';
+import CTAButton from '@/components/CTAButton';
 
 export default function CommunitySection() {
   return (
@@ -34,18 +33,11 @@ export default function CommunitySection() {
               </div>
 
               <div>
-                <Link
-                  href='/kontak'
-                  className='group inline-flex items-center border border-primary rounded-full px-4 py-2 transition-all duration-300 hover:bg-white/10'
-                >
-                  <span className='text-primary font-manrope mr-3 transition-all duration-300 group-hover:translate-x-1'>
-                    Pelajari Lebih Lanjut
-                  </span>
-
-                  <div className='flex items-center justify-center w-8 h-8 rounded-full bg-primary/20 transition-transform duration-300  group-hover:rotate-45'>
-                    <IoIosArrowRoundForward className='text-primary group-hover:text-primary w-5 h-5 transition-colors duration-300' />
-                  </div>
-                </Link>
+                <CTAButton
+                  text='Pelajari Lebih Lanjut'
+                  size='md'
+                  variant='outline-primary'
+                />
               </div>
             </div>
             <div className='w-full md:w-1/2 relative'>

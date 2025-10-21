@@ -5,10 +5,10 @@ import { cn } from '@/lib/utils';
 import logo from '@/public/svg/logo.svg';
 import { useMessages, useTranslations } from 'next-intl';
 import Image from 'next/image';
-import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useEffect, useState } from 'react';
-import { IoIosArrowRoundForward } from 'react-icons/io';
+import CTAButton from './CTAButton';
+import { Link } from '@/i18n/navigation';
 
 export default function NavigationBar() {
   const pathname = usePathname();
@@ -48,7 +48,7 @@ export default function NavigationBar() {
         <div className='flex items-center justify-between'>
           {/* Logo */}
           <div>
-            <Link href={`/${t('metadata.locale')}`}>
+            <Link href={'/'}>
               <Image
                 src={logo}
                 alt='Logo'
@@ -85,18 +85,12 @@ export default function NavigationBar() {
 
             {/* Tombol Kontak (desktop) */}
             <div>
-              <Link
-                href={t('contactCtaLink')}
-                className='group flex items-center bg-primary rounded-full px-3 py-2 transition-all duration-300'
-              >
-                <span className='text-white font-manrope mr-3 transition-all duration-300 group-hover:translate-x-1'>
-                  {t('contactCtaText')}
-                </span>
-
-                <div className='rounded-full bg-white p-1 transition-transform duration-300 group-hover:rotate-45'>
-                  <IoIosArrowRoundForward className='text-primary w-6 h-6 transition-colors duration-300' />
-                </div>
-              </Link>
+              <CTAButton
+                text={t('contactCtaText')}
+                url={t('contactCtaLink')}
+                size='md'
+                variant='secondary'
+              />
             </div>
           </nav>
 
@@ -154,18 +148,12 @@ export default function NavigationBar() {
           </ul>
 
           <div className='mt-4'>
-            <Link
-              href={t('contactCtaLink')}
+            <CTAButton
+              text={t('contactCtaText')}
+              url={t('contactCtaLink')}
               onClick={() => setMobileOpen(false)}
-              className='group inline-flex items-center bg-primary rounded-full px-4 py-2 transition-all duration-300'
-            >
-              <span className='text-white font-manrope mr-3'>
-                {t('contactCtaText')}
-              </span>
-              <div className='rounded-full bg-white p-1'>
-                <IoIosArrowRoundForward className='text-primary w-5 h-5' />
-              </div>
-            </Link>
+              size='md'
+            />
           </div>
         </div>
       )}
