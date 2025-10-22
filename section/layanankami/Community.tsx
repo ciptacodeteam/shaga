@@ -1,6 +1,13 @@
 import CTAButton from '@/components/CTAButton';
+import { transformMessages } from '@/i18n/messages';
+import { useMessages, useTranslations } from 'next-intl';
 
 export default function CommunitySection() {
+  const t = useTranslations('servicePage.communitySection');
+
+  const messages = useMessages();
+  const stats = transformMessages(messages.servicePage.communitySection.stats);
+
   return (
     <>
       <section className='relative mb-24 md:mb-32'>
@@ -13,28 +20,28 @@ export default function CommunitySection() {
                   <span className='relative inline-flex size-3 rounded-full bg-secondary'></span>
                 </span>
                 <p className='text-sm font-medium text-primary uppercase font-manrope'>
-                  KOMUNITAS KAMI
+                  {t('heading')}
                 </p>
               </div>
               <div className='mb-6 md:mb-8'>
-                <p className='font-manrope text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-tight text-primary'>
-                  Bergabunglah dengan{' '}
-                  <span className='text-secondary'>Komunitas Mitra Bisnis</span>{' '}
-                  dan Logistik yang Terus Berkembang
-                </p>
+                <p
+                  className='font-manrope text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-tight text-primary [&>span]:text-secondary'
+                  dangerouslySetInnerHTML={{
+                    __html: t.raw('title'),
+                  }}
+                ></p>
               </div>
 
               <div>
                 <p className='font-manrope text-primary mb-6 md:mb-10'>
-                  Bergabunglah dengan komunitas dinamis berisi pelaku bisnis dan
-                  mitra logistik, untuk mengoptimalkan rantai pasokan dan
-                  mendorong pertumbuhan.
+                  {t('description')}
                 </p>
               </div>
 
               <div>
                 <CTAButton
-                  text='Pelajari Lebih Lanjut'
+                  text={t('ctaText')}
+                  url={t('ctaLink')}
                   size='md'
                   variant='outline-primary'
                 />
@@ -42,49 +49,21 @@ export default function CommunitySection() {
             </div>
             <div className='w-full md:w-1/2 relative'>
               <div className='grid grid-cols-2 gap-4'>
-                <div className='border border-[#E0E6F3] p-6 sm:p-8 rounded-xl'>
-                  <div className='flex flex-col items-center justify-center'>
-                    <h1 className='font-manrope text-primary text-4xl sm:text-6xl md:text-7xl font-semibold tracking-tight'>
-                      25
-                    </h1>
-                    <p className='font-manrope text-[#556996] text-lg sm:text-2xl font-medium mt-6 text-center'>
-                      Tahun Pengalaman di Industri
-                    </p>
+                {stats.map((stat: any, index: number) => (
+                  <div
+                    className='border border-[#E0E6F3] p-6 sm:p-8 rounded-xl'
+                    key={index}
+                  >
+                    <div className='flex flex-col items-center justify-center'>
+                      <h1 className='font-manrope text-primary text-4xl sm:text-6xl md:text-7xl font-semibold tracking-tight'>
+                        {stat.value}
+                      </h1>
+                      <p className='font-manrope text-[#556996] text-lg sm:text-2xl font-medium mt-6 text-center'>
+                        {stat.label}
+                      </p>
+                    </div>
                   </div>
-                </div>
-
-                <div className='border border-[#E0E6F3] p-6 sm:p-8 rounded-xl'>
-                  <div className='flex flex-col items-center justify-center'>
-                    <h1 className='font-manrope text-primary text-4xl sm:text-6xl md:text-7xl font-semibold tracking-tight'>
-                      300<span className='text-base sm:text-xl'>+</span>
-                    </h1>
-                    <p className='font-manrope text-[#556996] text-lg sm:text-2xl font-medium mt-6 text-center'>
-                      Karyawan untuk Kesuksesan Anda
-                    </p>
-                  </div>
-                </div>
-
-                <div className='border border-[#E0E6F3] p-6 sm:p-8 rounded-xl'>
-                  <div className='flex flex-col items-center justify-center'>
-                    <h1 className='font-manrope text-primary text-4xl sm:text-6xl md:text-7xl font-semibold tracking-tight'>
-                      500<span className='text-base sm:text-xl'>+</span>
-                    </h1>
-                    <p className='font-manrope text-[#556996] text-lg sm:text-2xl font-medium mt-6 text-center'>
-                      Klien Puas di Seluruh Dunia
-                    </p>
-                  </div>
-                </div>
-
-                <div className='border border-[#E0E6F3] p-6 sm:p-8 rounded-xl'>
-                  <div className='flex flex-col items-center justify-center'>
-                    <h1 className='font-manrope text-primary text-4xl sm:text-6xl md:text-7xl font-semibold tracking-tight'>
-                      99<span className='text-base sm:text-xl'>%</span>
-                    </h1>
-                    <p className='font-manrope text-[#556996] text-lg sm:text-2xl font-medium mt-6 text-center'>
-                      Tingkat Pengiriman Tepat Waktu
-                    </p>
-                  </div>
-                </div>
+                ))}
               </div>
             </div>
           </div>

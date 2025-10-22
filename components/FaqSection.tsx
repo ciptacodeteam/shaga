@@ -1,31 +1,16 @@
 'use client';
 
+import { transformMessages } from '@/i18n/messages';
 import { Disclosure } from '@headlessui/react';
-
-const faqData = [
-  {
-    question: 'How long does it take for someone to respond to my inquiry?',
-    answer:
-      'We aim to respond to all inquiries within 24–48 hours on business days. For urgent matters, please call our customer service line.',
-  },
-  {
-    question: 'Can I visit your office without an appointment?',
-    answer:
-      'Visits are welcome, but we recommend scheduling an appointment so we can ensure the right person is available to help you quickly.',
-  },
-  {
-    question: 'What information should I include in my message for a quote?',
-    answer:
-      'Please include your shipping needs, the type of freight, dimensions/weight, origin and destination, and any specific services you require. The more detail you provide, the more accurate your quote will be.',
-  },
-  {
-    question: 'How do I track my shipment?',
-    answer:
-      'You can track your shipment using our online tracking system — enter your tracking number on the website for real-time status updates. If you need assistance, contact customer support.',
-  },
-];
+import { useMessages, useTranslations } from 'next-intl';
 
 const FaqSection = () => {
+  const t = useTranslations('contactPage.faqSection');
+
+  const messages = useMessages();
+
+  const faqs = transformMessages(messages.contactPage.faqSection.faqs);
+
   return (
     <section className='max-w-4xl mx-auto px-6 py-16 pt-5'>
       <header className='flex flex-col justify-center items-center text-center px-2 md:px-0'>
@@ -36,20 +21,22 @@ const FaqSection = () => {
           </span>
 
           <p className='text-sm font-medium text-primary uppercase font-manrope'>
-            Frequently Asked Questions
+            {t('heading')}
           </p>
         </div>
 
         <div className='mb-4 w-full'>
-          <p className='font-manrope text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-tight text-primary mx-auto max-w-full sm:max-w-3xl md:max-w-4xl'>
-            Common <span className='text-secondary'>Questions</span> About Our
-            Services.
-          </p>
+          <p
+            className='font-manrope text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-tight text-primary mx-auto max-w-full sm:max-w-3xl md:max-w-4xl [&>span]:text-secondary'
+            dangerouslySetInnerHTML={{
+              __html: t.raw('title'),
+            }}
+          ></p>
         </div>
       </header>
 
       <div className='bg-white mt-10'>
-        {faqData.map((item, i) => (
+        {faqs.map((item, i) => (
           <Disclosure key={i} defaultOpen={i === 2}>
             {({ open }) => (
               <div className='border-b last:border-b-0 border-slate-200'>

@@ -1,4 +1,8 @@
+import { useTranslations } from 'next-intl';
+
 export default function HeroContact() {
+  const t = useTranslations('contactPage.heroSection');
+
   return (
     <>
       <section className='relative mb-16 md:mb-20'>
@@ -9,12 +13,11 @@ export default function HeroContact() {
 
           <div className='relative z-20 flex flex-col px-6 md:px-16 py-12 md:py-28 text-white justify-center items-center text-center'>
             <h1 className='text-3xl sm:text-4xl md:text-6xl lg:text-7xl xl:text-8xl font-medium mb-6 md:mb-8 font-manrope'>
-              Hubungi Shaga
+              {t('title')}
             </h1>
 
             <p className='text-white mb-6 md:mb-10 font-manrope max-w-full md:max-w-2xl px-2'>
-              Kami siap mendukung kebutuhan logistik Anda. Hubungi kami untuk
-              pertanyaan, penawaran, atau bantuan.
+              {t('subtitle')}
             </p>
 
             <div className='flex justify-center items-center gap-2 mb-3'>
@@ -23,7 +26,7 @@ export default function HeroContact() {
                 <span className='relative inline-flex h-2.5 w-2.5 md:h-3 md:w-3 rounded-full bg-secondary'></span>
               </span>
               <p className='text-sm font-medium text-white uppercase font-manrope'>
-                Mendukung Bisnis di Seluruh Dunia
+                {t('tagline')}
               </p>
             </div>
           </div>

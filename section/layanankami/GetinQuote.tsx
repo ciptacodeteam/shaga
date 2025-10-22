@@ -1,6 +1,9 @@
 import CTAButton from '@/components/CTAButton';
+import { useTranslations } from 'next-intl';
 
 export default function GetinQuote() {
+  const t = useTranslations('servicePage.quoteCtaSection');
+
   return (
     <>
       <div className='max-w-7xl mx-auto mb-12 px-4'>
@@ -9,19 +12,18 @@ export default function GetinQuote() {
             <div className='flex flex-col justify-center items-center text-center'>
               <div className='mb-4 sm:mb-6'>
                 <p className='font-manrope text-2xl sm:text-3xl md:text-5xl leading-tight font-medium text-white capitalize'>
-                  Permudah proses logistik Anda hari ini!
+                  {t('title')}
                 </p>
               </div>
 
               <div>
                 <p className='font-manrope text-white mb-6 sm:mb-10 text-sm sm:text-base'>
-                  Temukan dunia logistik yang mudah dan lancar, siap mengubah
-                  cara Anda melangkah maju.
+                  {t('description')}
                 </p>
               </div>
 
               <div>
-                <CTAButton text='Konsultasi Gratis' size='md' />
+                <CTAButton text={t('ctaText')} url={t('ctaLink')} size='md' />
               </div>
             </div>
           </div>

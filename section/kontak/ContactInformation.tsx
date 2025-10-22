@@ -14,6 +14,7 @@ import {
 
 import { ChevronUpDownIcon } from '@heroicons/react/24/outline';
 import { CheckIcon } from '@heroicons/react/24/solid';
+import { useTranslations } from 'next-intl';
 // Link not needed here (form uses native submit button)
 const people = [
   {
@@ -27,6 +28,8 @@ const people = [
 ];
 
 export default function ContactInformation() {
+  const t = useTranslations('contactPage.contactInformationSection');
+
   const [selected, setSelected] = useState<any>(null);
   const [formData, setFormData] = useState({
     firstName: '',
@@ -52,7 +55,7 @@ export default function ContactInformation() {
   };
   return (
     <>
-      <section>
+      <section id='contact-form'>
         <div className='max-w-7xl mx-auto mb-20 lg:mb-30 px-4 lg:px-0'>
           <div className='flex items-center gap-2 mb-3'>
             <span className='relative flex'>
@@ -60,25 +63,24 @@ export default function ContactInformation() {
               <span className='relative inline-flex size-3 rounded-full bg-secondary'></span>
             </span>
             <p className='text-sm font-medium text-primary uppercase font-manrope'>
-              informasi kontak
+              {t('heading')}
             </p>
           </div>
 
           <div className='grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12'>
             <div>
               <div className='mb-6 md:mb-8'>
-                <p className='font-manrope text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-tight text-primary'>
-                  <span className='text-secondary'>Terhubunglah</span> dengan
-                  kami hari ini dan kami akan{' '}
-                  <span className='text-secondary'>membantu bisnis Anda</span>
-                </p>
+                <p
+                  className='font-manrope text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-tight text-primary [&>span]:text-secondary'
+                  dangerouslySetInnerHTML={{
+                    __html: t.raw('title'),
+                  }}
+                ></p>
               </div>
 
               <div>
                 <p className='font-manrope text-primary mb-6 md:mb-10'>
-                  Siap membawa logistik Anda ke level selanjutnya? Hubungi kami
-                  hari ini untuk mengetahui bagaimana solusi khusus dan keahlian
-                  kami dapat mentransformasi rantai pasok Anda.
+                  {t('description')}
                 </p>
               </div>
 
@@ -91,7 +93,7 @@ export default function ContactInformation() {
 
                     <div>
                       <h1 className='font-manrope font-medium text-[#556996]'>
-                        Telepon
+                        {t('phoneLabel')}
                       </h1>
                     </div>
                   </div>
@@ -108,7 +110,7 @@ export default function ContactInformation() {
 
                     <div>
                       <h1 className='font-manrope font-medium text-[#556996]'>
-                        E-mail
+                        {t('emailLabel')}
                       </h1>
                     </div>
                   </div>
@@ -125,7 +127,7 @@ export default function ContactInformation() {
 
                     <div>
                       <h1 className='font-manrope font-medium text-[#556996]'>
-                        Alamat
+                        {t('addressLabel')}
                       </h1>
                     </div>
                   </div>
@@ -143,12 +145,12 @@ export default function ContactInformation() {
 
                     <div>
                       <h1 className='font-manrope font-medium text-[#556996]'>
-                        Jam Operasional
+                        {t('operationalLabel')}
                       </h1>
                     </div>
                   </div>
                   <h1 className='font-manrope font-medium text-primary mt-3 md:mt-4 text-base md:text-lg'>
-                    Senin - Sabtu, 8:30 - 17:00 WIB
+                    {t('operationalHours')}
                   </h1>
                 </div>
               </div>
@@ -157,20 +159,19 @@ export default function ContactInformation() {
             <div>
               <div className='border border-[#E0E6F3] p-6 md:p-8 rounded-xl flex flex-col justify-between h-full'>
                 <p className='font-manrope text-[#556996] text-xl md:text-2xl lg:text-3xl xl:text-4xl leading-tight mb-4'>
-                  Silakan isi formulir di bawah ini, dan tim kami akan segera
-                  menghubungi Anda.
+                  {t('formTitle')}
                 </p>
 
                 <form onSubmit={handleSubmit} className='mt-6 space-y-6'>
                   <div className='grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4'>
                     <div>
                       <label className='block text-sm font-medium text-primary font-manrope mb-2'>
-                        Nama Depan
+                        {t('formFirstName.label')}
                       </label>
                       <input
                         type='text'
                         name='firstName'
-                        placeholder='Masukkan nama depan'
+                        placeholder={t('formFirstName.placeholder')}
                         value={formData.firstName}
                         onChange={handleChange}
                         className='w-full rounded-md border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-primary placeholder:text-gray-400 placeholder:font-manrope font-manrope'
@@ -178,12 +179,12 @@ export default function ContactInformation() {
                     </div>
                     <div>
                       <label className='block text-sm font-medium text-primary font-manrope mb-2'>
-                        Nama Belakang
+                        {t('formLastName.label')}
                       </label>
                       <input
                         type='text'
                         name='lastName'
-                        placeholder='Masukkan nama belakang'
+                        placeholder={t('formLastName.placeholder')}
                         value={formData.lastName}
                         onChange={handleChange}
                         className='w-full rounded-md border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-primary placeholder:text-gray-400 placeholder:font-manrope font-manrope'
@@ -195,12 +196,12 @@ export default function ContactInformation() {
                   <div className='grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4'>
                     <div>
                       <label className='block text-sm font-medium text-primary font-manrope mb-2'>
-                        Alamat Email
+                        {t('formEmail.label')}
                       </label>
                       <input
                         type='email'
                         name='email'
-                        placeholder='Masukkan email kamu'
+                        placeholder={t('formEmail.placeholder')}
                         value={formData.email}
                         onChange={handleChange}
                         className='w-full rounded-md border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-primary placeholder:text-gray-400 placeholder:font-manrope font-manrope'
@@ -208,12 +209,12 @@ export default function ContactInformation() {
                     </div>
                     <div>
                       <label className='block text-sm font-medium text-primary font-manrope mb-2'>
-                        Nomor Telepon
+                        {t('formPhone.label')}
                       </label>
                       <input
                         type='tel'
                         name='phone'
-                        placeholder='Masukkan nomor kamu'
+                        placeholder={t('formPhone.placeholder')}
                         value={formData.phone}
                         onChange={handleChange}
                         className='w-full rounded-md border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-primary placeholder:text-gray-400 placeholder:font-manrope font-manrope'
@@ -225,7 +226,7 @@ export default function ContactInformation() {
                   <div>
                     <Listbox value={selected} onChange={setSelected}>
                       <label className='block text-sm font-medium text-primary font-manrope mb-2'>
-                        Layanan Shaga
+                        {t('formService.label')}
                       </label>
                       <div className='relative'>
                         <ListboxButton className='grid w-full grid-cols-1 rounded-md border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-primary'>
@@ -235,7 +236,9 @@ export default function ContactInformation() {
                                 !selected ? 'text-gray-400' : 'text-black'
                               }`}
                             >
-                              {selected ? selected.name : 'Pilih layanan'}
+                              {selected
+                                ? selected.name
+                                : t('formService.placeholder')}
                             </span>
                           </span>
                           <ChevronUpDownIcon
@@ -276,11 +279,11 @@ export default function ContactInformation() {
                   {/* Message */}
                   <div>
                     <label className='block text-sm font-medium text-primary font-manrope mb-2'>
-                      Pesan
+                      {t('formMessage.label')}
                     </label>
                     <textarea
                       name='message'
-                      placeholder='Masukkan pesan kamu'
+                      placeholder={t('formMessage.placeholder')}
                       rows={5}
                       value={formData.message}
                       onChange={handleChange}
@@ -294,7 +297,7 @@ export default function ContactInformation() {
                       type='submit'
                       className='w-full bg-primary text-white py-3 rounded-full transition font-manrope cursor-pointer text-sm md:text-base lg:text-lg font-medium'
                     >
-                      Hubungi Kami
+                      {t('formSubmitText')}
                     </button>
                   </div>
                 </form>

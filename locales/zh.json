@@ -338,5 +338,187 @@
       "ctaText": "免费咨询",
       "ctaLink": "/contact"
     }
+  },
+  "contactPage": {
+    "heroSection": {
+      "title": "联系 SHAGA",
+      "subtitle": "我们随时准备支持您的物流需求。如有疑问、报价或需要帮助，请联系我们。",
+      "tagline": "支持全球业务"
+    },
+    "contactInformationSection": {
+      "heading": "联系信息",
+      "title": "立即<span>与我们联系</span>，我们将<span>助力您的业务</span>",
+      "description": "准备将您的物流提升到新的水平吗？今天就联系我们，了解我们的定制解决方案与专业如何转型您的供应链。",
+      "phoneLabel": "电话",
+      "emailLabel": "电子邮件",
+      "addressLabel": "地址",
+      "operationalLabel": "营业时间",
+      "operationalHours": "周一 - 周六：08:30 - 17:00（WIB）",
+      "formTitle": "请填写以下表格，我们的团队会尽快与您联系。",
+      "formFirstName": {
+        "label": "名",
+        "placeholder": "请输入名"
+      },
+      "formLastName": {
+        "label": "姓",
+        "placeholder": "请输入姓"
+      },
+      "formEmail": {
+        "label": "电子邮箱地址",
+        "placeholder": "请输入邮箱地址"
+      },
+      "formPhone": {
+        "label": "电话号码",
+        "placeholder": "请输入电话号码"
+      },
+      "formService": {
+        "label": "SHAGA 服务",
+        "placeholder": "请选择服务"
+      },
+      "formMessage": {
+        "label": "留言",
+        "placeholder": "在此输入您的留言"
+      },
+      "formSubmitText": "联系我们"
+    },
+    "findUsSection": {
+      "heading": "找到我们",
+      "title": "地理位置优越，便于通达所有主要物流路线",
+      "ctaText": "前往 SHAGA 的路线",
+      "ctaLink": "https://maps.app.goo.gl/6MjZsWsgTunc4GGd9"
+    },
+    "faqSection": {
+      "heading": "常见问题",
+      "title": "<span>常见问题</span> 关于我们的服务。",
+      "faqs": [
+        {
+          "question": "Shaga 提供哪些物流服务？",
+          "answer": "Shaga 提供多种物流服务，包括陆运、海运、报关服务、仓储与分销、供应链管理、跨境解决方案、末端配送及项目货物处理。"
+        },
+        {
+          "question": "我如何追踪我的货物？",
+          "answer": "您可以通过我们网站的跟踪功能，使用发货确认时提供的追踪编号来查询货物状态。"
+        },
+        {
+          "question": "Shaga 提供国际服务吗？",
+          "answer": "是的，Shaga 提供国际物流服务，涵盖跨境运输和报关解决方案，帮助企业进入全球市场。"
+        },
+        {
+          "question": "如何获得针对我物流需求的报价？",
+          "answer": "您可以通过网站上的联系表单联系销售团队，或直接通过电话或电子邮件联系我们，以获取根据您需求定制的报价。"
+        }
+      ]
+    },
+    "discussionCtaSection": {
+      "title": "联系我们，讨论我们的服务如何支持您的业务并简化物流需求。",
+      "ctaText": "联系我们",
+      "ctaLink": "/contact#contact-form"
+    }
+  },
+  "servicePage": {
+    "heroSection": {
+      "title": "物流服务",
+      "subtitle": "我们的综合物流解决方案旨在优化您的供应链并提升业务运营效率。",
+      "tagline": "为每种需求提供定制解决方案"
+    },
+    "communitySection": {
+      "heading": "我们的社区",
+      "title": "加入我们的<span>商业伙伴与物流社区</span>，共同成长",
+      "description": "加入由企业和物流合作伙伴组成的活跃社区，共同优化供应链并推动业务增长。",
+      "ctaText": "了解更多",
+      "ctaLink": "/about-us",
+      "stats": [
+        {
+          "value": "25",
+          "label": "年行业经验"
+        },
+        {
+          "value": "300K+",
+          "label": "为您成功而付出的员工"
+        },
+        {
+          "value": "500+",
+          "label": "全球满意客户"
+        },
+        {
+          "value": "99%",
+          "label": "准时交付率"
+        }
+      ]
+    },
+    "logisticServiceSection": {
+      "heading": "物流服务",
+      "title": "<span>综合物流服务</span>，为<span>满足需求</span>量身定制。",
+      "description": "我们的愿景是成为领先的物流合作伙伴，以供应链管理、创新与客户满意度为核心，超越期望，推动客户在全球范围内取得成功。",
+      "list": [
+        {
+          "key": "service-1",
+          "title": "报关服务",
+          "desc": "确保报关流程顺畅，使您的货物快速且合规通过边境。"
+        },
+        {
+          "key": "service-2",
+          "title": "仓储与分销",
+          "desc": "安全的储存解决方案与高效的分销服务，保障库存流通顺畅。"
+        },
+        {
+          "key": "service-3",
+          "title": "供应链管理",
+          "desc": "优化供应链的各个环节，实现更高效、更具成本效益的运营。"
+        },
+        {
+          "key": "service-4",
+          "title": "跨境解决方案",
+          "desc": "顺畅的跨境物流服务，助力您的业务连接国际市场。"
+        },
+        {
+          "key": "service-5",
+          "title": "末端配送",
+          "desc": "可靠的最后一公里配送服务，确保产品准时且准确地送达客户门前。"
+        },
+        {
+          "key": "service-6",
+          "title": "项目货物处理",
+          "desc": "针对大型或复杂货物的专属处理，提供定制化物流解决方案。"
+        }
+      ]
+    },
+    "workProcessSection": {
+      "heading": "工作流程",
+      "title": "<span>经过验证的流程</span>，助您实现卓越",
+      "description": "我们的流程简洁却高效。每个项目都有所不同，但自成立以来我们已处理过数千个项目。我们的经验是您宝贵的资产。",
+      "steps": [
+        {
+          "number": "01",
+          "title": "深入咨询",
+          "description": "对您的物流需求进行战略评估，提供最优且符合业务目标的解决方案。",
+          "image": "/img/1active.webp"
+        },
+        {
+          "number": "02",
+          "title": "战略规划",
+          "description": "制定综合策略，确保货物运输高效、及时且有序。",
+          "image": "/img/2active.webp"
+        },
+        {
+          "number": "03",
+          "title": "高效执行",
+          "description": "精心协调每个运输环节，确保流程顺畅并按时完成。",
+          "image": "/img/3active.webp"
+        },
+        {
+          "number": "04",
+          "title": "准时交付",
+          "description": "深入了解您的物流需求，提供最有效且可靠的解决方案。",
+          "image": "/img/4active.webp"
+        }
+      ]
+    },
+    "quoteCtaSection": {
+      "title": "今天就简化您的物流流程！",
+      "description": "探索一个轻松无缝的物流世界，准备好改变您的前进方式。",
+      "ctaText": "免费咨询",
+      "ctaLink": "/contact"
+    }
   }
 }

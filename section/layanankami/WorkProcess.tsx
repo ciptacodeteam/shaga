@@ -1,43 +1,21 @@
 'use client';
 
+import { transformMessages } from '@/i18n/messages';
 import { cn } from '@/lib/utils';
+import { useMessages, useTranslations } from 'next-intl';
 import Image from 'next/image';
 
 import { useState } from 'react';
 
 export default function WorkProcess() {
-  const steps = [
-    {
-      number: '01',
-      title: 'Konsultasi Mendalam',
-      description:
-        'Penilaian strategis terhadap kebutuhan logistik Anda guna menghadirkan solusi yang optimal dan sesuai dengan tujuan bisnis Anda.',
-      icon: '/img/1active.webp',
-    },
-    {
-      number: '02',
-      title: 'Perencanaan Strategis',
-      description:
-        'Menyusun strategi terpadu guna menjamin proses pengiriman barang yang efektif, efisien, dan tepat waktu.',
-      icon: '/img/2active.webp',
-    },
-    {
-      number: '03',
-      title: 'Eksekusi Efisien',
-      description:
-        'Mengoordinasikan setiap detail proses pengiriman dengan cermat untuk memastikan pelaksanaan yang lancar dan tepat waktu.',
-      icon: '/img/3active.webp',
-    },
-    {
-      number: '04',
-      title: 'Pengiriman Tepat Waktu',
-      description:
-        'Pendekatan mendalam terhadap kebutuhan logistik Anda guna menghadirkan solusi yang paling efektif dan andal.',
-      icon: '/img/4active.webp',
-    },
-  ];
+  const t = useTranslations('servicePage.workProcessSection');
 
-  const [activeStep, setActiveStep] = useState(steps[0]);
+  const messages = useMessages();
+  const stepsList = transformMessages(
+    messages.servicePage.workProcessSection.steps
+  );
+
+  const [activeStep, setActiveStep] = useState(stepsList[0]);
 
   return (
     <>
@@ -49,28 +27,28 @@ export default function WorkProcess() {
               <span className='relative inline-flex size-3 rounded-full bg-secondary'></span>
             </span>
             <p className='text-sm font-medium text-primary uppercase font-manrope'>
-              proses kerja
+              {t('heading')}
             </p>
           </div>
 
           <div className='mb-6 lg:mb-10'>
-            <p className='font-manrope text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-tight text-primary'>
-              <span className='text-secondary'>Proses Teruji</span> Kami untuk
-              Meraih Keunggulan
-            </p>
+            <p
+              className='font-manrope text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-tight text-primary [&>span]:text-secondary'
+              dangerouslySetInnerHTML={{
+                __html: t.raw('title'),
+              }}
+            ></p>
           </div>
 
           <div className='flex flex-col md:flex-row gap-8 md:gap-16'>
             <div className='w-full md:w-1/2'>
               <p className='text-[#2A437C] font-manrope mb-6 md:mb-0'>
-                Proses kami sederhana namun efektif. Setiap proyek memang
-                berbeda, tetapi kami telah menangani ribuan proyek sejak pertama
-                kali berdiri. Pengalaman kami adalah aset berharga bagi Anda.
+                {t('description')}
               </p>
 
               <div className='mt-8 md:mt-16 py-0 md:py-2'>
                 <Image
-                  src={activeStep.icon}
+                  src={activeStep.image}
                   alt={activeStep.title}
                   width={1000}
                   height={300}
@@ -80,7 +58,7 @@ export default function WorkProcess() {
             </div>
 
             <div className='w-full md:w-1/2 space-y-6 md:space-y-8'>
-              {steps.map((step) => (
+              {stepsList.map((step) => (
                 <div
                   key={step.number}
                   onMouseEnter={() => setActiveStep(step)}

@@ -1,6 +1,9 @@
 import CTAButton from '@/components/CTAButton';
+import { useTranslations } from 'next-intl';
 
 export default function FindUsSection() {
+  const t = useTranslations('contactPage.findUsSection');
+
   return (
     <section>
       <div className="bg-primary py-10 md:py-20 mb-16 md:mb-30 inset-0 bg-[url('/img/map.webp')] bg-blend-multiply bg-cover bg-no-repeat">
@@ -26,19 +29,18 @@ export default function FindUsSection() {
                     <span className='relative inline-flex size-3 rounded-full bg-secondary'></span>
                   </span>
                   <p className='text-sm font-medium text-white uppercase font-manrope'>
-                    temukan kami
+                    {t('heading')}
                   </p>
                 </div>
 
                 <div className='mb-6 md:mb-8'>
                   <p className='font-manrope text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-tight text-white'>
-                    Terletak strategis untuk akses mudah ke semua jalur logistik
-                    utama
+                    {t('title')}
                   </p>
                 </div>
 
                 <div>
-                  <CTAButton text='Jalan Menuju Shaga' />
+                  <CTAButton text={t('ctaText')} url={t('ctaLink')} />
                 </div>
               </div>
             </div>

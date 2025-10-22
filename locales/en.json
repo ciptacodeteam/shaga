@@ -338,5 +338,187 @@
       "ctaText": "Free Consultation",
       "ctaLink": "/contact"
     }
+  },
+  "contactPage": {
+    "heroSection": {
+      "title": "Contact Shaga",
+      "subtitle": "We are ready to support your logistics needs. Contact us for inquiries, quotes, or assistance.",
+      "tagline": "Supporting Businesses Worldwide"
+    },
+    "contactInformationSection": {
+      "heading": "Contact Information",
+      "title": "<span>Connect</span> with us today and we will <span>support your business</span>",
+      "description": "Ready to take your logistics to the next level? Contact us today to learn how our tailored solutions and expertise can transform your supply chain.",
+      "phoneLabel": "Phone",
+      "emailLabel": "Email",
+      "addressLabel": "Address",
+      "operationalLabel": "Operating Hours",
+      "operationalHours": "Monday - Saturday: 08:30 - 17:00 WIB",
+      "formTitle": "Please fill out the form below and our team will contact you shortly.",
+      "formFirstName": {
+        "label": "First Name",
+        "placeholder": "Enter your first name"
+      },
+      "formLastName": {
+        "label": "Last Name",
+        "placeholder": "Enter your last name"
+      },
+      "formEmail": {
+        "label": "Email Address",
+        "placeholder": "Enter your email"
+      },
+      "formPhone": {
+        "label": "Phone Number",
+        "placeholder": "Enter your phone number"
+      },
+      "formService": {
+        "label": "Shaga Service",
+        "placeholder": "Select a service"
+      },
+      "formMessage": {
+        "label": "Message",
+        "placeholder": "Write your message here"
+      },
+      "formSubmitText": "Contact Us"
+    },
+    "findUsSection": {
+      "heading": "Find Us",
+      "title": "Strategically located for easy access to all major logistics routes",
+      "ctaText": "Get Directions",
+      "ctaLink": "https://maps.app.goo.gl/6MjZsWsgTunc4GGd9"
+    },
+    "faqSection": {
+      "heading": "Frequently Asked Questions",
+      "title": " <span>Questions</span> About Our Services.",
+      "faqs": [
+        {
+          "question": "What logistics services does Shaga offer?",
+          "answer": "Shaga offers a range of logistics services including land and sea shipping, customs services, warehousing & distribution, supply chain management, cross-border solutions, last-mile delivery, and project cargo handling."
+        },
+        {
+          "question": "How can I track my shipment?",
+          "answer": "You can track your shipment using the tracking feature on our website by entering the tracking number provided when your shipment was confirmed."
+        },
+        {
+          "question": "Does Shaga provide international services?",
+          "answer": "Yes, Shaga provides international logistics services including cross-border shipping and customs solutions to help businesses access global markets."
+        },
+        {
+          "question": "How can I get a quote for my logistics needs?",
+          "answer": "You can contact our sales team via the contact form on our website or reach out directly by phone or email to get a customized quote for your logistics needs."
+        }
+      ]
+    },
+    "discussionCtaSection": {
+      "title": "Contact us to discuss how our services can support your business and simplify your logistics needs.",
+      "ctaText": "Contact Us",
+      "ctaLink": "/contact#contact-form"
+    }
+  },
+  "servicePage": {
+    "heroSection": {
+      "title": "Logistics Services",
+      "subtitle": "Our comprehensive logistics solutions are designed to optimize your supply chain and improve your business operations.",
+      "tagline": "Tailored solutions for every need"
+    },
+    "communitySection": {
+      "heading": "Our Community",
+      "title": "Join the <span>Business Partner</span> and Growing Logistics Community",
+      "description": "Join a dynamic community of businesses and logistics partners to optimize supply chains and drive growth.",
+      "ctaText": "Learn More",
+      "ctaLink": "/about-us",
+      "stats": [
+        {
+          "value": "25",
+          "label": "Years of Industry Experience"
+        },
+        {
+          "value": "300K+",
+          "label": "Employees Supporting Your Success"
+        },
+        {
+          "value": "500+",
+          "label": "Satisfied Clients Worldwide"
+        },
+        {
+          "value": "99%",
+          "label": "On-time Delivery Rate"
+        }
+      ]
+    },
+    "logisticServiceSection": {
+      "heading": "Logistics Services",
+      "title": "<span>Comprehensive Logistics Services</span> Tailored to <span>Meet Your Needs</span>.",
+      "description": "Our vision is to be a leading logistics partner known for excellence in supply chain management, innovation, and customer satisfaction, exceeding expectations and driving our clients' success worldwide.",
+      "list": [
+        {
+          "key": "service-1",
+          "title": "Customs Services",
+          "desc": "Ensuring customs processes run smoothly so your goods can cross borders quickly and in compliance with regulations."
+        },
+        {
+          "key": "service-2",
+          "title": "Warehousing & Distribution",
+          "desc": "Secure storage solutions and efficient distribution to keep your inventory flowing smoothly."
+        },
+        {
+          "key": "service-3",
+          "title": "Supply Chain Management",
+          "desc": "Optimizing every step in your supply chain for more efficient and cost-effective operations."
+        },
+        {
+          "key": "service-4",
+          "title": "Cross-Border Solutions",
+          "desc": "Seamless cross-border logistics services to connect your business with international markets."
+        },
+        {
+          "key": "service-5",
+          "title": "Last-Mile Delivery",
+          "desc": "Reliable last-mile delivery services to ensure your products arrive at customers' doorsteps accurately and on time."
+        },
+        {
+          "key": "service-6",
+          "title": "Project Cargo Handling",
+          "desc": "Specialized handling for large or complex shipments, with tailored logistics solutions."
+        }
+      ]
+    },
+    "workProcessSection": {
+      "heading": "Work Process",
+      "title": "<span>Proven Process</span> to Achieve Excellence",
+      "description": "Our process is simple yet effective. Every project is different, but we have handled thousands of projects since our founding. Our experience is a valuable asset for you.",
+      "steps": [
+        {
+          "number": "01",
+          "title": "In-depth Consultation",
+          "description": "Strategic assessment of your logistics needs to deliver optimal solutions aligned with your business goals.",
+          "image": "/img/1active.webp"
+        },
+        {
+          "number": "02",
+          "title": "Strategic Planning",
+          "description": "Developing integrated strategies to ensure effective, efficient, and timely shipment processes.",
+          "image": "/img/2active.webp"
+        },
+        {
+          "number": "03",
+          "title": "Efficient Execution",
+          "description": "Coordinating every detail of the delivery process carefully to ensure smooth and timely implementation.",
+          "image": "/img/3active.webp"
+        },
+        {
+          "number": "04",
+          "title": "On-time Delivery",
+          "description": "A thorough approach to your logistics needs to deliver the most effective and reliable solutions.",
+          "image": "/img/4active.webp"
+        }
+      ]
+    },
+    "quoteCtaSection": {
+      "title": "Simplify your logistics process today!",
+      "description": "Discover a world of easy and seamless logistics, ready to transform the way you move forward.",
+      "ctaText": "Free Consultation",
+      "ctaLink": "/contact"
+    }
   }
 }

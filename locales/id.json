@@ -338,5 +338,187 @@
       "ctaText": "Konsultasi Gratis",
       "ctaLink": "/contact"
     }
+  },
+  "contactPage": {
+    "heroSection": {
+      "title": "Hubungi Shaga",
+      "subtitle": "Kami siap mendukung kebutuhan logistik Anda. Hubungi kami untuk pertanyaan, penawaran, atau bantuan.",
+      "tagline": "Mendukung Bisnis di Seluruh Dunia"
+    },
+    "contactInformationSection": {
+      "heading": "informasi kontak",
+      "title": "<span>Terhubunglah</span> dengan kami hari ini dan kami akan <span>membantu bisnis Anda</span>",
+      "description": "Siap membawa logistik Anda ke level selanjutnya? Hubungi kami hari ini untuk mengetahui bagaimana solusi khusus dan keahlian kami dapat mentransformasi rantai pasok Anda.",
+      "phoneLabel": "Telepon",
+      "emailLabel": "Email",
+      "addressLabel": "Alamat",
+      "operationalLabel": "Jam Operasional",
+      "operationalHours": "Senin - Sabtu: 08.30 - 17.00 WIB",
+      "formTitle": "Silakan isi formulir di bawah ini, dan tim kami akan segera menghubungi Anda.",
+      "formFirstName": {
+        "label": "Nama Depan",
+        "placeholder": "Masukkan nama depan"
+      },
+      "formLastName": {
+        "label": "Nama Belakang",
+        "placeholder": "Masukkan nama belakang"
+      },
+      "formEmail": {
+        "label": "Alamat Email",
+        "placeholder": "Masukkan email kamu"
+      },
+      "formPhone": {
+        "label": "Nomor Telepon",
+        "placeholder": "Masukkan nomor kamu"
+      },
+      "formService": {
+        "label": "Layanan Shaga",
+        "placeholder": "Pilih layanan"
+      },
+      "formMessage": {
+        "label": "Pesan",
+        "placeholder": "Tulis pesan kamu di sini"
+      },
+      "formSubmitText": "Hubungi Kami"
+    },
+    "findUsSection": {
+      "heading": "Temukan Kami",
+      "title": "Terletak strategis untuk akses mudah ke semua jalur logistik utama",
+      "ctaText": "Jalan Menuju Shaga",
+      "ctaLink": "https://maps.app.goo.gl/6MjZsWsgTunc4GGd9"
+    },
+    "faqSection": {
+      "heading": "Pertanyaan yang Sering Diajukan",
+      "title": " <span>Pertanyaan</span> Tentang Layanan Kami.",
+      "faqs": [
+        {
+          "question": "Layanan logistik apa saja yang ditawarkan Shaga?",
+          "answer": "Shaga menawarkan berbagai layanan logistik termasuk pengiriman darat, laut, jasa kepabeanan, pergudangan & distribusi, manajemen rantai pasok, solusi lintas batas, pengiriman last-mile, dan penanganan kargo proyek."
+        },
+        {
+          "question": "Bagaimana cara melacak pengiriman saya?",
+          "answer": "Anda dapat melacak pengiriman Anda melalui fitur pelacakan di situs web kami dengan memasukkan nomor pelacakan yang diberikan saat pengiriman dikonfirmasi."
+        },
+        {
+          "question": "Apakah Shaga menyediakan layanan internasional?",
+          "answer": "Ya, Shaga menyediakan layanan logistik internasional yang mencakup pengiriman lintas batas dan solusi kepabeanan untuk membantu bisnis mengakses pasar global."
+        },
+        {
+          "question": "Bagaimana cara mendapatkan penawaran untuk kebutuhan logistik saya?",
+          "answer": "Anda dapat menghubungi tim penjualan kami melalui formulir kontak di situs web kami atau langsung menghubungi kami melalui telepon atau email untuk mendapatkan penawaran yang disesuaikan dengan kebutuhan logistik Anda."
+        }
+      ]
+    },
+    "discussionCtaSection": {
+      "title": "Hubungi kami untuk membahas bagaimana layanan kami dapat mendukung bisnis Anda dan menyederhanakan kebutuhan logistik Anda.",
+      "ctaText": "Hubungi Kami",
+      "ctaLink": "/contact#contact-form"
+    }
+  },
+  "servicePage": {
+    "heroSection": {
+      "title": "Layanan Logistik",
+      "subtitle": "Solusi logistik komprehensif kami dirancang untuk mengoptimalkan rantai pasokan Anda dan meningkatkan operasional bisnis Anda.",
+      "tagline": "Solusi khusus untuk setiap kebutuhan"
+    },
+    "communitySection": {
+      "heading": "Komunitas Kami",
+      "title": " Bergabunglah dengan <span>Komunitas Mitra Bisnis</span> dan Logistik yang Terus Berkembang",
+      "description": "Bergabunglah dengan komunitas dinamis berisi pelaku bisnis dan mitra logistik, untuk mengoptimalkan rantai pasokan dan mendorong pertumbuhan.",
+      "ctaText": "Pelajari Lebih Lanjut",
+      "ctaLink": "/about-us",
+      "stats": [
+        {
+          "value": "25",
+          "label": "Tahun Pengalaman di Industri"
+        },
+        {
+          "value": "300K+",
+          "label": "Karyawan untuk Kesuksesan Anda"
+        },
+        {
+          "value": "500+",
+          "label": "Klien Puas di Seluruh Dunia"
+        },
+        {
+          "value": "99%",
+          "label": "Tingkat Pengiriman Tepat Waktu"
+        }
+      ]
+    },
+    "logisticServiceSection": {
+      "heading": "Layanan Logistik",
+      "title": "<span>Layanan Logistik</span> Komprehensif yang Disesuaikan untuk <span>Memenuhi Kebutuhan</span>.",
+      "description": "Visi kami adalah menjadi mitra logistik terdepan yang dikenal atas keunggulan dalam manajemen rantai pasokan, inovasi, dan kepuasan pelanggan, sekaligus melampaui ekspektasi serta mendorong kesuksesan klien kami di seluruh dunia.",
+      "list": [
+        {
+          "key": "service-1",
+          "title": "Jasa Kepabeanan",
+          "desc": "Memastikan proses kepabeanan berjalan lancar, sehingga barang Anda dapat melewati perbatasan dengan cepat dan sesuai peraturan."
+        },
+        {
+          "key": "service-2",
+          "title": "Pergudangan & Distribusi",
+          "desc": "Solusi penyimpanan yang aman dan distribusi yang efisien untuk menjaga kelancaran alur persediaan Anda."
+        },
+        {
+          "key": "service-3",
+          "title": "Manajemen Rantai Pasok",
+          "desc": "Mengoptimalkan setiap langkah dalam rantai pasok Anda untuk operasi yang lebih efisien dan hemat biaya."
+        },
+        {
+          "key": "service-4",
+          "title": "Solusi Lintas Batas",
+          "desc": "Layanan logistik lintas batas yang lancar untuk menghubungkan bisnis Anda dengan pasar internasional."
+        },
+        {
+          "key": "service-5",
+          "title": "Pengiriman Last-Mile",
+          "desc": "Layanan pengiriman tahap akhir yang andal untuk memastikan produk Anda tiba di depan pintu pelanggan dengan tepat dan akurat."
+        },
+        {
+          "key": "service-6",
+          "title": "Penanganan Kargo Proyek",
+          "desc": "Penanganan khusus untuk pengiriman berukuran besar atau kompleks, dengan solusi logistik yang disesuaikan."
+        }
+      ]
+    },
+    "workProcessSection": {
+      "heading": "Proses Kerja",
+      "title": "<span>Proses Teruji</span> Kami untuk Meraih Keunggulan",
+      "description": "Proses kami sederhana namun efektif. Setiap proyek memang berbeda, tetapi kami telah menangani ribuan proyek sejak pertama kali berdiri. Pengalaman kami adalah aset berharga bagi Anda.",
+      "steps": [
+        {
+          "number": "01",
+          "title": "Konsultasi Mendalam",
+          "description": "Penilaian strategis terhadap kebutuhan logistik Anda guna menghadirkan solusi yang optimal dan sesuai dengan tujuan bisnis Anda.",
+          "image": "/img/1active.webp"
+        },
+        {
+          "number": "02",
+          "title": "Perencanaan Strategis",
+          "description": "Menyusun strategi terpadu guna menjamin proses pengiriman barang yang efektif, efisien, dan tepat waktu.",
+          "image": "/img/2active.webp"
+        },
+        {
+          "number": "03",
+          "title": "Eksekusi Efisien",
+          "description": "Mengoordinasikan setiap detail proses pengiriman dengan cermat untuk memastikan pelaksanaan yang lancar dan tepat waktu.",
+          "image": "/img/3active.webp"
+        },
+        {
+          "number": "04",
+          "title": "Pengiriman Tepat Waktu",
+          "description": "Pendekatan mendalam terhadap kebutuhan logistik Anda guna menghadirkan solusi yang paling efektif dan andal.",
+          "image": "/img/4active.webp"
+        }
+      ]
+    },
+    "quoteCtaSection": {
+      "title": "Permudah proses logistik Anda hari ini!",
+      "description": "Temukan dunia logistik yang mudah dan lancar, siap mengubah cara Anda melangkah maju.",
+      "ctaText": "Konsultasi Gratis",
+      "ctaLink": "/contact"
+    }
   }
 }
