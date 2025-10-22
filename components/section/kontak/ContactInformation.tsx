@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 
 import { HiOutlineLocationMarker, HiOutlineMail } from 'react-icons/hi';
 import { LuClock3, LuPhone } from 'react-icons/lu';
@@ -15,6 +15,9 @@ import {
 import { ChevronUpDownIcon } from '@heroicons/react/24/outline';
 import { CheckIcon } from '@heroicons/react/24/solid';
 import { useTranslations } from 'next-intl';
+import { useInView } from 'motion/react';
+import { motion } from 'framer-motion';
+
 // Link not needed here (form uses native submit button)
 const people = [
   {
@@ -53,11 +56,20 @@ export default function ContactInformation() {
     e.preventDefault();
     console.log(formData);
   };
+
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, margin: '-50px' });
+
   return (
     <>
-      <section id='contact-form'>
+      <section id='contact-form' ref={ref}>
         <div className='max-w-7xl mx-auto mb-20 lg:mb-30 px-4 md:px-6 xl:px-0'>
-          <div className='flex items-center gap-2 mb-3'>
+          <motion.div
+            initial={{ opacity: 0, x: -4 }}
+            animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -4 }}
+            transition={{ duration: 0.8 }}
+            className='flex items-center gap-2 mb-3'
+          >
             <span className='relative flex'>
               <span className='absolute inline-flex size-3 animate-ping rounded-full bg-secondary opacity-75'></span>
               <span className='relative inline-flex size-3 rounded-full bg-secondary'></span>
@@ -65,27 +77,53 @@ export default function ContactInformation() {
             <p className='text-sm font-medium text-primary uppercase font-manrope'>
               {t('heading')}
             </p>
-          </div>
+          </motion.div>
 
           <div className='grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12'>
             <div>
               <div className='mb-6 md:mb-8'>
-                <p
+                <motion.p
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={
+                    isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 10 }
+                  }
+                  transition={{ duration: 0.8, delay: 0.2 }}
                   className='font-manrope text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-tight text-primary [&>span]:text-secondary'
                   dangerouslySetInnerHTML={{
                     __html: t.raw('title'),
                   }}
-                ></p>
+                ></motion.p>
               </div>
 
               <div>
-                <p className='font-manrope text-primary mb-6 md:mb-10'>
+                <motion.p
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={
+                    isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 10 }
+                  }
+                  transition={{ duration: 0.8, delay: 0.3 }}
+                  className='font-manrope text-primary mb-6 md:mb-10'
+                >
                   {t('description')}
-                </p>
+                </motion.p>
               </div>
 
-              <div className='grid grid-cols-1 sm:grid-cols-2 gap-4'>
-                <div className='border border-[#E0E6F3] p-4 md:p-6 rounded-xl flex flex-col justify-between h-full'>
+              <motion.div
+                className='grid grid-cols-1 sm:grid-cols-2 gap-4'
+                initial={{ opacity: 0, y: 10 }}
+                animate={
+                  isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 10 }
+                }
+                transition={{ duration: 0.8 }}
+              >
+                <motion.div
+                  className='border border-[#E0E6F3] p-4 md:p-6 rounded-xl flex flex-col justify-between h-full'
+                  initial={{ opacity: 0, y: 8 }}
+                  animate={
+                    isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 8 }
+                  }
+                  transition={{ duration: 0.6, delay: 0.15 }}
+                >
                   <div className='flex items-center gap-3 lg:gap-4'>
                     <div className='bg-[#E0E6F3] rounded-full p-2 md:p-3 flex-shrink-0 flex items-center justify-center'>
                       <LuPhone className='text-primary w-5 h-5 md:w-6 md:h-6' />
@@ -100,9 +138,16 @@ export default function ContactInformation() {
                   <h1 className='font-manrope font-medium text-primary mt-3 md:mt-4 text-base md:text-lg'>
                     +62 811 6383 887
                   </h1>
-                </div>
+                </motion.div>
 
-                <div className='border border-[#E0E6F3] p-4 md:p-6 rounded-xl flex flex-col justify-between h-full'>
+                <motion.div
+                  className='border border-[#E0E6F3] p-4 md:p-6 rounded-xl flex flex-col justify-between h-full'
+                  initial={{ opacity: 0, y: 8 }}
+                  animate={
+                    isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 8 }
+                  }
+                  transition={{ duration: 0.6, delay: 0.25 }}
+                >
                   <div className='flex items-center gap-3 md:gap-4'>
                     <div className='bg-[#E0E6F3] rounded-full p-2 md:p-3 flex-shrink-0 flex items-center justify-center'>
                       <HiOutlineMail className='text-primary size-5 md:size-6' />
@@ -117,9 +162,16 @@ export default function ContactInformation() {
                   <h1 className='font-manrope font-medium text-primary mt-3 md:mt-4 text-base md:text-lg'>
                     shaga3729@gmail.com
                   </h1>
-                </div>
+                </motion.div>
 
-                <div className='col-span-1 sm:col-span-2 border border-[#E0E6F3] p-4 md:p-6 rounded-xl flex flex-col justify-between h-full'>
+                <motion.div
+                  className='col-span-1 sm:col-span-2 border border-[#E0E6F3] p-4 md:p-6 rounded-xl flex flex-col justify-between h-full'
+                  initial={{ opacity: 0, y: 8 }}
+                  animate={
+                    isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 8 }
+                  }
+                  transition={{ duration: 0.6, delay: 0.35 }}
+                >
                   <div className='flex items-center gap-3'>
                     <div className='bg-[#E0E6F3] rounded-full p-2 md:p-3 flex-shrink-0 flex items-center justify-center'>
                       <HiOutlineLocationMarker className='text-primary w-5 h-5 md:w-6 md:h-6' />
@@ -135,9 +187,16 @@ export default function ContactInformation() {
                     Jl. Mengkara No.2, Petisah Tengah, Kec. Medan Petisah, Kota
                     Medan, Sumatera Utara 20111
                   </h1>
-                </div>
+                </motion.div>
 
-                <div className='col-span-1 sm:col-span-2 border border-[#E0E6F3] p-4 md:p-6 rounded-xl flex flex-col justify-between h-full'>
+                <motion.div
+                  className='col-span-1 sm:col-span-2 border border-[#E0E6F3] p-4 md:p-6 rounded-xl flex flex-col justify-between h-full'
+                  initial={{ opacity: 0, y: 8 }}
+                  animate={
+                    isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 8 }
+                  }
+                  transition={{ duration: 0.6, delay: 0.45 }}
+                >
                   <div className='flex items-center gap-3'>
                     <div className='bg-[#E0E6F3] rounded-full p-2 md:p-3 flex-shrink-0 flex items-center justify-center'>
                       <LuClock3 className='text-primary w-5 h-5 md:w-6 md:h-6' />
@@ -152,17 +211,32 @@ export default function ContactInformation() {
                   <h1 className='font-manrope font-medium text-primary mt-3 md:mt-4 text-base md:text-lg'>
                     {t('operationalHours')}
                   </h1>
-                </div>
-              </div>
+                </motion.div>
+              </motion.div>
             </div>
 
             <div>
               <div className='border border-[#E0E6F3] p-6 md:p-8 rounded-xl flex flex-col justify-between h-full'>
-                <p className='font-manrope text-[#556996] text-xl md:text-2xl lg:text-3xl xl:text-4xl leading-tight mb-4'>
+                <motion.p
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={
+                    isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 10 }
+                  }
+                  transition={{ duration: 0.8, delay: 0.2 }}
+                  className='font-manrope text-[#556996] text-xl md:text-2xl lg:text-3xl xl:text-4xl leading-tight mb-4'
+                >
                   {t('formTitle')}
-                </p>
+                </motion.p>
 
-                <form onSubmit={handleSubmit} className='mt-6 space-y-6'>
+                <motion.form
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={
+                    isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 10 }
+                  }
+                  transition={{ duration: 0.6, delay: 0.35 }}
+                  onSubmit={handleSubmit}
+                  className='mt-6 space-y-6'
+                >
                   <div className='grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4'>
                     <div>
                       <label className='block text-sm font-medium text-primary font-manrope mb-2'>
@@ -300,7 +374,7 @@ export default function ContactInformation() {
                       {t('formSubmitText')}
                     </button>
                   </div>
-                </form>
+                </motion.form>
               </div>
             </div>
           </div>
