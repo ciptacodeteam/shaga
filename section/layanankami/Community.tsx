@@ -55,7 +55,7 @@ export default function CommunitySection() {
                     key={index}
                   >
                     <div className='flex flex-col items-center justify-center'>
-                      <h1 className='font-manrope text-primary text-4xl sm:text-6xl md:text-7xl font-semibold tracking-tight'>
+                      <h1 className='font-manrope text-primary text-5xl sm:text-6xl md:text-7xl font-semibold tracking-tight'>
                         {stat.value}
                       </h1>
                       <p className='font-manrope text-[#556996] text-lg sm:text-2xl font-medium mt-6 text-center'>
