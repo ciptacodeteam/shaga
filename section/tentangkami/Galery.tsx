@@ -1,10 +1,19 @@
 import Image from 'next/image';
 
-import air from '@/public/img/air.webp';
 import { useTranslations } from 'next-intl';
 
 export default function GallerySection() {
   const t = useTranslations('aboutPage.gallerySection');
+
+  const images = [
+    '/img/trucks/truck-1.webp',
+    '/img/trucks/truck-2.webp',
+    '/img/trucks/truck-3.webp',
+    '/img/trucks/truck-4.webp',
+    '/img/trucks/truck-5.webp',
+    '/img/trucks/truck-6.webp',
+    '/img/trucks/truck-7.webp',
+  ];
 
   return (
     <>
@@ -32,38 +41,18 @@ export default function GallerySection() {
             </p>
           </div>
 
-          <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-5'>
-            <div>
-              <Image
-                alt=''
-                src={air}
-                className='w-full object-fit rounded-xl'
-              />
-            </div>
-
-            <div>
-              <Image
-                alt=''
-                src={air}
-                className='w-full object-fit rounded-xl'
-              />
-            </div>
-
-            <div>
-              <Image
-                alt=''
-                src={air}
-                className='w-full object-fit rounded-xl'
-              />
-            </div>
-
-            <div>
-              <Image
-                alt=''
-                src={air}
-                className='w-full object-fit rounded-xl'
-              />
-            </div>
+          <div className='grid grid-cols-1 sm:grid-cols-2 lg:flex justify-center items-center flex-wrap gap-4 md:gap-5'>
+            {images.map((src, index) => (
+              <div key={index} className='overflow-hidden rounded-xl'>
+                <Image
+                  src={src}
+                  alt={`Gallery image ${index + 1}`}
+                  width={500}
+                  height={400}
+                  className='w-full h-auto object-cover transform hover:scale-105 transition-transform duration-300 lg:max-h-[310px]'
+                />
+              </div>
+            ))}
           </div>
         </div>
       </section>
