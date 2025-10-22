@@ -35,7 +35,7 @@ const FaqSection = () => {
         </div>
       </header>
 
-      <div className='bg-white mt-10'>
+      <div className='bg-white mt-4 md:mt-10'>
         {faqs.map((item, i) => (
           <Disclosure key={i} defaultOpen={i === 2}>
             {({ open }) => (
