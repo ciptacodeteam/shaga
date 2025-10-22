@@ -26,12 +26,12 @@ export default function FooterSection() {
     <>
       <section>
         <div className='bg-primary'>
-          <div className='max-w-7xl mx-auto pt-12 md:pt-20 pb-8 px-4 md:px-0'>
+          <div className='max-w-7xl mx-auto pt-12 md:pt-20 pb-8 px-4 xl:px-0'>
             <div className='grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-0 items-start md:items-center'>
               <div className='mx-auto md:mx-0'>
                 <Image src={logowhite} alt='' className='w-48 md:w-60' />
               </div>
-              <div className='text-right'>
+              <div className='md:ml-auto'>
                 <h1 className='font-manrope text-2xl md:text-4xl text-white font-medium text-center md:text-right max-w-lg leading-tight my-4 md:my-0 px-4 md:px-0'>
                   {t('footerSection.tagline')}
                 </h1>
@@ -61,7 +61,7 @@ export default function FooterSection() {
                   </div>
                 </div>
 
-                <div className='mt-6 md:mt-0'>
+                <div className='mt-6 md:mt-0 flex justify-center md:justify-end'>
                   <div className='grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-8 md:gap-12'>
                     <div>
                       <h1 className='font-manrope text-white text-xl md:text-2xl font-semibold mb-6 md:mb-10'>
@@ -81,7 +81,7 @@ export default function FooterSection() {
                       </div>
                     </div>
 
-                    <div>
+                    <div className='md:ml-4'>
                       <h1 className='font-manrope text-white text-xl md:text-2xl font-semibold mb-6 md:mb-10'>
                         {t('footerSection.supportNavList.heading')}
                       </h1>
@@ -99,7 +99,7 @@ export default function FooterSection() {
                       </div>
                     </div>
 
-                    <div>
+                    <div className='md:ml-auto'>
                       <h1 className='font-manrope text-white text-xl md:text-2xl font-semibold mb-6 md:mb-10'>
                         {t('footerSection.servicesNavList.heading')}
                       </h1>
@@ -125,9 +125,8 @@ export default function FooterSection() {
 
             <div className='text-center'>
               <p className='font-manrope text-white text-sm mt-8'>
-                {' '}
-                ©{new Date().getFullYear()} Shaga. All Rights Reserved. Designed
-                & Developed by{' '}
+                © {new Date().getFullYear()} Shaga. All Rights Reserved.
+                Designed & Developed by{' '}
                 <span>
                   <Link
                     href={'https://ciptacode.id'}

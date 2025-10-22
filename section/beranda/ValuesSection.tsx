@@ -10,7 +10,7 @@ export default function ValueSection() {
   return (
     <>
       <section>
-        <div className='max-w-7xl mx-auto mb-64 md:mb-36 px-4'>
+        <div className='max-w-7xl mx-auto mb-64 md:mb-36 px-4 md:px-6 xl:px-0'>
           <div className='flex flex-col md:flex-row gap-8 md:gap-12'>
             <div className='w-full md:w-1/3'>
               <div className='flex flex-col'>

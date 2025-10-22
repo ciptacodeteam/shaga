@@ -70,7 +70,7 @@ export default function PartnerClient() {
   return (
     <>
       <section>
-        <div className='max-w-7xl mx-auto mb-24 md:mb-42 px-4 md:px-8'>
+        <div className='max-w-7xl mx-auto mb-24 md:mb-42 px-4 md:px-6 xl:px-0'>
           <div className='flex flex-col justify-center items-center text-center'>
             <div className='flex items-center gap-2 mb-3'>
               <span className='relative flex size-3'>
@@ -93,7 +93,7 @@ export default function PartnerClient() {
           </div>
 
           <div>
-            <div className='mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-x-8 sm:gap-x-12 gap-y-12 items-center justify-items-center mt-6 md:mt-10 px-4 md:px-0'>
+            <div className='mx-auto grid grid-cols-2 md:flex flex-wrap justify-center gap-x-8 sm:gap-x-12 gap-y-12 items-center mt-6 md:mt-10 px-4 md:px-0'>
               {partners.map((partner) => (
                 <div
                   key={partner.id}
