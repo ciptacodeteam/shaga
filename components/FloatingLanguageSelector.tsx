@@ -87,7 +87,7 @@ export default function FloatingLanguageSelector({
       role='group'
       aria-label='Language selector'
       className={cx(
-        'fixed bottom-4 right-2 lg:right-6 lg:bottom-6 z-50',
+        'fixed bottom-14 right-2 lg:right-6 lg:bottom-6 z-50',
         isRight ? 'right-4' : 'left-4',
         className
       )}

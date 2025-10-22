@@ -61,7 +61,7 @@ export default function NavigationBar() {
             </Link>
           </div>
           {/* Desktop nav */}
-          <nav className='hidden md:flex gap-8 items-center'>
+          <nav className='hidden lg:flex gap-8 items-center'>
             <ul className='flex items-center gap-8'>
               {menus.map(
                 (menu: { text: string; link: string }, idx: number) => {
@@ -141,7 +141,7 @@ export default function NavigationBar() {
       </div>
       {/* Mobile menu overlay */}
       {mobileOpen && (
-        <div className='md:hidden fixed inset-x-4 top-20 z-40 bg-white rounded-lg shadow-lg p-4'>
+        <div className='lg:hidden fixed inset-x-4 top-20 z-40 bg-white rounded-lg shadow-lg p-4'>
           <ul className='flex flex-col gap-3'>
             {menus.map((menu: { text: string; link: string }, idx: number) => (
               <li key={idx}>
