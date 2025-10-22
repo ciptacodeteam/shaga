@@ -4,6 +4,8 @@ import CTAButton from '@/components/CTAButton';
 import { Link } from '@/i18n/navigation';
 import { useTranslations } from 'next-intl';
 import { BiMapPin } from 'react-icons/bi';
+import { getWhatsappMessageUrl } from '@/lib/utils';
+import { PHONE_NUMBER } from '@/lib/constant';
 
 export default function HeroSection() {
   const t = useTranslations();
@@ -34,7 +36,10 @@ export default function HeroSection() {
               <div>
                 <CTAButton
                   text={t('heroSection.ctaText')}
-                  url={t('heroSection.ctaLink')}
+                  url={getWhatsappMessageUrl(
+                    PHONE_NUMBER,
+                    'Hello, I am interested in your logistics services. Please provide me with more information.'
+                  )}
                   size='md'
                 />
               </div>
@@ -42,7 +47,7 @@ export default function HeroSection() {
               <div>
                 <CTAButton
                   text={t('heroSection.cta2Text')}
-                  url={t('heroSection.cta2Link')}
+                  url={'/about-us'}
                   size='md'
                   variant='outline-white'
                 />
@@ -60,7 +65,12 @@ export default function HeroSection() {
                   ></p>
                 </div>
                 <div>
-                  <Link href={t('heroSection.locationButtonLink')}>
+                  <Link
+                    href={getWhatsappMessageUrl(
+                      PHONE_NUMBER,
+                      'Hello, I am interested in your logistics services. Please provide me with more information.'
+                    )}
+                  >
                     <button className='text-white bg-primary  py-2 px-4 rounded-full cursor-pointer transition-all duration-300 hover:brightness-110 hover:-translate-y-0.5 font-manrope text-start md:text-center'>
                       <p
                         className='text-xs md:text-sm block [&>span]:hidden sm:[&>span]:inline'

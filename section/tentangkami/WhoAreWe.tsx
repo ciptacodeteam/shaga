@@ -52,7 +52,7 @@ export default function WhoAreWeSection() {
 
             <div className='w-full md:w-2/5 relative'>
               {/* Ensure the immediate parent of the Image has an explicit height */}
-              <div className='h-64 md:h-96 lg:h-[570px] w-full relative rounded-xl overflow-hidden'>
+              <div className='h-[450px] md:h-96 lg:h-[570px] w-full relative rounded-xl overflow-hidden'>
                 <Image
                   src={sea}
                   alt='Sea freight logistics image'

@@ -3,13 +3,15 @@ import Image from 'next/image';
 import CTAButton from '@/components/CTAButton';
 import sea from '@/public/img/sea.webp';
 import { useTranslations } from 'next-intl';
+import { PHONE_NUMBER } from '@/lib/constant';
+import { getWhatsappMessageUrl } from '@/lib/utils';
 
 export default function CtaSection() {
   const t = useTranslations('aboutPage.ctaSection');
 
   return (
     <>
-      <div className='max-w-7xl mx-auto mb-16 px-4 sm:px-6'>
+      <div className='max-w-7xl mx-auto mb-16 px-4 lg:px-0'>
         <div className='bg-primary p-6 sm:p-12 rounded-xl'>
           <div className='flex flex-col md:flex-row gap-6 md:gap-12 items-center'>
             {/* Image: on small screens it sits on top, use a fixed aspect container for Image fill */}
@@ -41,7 +43,13 @@ export default function CtaSection() {
               <div className='mt-4 md:mt-0'>
                 <div className='w-full md:w-auto'>
                   {/* Make CTA full width on mobile */}
-                  <CTAButton text={t('ctaText')} url={t('ctaLink')} />
+                  <CTAButton
+                    text={t('ctaText')}
+                    url={getWhatsappMessageUrl(
+                      PHONE_NUMBER,
+                      'Hello, I am interested in your logistics services. Please provide me with more information.'
+                    )}
+                  />
                 </div>
               </div>
             </div>

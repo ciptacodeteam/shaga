@@ -52,7 +52,7 @@ export default function WorkProcess() {
                   alt={activeStep.title}
                   width={1000}
                   height={300}
-                  className='bg-[#E0E6F3] w-full h-auto rounded-xl'
+                  className='bg-[#E0E6F3] w-full h-auto rounded-xl py-4 md:py-6'
                 />
               </div>
             </div>

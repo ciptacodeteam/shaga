@@ -1,4 +1,6 @@
 import CTAButton from '@/components/CTAButton';
+import { PHONE_NUMBER } from '@/lib/constant';
+import { getWhatsappMessageUrl } from '@/lib/utils';
 import { useTranslations } from 'next-intl';
 
 export default function GetInTouch() {
@@ -26,7 +28,10 @@ export default function GetInTouch() {
                 <div className='w-full md:w-auto'>
                   <CTAButton
                     text={t('getInTouchSection.ctaText')}
-                    url={t('getInTouchSection.ctaLink')}
+                    url={getWhatsappMessageUrl(
+                      PHONE_NUMBER,
+                      'Hello, I am interested in your logistics services. Please provide me with more information.'
+                    )}
                     size='md'
                   />
                 </div>

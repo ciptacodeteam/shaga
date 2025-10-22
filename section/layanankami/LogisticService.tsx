@@ -59,7 +59,7 @@ export default function LogisticService() {
             {services.map((service, index) => (
               <div
                 key={index}
-                className='group flex flex-col rounded-xl p-4 sm:p-6 transition-all duration-300 cursor-pointer bg-white border border-[#E0E6F3] hover:bg-primary hover:text-white min-h-[220px]'
+                className='group flex flex-col rounded-xl p-4 sm:p-6 transition-all duration-300 bg-white border border-[#E0E6F3] hover:bg-primary hover:text-white min-h-[220px]'
               >
                 <div className='flex flex-col'>
                   <div className='bg-[#CBFFE3] w-fit text-secondary p-2 sm:p-3 rounded-lg transition-all duration-300 group-hover:bg-[#E0E6F3] group-hover:!text-primary mb-5 md:mb-7'>

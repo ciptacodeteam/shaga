@@ -36,7 +36,6 @@
     }
   ],
   "contactCtaText": "Contact Us",
-  "contactCtaLink": "/contact",
   "navList": [
     {
       "text": "Home",
@@ -122,7 +121,7 @@
     "title": "We bring strategic innovation in logistics to support sustainable market growth.",
     "content": "Transforming logistics with innovative solutions through advanced technology and data-driven strategies to increase efficiency, reduce costs, and meet the ever-evolving demands of the market.",
     "ctaText": "Learn More",
-    "ctaLink": "/services"
+    "ctaLink": "/about-us"
   },
   "workSection": {
     "heading": "Work Process",
@@ -296,7 +295,7 @@
           "label": "Satisfied Clients Worldwide"
         },
         {
-          "value": "300K+",
+          "value": "300+",
           "label": "Employees Supporting Your Success"
         }
       ]
@@ -410,7 +409,7 @@
       ]
     },
     "discussionCtaSection": {
-      "title": "Contact us to discuss how our services can support your business and simplify your logistics needs.",
+      "title": "Contact us to discuss how our services can support your business.",
       "ctaText": "Contact Us",
       "ctaLink": "/contact#contact-form"
     }
@@ -433,7 +432,7 @@
           "label": "Years of Industry Experience"
         },
         {
-          "value": "300K+",
+          "value": "300+",
           "label": "Employees Supporting Your Success"
         },
         {

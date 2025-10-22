@@ -31,7 +31,7 @@ export default function WorkSection() {
     <section className='bg-[#001E62] py-12 md:py-10 md:mb-30 mb-24'>
       <div className='max-w-7xl mx-auto px-4 lg:px-0'>
         <div className='mb-10 md:mb-16'>
-          <div className='flex items-center gap-2 md:mb-6'>
+          <div className='flex items-center gap-2 mb-3 md:mb-6'>
             <span className='relative flex size-3'>
               <span className='absolute inline-flex h-full w-full animate-ping rounded-full bg-green-400 opacity-75'></span>
               <span className='relative inline-flex size-3 rounded-full bg-green-400'></span>
@@ -78,7 +78,7 @@ export default function WorkSection() {
                     isActive ? 'bg-[#E0E6F3]' : 'bg-primary'
                   )}
                 >
-                  <div className='flex flex-col justify-center items-center'>
+                  <div className='flex flex-col justify-center items-start'>
                     <div>
                       <span
                         className={cn(
@@ -90,7 +90,7 @@ export default function WorkSection() {
                       </span>
                       <h3
                         className={cn(
-                          'text-xl md:text-3xl font-manrope font-semibold mt-2 mb-3 text-center md:text-left',
+                          'text-xl md:text-3xl font-manrope font-semibold mt-2 mb-3 text-left',
                           isActive ? 'text-primary' : 'text-[#E0E6F3]'
                         )}
                       >
@@ -98,7 +98,7 @@ export default function WorkSection() {
                       </h3>
                       <p
                         className={cn(
-                          `text-sm md:text-base font-manrope text-center md:text-left`,
+                          `text-sm md:text-base font-manrope text-left`,
                           isActive ? 'text-primary' : 'text-[#B4BED5]'
                         )}
                       >
@@ -106,13 +106,13 @@ export default function WorkSection() {
                       </p>
                     </div>
 
-                    <div className='mt-6 md:mt-10'>
+                    <div className='mt-6 md:mt-10 flex items-center justify-center w-full'>
                       <Image
                         src={isActive ? step.iconActive : step.icon}
                         alt={step.title}
                         width={400}
                         height={400}
-                        className='mt-10 w-[300px] h-auto md:w-[500px] md:h-auto'
+                        className='mt-6 md:mt-10 w-[300px] h-auto md:w-[500px] md:h-auto'
                       />
                     </div>
                   </div>

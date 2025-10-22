@@ -2,13 +2,14 @@
 
 import { transformMessages } from '@/i18n/messages';
 import { Link } from '@/i18n/navigation';
-import { cn } from '@/lib/utils';
+import { cn, getWhatsappMessageUrl } from '@/lib/utils';
 import logo from '@/public/svg/logo.svg';
 import { useMessages, useTranslations } from 'next-intl';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import CTAButton from './CTAButton';
+import { PHONE_NUMBER } from '@/lib/constant';
 
 export default function NavigationBar() {
   const pathname = usePathname();
@@ -40,7 +41,7 @@ export default function NavigationBar() {
     <header
       className={cn(
         'fixed top-0 left-0 right-0 w-full bg-white z-30 transition-transform duration-300 ease-in-out',
-        isTop ? 'shadow-none' : 'shadow-md',
+        isTop ? 'shadow-none' : 'shadow-sm',
         visible ? 'translate-y-0' : '-translate-y-full'
       )}
     >
@@ -92,7 +93,10 @@ export default function NavigationBar() {
             <div>
               <CTAButton
                 text={t('contactCtaText')}
-                url={t('contactCtaLink')}
+                url={getWhatsappMessageUrl(
+                  PHONE_NUMBER,
+                  'Hello, I am interested in your logistics services. Please provide me with more information.'
+                )}
                 size='md'
                 variant='secondary'
               />
@@ -155,9 +159,11 @@ export default function NavigationBar() {
           <div className='mt-4'>
             <CTAButton
               text={t('contactCtaText')}
-              url={t('contactCtaLink')}
+              url={getWhatsappMessageUrl(
+                PHONE_NUMBER,
+                'Hello, I am interested in your logistics services. Please provide me with more information.'
+              )}
               onClick={() => setMobileOpen(false)}
-              size='md'
             />
           </div>
         </div>

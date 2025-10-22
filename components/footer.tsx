@@ -2,9 +2,11 @@ import logowhite from '@/public/svg/logowhite.svg';
 import { useMessages, useTranslations } from 'next-intl';
 
 import { transformMessages } from '@/i18n/messages';
+import { Link } from '@/i18n/navigation';
+import { PHONE_NUMBER } from '@/lib/constant';
+import { getWhatsappMessageUrl } from '@/lib/utils';
 import Image from 'next/image';
 import CTAButton from './CTAButton';
-import { Link } from '@/i18n/navigation';
 
 export default function FooterSection() {
   const t = useTranslations();
@@ -26,11 +28,11 @@ export default function FooterSection() {
         <div className='bg-primary'>
           <div className='max-w-7xl mx-auto pt-12 md:pt-20 pb-8 px-4 md:px-0'>
             <div className='grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-0 items-start md:items-center'>
-              <div>
+              <div className='mx-auto md:mx-0'>
                 <Image src={logowhite} alt='' className='w-48 md:w-60' />
               </div>
               <div className='text-right'>
-                <h1 className='font-manrope text-2xl md:text-4xl text-white font-medium text-right max-w-lg leading-tight'>
+                <h1 className='font-manrope text-2xl md:text-4xl text-white font-medium text-center md:text-right max-w-lg leading-tight my-4 md:my-0 px-4 md:px-0'>
                   {t('footerSection.tagline')}
                 </h1>
               </div>
@@ -50,14 +52,17 @@ export default function FooterSection() {
                   <div className='mt-8 md:mt-12'>
                     <CTAButton
                       text={t('footerSection.ctaText')}
-                      url={t('footerSection.ctaLink')}
+                      url={getWhatsappMessageUrl(
+                        PHONE_NUMBER,
+                        'Hello, I am interested in your logistics services. Please provide me with more information.'
+                      )}
                       size='md'
                     />
                   </div>
                 </div>
 
-                <div>
-                  <div className='grid grid-cols-1 sm:grid-cols-3 gap-8 md:gap-12'>
+                <div className='mt-6 md:mt-0'>
+                  <div className='grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-8 md:gap-12'>
                     <div>
                       <h1 className='font-manrope text-white text-xl md:text-2xl font-semibold mb-6 md:mb-10'>
                         {t('footerSection.companyNavList.heading')}
@@ -124,7 +129,13 @@ export default function FooterSection() {
                 ©{new Date().getFullYear()} Shaga. All Rights Reserved. Designed
                 & Developed by{' '}
                 <span>
-                  <Link href={''}>Ciptacode</Link>
+                  <Link
+                    href={'https://ciptacode.id'}
+                    target='_blank'
+                    rel='noopener noreferrer'
+                  >
+                    Ciptacode
+                  </Link>
                 </span>
                 .
               </p>

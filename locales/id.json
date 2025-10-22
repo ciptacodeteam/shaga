@@ -36,7 +36,6 @@
     }
   ],
   "contactCtaText": "Hubungi Kami",
-  "contactCtaLink": "/contact",
   "navList": [
     {
       "text": "Beranda",
@@ -122,7 +121,7 @@
     "title": "Kami menghadirkan inovasi strategis dalam logistik untuk mendukung pertumbuhan pasar yang berkelanjutan.",
     "content": "Mentransformasi logistik dengan solusi inovatif melalui pemanfaatan teknologi canggih dan strategi berbasis data untuk meningkatkan efisiensi, menekan biaya, serta memenuhi permintaan pasar yang terus berkembang.",
     "ctaText": "Pelajari Lebih Lanjut",
-    "ctaLink": "/services"
+    "ctaLink": "/about-us"
   },
   "workSection": {
     "heading": "Proses Kerja",
@@ -296,7 +295,7 @@
           "label": "Klien Puas di Seluruh Dunia"
         },
         {
-          "value": "300K+",
+          "value": "300+",
           "label": "Karyawan untuk Kesuksesan Anda"
         }
       ]
@@ -410,7 +409,7 @@
       ]
     },
     "discussionCtaSection": {
-      "title": "Hubungi kami untuk membahas bagaimana layanan kami dapat mendukung bisnis Anda dan menyederhanakan kebutuhan logistik Anda.",
+      "title": "Hubungi kami untuk membahas bagaimana layanan kami dapat mendukung bisnis Anda.",
       "ctaText": "Hubungi Kami",
       "ctaLink": "/contact#contact-form"
     }
@@ -433,7 +432,7 @@
           "label": "Tahun Pengalaman di Industri"
         },
         {
-          "value": "300K+",
+          "value": "300+",
           "label": "Karyawan untuk Kesuksesan Anda"
         },
         {

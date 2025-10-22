@@ -8,7 +8,7 @@ export default function VisionMissionSection() {
 
   return (
     <>
-      <section className='relative mb-[450px] md:mb-[600px] lg:mb-38'>
+      <section className='relative mb-[450px] md:mb-[600px] lg:mb-38 lg:min-h-[400px] xl:min-h-[450px]'>
         <div className='max-w-7xl mx-auto'>
           <div className='flex items-center flex-col lg:flex-row'>
             <div className='w-full lg:w-1/2 px-8 xl:px-0'>
