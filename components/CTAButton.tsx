@@ -37,6 +37,7 @@ const CTAButton = ({ url, text, size, variant, onClick, className }: Props) => {
     <Link
       href={url || '/contact'}
       onClick={onClick}
+      prefetch
       className={cn(
         'group flex items-center bg-white rounded-full px-2 py-2 transition-all duration-300 w-fit',
         sizes[size || 'md'],

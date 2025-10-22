@@ -72,6 +72,7 @@ export default function FooterSection() {
                         {companyLinks.map((link: any, index: number) => (
                           <Link
                             key={index}
+                            prefetch
                             href={link.url}
                             className='font-manrope text-[#EEEEEE]'
                           >
@@ -90,6 +91,7 @@ export default function FooterSection() {
                         {supportLinks.map((link: any, index: number) => (
                           <Link
                             key={index}
+                            prefetch
                             href={link.url}
                             className='font-manrope text-[#EEEEEE]'
                           >
@@ -108,6 +110,7 @@ export default function FooterSection() {
                         {serviceLinks.map((link: any, index: number) => (
                           <Link
                             key={index}
+                            prefetch
                             href={link.url}
                             className='font-manrope text-[#EEEEEE]'
                           >
@@ -130,6 +133,7 @@ export default function FooterSection() {
                   Designed & Developed by{' '}
                   <Link
                     href={'https://ciptacode.id'}
+                    prefetch
                     target='_blank'
                     rel='noopener noreferrer'
                   >

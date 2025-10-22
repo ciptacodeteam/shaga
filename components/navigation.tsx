@@ -58,7 +58,7 @@ export default function NavigationBar() {
         <div className='flex items-center justify-between'>
           {/* Logo */}
           <div>
-            <Link href={'/'}>
+            <Link href={'/'} prefetch>
               <Image
                 src={logo}
                 alt='Logo'
@@ -83,6 +83,7 @@ export default function NavigationBar() {
                     <li key={idx}>
                       <Link
                         href={menu.link}
+                        prefetch
                         className={cn(
                           `font-manrope font-medium transition-colors duration-200`,
                           isActive
@@ -224,7 +225,7 @@ export default function NavigationBar() {
             </button>
 
             <div className='p-8 mb-12 absolute top-0 left-0'>
-              <Link href={'/'}>
+              <Link href={'/'} prefetch>
                 <Image
                   src={logo}
                   alt='Logo'
@@ -263,6 +264,7 @@ export default function NavigationBar() {
                 >
                   <Link
                     href={menu.link}
+                    prefetch
                     onClick={() => setMobileOpen(false)}
                     className={cn(
                       `font-manrope font-semibold transition-colors duration-200 py-2 block text-3xl`,

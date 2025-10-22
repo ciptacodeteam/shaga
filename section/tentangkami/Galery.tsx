@@ -47,6 +47,7 @@ export default function GallerySection() {
                 <Image
                   src={src}
                   alt={`Gallery image ${index + 1}`}
+                  priority
                   width={500}
                   height={400}
                   className='w-full h-auto object-cover transform hover:scale-105 transition-transform duration-300 lg:max-h-[310px]'

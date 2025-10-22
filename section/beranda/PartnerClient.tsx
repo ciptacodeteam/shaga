@@ -102,6 +102,7 @@ export default function PartnerClient() {
                   <Image
                     alt={partner.name}
                     src={partner.logo}
+                    priority
                     width={200}
                     height={200}
                     className='max-h-14 md:max-h-20 max-w-full object-contain'
