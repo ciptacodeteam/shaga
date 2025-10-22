@@ -126,8 +126,8 @@ export default function FooterSection() {
             <div className='text-center'>
               <p className='font-manrope text-white text-sm mt-8'>
                 © {new Date().getFullYear()} Shaga. All Rights Reserved.
-                Designed & Developed by{' '}
-                <span>
+                <span className='hidden lg:block'>
+                  Designed & Developed by{' '}
                   <Link
                     href={'https://ciptacode.id'}
                     target='_blank'
