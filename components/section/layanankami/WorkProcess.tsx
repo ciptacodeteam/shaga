@@ -5,7 +5,9 @@ import { cn } from '@/lib/utils';
 import { useMessages, useTranslations } from 'next-intl';
 import Image from 'next/image';
 
-import { useState } from 'react';
+import { useRef, useState } from 'react';
+import { useInView } from 'motion/react';
+import { motion } from 'framer-motion';
 
 export default function WorkProcess() {
   const t = useTranslations('servicePage.workProcessSection');
@@ -17,11 +19,19 @@ export default function WorkProcess() {
 
   const [activeStep, setActiveStep] = useState(stepsList[0]);
 
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, margin: '-50px' });
+
   return (
     <>
-      <section>
+      <section ref={ref}>
         <div className='max-w-7xl mx-auto mb-12 lg:mb-30 px-4 md:px-6 xl:px-0'>
-          <div className='flex items-center gap-2 mb-3'>
+          <motion.div
+            initial={{ opacity: 0, x: -4 }}
+            animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -4 }}
+            transition={{ duration: 0.8 }}
+            className='flex items-center gap-2 mb-3'
+          >
             <span className='relative flex size-3'>
               <span className='absolute inline-flex h-full w-full animate-ping rounded-full bg-secondary opacity-75'></span>
               <span className='relative inline-flex size-3 rounded-full bg-secondary'></span>
@@ -29,7 +39,7 @@ export default function WorkProcess() {
             <p className='text-sm font-medium text-primary uppercase font-manrope'>
               {t('heading')}
             </p>
-          </div>
+          </motion.div>
 
           <div className='mb-6 lg:mb-10'>
             <p
@@ -42,11 +52,25 @@ export default function WorkProcess() {
 
           <div className='flex flex-col md:flex-row gap-8 md:gap-16'>
             <div className='w-full md:w-1/2'>
-              <p className='text-[#2A437C] font-manrope mb-6 md:mb-0'>
+              <motion.p
+                initial={{ opacity: 0, y: 10 }}
+                animate={
+                  isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 10 }
+                }
+                transition={{ duration: 0.8, delay: 0.2 }}
+                className='text-[#2A437C] font-manrope mb-6 md:mb-0'
+              >
                 {t('description')}
-              </p>
+              </motion.p>
 
-              <div className='mt-8 md:mt-16 py-0 md:py-2'>
+              <motion.div
+                initial={{ opacity: 0, y: 10 }}
+                animate={
+                  isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 10 }
+                }
+                transition={{ duration: 0.8, delay: 0.4 }}
+                className='mt-8 md:mt-16 py-0 md:py-2'
+              >
                 <Image
                   src={activeStep.image}
                   alt={activeStep.title}
@@ -54,13 +78,20 @@ export default function WorkProcess() {
                   height={300}
                   className='bg-[#E0E6F3] w-full h-auto rounded-xl py-4 md:py-6'
                 />
-              </div>
+              </motion.div>
             </div>
 
             <div className='w-full md:w-1/2 space-y-6 md:space-y-8'>
-              {stepsList.map((step) => (
-                <div
+              {stepsList.map((step, i) => (
+                <motion.div
                   key={step.number}
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={
+                    isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 10 }
+                  }
+                  transition={{ duration: 0.6, delay: 0.12 * i }}
+                  whileHover={{ scale: 1.02 }}
+                  whileTap={{ scale: 0.995 }}
                   onMouseEnter={() => setActiveStep(step)}
                   onClick={() => setActiveStep(step)}
                   onKeyDown={(e) => {
@@ -111,7 +142,7 @@ export default function WorkProcess() {
                       </p>
                     </div>
                   </div>
-                </div>
+                </motion.div>
               ))}
             </div>
           </div>
