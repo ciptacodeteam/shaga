@@ -61,8 +61,8 @@ export default function FooterSection() {
                   </div>
                 </div>
 
-                <div className='mt-6 md:mt-0 flex justify-center md:justify-end'>
-                  <div className='grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-8 md:gap-12'>
+                <div className='mt-6 md:mt-0 flex justify-start md:justify-end'>
+                  <div className='grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-8 gap-x-20 md:gap-x-12 md:gap-12'>
                     <div>
                       <h1 className='font-manrope text-white text-xl md:text-2xl font-semibold mb-6 md:mb-10'>
                         {t('footerSection.companyNavList.heading')}
