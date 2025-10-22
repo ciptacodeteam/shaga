@@ -1,8 +1,11 @@
 import Image from 'next/image';
 
 import air from '@/public/img/air.webp';
+import { useTranslations } from 'next-intl';
 
 export default function GallerySection() {
+  const t = useTranslations('aboutPage.gallerySection');
+
   return (
     <>
       <section>
@@ -13,19 +16,19 @@ export default function GallerySection() {
               <span className='relative inline-flex size-3 rounded-full bg-secondary'></span>
             </span>
             <p className='text-sm font-medium text-primary uppercase font-manrope'>
-              galeri
+              {t('heading')}
             </p>
           </div>
 
           <div className='flex justify-between flex-col md:flex-row gap-6 md:gap-0 mb-12'>
-            <h1 className='font-manrope text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-tight text-primary'>
-              <span className='text-secondary'>Perjalanan</span> Logistik Kami
-            </h1>
+            <h1
+              className='font-manrope text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-tight text-primary [&>span]:text-secondary'
+              dangerouslySetInnerHTML={{
+                __html: t.raw('title'),
+              }}
+            ></h1>
             <p className='text-primary font-manrope md:w-2/5'>
-              Mengantarkan Anda menyusuri perjalanan armada kami, di mana setiap
-              langkah dikelola dengan presisi, kecepatan, dan keandalan,
-              memastikan pengiriman tepat waktu dan logistik tanpa hambatan dari
-              awal hingga akhir.
+              {t('description')}
             </p>
           </div>
 

@@ -262,5 +262,81 @@
         }
       ]
     }
+  },
+  "aboutPage": {
+    "heroSection": {
+      "title": "About Shaga",
+      "subtitle": "Delivering excellence through tailored logistics solutions to drive efficiency, innovation, and customer satisfaction.",
+      "tagline": "Driven by a talented team"
+    },
+    "whoAreWeSection": {
+      "heading": "Getting to Know Us",
+      "title": "We focus on <span>comprehensive logistics services</span> to ensure timely and secure deliveries.",
+      "description": "Our dedicated team works tirelessly to deliver customized solutions for businesses of all sizes, helping you achieve your goals reliably and efficiently. From customs services to last-mile delivery, we are committed to quality and attention to detail in every service we provide.",
+      "quote": "We simplify the logistics process with advanced technology so you can focus on business growth",
+      "values": {
+        "trust": "Trusted",
+        "customerCentric": "Priority",
+        "innovation": "Innovation",
+        "sustainability": "Sustainability"
+      }
+    },
+    "numberSection": {
+      "stats": [
+        {
+          "value": "25",
+          "label": "Years of Industry Experience"
+        },
+        {
+          "value": "99%",
+          "label": "On-time Delivery Rate"
+        },
+        {
+          "value": "500+",
+          "label": "Satisfied Clients Worldwide"
+        },
+        {
+          "value": "300K+",
+          "label": "Employees Supporting Your Success"
+        }
+      ]
+    },
+    "milestoneSection": {
+      "heading": "Company Progress",
+      "title": "Our History Since Founding",
+      "years": [
+        {
+          "year": "1999",
+          "description": "Shaga was founded with a vision to provide efficient regional logistics solutions"
+        },
+        {
+          "year": "2005",
+          "description": "Expanded services to include international shipping and cross-border solutions"
+        },
+        {
+          "year": "2012",
+          "description": "Opened new offices in major global trade centers, strengthening international reach"
+        },
+        {
+          "year": "2018",
+          "description": "Launched our proprietary tracking technology for real-time shipment visibility"
+        },
+        {
+          "year": "2023",
+          "description": "Achieved a 99% on-time delivery rate, establishing a trusted industry-leading position"
+        }
+      ]
+    },
+    "gallerySection": {
+      "heading": "Our Gallery",
+      "title": "<span>Journey</span> of Our Logistics",
+      "description": "Take a tour of our fleet's journey, where every step is managed with precision, speed, and reliability to ensure on-time delivery and seamless logistics from start to finish."
+    },
+    "ctaSection": {
+      "title": "Entrust your cargo to our team",
+      "description": "Our experienced team ensures your cargo is handled with the utmost care, delivering safe and timely shipments at every stage of the process.",
+      "ctaText": "Free Consultation",
+      "ctaLink": "/contact"
+    }
   }
 }

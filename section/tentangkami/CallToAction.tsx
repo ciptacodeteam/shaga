@@ -2,8 +2,11 @@ import Image from 'next/image';
 
 import CTAButton from '@/components/CTAButton';
 import sea from '@/public/img/sea.webp';
+import { useTranslations } from 'next-intl';
 
 export default function CtaSection() {
+  const t = useTranslations('aboutPage.ctaSection');
+
   return (
     <>
       <div className='max-w-7xl mx-auto mb-16 px-4 sm:px-6'>
@@ -25,22 +28,20 @@ export default function CtaSection() {
             <div className='w-full md:w-3/5 flex flex-col justify-center md:text-left'>
               <div className='mb-6'>
                 <p className='font-manrope text-2xl sm:text-3xl lg:text-5xl leading-tight font-medium text-white capitalize'>
-                  Percayakan kargo Anda kepada tim kami
+                  {t('title')}
                 </p>
               </div>
 
               <div>
                 <p className='font-manrope text-white mb-6 sm:mb-10 text-sm sm:text-base'>
-                  Tim berpengalaman kami memastikan kago Anda ditangani dengan
-                  sangat hati-hati, menghadirkan pengiriman yang aman dan tepat
-                  waktu di setiap tahap prosesnya.
+                  {t('description')}
                 </p>
               </div>
 
               <div className='mt-4 md:mt-0'>
                 <div className='w-full md:w-auto'>
                   {/* Make CTA full width on mobile */}
-                  <CTAButton text='Konsultasi Gratis' />
+                  <CTAButton text={t('ctaText')} url={t('ctaLink')} />
                 </div>
               </div>
             </div>

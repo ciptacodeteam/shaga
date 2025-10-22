@@ -1,6 +1,14 @@
 'use client';
 
+import { transformMessages } from '@/i18n/messages';
+import { useMessages, useTranslations } from 'next-intl';
+
 export default function MilestoneSection() {
+  const t = useTranslations('aboutPage.milestoneSection');
+
+  const messages = useMessages();
+  const yearList = transformMessages(messages.aboutPage.milestoneSection.years);
+
   const years = [1999, 2005, 2012, 2018, 2023];
 
   const sidePad = `${50 / years.length}%`;
@@ -17,13 +25,13 @@ export default function MilestoneSection() {
                   <span className='relative inline-flex size-3 rounded-full bg-secondary'></span>
                 </span>
                 <p className='text-sm font-medium text-white uppercase font-manrope'>
-                  perkembangan perusahaan
+                  {t('heading')}
                 </p>
               </div>
 
               <div className='mt-8'>
                 <h1 className='font-manrope text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-tight text-white'>
-                  Sejarah Kami Sejak Awal Berdiri
+                  {t('title')}
                 </h1>
               </div>
 
@@ -39,8 +47,11 @@ export default function MilestoneSection() {
                         'repeating-linear-gradient(to bottom, #E0E6F3 0 6px, transparent 6px 12px)',
                     }}
                   />
-                  {years.map((year) => (
-                    <div key={year} className='flex gap-4 items-start relative'>
+                  {yearList.map((item) => (
+                    <div
+                      key={item.year}
+                      className='flex gap-4 items-start relative'
+                    >
                       {/* Titik */}
                       <div className='flex-shrink-0 relative z-10 mt-1'>
                         <div className='p-2 rounded-full bg-[#E0E6F3] flex items-center justify-center'>
@@ -51,19 +62,10 @@ export default function MilestoneSection() {
                       {/* Konten */}
                       <div className='pl-1'>
                         <div className='text-white text-lg font-manrope font-semibold'>
-                          {year}
+                          {item.year}
                         </div>
                         <p className='text-white text-sm mt-2 font-manrope leading-relaxed max-w-prose'>
-                          {year === 1999 &&
-                            'Shaga didirikan dengan visi untuk menyediakan solusi logistik regional yang efisien'}
-                          {year === 2005 &&
-                            'Memperluas layanan untuk mencakup pengiriman internasional dan solusi lintas batas'}
-                          {year === 2012 &&
-                            'Membuka kantor baru di berbagai pusat perdagangan global utama, memperkuat jangkauan internasional'}
-                          {year === 2018 &&
-                            'Meluncurkan teknologi pelacakan milik kami sendiri untuk visibilitas pengiriman secara real-time'}
-                          {year === 2023 &&
-                            'Mencapai tingkat pengiriman tepat waktu 99%, menetapkan posisi sebagai pemimpin industri yang tepercaya'}
+                          {item.description}
                         </p>
                       </div>
                     </div>
@@ -93,14 +95,14 @@ export default function MilestoneSection() {
                     />
 
                     <div className='relative flex justify-between items-start'>
-                      {years.map((year) => (
+                      {yearList.map((item) => (
                         <div
-                          key={year}
+                          key={item.year}
                           className='relative flex flex-col items-center text-center'
-                          style={{ width: `${100 / years.length}%` }}
+                          style={{ width: `${100 / yearList.length}%` }}
                         >
                           <span className='text-white text-lg mb-6 font-manrope font-semibold'>
-                            {year}
+                            {item.year}
                           </span>
 
                           <div className='p-1.5 rounded-full bg-[#E0E6F3] flex items-center justify-center'>
@@ -108,16 +110,7 @@ export default function MilestoneSection() {
                           </div>
 
                           <p className='text-white text-sm mt-6 text-center font-manrope leading-relaxed max-w-[170px]'>
-                            {year === 1999 &&
-                              'Shaga didirikan dengan visi untuk menyediakan solusi logistik regional yang efisien'}
-                            {year === 2005 &&
-                              'Memperluas layanan untuk mencakup pengiriman internasional dan solusi lintas batas'}
-                            {year === 2012 &&
-                              'Membuka kantor baru di berbagai pusat perdagangan global utama, memperkuat jangkauan internasional'}
-                            {year === 2018 &&
-                              'Meluncurkan teknologi pelacakan milik kami sendiri untuk visibilitas pengiriman secara real-time'}
-                            {year === 2023 &&
-                              'Mencapai tingkat pengiriman tepat waktu 99%, menetapkan posisi sebagai pemimpin industri yang tepercaya'}
+                            {item.description}
                           </p>
                         </div>
                       ))}

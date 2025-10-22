@@ -262,5 +262,81 @@
         }
       ]
     }
+  },
+  "aboutPage": {
+    "heroSection": {
+      "title": "Tentang Shaga",
+      "subtitle": "Memberikan keunggulan melalui solusi logistik yang disesuaikan untuk mendorong efisiensi, inovasi, dan kepuasan pelanggan.",
+      "tagline": "Didorong oleh tim yang berbakat"
+    },
+    "whoAreWeSection": {
+      "heading": "Mengenal Kami Lebih Dekat",
+      "title": "Kami fokus dalam <span>layanan logistik menyeluruh</span> untuk memastikan pengiriman tepat waktu dan aman.",
+      "description": "Tim kami yang berdedikasi bekerja tanpa henti untuk memberikan solusi yang disesuaikan bagi berbagai bisnis dari semua skala, membantu Anda mencapai tujuan dengan mudah dan andal. Mulai dari layanan kepabeanan hingga pengiriman last-mile, kami berkomitmen terhadap kualitas dan ketelitian di setiap layanan yang kami berikan.",
+      "quote": "Kami menyederhanakan proses logistik dengan teknologi canggih, sehingga Anda dapat fokus pada pertumbuhan bisnis",
+      "values": {
+        "trust": "Dipercaya",
+        "customerCentric": "Prioritas",
+        "innovation": "Inovasi",
+        "sustainability": "Keberlanjutan"
+      }
+    },
+    "numberSection": {
+      "stats": [
+        {
+          "value": "25",
+          "label": "Tahun Pengalaman di Industri"
+        },
+        {
+          "value": "99%",
+          "label": "Tingkat Pengiriman Tepat Waktu"
+        },
+        {
+          "value": "500+",
+          "label": "Klien Puas di Seluruh Dunia"
+        },
+        {
+          "value": "300K+",
+          "label": "Karyawan untuk Kesuksesan Anda"
+        }
+      ]
+    },
+    "milestoneSection": {
+      "heading": "Perkembangan Perusahaan",
+      "title": "Sejarah Kami Sejak Awal Berdiri",
+      "years": [
+        {
+          "year": "1999",
+          "description": "Shaga didirikan dengan visi untuk menyediakan solusi logistik regional yang efisien"
+        },
+        {
+          "year": "2005",
+          "description": "Memperluas layanan untuk mencakup pengiriman internasional dan solusi lintas batas"
+        },
+        {
+          "year": "2012",
+          "description": "Membuka kantor baru di berbagai pusat perdagangan global utama, memperkuat jangkauan internasional"
+        },
+        {
+          "year": "2018",
+          "description": "Meluncurkan teknologi pelacakan milik kami sendiri untuk visibilitas pengiriman secara real-time"
+        },
+        {
+          "year": "2023",
+          "description": "Mencapai tingkat pengiriman tepat waktu 99%, menetapkan posisi sebagai pemimpin industri yang tepercaya"
+        }
+      ]
+    },
+    "gallerySection": {
+      "heading": "Galeri Kami",
+      "title": "<span>Perjalanan</span> Logistik Kami",
+      "description": "Mengantarkan Anda menyusuri perjalanan armada kami, di mana setiap langkah dikelola dengan presisi, kecepatan, dan keandalan, memastikan pengiriman tepat waktu dan logistik tanpa hambatan dari awal hingga akhir."
+    },
+    "ctaSection": {
+      "title": "Percayakan kargo Anda kepada tim kami",
+      "description": "Tim berpengalaman kami memastikan kago Anda ditangani dengan sangat hati-hati, menghadirkan pengiriman yang aman dan tepat waktu di setiap tahap prosesnya.",
+      "ctaText": "Konsultasi Gratis",
+      "ctaLink": "/contact"
+    }
   }
 }

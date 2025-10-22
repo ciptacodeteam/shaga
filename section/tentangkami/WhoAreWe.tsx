@@ -6,8 +6,11 @@ import { BsPatchCheck } from 'react-icons/bs';
 import { IoPeopleOutline } from 'react-icons/io5';
 import { HiOutlineLightBulb } from 'react-icons/hi';
 import { AiOutlineDeploymentUnit } from 'react-icons/ai';
+import { useTranslations } from 'next-intl';
 
 export default function WhoAreWeSection() {
+  const t = useTranslations('aboutPage.whoAreWeSection');
+
   return (
     <>
       <section className='relative mb-16 md:mb-30'>
@@ -20,35 +23,28 @@ export default function WhoAreWeSection() {
                   <span className='relative inline-flex size-3 rounded-full bg-secondary'></span>
                 </span>
                 <p className='text-sm font-medium text-primary uppercase font-manrope'>
-                  Mengenal Kami Lebih Dekat
+                  {t('heading')}
                 </p>
               </div>
 
               <div className='mb-4 md:mb-8'>
-                <p className='font-manrope text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-tight text-primary'>
-                  Kami fokus dalam{' '}
-                  <span className='text-secondary'>
-                    layanan logistik menyeluruh
-                  </span>{' '}
-                  untuk memastikan pengiriman tepat waktu dan aman.
-                </p>
+                <p
+                  className='font-manrope text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-tight text-primary [&>span]:text-secondary'
+                  dangerouslySetInnerHTML={{
+                    __html: t.raw('title'),
+                  }}
+                ></p>
               </div>
 
               <div>
                 <p className='font-manrope text-primary mb-6 md:mb-10 text-sm sm:text-base'>
-                  Tim kami yang berdedikasi bekerja tanpa henti untuk memberikan
-                  solusi yang disesuaikan bagi berbagai bisnis dari semua skala,
-                  membantu Anda mencapai tujuan dengan mudah dan andal. Mulai
-                  dari layanan kepabeanan hingga pengiriman last-mile, kami
-                  berkomitmen terhadap kualitas dan ketelitian di setiap layanan
-                  yang kami berikan.
+                  {t('description')}
                 </p>
               </div>
 
               <div className='rounded-t-xl bg-[#EEF4FF] mt-6'>
                 <p className='font-manrope text-primary font-semibold p-4 md:p-6 text-sm md:text-base'>
-                  Kami menyederhanakan proses logistik dengan teknologi canggih,
-                  sehingga Anda dapat fokus pada pertumbuhan bisnis
+                  {t('quote')}
                 </p>
                 <div className='bg-secondary w-full h-1.5'></div>
               </div>
@@ -69,28 +65,28 @@ export default function WhoAreWeSection() {
                       <div className='flex items-center gap-3'>
                         <BsPatchCheck className='text-primary w-6 h-6' />
                         <p className='font-manrope text-primary font-medium text-sm md:text-base'>
-                          Dipercaya
+                          {t('values.trust')}
                         </p>
                       </div>
 
                       <div className='flex items-center gap-3'>
                         <IoPeopleOutline className='text-primary w-6 h-6' />
                         <p className='font-manrope text-primary font-medium text-sm md:text-base'>
-                          Prioritas
+                          {t('values.customerCentric')}
                         </p>
                       </div>
 
                       <div className='flex items-center gap-3'>
                         <HiOutlineLightBulb className='text-primary w-6 h-6' />
                         <p className='font-manrope text-primary font-medium text-sm md:text-base'>
-                          Inovasi
+                          {t('values.innovation')}
                         </p>
                       </div>
 
                       <div className='flex items-center gap-3'>
                         <AiOutlineDeploymentUnit className='text-primary w-6 h-6' />
                         <p className='font-manrope text-primary font-medium text-sm md:text-base'>
-                          Keberlanjutan
+                          {t('values.sustainability')}
                         </p>
                       </div>
                     </div>
