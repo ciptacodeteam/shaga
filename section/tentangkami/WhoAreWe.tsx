@@ -59,7 +59,7 @@ export default function WhoAreWeSection() {
                   fill
                   className='object-cover rounded-xl'
                 />
-                <div className='absolute bottom-4 left-4 right-4 md:left-4 md:right-auto p-4 md:p-6'>
+                <div className='absolute bottom-4 left-4 right-4 md:left-4 md:right-auto p-2 md:p-6'>
                   <div className='bg-white p-4 md:p-6 rounded-lg'>
                     <div className='space-y-3 md:space-y-4'>
                       <div className='flex items-center gap-3'>
