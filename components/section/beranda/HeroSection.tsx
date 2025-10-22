@@ -1,3 +1,5 @@
+'use client';
+
 import Image from 'next/image';
 
 import CTAButton from '@/components/CTAButton';
@@ -6,6 +8,7 @@ import { useTranslations } from 'next-intl';
 import { BiMapPin } from 'react-icons/bi';
 import { getWhatsappMessageUrl } from '@/lib/utils';
 import { PHONE_NUMBER } from '@/lib/constant';
+import { motion } from 'framer-motion';
 
 export default function HeroSection() {
   const t = useTranslations();
@@ -23,18 +26,56 @@ export default function HeroSection() {
         {/* Text Content */}
         <div className='relative z-20 flex flex-col justify-between h-full px-6 md:px-16 text-white py-8 md:py-16'>
           <div className='max-w-xl md:max-w-2xl'>
-            <h1 className='text-2xl sm:text-3xl md:text-5xl lg:text-6xl leading-tight font-medium mb-4 font-manrope max-w-xs sm:max-w-none'>
+            <motion.h1
+              variants={{
+                hidden: { opacity: 0, y: 8 },
+                visible: {
+                  opacity: 1,
+                  y: 0,
+                  transition: { duration: 0.8, ease: 'easeOut' },
+                },
+              }}
+              initial='hidden'
+              whileInView='visible'
+              viewport={{ once: true, amount: 0.2 }}
+              className='text-2xl sm:text-3xl md:text-5xl lg:text-6xl leading-tight font-medium mb-4 font-manrope max-w-xs sm:max-w-none'
+            >
               {t('heroSection.title')}
-            </h1>
-            <p className='text-sm sm:text-base text-white mb-6 font-manrope'>
+            </motion.h1>
+            <motion.p
+              variants={{
+                hidden: { opacity: 0, y: 8 },
+                visible: {
+                  opacity: 1,
+                  y: 0,
+                  transition: { duration: 0.5, ease: 'easeOut', delay: 0.2 },
+                },
+              }}
+              initial='hidden'
+              whileInView='visible'
+              viewport={{ once: true, amount: 0.2 }}
+              className='text-sm sm:text-base text-white mb-6 font-manrope'
+            >
               {t('heroSection.subtitle')}
-            </p>
+            </motion.p>
           </div>
 
           {/* Tombol CTA */}
           <div className='flex flex-col lg:flex-row lg:justify-between gap-4 lg:items-end'>
             <div className='flex gap-3 sm:gap-6 mt-4 md:mt-0'>
-              <div>
+              <motion.div
+                variants={{
+                  hidden: { opacity: 0, x: -4 },
+                  visible: {
+                    opacity: 1,
+                    x: 0,
+                    transition: { duration: 0.8, ease: 'easeOut', delay: 0.4 },
+                  },
+                }}
+                initial='hidden'
+                whileInView='visible'
+                viewport={{ once: true, amount: 0.2 }}
+              >
                 <CTAButton
                   text={t('heroSection.ctaText')}
                   url={getWhatsappMessageUrl(
@@ -43,27 +84,67 @@ export default function HeroSection() {
                   )}
                   size='md'
                 />
-              </div>
+              </motion.div>
 
-              <div>
+              <motion.div
+                variants={{
+                  hidden: { opacity: 0, x: -4 },
+                  visible: {
+                    opacity: 1,
+                    x: 0,
+                    transition: { duration: 0.8, ease: 'easeOut', delay: 0.7 },
+                  },
+                }}
+                initial='hidden'
+                whileInView='visible'
+                viewport={{ once: true, amount: 0.2 }}
+              >
                 <CTAButton
                   text={t('heroSection.cta2Text')}
                   url={'/about-us'}
                   size='md'
                   variant='outline-white'
                 />
-              </div>
+              </motion.div>
             </div>
 
-            <div className='bg-white rounded-lg py-4 px-5 flex items-center gap-4 w-full sm:w-[400px] h-auto mt-8 lg:mt-0'>
+            <motion.div
+              variants={{
+                hidden: { opacity: 0, scale: 0.98 },
+                visible: {
+                  opacity: 1,
+                  scale: 1,
+                  transition: { duration: 1, ease: 'easeOut', delay: 1 },
+                },
+              }}
+              initial='hidden'
+              whileInView='visible'
+              viewport={{ once: true, amount: 0.2 }}
+              className='bg-white rounded-lg py-4 px-5 flex items-center gap-4 w-full sm:w-[400px] h-auto mt-8 lg:mt-0'
+            >
               <div className='md:w-1/2 w-2/3'>
                 <div className='mb-4'>
-                  <p
+                  <motion.p
+                    variants={{
+                      hidden: { opacity: 0, y: 4 },
+                      visible: {
+                        opacity: 1,
+                        y: 0,
+                        transition: {
+                          duration: 0.5,
+                          ease: 'easeOut',
+                          delay: 0.2,
+                        },
+                      },
+                    }}
+                    initial='hidden'
+                    whileInView='visible'
+                    viewport={{ once: true, amount: 0.2 }}
                     className='text-primary font-semibold font-manrope text-sm md:text-base [&>span]:text-secondary'
                     dangerouslySetInnerHTML={{
                       __html: t.raw('heroSection.locationText'),
                     }}
-                  ></p>
+                  ></motion.p>
                 </div>
                 <div>
                   <Link
@@ -86,41 +167,95 @@ export default function HeroSection() {
               <div className='w-1/2 flex justify-end'>
                 <div className="bg-[url('/img/transportation.webp')] w-42 h-32 bg-no-repeat bg-cover bg-center rounded-lg"></div>
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
 
         <div className='absolute right-4 md:right-8 lg:right-20 top-8 md:top-8 lg:top-16 z-10'>
           <div className='flex gap-2'>
-            <div className='flex items-center justify-center w-10 h-10 rounded-full bg-white transition-transform duration-300 group-hover:rotate-45'>
+            <motion.div
+              variants={{
+                hidden: { opacity: 0, scale: 0.98 },
+                visible: {
+                  opacity: 1,
+                  scale: 1,
+                  transition: { duration: 1, ease: 'easeOut', delay: 0.2 },
+                },
+              }}
+              initial='hidden'
+              whileInView='visible'
+              viewport={{ once: true, amount: 0.2 }}
+              className='flex items-center justify-center w-10 h-10 rounded-full bg-white transition-transform duration-300 group-hover:rotate-45'
+            >
               <BiMapPin className='text-primary w-5 h-5 transition-colors duration-300' />
-            </div>
-            <div className='bg-white font-manrope text-primary h-10 rounded-full font-semibold items-center px-4 hidden lg:flex'>
+            </motion.div>
+            <motion.div
+              variants={{
+                hidden: { opacity: 0, scale: 0.98 },
+                visible: {
+                  opacity: 1,
+                  scale: 1,
+                  transition: { duration: 1, ease: 'easeOut', delay: 0.5 },
+                },
+              }}
+              initial='hidden'
+              whileInView='visible'
+              viewport={{ once: true, amount: 0.2 }}
+              className='bg-white font-manrope text-primary h-10 rounded-full font-semibold items-center px-4 hidden lg:flex'
+            >
               {t('heroSection.locationMapText')}
-            </div>
+            </motion.div>
           </div>
         </div>
 
         {/* Decorative tracking images: hide on small screens to avoid layout issues */}
         <div className='hidden xl:block'>
-          <div>
-            <Image
-              src={t('heroSection.locationMarker1Image.src')}
-              alt={t('heroSection.locationMarker1Image.alt')}
-              width={400}
-              height={200}
-              className='absolute top-32 right-24 lg:right-64 w-44 h-44 lg:w-52 lg:h-52 mb-4 mr-4 z-10'
-            />
-          </div>
+          <motion.div
+            variants={{
+              hidden: { opacity: 0, y: 8 },
+              visible: {
+                opacity: 1,
+                y: 0,
+                transition: { duration: 0.5, ease: 'easeOut' },
+              },
+            }}
+            initial='hidden'
+            whileInView='visible'
+            viewport={{ once: true, amount: 0.2 }}
+          >
+            <div>
+              <Image
+                src={t('heroSection.locationMarker1Image.src')}
+                alt={t('heroSection.locationMarker1Image.alt')}
+                width={400}
+                height={200}
+                className='absolute top-32 right-24 lg:right-64 w-44 h-44 lg:w-52 lg:h-52 mb-4 mr-4 z-10'
+              />
+            </div>
+          </motion.div>
 
           <div>
-            <Image
-              src={t('heroSection.locationMarker2Image.src')}
-              alt={t('heroSection.locationMarker2Image.alt')}
-              width={400}
-              height={200}
-              className='absolute top-72 right-40 lg:right-96 w-44 h-44 lg:w-52 lg:h-52 mb-4 mr-4 z-10'
-            />
+            <motion.div
+              variants={{
+                hidden: { opacity: 0, y: 8 },
+                visible: {
+                  opacity: 1,
+                  y: 0,
+                  transition: { duration: 0.5, ease: 'easeOut' },
+                },
+              }}
+              initial='hidden'
+              whileInView='visible'
+              viewport={{ once: true, amount: 0.2 }}
+            >
+              <Image
+                src={t('heroSection.locationMarker2Image.src')}
+                alt={t('heroSection.locationMarker2Image.alt')}
+                width={400}
+                height={200}
+                className='absolute top-72 right-40 lg:right-96 w-44 h-44 lg:w-52 lg:h-52 mb-4 mr-4 z-10'
+              />
+            </motion.div>
           </div>
         </div>
       </div>
@@ -138,21 +273,49 @@ export default function HeroSection() {
           </div>
 
           <div className='space-y-6 mt-10'>
-            <CTAButton
-              text={t('heroSection.ctaText')}
-              url={getWhatsappMessageUrl(
-                PHONE_NUMBER,
-                'Hello, I am interested in your logistics services. Please provide me with more information.'
-              )}
-              variant='secondary'
-            />
+            <motion.div
+              variants={{
+                hidden: { opacity: 0, y: 8 },
+                visible: {
+                  opacity: 1,
+                  y: 0,
+                  transition: { duration: 0.5, ease: 'easeOut' },
+                },
+              }}
+              initial='hidden'
+              whileInView='visible'
+              viewport={{ once: true, amount: 0.2 }}
+            >
+              <CTAButton
+                text={t('heroSection.ctaText')}
+                url={getWhatsappMessageUrl(
+                  PHONE_NUMBER,
+                  'Hello, I am interested in your logistics services. Please provide me with more information.'
+                )}
+                variant='secondary'
+              />
+            </motion.div>
 
-            <CTAButton
-              text={t('heroSection.cta2Text')}
-              url={'/about-us'}
-              size='md'
-              variant='outline-primary'
-            />
+            <motion.div
+              variants={{
+                hidden: { opacity: 0, y: 8 },
+                visible: {
+                  opacity: 1,
+                  y: 0,
+                  transition: { duration: 0.5, ease: 'easeOut' },
+                },
+              }}
+              initial='hidden'
+              whileInView='visible'
+              viewport={{ once: true, amount: 0.2 }}
+            >
+              <CTAButton
+                text={t('heroSection.cta2Text')}
+                url={'/about-us'}
+                size='md'
+                variant='outline-primary'
+              />
+            </motion.div>
           </div>
 
           <div className='relative min-h-[660px] mt-12 rounded-xl overflow-hidden z-0'>

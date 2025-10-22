@@ -1,14 +1,27 @@
+'use client';
+
+import { useInView } from 'motion/react';
 import { useTranslations } from 'next-intl';
+import { useRef } from 'react';
+import { motion } from 'framer-motion';
 
 export default function SolutionSection() {
   const t = useTranslations();
 
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, margin: '-50px' });
+
   return (
     <>
-      <section>
+      <section ref={ref}>
         <div className='max-w-7xl mx-auto mb-20 lg:mb-38'>
           <div className='flex flex-col justify-center items-center text-center px-4'>
-            <div className='flex items-center gap-2 mb-3'>
+            <motion.div
+              initial={{ opacity: 0, x: -4 }}
+              animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -4 }}
+              transition={{ duration: 0.8 }}
+              className='flex items-center gap-2 mb-3'
+            >
               <span className='relative flex size-3'>
                 <span className='absolute inline-flex h-full w-full animate-ping rounded-full bg-secondary opacity-75'></span>
                 <span className='relative inline-flex size-3 rounded-full bg-secondary'></span>
@@ -16,21 +29,46 @@ export default function SolutionSection() {
               <p className='text-sm font-medium text-primary uppercase font-manrope'>
                 {t('solutionSection.heading')}
               </p>
-            </div>
+            </motion.div>
 
-            <div className='mb-10 md:mb-16'>
+            <motion.div
+              initial={{ opacity: 0, y: 10 }}
+              animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 10 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              className='mb-10 md:mb-16'
+            >
               <p
                 className='font-manrope text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-tight text-primary mx-auto max-w-3xl lg:max-w-3/4 [&>span]:text-secondary'
                 dangerouslySetInnerHTML={{
                   __html: t.raw('solutionSection.title'),
                 }}
               ></p>
-            </div>
+            </motion.div>
           </div>
 
-          <div className='p-4 md:px-8 xl:p-0'>
+          <motion.div
+            initial='hidden'
+            animate={isInView ? 'visible' : 'hidden'}
+            variants={{
+              visible: { transition: { staggerChildren: 0.12 } },
+              hidden: {},
+            }}
+            className='p-4 md:px-8 xl:p-0'
+          >
             <div className='grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8'>
-              <div className='w-full h-[380px] md:h-[450px] relative rounded-xl overflow-hidden p-8 md:p-12 group'>
+              <motion.div
+                variants={{
+                  hidden: { opacity: 0, y: 24, scale: 0.98 },
+                  visible: {
+                    opacity: 1,
+                    y: 0,
+                    scale: 1,
+                    transition: { duration: 0.8, ease: 'easeOut' },
+                  },
+                }}
+                whileHover={{ scale: 1.02 }}
+                className='w-full h-[380px] md:h-[450px] relative rounded-xl overflow-hidden p-8 md:p-12 group'
+              >
                 <div className="absolute inset-0 bg-[url('/img/sea.webp')] bg-cover bg-center z-0 transition-transform duration-700 ease-out group-hover:scale-110"></div>
 
                 <div className='absolute inset-0 bg-primary/75 z-0'></div>
@@ -46,9 +84,21 @@ export default function SolutionSection() {
                     {t('solutionSection.seaShipping.content')}
                   </p>
                 </div>
-              </div>
+              </motion.div>
 
-              <div className='w-full h-[380px] md:h-[450px] relative rounded-xl overflow-hidden p-8 md:p-12 group'>
+              <motion.div
+                variants={{
+                  hidden: { opacity: 0, y: 24, scale: 0.98 },
+                  visible: {
+                    opacity: 1,
+                    y: 0,
+                    scale: 1,
+                    transition: { duration: 0.8, ease: 'easeOut' },
+                  },
+                }}
+                whileHover={{ scale: 1.02 }}
+                className='w-full h-[380px] md:h-[450px] relative rounded-xl overflow-hidden p-8 md:p-12 group'
+              >
                 <div className="absolute inset-0 bg-[url('/img/road.webp')] bg-cover bg-center z-0 transition-transform duration-700 ease-out group-hover:scale-110"></div>
 
                 <div className='absolute inset-0 bg-primary/75 z-0'></div>
@@ -64,9 +114,9 @@ export default function SolutionSection() {
                     {t('solutionSection.landShipping.content')}
                   </p>
                 </div>
-              </div>
+              </motion.div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </section>
     </>

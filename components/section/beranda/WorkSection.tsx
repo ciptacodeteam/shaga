@@ -11,6 +11,8 @@ import Image from 'next/image';
 import { cn } from '@/lib/utils';
 import { useMessages, useTranslations } from 'next-intl';
 import { transformMessages } from '@/i18n/messages';
+import { useInView } from 'motion/react';
+import { motion } from 'framer-motion';
 
 export default function WorkSection() {
   const t = useTranslations();
@@ -27,11 +29,19 @@ export default function WorkSection() {
     }
   }, []);
 
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, margin: '-100px' });
+
   return (
-    <section className='bg-[#001E62] py-12 md:py-10 md:mb-30 mb-24'>
+    <section className='bg-[#001E62] py-12 md:py-10 md:mb-30 mb-24' ref={ref}>
       <div className='max-w-7xl mx-auto px-4 md:px-6 xl:px-0'>
         <div className='mb-10 md:mb-16'>
-          <div className='flex items-center gap-2 mb-3 md:mb-6'>
+          <motion.div
+            initial={{ opacity: 0, x: -4 }}
+            animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -4 }}
+            transition={{ duration: 0.8 }}
+            className='flex items-center gap-2 mb-3 md:mb-6'
+          >
             <span className='relative flex size-3'>
               <span className='absolute inline-flex h-full w-full animate-ping rounded-full bg-green-400 opacity-75'></span>
               <span className='relative inline-flex size-3 rounded-full bg-green-400'></span>
@@ -39,15 +49,25 @@ export default function WorkSection() {
             <p className='text-sm font-medium text-white uppercase font-manrope'>
               {t('workSection.heading')}
             </p>
-          </div>
+          </motion.div>
 
           <div className='flex flex-col md:flex-row md:justify-between gap-6 md:gap-0'>
-            <h1 className='font-manrope text-2xl md:text-4xl lg:text-5xl text-white'>
+            <motion.h1
+              initial={{ opacity: 0, y: 10 }}
+              animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 10 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              className='font-manrope text-2xl md:text-4xl lg:text-5xl text-white'
+            >
               {t('workSection.title')}
-            </h1>
-            <p className='text-white font-manrope md:w-2/5 text-sm md:text-base'>
+            </motion.h1>
+            <motion.p
+              initial={{ opacity: 0, y: 10 }}
+              animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 10 }}
+              transition={{ duration: 0.8, delay: 0.4 }}
+              className='text-white font-manrope md:w-2/5 text-sm md:text-base'
+            >
               {t('workSection.subtitle')}
-            </p>
+            </motion.p>
           </div>
         </div>
       </div>
