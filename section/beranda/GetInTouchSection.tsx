@@ -8,7 +8,7 @@ export default function GetInTouch() {
 
   return (
     <>
-      <section className='px-4 lg:px-0'>
+      <section className='px-4 md:px-6 xl:px-0'>
         <div className='relative'>
           <div className='relative max-w-7xl mx-auto mb-12 md:mb-16 rounded-xl overflow-hidden z-0'>
             <div className="absolute inset-0 bg-[url('/img/img1.webp')] bg-cover bg-center"></div>

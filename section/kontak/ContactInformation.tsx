@@ -56,7 +56,7 @@ export default function ContactInformation() {
   return (
     <>
       <section id='contact-form'>
-        <div className='max-w-7xl mx-auto mb-20 lg:mb-30 px-4 lg:px-0'>
+        <div className='max-w-7xl mx-auto mb-20 lg:mb-30 px-4 md:px-6 xl:px-0'>
           <div className='flex items-center gap-2 mb-3'>
             <span className='relative flex'>
               <span className='absolute inline-flex size-3 animate-ping rounded-full bg-secondary opacity-75'></span>

@@ -11,7 +11,7 @@ export default function CtaSection() {
 
   return (
     <>
-      <div className='max-w-7xl mx-auto mb-16 px-4 lg:px-0'>
+      <div className='max-w-7xl mx-auto mb-16 px-4 md:px-6 xl:px-0'>
         <div className='bg-primary p-6 sm:p-12 rounded-xl'>
           <div className='flex flex-col md:flex-row gap-6 md:gap-12 items-center'>
             {/* Image: on small screens it sits on top, use a fixed aspect container for Image fill */}

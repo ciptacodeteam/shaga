@@ -9,7 +9,7 @@ export default function NumberSection() {
     <>
       <section>
         <div className='max-w-7xl mx-auto mb-20 md:mb-32'>
-          <div className='grid grid-cols-2 md:grid-cols-4 gap-4 lg:gap-10 px-4 md:px-0'>
+          <div className='grid grid-cols-2 md:grid-cols-4 gap-4 lg:gap-10 px-4 md:px-6 xl:px-0'>
             {statList.map(
               (
                 stat: { id: string; value: string; label: string },

@@ -7,7 +7,7 @@ const DiscussionCtaSection = () => {
   const t = useTranslations('contactPage.discussionCtaSection');
 
   return (
-    <section className='relative my-8 md:my-16 max-w-7xl mx-auto px-4 md:px-0'>
+    <section className='relative my-8 md:my-16 max-w-7xl mx-auto px-4 md:px-6 xl:px-0'>
       <div className='relative rounded-xl overflow-hidden z-0'>
         <div className="absolute inset-0 bg-[url('/img/imghero.webp')] bg-cover bg-center" />
 

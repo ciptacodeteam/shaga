@@ -7,10 +7,10 @@ export default function FindUsSection() {
   return (
     <section>
       <div className="bg-primary py-10 md:py-20 mb-16 md:mb-30 inset-0 bg-[url('/img/map.webp')] bg-blend-multiply bg-cover bg-no-repeat">
-        <div className='max-w-7xl mx-auto px-4 md:px-0'>
-          <div className='grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10 items-center'>
+        <div className='max-w-7xl mx-auto px-4 md:px-6 xl:px-0'>
+          <div className='grid grid-cols-1 xl:grid-cols-2 gap-8 lg:gap-10 items-center'>
             <div className='w-full'>
-              <div className='w-full md:w-[600px] h-[400px] md:aspect-h-3 rounded-xl overflow-hidden'>
+              <div className='w-full xl:w-[600px] h-[400px] md:aspect-h-3 rounded-xl overflow-hidden'>
                 <iframe
                   src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.9413272794386!2d98.65997647530624!3d3.5867875503058926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x303131002de23245%3A0x7934cd2d6c49eb3c!2sPT.%20SHAGA%20(PT.%20SHAKTINAGARA%20GANDA%20ARTHATENTERAM%20MAKMURJAYA)!5e0!3m2!1sid!2sid!4v1760959768587!5m2!1sid!2sid'
                   className='w-full h-full border-0'

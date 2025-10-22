@@ -45,7 +45,7 @@ export default function NavigationBar() {
         visible ? 'translate-y-0' : '-translate-y-full'
       )}
     >
-      <div className='max-w-7xl mx-auto py-4 px-4 md:px-0'>
+      <div className='max-w-7xl mx-auto py-4 px-4 md:px-6 xl:px-0'>
         <div className='flex items-center justify-between'>
           {/* Logo */}
           <div>
@@ -104,7 +104,7 @@ export default function NavigationBar() {
           </nav>
 
           {/* Mobile menu button */}
-          <div className='md:hidden'>
+          <div className='lg:hidden'>
             <button
               aria-label='Toggle menu'
               aria-expanded={mobileOpen}

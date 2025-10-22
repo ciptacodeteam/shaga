@@ -12,7 +12,7 @@ const FaqSection = () => {
   const faqs = transformMessages(messages.contactPage.faqSection.faqs);
 
   return (
-    <section className='max-w-4xl mx-auto px-6 py-16 pt-5'>
+    <section className='max-w-4xl mx-auto px-4 md:px-6 xl:px-0 py-16 pt-5'>
       <header className='flex flex-col justify-center items-center text-center px-2 md:px-0'>
         <div className='flex items-center gap-2 mb-3'>
           <span className='relative flex'>

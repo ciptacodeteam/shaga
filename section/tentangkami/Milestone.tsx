@@ -17,7 +17,7 @@ export default function MilestoneSection() {
     <>
       <section>
         <div className='bg-primary mb-20 md:mb-30 py-24'>
-          <div className='max-w-7xl mx-auto'>
+          <div className='max-w-7xl mx-auto '>
             <div className='flex flex-col justify-center items-center'>
               <div className='flex justify-center items-center gap-2'>
                 <span className='relative flex size-3'>

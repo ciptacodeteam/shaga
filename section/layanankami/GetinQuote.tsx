@@ -8,7 +8,7 @@ export default function GetinQuote() {
 
   return (
     <>
-      <div className='max-w-7xl mx-auto mb-12 px-4'>
+      <div className='max-w-7xl mx-auto mb-12 px-4 md:px-6 xl:px-0'>
         <div className="bg-primary relative bg-[url('/img/map.webp')] bg-blend-overlay bg-cover bg-no-repeat p-6 sm:p-8 md:p-12 rounded-xl">
           <div className='p-6 sm:p-8 md:p-0 rounded-lg md:rounded-none'>
             <div className='flex flex-col justify-center items-center text-center'>

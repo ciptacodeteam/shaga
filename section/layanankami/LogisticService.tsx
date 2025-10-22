@@ -30,7 +30,7 @@ export default function LogisticService() {
     <>
       <section>
         <div className='max-w-7xl mx-auto mb-24 md:mb-30'>
-          <div className='flex flex-col justify-center items-center text-center px-4'>
+          <div className='flex flex-col justify-center items-center text-center px-4 md:px-6 xl:px-0'>
             <div className='flex items-center gap-2 mb-3'>
               <span className='relative flex'>
                 <span className='absolute inline-flex h-2.5 w-2.5 md:h-3 md:w-3 animate-ping rounded-full bg-secondary opacity-75'></span>
@@ -55,7 +55,7 @@ export default function LogisticService() {
             </div>
           </div>
 
-          <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-12 lg:mt-16 gap-6 lg:gap-8 px-4'>
+          <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-12 lg:mt-16 gap-6 lg:gap-8 px-4 md:px-6 xl:px-0'>
             {services.map((service, index) => (
               <div
                 key={index}

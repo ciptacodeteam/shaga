@@ -11,7 +11,7 @@ export default function CommunitySection() {
   return (
     <>
       <section className='relative mb-24 md:mb-32'>
-        <div className='max-w-7xl mx-auto px-4'>
+        <div className='max-w-7xl mx-auto px-4 md:px-6 xl:px-0'>
           <div className='flex flex-col md:flex-row gap-10 md:gap-16 items-start md:items-center'>
             <div className='w-full md:w-1/2 flex flex-col justify-center'>
               <div className='flex items-center gap-2 mb-3'>

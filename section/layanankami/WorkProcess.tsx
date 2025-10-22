@@ -20,7 +20,7 @@ export default function WorkProcess() {
   return (
     <>
       <section>
-        <div className='max-w-7xl mx-auto px-4 mb-12 lg:mb-30'>
+        <div className='max-w-7xl mx-auto mb-12 lg:mb-30 px-4 md:px-6 xl:px-0'>
           <div className='flex items-center gap-2 mb-3'>
             <span className='relative flex size-3'>
               <span className='absolute inline-flex h-full w-full animate-ping rounded-full bg-secondary opacity-75'></span>
