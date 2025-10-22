@@ -74,7 +74,7 @@ export default function WorkSection() {
                   role='button'
                   tabIndex={0}
                   className={cn(
-                    `transition-all duration-300 rounded-xl p-6 md:p-8 flex flex-col justify-between text-left cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-300`,
+                    `transition-all duration-300 rounded-xl p-6 md:p-8 flex flex-col justify-between text-left cursor-pointer focus:outline-none focus:ring-2 min-h-[400px] lg:min-h-[550px] focus:ring-offset-2 focus:ring-green-300`,
                     isActive ? 'bg-[#E0E6F3]' : 'bg-primary'
                   )}
                 >
