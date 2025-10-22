@@ -163,10 +163,11 @@ export default function NavigationBar() {
           </div>
         </div>
       </div>
+
       {/* Mobile menu overlay */}
       <motion.div
         key='mobile-menu'
-        className='lg:hidden fixed inset-0 z-40 bg-white/95 backdrop-blur-sm h-screen'
+        className='lg:hidden fixed inset-0 z-40 bg-white/95 backdrop-blur-sm h-svh'
         initial='closed'
         animate={mobileOpen ? 'open' : 'closed'}
         variants={{
