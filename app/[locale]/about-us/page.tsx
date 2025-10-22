@@ -1,10 +1,10 @@
 import { locales } from '@/i18n/routing';
-import CtaSection from '@/section/tentangkami/CallToAction';
-import GallerySection from '@/section/tentangkami/Galery';
-import HeroAbout from '@/section/tentangkami/HeroAbout';
-import MilestoneSection from '@/section/tentangkami/Milestone';
-import NumberSection from '@/section/tentangkami/NumberSection';
-import WhoAreWeSection from '@/section/tentangkami/WhoAreWe';
+import CtaSection from '@/components/section/tentangkami/CallToAction';
+import GallerySection from '@/components/section/tentangkami/Galery';
+import HeroAbout from '@/components/section/tentangkami/HeroAbout';
+import MilestoneSection from '@/components/section/tentangkami/Milestone';
+import NumberSection from '@/components/section/tentangkami/NumberSection';
+import WhoAreWeSection from '@/components/section/tentangkami/WhoAreWe';
 
 export async function generateStaticParams() {
   const params: { locale: string }[] = [];

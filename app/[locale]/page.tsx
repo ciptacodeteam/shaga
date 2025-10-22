@@ -1,13 +1,13 @@
 import { locales } from '@/i18n/routing';
-import GetInTouch from '@/section/beranda/GetInTouchSection';
-import HeroSection from '@/section/beranda/HeroSection';
-import PartnerClient from '@/section/beranda/PartnerClient';
-import ServicesSection from '@/section/beranda/ServiceSection';
-import SolutionSection from '@/section/beranda/SolutionSection';
-import TransformSection from '@/section/beranda/TransformingSection';
-import ValueSection from '@/section/beranda/ValuesSection';
-import VisionMissionSection from '@/section/beranda/VisionMisionSection';
-import WorkSection from '@/section/beranda/WorkSection';
+import GetInTouch from '@/components/section/beranda/GetInTouchSection';
+import HeroSection from '@/components/section/beranda/HeroSection';
+import PartnerClient from '@/components/section/beranda/PartnerClient';
+import ServicesSection from '@/components/section/beranda/ServiceSection';
+import SolutionSection from '@/components/section/beranda/SolutionSection';
+import TransformSection from '@/components/section/beranda/TransformingSection';
+import ValueSection from '@/components/section/beranda/ValuesSection';
+import VisionMissionSection from '@/components/section/beranda/VisionMisionSection';
+import WorkSection from '@/components/section/beranda/WorkSection';
 
 export async function generateStaticParams() {
   const params: { locale: string }[] = [];

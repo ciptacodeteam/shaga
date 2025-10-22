@@ -1,9 +1,9 @@
 import { locales } from '@/i18n/routing';
-import CommunitySection from '@/section/layanankami/Community';
-import GetinQuote from '@/section/layanankami/GetinQuote';
-import HeroService from '@/section/layanankami/HeroService';
-import LogisticService from '@/section/layanankami/LogisticService';
-import WorkProcess from '@/section/layanankami/WorkProcess';
+import CommunitySection from '@/components/section/layanankami/Community';
+import GetinQuote from '@/components/section/layanankami/GetinQuote';
+import HeroService from '@/components/section/layanankami/HeroService';
+import LogisticService from '@/components/section/layanankami/LogisticService';
+import WorkProcess from '@/components/section/layanankami/WorkProcess';
 
 export async function generateStaticParams() {
   const params: { locale: string }[] = [];

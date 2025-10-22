@@ -1,9 +1,9 @@
 import DiscussionCtaSection from '@/components/DiscussionCtaSection';
 import FaqSection from '@/components/FaqSection';
 import { locales } from '@/i18n/routing';
-import ContactInformation from '@/section/kontak/ContactInformation';
-import FindUsSection from '@/section/kontak/FindUs';
-import HeroContact from '@/section/kontak/HeroContact';
+import ContactInformation from '@/components/section/kontak/ContactInformation';
+import FindUsSection from '@/components/section/kontak/FindUs';
+import HeroContact from '@/components/section/kontak/HeroContact';
 
 export async function generateStaticParams() {
   const params: { locale: string }[] = [];
