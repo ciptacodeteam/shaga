@@ -143,17 +143,28 @@ export default function NavigationBar() {
       {mobileOpen && (
         <div className='lg:hidden fixed inset-x-4 top-20 z-40 bg-white rounded-lg shadow-lg p-4'>
           <ul className='flex flex-col gap-3'>
-            {menus.map((menu: { text: string; link: string }, idx: number) => (
-              <li key={idx}>
-                <Link
-                  href={menu.link}
-                  onClick={() => setMobileOpen(false)}
-                  className='block font-manrope font-medium text-[#344565] py-2'
-                >
-                  {menu.text}
-                </Link>
-              </li>
-            ))}
+            {menus.map((menu: { text: string; link: string }, idx: number) => {
+              const isActive =
+                pathname.replace(`/${t('metadata.locale')}`, '') ===
+                  menu.link ||
+                (menu.link === '/' && pathname === `/${t('metadata.locale')}`);
+              return (
+                <li key={idx}>
+                  <Link
+                    href={menu.link}
+                    onClick={() => setMobileOpen(false)}
+                    className={cn(
+                      `font-manrope font-medium transition-colors duration-200 py-2 block`,
+                      isActive
+                        ? 'text-primary'
+                        : 'text-[#7686ab] hover:text-primary'
+                    )}
+                  >
+                    {menu.text}
+                  </Link>
+                </li>
+              );
+            })}
           </ul>
 
           <div className='mt-4'>
