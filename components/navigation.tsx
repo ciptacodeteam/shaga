@@ -2,14 +2,15 @@
 
 import { transformMessages } from '@/i18n/messages';
 import { Link } from '@/i18n/navigation';
+import { PHONE_NUMBER } from '@/lib/constant';
 import { cn, getWhatsappMessageUrl } from '@/lib/utils';
 import logo from '@/public/svg/logo.svg';
+import { motion } from 'framer-motion';
 import { useMessages, useTranslations } from 'next-intl';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import CTAButton from './CTAButton';
-import { PHONE_NUMBER } from '@/lib/constant';
 
 export default function NavigationBar() {
   const pathname = usePathname();
@@ -112,6 +113,91 @@ export default function NavigationBar() {
               className='inline-flex items-center justify-center p-2 rounded-md text-gray-700 bg-white/0 hover:bg-gray-100 focus:outline-none'
             >
               {/* hamburger / close icon */}
+              <motion.svg
+                className='w-6 h-6'
+                fill='none'
+                stroke='currentColor'
+                viewBox='0 0 24 24'
+                xmlns='http://www.w3.org/2000/svg'
+                initial={false}
+                animate={mobileOpen ? 'open' : 'closed'}
+              >
+                <motion.path
+                  style={{ originX: 0.5, originY: 0.5 }}
+                  variants={{
+                    closed: { y: 0, rotate: 0, transition: { duration: 0.18 } },
+                    open: { y: 6, rotate: 45, transition: { duration: 0.18 } },
+                  }}
+                  strokeLinecap='round'
+                  strokeLinejoin='round'
+                  strokeWidth='2'
+                  d='M4 6h16'
+                />
+                <motion.path
+                  variants={{
+                    closed: { opacity: 1, transition: { duration: 0.12 } },
+                    open: { opacity: 0, transition: { duration: 0.12 } },
+                  }}
+                  strokeLinecap='round'
+                  strokeLinejoin='round'
+                  strokeWidth='2'
+                  d='M4 12h16'
+                />
+                <motion.path
+                  style={{ originX: 0.5, originY: 0.5 }}
+                  variants={{
+                    closed: { y: 0, rotate: 0, transition: { duration: 0.18 } },
+                    open: {
+                      y: -6,
+                      rotate: -45,
+                      transition: { duration: 0.18 },
+                    },
+                  }}
+                  strokeLinecap='round'
+                  strokeLinejoin='round'
+                  strokeWidth='2'
+                  d='M4 18h16'
+                />
+              </motion.svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      {/* Mobile menu overlay */}
+      <motion.div
+        key='mobile-menu'
+        className='lg:hidden fixed inset-0 z-40 bg-white/95 backdrop-blur-sm h-screen'
+        initial='closed'
+        animate={mobileOpen ? 'open' : 'closed'}
+        variants={{
+          closed: {
+            y: '-100%',
+            transition: { duration: 0.45, ease: [0.22, 1, 0.36, 1] },
+          },
+          open: {
+            y: '0%',
+            transition: {
+              duration: 0.45,
+              ease: [0.22, 1, 0.36, 1],
+              when: 'beforeChildren',
+              staggerChildren: 0.06,
+              delayChildren: 0.28,
+            },
+          },
+        }}
+        onClick={() => setMobileOpen(false)}
+      >
+        <div
+          className='relative h-full overflow-auto flex flex-col justify-center items-start'
+          onClick={(e) => e.stopPropagation()}
+        >
+          <header>
+            {/* Close button */}
+            <button
+              aria-label='Close menu'
+              onClick={() => setMobileOpen(false)}
+              className='absolute top-6 right-6 p-2 rounded-md text-gray-700 hover:bg-gray-100'
+            >
               <svg
                 className='w-6 h-6'
                 fill='none'
@@ -119,42 +205,58 @@ export default function NavigationBar() {
                 viewBox='0 0 24 24'
                 xmlns='http://www.w3.org/2000/svg'
               >
-                {mobileOpen ? (
-                  <path
-                    strokeLinecap='round'
-                    strokeLinejoin='round'
-                    strokeWidth='2'
-                    d='M6 18L18 6M6 6l12 12'
-                  />
-                ) : (
-                  <path
-                    strokeLinecap='round'
-                    strokeLinejoin='round'
-                    strokeWidth='2'
-                    d='M4 6h16M4 12h16M4 18h16'
-                  />
-                )}
+                <path
+                  strokeLinecap='round'
+                  strokeLinejoin='round'
+                  strokeWidth='2'
+                  d='M6 18L18 6M6 6l12 12'
+                />
               </svg>
             </button>
-          </div>
-        </div>
-      </div>
-      {/* Mobile menu overlay */}
-      {mobileOpen && (
-        <div className='lg:hidden fixed inset-x-4 top-20 z-40 bg-white rounded-lg shadow-lg p-4'>
-          <ul className='flex flex-col gap-3'>
+
+            <div className='p-8 mb-12 absolute top-0 left-0'>
+              <Link href={'/'}>
+                <Image
+                  src={logo}
+                  alt='Logo'
+                  className='w-32 md:w-42'
+                  priority
+                  width={300}
+                  height={100}
+                />
+              </Link>
+            </div>
+          </header>
+          {/* Content container (centered, appears after bg slide) */}
+          <motion.ul
+            className='flex flex-col gap-4 items-start justify-start mr-auto px-8 max-w-md'
+            variants={{
+              closed: {},
+              open: {},
+            }}
+          >
             {menus.map((menu: { text: string; link: string }, idx: number) => {
               const isActive =
                 pathname.replace(`/${t('metadata.locale')}`, '') ===
                   menu.link ||
                 (menu.link === '/' && pathname === `/${t('metadata.locale')}`);
               return (
-                <li key={idx}>
+                <motion.li
+                  key={idx}
+                  variants={{
+                    closed: { opacity: 0, y: 12 },
+                    open: {
+                      opacity: 1,
+                      y: 0,
+                      transition: { duration: 0.36 },
+                    },
+                  }}
+                >
                   <Link
                     href={menu.link}
                     onClick={() => setMobileOpen(false)}
                     className={cn(
-                      `font-manrope font-medium transition-colors duration-200 py-2 block`,
+                      `font-manrope font-semibold transition-colors duration-200 py-2 block text-3xl`,
                       isActive
                         ? 'text-primary'
                         : 'text-[#7686ab] hover:text-primary'
@@ -162,12 +264,23 @@ export default function NavigationBar() {
                   >
                     {menu.text}
                   </Link>
-                </li>
+                </motion.li>
               );
             })}
-          </ul>
+          </motion.ul>
 
-          <div className='mt-4'>
+          {/* CTA - reveal slightly after menu items */}
+          <motion.div
+            className='absolute bottom-8 left-2 transform px-8 max-w-md mr-auto'
+            variants={{
+              closed: { opacity: 0, y: 8 },
+              open: {
+                opacity: 1,
+                y: 0,
+                transition: { delay: 0.1, duration: 0.36 },
+              },
+            }}
+          >
             <CTAButton
               text={t('contactCtaText')}
               url={getWhatsappMessageUrl(
@@ -175,10 +288,11 @@ export default function NavigationBar() {
                 'Hello, I am interested in your logistics services. Please provide me with more information.'
               )}
               onClick={() => setMobileOpen(false)}
+              variant='secondary'
             />
-          </div>
+          </motion.div>
         </div>
-      )}
+      </motion.div>
     </header>
   );
 }
