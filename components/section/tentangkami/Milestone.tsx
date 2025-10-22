@@ -29,7 +29,7 @@ export default function MilestoneSection() {
                 </p>
               </div>
 
-              <div className='mt-8'>
+              <div className='mt-4 md:mt-8'>
                 <h1 className='font-manrope text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-tight text-white'>
                   {t('title')}
                 </h1>

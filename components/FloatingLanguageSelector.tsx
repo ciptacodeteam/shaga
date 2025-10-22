@@ -80,17 +80,68 @@ export default function FloatingLanguageSelector({
   }
 
   const isRight = position === 'right';
+  const [hiddenByScroll, setHiddenByScroll] = useState(false);
 
+  useEffect(() => {
+    let lastY = typeof window !== 'undefined' ? window.scrollY : 0;
+    let ticking = false;
+    let stopTimeout: number | null = null;
+
+    function clearStopTimeout() {
+      if (stopTimeout !== null) {
+        clearTimeout(stopTimeout);
+        stopTimeout = null;
+      }
+    }
+
+    function onScroll() {
+      if (ticking) return;
+      ticking = true;
+      requestAnimationFrame(() => {
+        const y = window.scrollY;
+        const delta = y - lastY;
+        // hide when scrolling down more than 8px, show when scrolling up
+        if (delta > 8) {
+          setHiddenByScroll(true);
+        } else if (delta < -8) {
+          setHiddenByScroll(false);
+        }
+
+        // reset idle timer: when user stops scrolling, show selector
+        clearStopTimeout();
+        stopTimeout = window.setTimeout(() => {
+          setHiddenByScroll(false);
+          stopTimeout = null;
+        }, 800);
+
+        lastY = y;
+        ticking = false;
+      });
+    }
+
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => {
+      window.removeEventListener('scroll', onScroll);
+      clearStopTimeout();
+    };
+  }, []);
   return (
     <div
       ref={containerRef}
       role='group'
       aria-label='Language selector'
       className={cx(
-        'fixed bottom-14 right-2 lg:right-6 lg:bottom-6 z-50',
+        'fixed bottom-14 right-2 lg:right-6 lg:bottom-12 z-50',
         isRight ? 'right-4' : 'left-4',
         className
       )}
+      // apply transition and hide when scrolling down
+      style={{
+        transition: 'transform 220ms ease, opacity 220ms ease',
+        transform: hiddenByScroll ? 'translateY(10px)' : 'translateY(0)',
+        opacity: hiddenByScroll ? 0 : 1,
+        pointerEvents: hiddenByScroll ? 'none' : undefined,
+      }}
     >
       <div
         className={cx(
