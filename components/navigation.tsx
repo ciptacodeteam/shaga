@@ -2,6 +2,7 @@
 
 import { transformMessages } from '@/i18n/messages';
 import { Link } from '@/i18n/navigation';
+import NextLink from 'next/link';
 import { PHONE_NUMBER } from '@/lib/constant';
 import { cn, getWhatsappMessageUrl } from '@/lib/utils';
 import logo from '@/public/svg/logo.svg';
@@ -11,6 +12,7 @@ import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import CTAButton from './CTAButton';
+import { locales } from '@/i18n/routing';
 
 export default function NavigationBar() {
   const pathname = usePathname();
@@ -110,6 +112,28 @@ export default function NavigationBar() {
                 size='md'
                 variant='secondary'
               />
+            </div>
+
+            <div className='flex gap-3 items-center justify-end'>
+              {locales.map((locale) => {
+                const localePath =
+                  locale === t('metadata.locale') ? '/' : `/${locale}`;
+                return (
+                  <NextLink
+                    key={locale}
+                    href={localePath}
+                    prefetch
+                    className={cn(
+                      'font-manrope font-bold transition-colors duration-200 bg-gray-100 px-3 py-1 rounded-full text-xs',
+                      locale === t('metadata.locale')
+                        ? 'text-white bg-primary'
+                        : 'text-[#7686ab] hover:text-primary'
+                    )}
+                  >
+                    {locale.toUpperCase()}
+                  </NextLink>
+                );
+              })}
             </div>
           </nav>
 
@@ -302,6 +326,33 @@ export default function NavigationBar() {
               variant='secondary'
             />
           </motion.div>
+
+          <div className='flex gap-4 items-center justify-end absolute bottom-10 right-8'>
+            {locales.map((locale) => {
+              const localePath =
+                locale === t('metadata.locale') ? '/' : `/${locale}`;
+              const localizedPath =
+                pathname.replace(
+                  `/${t('metadata.locale')}`,
+                  localePath === '/' ? '' : localePath
+                ) || localePath;
+              return (
+                <NextLink
+                  key={locale}
+                  href={localizedPath}
+                  prefetch
+                  className={cn(
+                    'font-manrope font-bold transition-colors duration-200 bg-gray-100 px-3 py-1 rounded-full text-sm',
+                    locale === t('metadata.locale')
+                      ? 'text-primary'
+                      : 'text-[#7686ab] hover:text-primary'
+                  )}
+                >
+                  {locale.toUpperCase()}
+                </NextLink>
+              );
+            })}
+          </div>
         </div>
       </motion.div>
     </header>
