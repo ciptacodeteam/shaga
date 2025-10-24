@@ -211,17 +211,9 @@ export default function HeroSection() {
         {/* Decorative tracking images: hide on small screens to avoid layout issues */}
         <div className='hidden xl:block'>
           <motion.div
-            variants={{
-              hidden: { opacity: 0, y: 8 },
-              visible: {
-                opacity: 1,
-                y: 0,
-                transition: { duration: 0.5, ease: 'easeOut' },
-              },
-            }}
-            initial='hidden'
-            whileInView='visible'
-            viewport={{ once: true, amount: 0.2 }}
+            initial={{ opacity: 0, y: 8 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, ease: 'easeOut' }}
           >
             <div>
               <Image
@@ -234,29 +226,21 @@ export default function HeroSection() {
             </div>
           </motion.div>
 
-          <div>
-            <motion.div
-              variants={{
-                hidden: { opacity: 0, y: 8 },
-                visible: {
-                  opacity: 1,
-                  y: 0,
-                  transition: { duration: 0.5, ease: 'easeOut' },
-                },
-              }}
-              initial='hidden'
-              whileInView='visible'
-              viewport={{ once: true, amount: 0.2 }}
-            >
+          <motion.div
+            initial={{ opacity: 0, y: 8 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, ease: 'easeOut', delay: 0.2 }}
+          >
+            <div>
               <Image
                 src={t('heroSection.locationMarker2Image.src')}
                 alt={t('heroSection.locationMarker2Image.alt')}
                 width={400}
                 height={200}
-                className='absolute top-72 right-40 lg:right-96 w-44 h-44 lg:w-52 lg:h-52 mb-4 mr-4 z-10'
+                className='absolute top-72 right-40 lg:right-96 w-44 h-44 lg:w-52 lg:h-52 mb-4 mr-4 z-10 xl:right-[420px] xl:top-[250px]'
               />
-            </motion.div>
-          </div>
+            </div>
+          </motion.div>
         </div>
       </div>
 
