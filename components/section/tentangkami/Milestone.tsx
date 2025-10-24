@@ -91,7 +91,7 @@ export default function MilestoneSection() {
                       {/* Titik */}
                       <div className='flex-shrink-0 relative z-10 mt-1'>
                         <div className='p-2 rounded-full bg-[#E0E6F3] flex items-center justify-center'>
-                          <div className='w-3 h-3 rounded-full bg-[#20458E]' />
+                          <div className='w-3 h-3 rounded-full bg-[#02863f]' />
                         </div>
                       </div>
 
@@ -169,7 +169,7 @@ export default function MilestoneSection() {
                           </span>
 
                           <div className='p-1.5 rounded-full bg-[#E0E6F3] flex items-center justify-center'>
-                            <div className='w-3 h-3 rounded-full bg-[#20458E]' />
+                            <div className='w-3 h-3 rounded-full bg-[#02863f]' />
                           </div>
 
                           <p className='text-white text-sm mt-6 text-center font-manrope leading-relaxed max-w-[170px]'>

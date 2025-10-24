@@ -369,7 +369,7 @@ export default function ContactInformation() {
                   <div>
                     <button
                       type='submit'
-                      className='w-full bg-primary text-white py-3 rounded-full transition font-manrope cursor-pointer text-sm md:text-base lg:text-lg font-medium'
+                      className='w-full bg-secondary text-white py-3 rounded-full transition font-manrope cursor-pointer text-sm md:text-base lg:text-lg font-medium'
                     >
                       {t('formSubmitText')}
                     </button>

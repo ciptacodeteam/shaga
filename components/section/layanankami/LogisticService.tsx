@@ -36,7 +36,7 @@ export default function LogisticService() {
   return (
     <>
       <section>
-        <div className='max-w-7xl mx-auto mb-24 md:mb-30'>
+        <div className='max-w-7xl mx-auto mb-24 md:mb-42'>
           <div className='flex flex-col justify-center items-center text-center px-4 md:px-6 xl:px-0'>
             <motion.div
               initial={{ opacity: 0, x: -4 }}

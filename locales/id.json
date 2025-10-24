@@ -264,7 +264,7 @@
   },
   "aboutPage": {
     "heroSection": {
-      "title": "Tentang Shaga",
+      "title": "Tentang SHAGA",
       "subtitle": "Memberikan keunggulan melalui solusi logistik yang disesuaikan untuk mendorong efisiensi, inovasi, dan kepuasan pelanggan.",
       "tagline": "Didorong oleh tim yang berbakat"
     },
@@ -306,7 +306,7 @@
       "years": [
         {
           "year": "1999",
-          "description": "Shaga didirikan dengan visi untuk menyediakan solusi logistik regional yang efisien"
+          "description": "SHAGA didirikan dengan visi untuk menyediakan solusi logistik regional yang efisien"
         },
         {
           "year": "2005",
@@ -340,7 +340,7 @@
   },
   "contactPage": {
     "heroSection": {
-      "title": "Hubungi Shaga",
+      "title": "Hubungi SHAGA",
       "subtitle": "Kami siap mendukung kebutuhan logistik Anda. Hubungi kami untuk pertanyaan, penawaran, atau bantuan.",
       "tagline": "Mendukung Bisnis di Seluruh Dunia"
     },
@@ -371,7 +371,7 @@
         "placeholder": "Masukkan nomor kamu"
       },
       "formService": {
-        "label": "Layanan Shaga",
+        "label": "Layanan SHAGA",
         "placeholder": "Pilih layanan"
       },
       "formMessage": {
@@ -383,7 +383,7 @@
     "findUsSection": {
       "heading": "Temukan Kami",
       "title": "Terletak strategis untuk akses mudah ke semua jalur logistik utama",
-      "ctaText": "Jalan Menuju Shaga",
+      "ctaText": "Jalan Menuju SHAGA",
       "ctaLink": "https://maps.app.goo.gl/6MjZsWsgTunc4GGd9"
     },
     "faqSection": {
@@ -391,16 +391,16 @@
       "title": " <span>Pertanyaan</span> Tentang Layanan Kami.",
       "faqs": [
         {
-          "question": "Layanan logistik apa saja yang ditawarkan Shaga?",
-          "answer": "Shaga menawarkan berbagai layanan logistik termasuk pengiriman darat, laut, jasa kepabeanan, pergudangan & distribusi, manajemen rantai pasok, solusi lintas batas, pengiriman last-mile, dan penanganan kargo proyek."
+          "question": "Layanan logistik apa saja yang ditawarkan SHAGA?",
+          "answer": "SHAGA menawarkan berbagai layanan logistik termasuk pengiriman darat, laut, jasa kepabeanan, pergudangan & distribusi, manajemen rantai pasok, solusi lintas batas, pengiriman last-mile, dan penanganan kargo proyek."
         },
         {
           "question": "Bagaimana cara melacak pengiriman saya?",
           "answer": "Anda dapat melacak pengiriman Anda melalui fitur pelacakan di situs web kami dengan memasukkan nomor pelacakan yang diberikan saat pengiriman dikonfirmasi."
         },
         {
-          "question": "Apakah Shaga menyediakan layanan internasional?",
-          "answer": "Ya, Shaga menyediakan layanan logistik internasional yang mencakup pengiriman lintas batas dan solusi kepabeanan untuk membantu bisnis mengakses pasar global."
+          "question": "Apakah SHAGA menyediakan layanan internasional?",
+          "answer": "Ya, SHAGA menyediakan layanan logistik internasional yang mencakup pengiriman lintas batas dan solusi kepabeanan untuk membantu bisnis mengakses pasar global."
         },
         {
           "question": "Bagaimana cara mendapatkan penawaran untuk kebutuhan logistik saya?",

@@ -11,7 +11,7 @@ export default function GallerySection() {
   const images = [
     '/img/trucks/truck-1.webp',
     '/img/trucks/truck-2.webp',
-    '/img/trucks/truck-3.webp',
+    // '/img/trucks/truck-3.webp',
     '/img/trucks/truck-4.webp',
     '/img/trucks/truck-5.webp',
     '/img/trucks/truck-6.webp',

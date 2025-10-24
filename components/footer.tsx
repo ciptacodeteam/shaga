@@ -219,7 +219,7 @@ export default function FooterSection() {
               }}
             >
               <p className='font-manrope text-white text-sm mt-8'>
-                © {new Date().getFullYear()} Shaga. All Rights Reserved.
+                © {new Date().getFullYear()} SHAGA. All Rights Reserved.
                 <span className='hidden lg:block'>
                   Designed & Developed by{' '}
                   <Link

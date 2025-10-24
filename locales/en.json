@@ -264,7 +264,7 @@
   },
   "aboutPage": {
     "heroSection": {
-      "title": "About Shaga",
+      "title": "About SHAGA",
       "subtitle": "Delivering excellence through tailored logistics solutions to drive efficiency, innovation, and customer satisfaction.",
       "tagline": "Driven by a talented team"
     },
@@ -306,7 +306,7 @@
       "years": [
         {
           "year": "1999",
-          "description": "Shaga was founded with a vision to provide efficient regional logistics solutions"
+          "description": "SHAGA was founded with a vision to provide efficient regional logistics solutions"
         },
         {
           "year": "2005",
@@ -340,7 +340,7 @@
   },
   "contactPage": {
     "heroSection": {
-      "title": "Contact Shaga",
+      "title": "Contact SHAGA",
       "subtitle": "We are ready to support your logistics needs. Contact us for inquiries, quotes, or assistance.",
       "tagline": "Supporting Businesses Worldwide"
     },
@@ -371,7 +371,7 @@
         "placeholder": "Enter your phone number"
       },
       "formService": {
-        "label": "Shaga Service",
+        "label": "SHAGA Service",
         "placeholder": "Select a service"
       },
       "formMessage": {
@@ -391,16 +391,16 @@
       "title": " <span>Questions</span> About Our Services.",
       "faqs": [
         {
-          "question": "What logistics services does Shaga offer?",
-          "answer": "Shaga offers a range of logistics services including land and sea shipping, customs services, warehousing & distribution, supply chain management, cross-border solutions, last-mile delivery, and project cargo handling."
+          "question": "What logistics services does SHAGA offer?",
+          "answer": "SHAGA offers a range of logistics services including land and sea shipping, customs services, warehousing & distribution, supply chain management, cross-border solutions, last-mile delivery, and project cargo handling."
         },
         {
           "question": "How can I track my shipment?",
           "answer": "You can track your shipment using the tracking feature on our website by entering the tracking number provided when your shipment was confirmed."
         },
         {
-          "question": "Does Shaga provide international services?",
-          "answer": "Yes, Shaga provides international logistics services including cross-border shipping and customs solutions to help businesses access global markets."
+          "question": "Does SHAGA provide international services?",
+          "answer": "Yes, SHAGA provides international logistics services including cross-border shipping and customs solutions to help businesses access global markets."
         },
         {
           "question": "How can I get a quote for my logistics needs?",
