@@ -126,8 +126,8 @@ export default function NavigationBar() {
                     className={cn(
                       'font-manrope font-bold transition-colors duration-200 bg-gray-100 px-3 py-1 rounded-full text-xs',
                       locale === t('metadata.locale')
-                        ? 'text-white bg-primary'
-                        : 'text-[#7686ab] hover:text-primary'
+                        ? 'text-white bg-secondary'
+                        : 'text-[#7686ab] hover:text-secondary'
                     )}
                   >
                     {locale.toUpperCase()}
@@ -344,8 +344,8 @@ export default function NavigationBar() {
                   className={cn(
                     'font-manrope font-bold transition-colors duration-200 bg-gray-100 px-3 py-1 rounded-full text-sm',
                     locale === t('metadata.locale')
-                      ? 'text-primary'
-                      : 'text-[#7686ab] hover:text-primary'
+                      ? 'text-secondary'
+                      : 'text-[#7686ab] hover:text-secondary'
                   )}
                 >
                   {locale.toUpperCase()}
