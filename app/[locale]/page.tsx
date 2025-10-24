@@ -26,8 +26,8 @@ export default function HomePage() {
       <SolutionSection />
       <ValueSection />
       <TransformSection />
-      <WorkSection />
-      <ServicesSection />
+      {/* <WorkSection /> */}
+      {/* <ServicesSection /> */}
       <PartnerClient />
       <GetInTouch />
     </>

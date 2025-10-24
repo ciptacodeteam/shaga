@@ -26,7 +26,7 @@ const CTAButton = ({ url, text, size, variant, onClick, className }: Props) => {
 
   const variants = {
     primary: 'bg-white text-primary',
-    secondary: 'bg-primary text-white',
+    secondary: 'bg-secondary text-white',
     outline: 'border border-primary text-primary bg-transparent',
     'outline-primary': 'border border-primary text-primary bg-transparent',
     'outline-white':
@@ -52,7 +52,7 @@ const CTAButton = ({ url, text, size, variant, onClick, className }: Props) => {
       <div
         className={cn(
           'flex items-center justify-center w-8 h-8 rounded-full transition-all duration-300 group-hover:rotate-45',
-          variant === 'secondary' ? 'bg-white' : 'bg-primary',
+          variant === 'secondary' ? 'bg-white' : 'bg-secondary',
           variant === 'outline' ? 'bg-primary/20 group-hover:bg-primary' : '',
           variant === 'outline-primary'
             ? 'bg-primary/20 group-hover:bg-primary'
@@ -63,7 +63,7 @@ const CTAButton = ({ url, text, size, variant, onClick, className }: Props) => {
         <IoIosArrowRoundForward
           className={cn(
             'w-5 h-5 transition-colors duration-300',
-            variant === 'secondary' ? 'text-primary' : 'text-white',
+            variant === 'secondary' ? 'text-secondary' : 'text-white',
             variant === 'outline' ? 'text-primary group-hover:text-white' : '',
             variant === 'outline-primary'
               ? 'text-primary group-hover:!text-white'

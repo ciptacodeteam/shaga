@@ -80,7 +80,7 @@ export default function SolutionSection() {
                 </div>
 
                 <div>
-                  <p className='relative font-manrope text-white text-2xl lg:text-4xl z-20 leading-snug lg:leading-tight'>
+                  <p className='relative font-manrope text-white text-xl lg:text-3xl z-20 leading-snug lg:leading-tight'>
                     {t('solutionSection.seaShipping.content')}
                   </p>
                 </div>
@@ -110,7 +110,7 @@ export default function SolutionSection() {
                 </div>
 
                 <div>
-                  <p className='relative font-manrope text-white text-2xl lg:text-4xl z-20 leading-snug lg:leading-tight'>
+                  <p className='relative font-manrope text-white text-xl lg:text-3xl z-20 leading-snug lg:leading-tight'>
                     {t('solutionSection.landShipping.content')}
                   </p>
                 </div>

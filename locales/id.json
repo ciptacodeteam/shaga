@@ -55,8 +55,8 @@
     }
   ],
   "heroSection": {
-    "title": "Menjangkau Dunia Lewat Darat, Laut, dan Udara",
-    "subtitle": "Kami menghadirkan solusi logistik melalui jalur darat, laut, dan udara, memastikan setiap pengiriman tiba tepat waktu, dengan keamanan dan pelayanan terbaik di setiap langkahnya.",
+    "title": "Menghubungkan Dunia Lewat Darat, Laut, dan Udara",
+    "subtitle": "Kami menyediakan layanan logistik terpadu yang aman, terpercaya, dan efisien, dengan komitmen tinggi untuk memberikan solusi pengiriman terbaik.",
     "ctaText": "Konsultasi Gratis",
     "ctaLink": "/contact",
     "cta2Text": "Pelajari Lebih Lanjut",
@@ -79,47 +79,47 @@
     "title": "Kami menyediakan <span>layanan logistik</span> untuk pengiriman yang <span>tepat waktu dan aman.</span>",
     "visionNumber": "01",
     "visionTitle": "Visi",
-    "visionDescription": "Menjadi pemimpin global dalam industri logistik dengan menghadirkan solusi yang lancar, andal, dan inovatif untuk mendorong kesuksesan serta pertumbuhan berkelanjutan bagi bisnis di seluruh dunia.",
+    "visionDescription": "Menghubungkan dunia melalui industri logistik global dengan kredibilitas dan efisiensi yang disajikan melalui solusi terbaik dan memberi manfaat maksimal bagi semua pihak terkait.",
     "missionNumber": "02",
     "missionTitle": "Misi",
-    "missionDescription": "Kami menghubungkan bisnis dengan rantai pasok yang efisien dan terpadu melalui solusi logistik yang inovatif dan bertanggung jawab, yang meningkatkan kinerja operasional, mengurangi biaya, serta mendorong pertumbuhan di pasar global yang dinamis."
+    "missionDescription": "Mendorong pertumbuha pasar global di semua sektor melalui layanan logistik terpadu yang dikerjakan secara profesional dan proporsional."
   },
   "solutionSection": {
     "heading": "Solusi Logistik Kami",
-    "title": "Dikelola <span>secara profesional</span>, mulai dari pengiriman hingga pergudangan.",
+    "title": "Dikelola <span>Secara Profesional</span>, Memberi Manfaat Secara Proporsional.",
     "seaShipping": {
       "badge": "Pengiriman Laut",
-      "content": "Solusi hemat biaya untuk barang dalam jumlah besar dari pelabuhan."
+      "content": "Perencanaan dan pelaksanaan dengan efisiensi waktu dan biaya yang linier dengan kauntitas dan interval pengiriman melalui kapal kontainer, breakbulk, LCT, RORO, dan lainnya."
     },
     "landShipping": {
       "badge": "Pengiriman Darat",
-      "content": "Transportasi yang efisien untuk pengiriman regional dengan jadwal yang fleksibel."
+      "content": "Mencapai daerah kawasan industri, pergudangan kota dan pelosok dengan solusi kreatif & variatif yang dilaksanakan oleh tenaga ahli berpengalaman."
     }
   },
   "valuesSection": {
     "heading": "NILAI-NILAI UTAMA",
-    "title": "Dibangun atas dasar <span>Kepercayaan</span> dan <span>Keunggulan</span>.",
-    "subtitle": "Kami membangun hubungan yang kuat pada nilai-nilai integritas, kualitas, dan akuntabilitas.",
+    "title": "Dibangun Atas Dasar <span>Kepercayaan</span> dan <span>Profesionalisme</span>.",
+    "subtitle": "Kami mengutamakan hubungan kerjasama yang kuat berdasarkan integritas & profesionalitas secara mutual yang bisa berlangsung jangka panjang.",
     "trustItem": {
-      "badge": "Dipercaya",
-      "content": "Kami memastikan setiap pengiriman memenuhi standar tinggi kami, dari awal hingga akhir."
+      "badge": "Terpercaya",
+      "content": "Dikerjakan secara menyeluruh dengan integritas dan akuntabilitas."
     },
     "customerCentricItem": {
       "badge": "Prioritas",
-      "content": "Kebutuhan Anda adalah prioritas kami di setiap langkah perjalanan."
+      "content": "Menyeimbangkan dan mengutamakan manfaat bersama untuk hasil yang maksimal."
     },
     "innovationItem": {
       "badge": "Inovasi",
-      "content": "Mengadopsi teknologi terbaru untuk menghadirkan pengalaman logistik yang mulus."
+      "content": "Mendapatkan solusi dengan proses kreatif untuk hasil terbaik."
     },
     "sustainabilityItem": {
-      "badge": "Keberlanjutan",
-      "content": "Berkomitmen pada praktik ramah lingkungan di setiap aspek layanan kami."
+      "badge": "Keberlangsungan",
+      "content": "Menjaga komunikasi yang baik sebagai langkah pemeliharaan dalam setiap proses yang berjalan."
     }
   },
   "transformingSection": {
-    "title": "Kami menghadirkan inovasi strategis dalam logistik untuk mendukung pertumbuhan pasar yang berkelanjutan.",
-    "content": "Mentransformasi logistik dengan solusi inovatif melalui pemanfaatan teknologi canggih dan strategi berbasis data untuk meningkatkan efisiensi, menekan biaya, serta memenuhi permintaan pasar yang terus berkembang.",
+    "title": "Hadir dalam setiap langkah strategis sebagai bagian dari pertumbuhan pasar global.",
+    "content": "Mendukung, ber-inovasi serta bertransformasi dalam dunia logistik melalui data dan teknologi menuju pertumbuhan ke arah yang lebih baik.",
     "ctaText": "Pelajari Lebih Lanjut",
     "ctaLink": "/about-us"
   },
@@ -264,14 +264,14 @@
   },
   "aboutPage": {
     "heroSection": {
-      "title": "Tentang Shaga",
-      "subtitle": "Memberikan keunggulan melalui solusi logistik yang disesuaikan untuk mendorong efisiensi, inovasi, dan kepuasan pelanggan.",
-      "tagline": "Didorong oleh tim yang berbakat"
+      "title": "Tentang SHAGA",
+      "subtitle": "Mengutamakan pelayanan prima yang profesional untuk mendorong pertumbuhan bersama dengan kerjasama yang baik.",
+      "tagline": "Didukung oleh tim yang yang berdedikasi dan berkomitmen"
     },
     "whoAreWeSection": {
       "heading": "Mengenal Kami Lebih Dekat",
-      "title": "Kami fokus dalam <span>layanan logistik menyeluruh</span> untuk memastikan pengiriman tepat waktu dan aman.",
-      "description": "Tim kami yang berdedikasi bekerja tanpa henti untuk memberikan solusi yang disesuaikan bagi berbagai bisnis dari semua skala, membantu Anda mencapai tujuan dengan mudah dan andal. Mulai dari layanan kepabeanan hingga pengiriman last-mile, kami berkomitmen terhadap kualitas dan ketelitian di setiap layanan yang kami berikan.",
+      "title": "Kami Fokus Dalam <span>Layanan Logistik Terpadu</span> Yang Menyeluruh Untuk Memastikan Kelancaran Mobilisasi Sampai ke Tujuan.",
+      "description": "Tim kami yang berkomitmen tinggi, bekerja maksimal untuk mendapatkan solusi terbaik bagi berbagai skala bisnis. Tujuan kami adalah memberikan pelayanan berkualitas dan meminimalisasi resiko di setiap tahap.",
       "quote": "Kami menyederhanakan proses logistik dengan teknologi canggih, sehingga Anda dapat fokus pada pertumbuhan bisnis",
       "values": {
         "trust": "Dipercaya",

@@ -14,7 +14,7 @@ export default function TransformSection() {
   return (
     <>
       <section ref={ref}>
-        <div className="relative bg-[url('/img/mountain.webp')] bg-no-repeat bg-cover w-full py-20 md:py-36">
+        <div className="relative bg-[url('/img/mountain.webp')] bg-no-repeat bg-cover w-full py-20 md:py-36 lg:mb-30">
           {/* Gradient overlay */}
           <div className='absolute inset-0 bg-gradient-to-t from-[#001E62] to-transparent'></div>
 
