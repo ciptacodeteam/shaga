@@ -225,7 +225,7 @@ export default function NavigationBar() {
             </button>
 
             <div className='p-8 mb-12 absolute top-0 left-0'>
-              <Link href={'/'} prefetch>
+              <Link href={'/'} prefetch onClick={() => setMobileOpen(false)}>
                 <Image
                   src={logo}
                   alt='Logo'
