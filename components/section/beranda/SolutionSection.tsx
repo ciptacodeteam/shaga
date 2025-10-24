@@ -13,7 +13,7 @@ export default function SolutionSection() {
 
   return (
     <>
-      <section ref={ref}>
+      <section ref={ref} id='solution-section'>
         <div className='max-w-7xl mx-auto mb-20 lg:mb-38'>
           <div className='flex flex-col justify-center items-center text-center px-4'>
             <motion.div

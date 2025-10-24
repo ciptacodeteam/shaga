@@ -253,11 +253,11 @@
       "links": [
         {
           "text": "Darat",
-          "link": "/services/land"
+          "link": "/services"
         },
         {
           "text": "Laut",
-          "link": "/services/sea"
+          "link": "/services"
         }
       ]
     }

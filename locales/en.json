@@ -253,11 +253,11 @@
       "links": [
         {
           "text": "Land",
-          "link": "/services/land"
+          "link": "/services"
         },
         {
           "text": "Sea",
-          "link": "/services/sea"
+          "link": "/services"
         }
       ]
     }
