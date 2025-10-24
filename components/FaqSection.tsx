@@ -55,17 +55,16 @@ const FaqSection = () => {
         </motion.div>
       </header>
 
-      <div className='bg-white mt-4 md:mt-10'>
+      <motion.div
+        initial={{ opacity: 0, y: 10 }}
+        animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 10 }}
+        transition={{ duration: 0.8, delay: 0.4 }}
+        className='bg-white mt-4 md:mt-10'
+      >
         {faqs.map((item, i) => (
           <Disclosure key={i} defaultOpen={i === 2}>
             {({ open }) => (
-              <motion.div
-                className='border-b last:border-b-0 border-slate-200'
-                initial={{ opacity: 0, y: 8 }}
-                animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 8 }}
-                transition={{ duration: 0.6, delay: i * 0.06 }}
-                layout
-              >
+              <div className='border-b last:border-b-0 border-slate-200'>
                 <h4 className='m-0'>
                   <Disclosure.Button className='w-full text-left px-2 lg:px-6 py-6 flex items-center justify-between gap-4 focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400'>
                     <span className='text-lg md:text-xl text-sky-700 font-medium font-manrope'>
@@ -106,11 +105,11 @@ const FaqSection = () => {
                     </p>
                   </motion.div>
                 </Disclosure.Panel>
-              </motion.div>
+              </div>
             )}
           </Disclosure>
         ))}
-      </div>
+      </motion.div>
     </section>
   );
 };
