@@ -21,6 +21,7 @@ const FaqSection = () => {
   return (
     <section
       className='max-w-4xl mx-auto px-4 md:px-6 xl:px-0 py-16 pt-5'
+      id='faq-section'
       ref={ref}
     >
       <header className='flex flex-col justify-center items-center text-center px-2 md:px-0'>

@@ -236,15 +236,15 @@
       "links": [
         {
           "text": "FAQ",
-          "link": "/faq"
+          "link": "/contact#faq-section"
         },
         {
           "text": "Customer Support",
-          "link": "/support"
+          "link": "/contact#contact-form"
         },
         {
           "text": "Tracking",
-          "link": "/tracking"
+          "link": "/contact#contact-form"
         }
       ]
     },

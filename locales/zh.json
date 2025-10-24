@@ -236,15 +236,15 @@
       "links": [
         {
           "text": "常见问题",
-          "link": "/faq"
+          "link": "/contact#faq-section"
         },
         {
           "text": "客户支持",
-          "link": "/support"
+          "link": "/contact#contact-form"
         },
         {
           "text": "物流跟踪",
-          "link": "/tracking"
+          "link": "/contact#contact-form"
         }
       ]
     },

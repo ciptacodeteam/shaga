@@ -132,7 +132,7 @@ export default function FooterSection() {
                           <Link
                             key={index}
                             prefetch
-                            href={link.url}
+                            href={link.link}
                             className='font-manrope text-[#EEEEEE]'
                           >
                             {link.text}
@@ -161,7 +161,7 @@ export default function FooterSection() {
                           <Link
                             key={index}
                             prefetch
-                            href={link.url}
+                            href={link.link}
                             className='font-manrope text-[#EEEEEE]'
                           >
                             {link.text}
@@ -190,7 +190,7 @@ export default function FooterSection() {
                           <Link
                             key={index}
                             prefetch
-                            href={link.url}
+                            href={link.link}
                             className='font-manrope text-[#EEEEEE]'
                           >
                             {link.text}

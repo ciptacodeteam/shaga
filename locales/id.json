@@ -236,15 +236,15 @@
       "links": [
         {
           "text": "FAQ",
-          "link": "/faq"
+          "link": "/contact#faq-section"
         },
         {
           "text": "Dukungan Pelanggan",
-          "link": "/support"
+          "link": "/contact#contact-form"
         },
         {
           "text": "Pelacakan",
-          "link": "/tracking"
+          "link": "/contact#contact-form"
         }
       ]
     },
