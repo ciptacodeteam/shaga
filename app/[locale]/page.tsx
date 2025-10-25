@@ -2,6 +2,7 @@ import GetInTouch from '@/components/section/beranda/GetInTouchSection';
 import HeroSection from '@/components/section/beranda/HeroSection';
 import PartnerClient from '@/components/section/beranda/PartnerClient';
 import SolutionSection from '@/components/section/beranda/SolutionSection';
+import TransformSection from '@/components/section/beranda/TransformingSection';
 import ValueSection from '@/components/section/beranda/ValuesSection';
 import VisionMissionSection from '@/components/section/beranda/VisionMisionSection';
 import { locales } from '@/i18n/routing';
@@ -22,8 +23,8 @@ export default function HomePage() {
       <VisionMissionSection />
       <SolutionSection />
       <ValueSection />
-      {/* <TransformSection />
-      <WorkSection /> */}
+      <TransformSection />
+      {/* <WorkSection /> */}
       {/* <ServicesSection /> */}
       <PartnerClient />
       <GetInTouch />
