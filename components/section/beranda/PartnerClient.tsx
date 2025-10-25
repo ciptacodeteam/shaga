@@ -110,7 +110,7 @@ export default function PartnerClient() {
           </div>
 
           <div>
-            <div className='mx-auto grid grid-cols-2 md:flex flex-wrap justify-center gap-x-8 sm:gap-x-12 gap-y-12 items-center mt-6 md:mt-10 px-4 md:px-0'>
+            <div className='mx-auto grid grid-cols-2 md:flex flex-wrap justify-center gap-x-8 sm:gap-x-12 gap-y-12 items-center mt-6 md:mt-10 px-4 md:px-0 md:gap-y-16'>
               {partners.map((partner) => (
                 <motion.div
                   key={partner.id}
@@ -120,7 +120,7 @@ export default function PartnerClient() {
                   }
                   transition={{ duration: 0.6, delay: partner.id * 0.2 }}
                   whileHover={{ scale: 1.05 }}
-                  className='flex items-center justify-center p-2 md:p-4'
+                  className='flex items-center justify-center p-2 md:p-2'
                 >
                   <Image
                     alt={partner.name}
@@ -128,7 +128,7 @@ export default function PartnerClient() {
                     priority
                     width={200}
                     height={200}
-                    className='max-h-14 md:max-h-20 max-w-full object-contain'
+                    className='max-h-14 md:max-h-16 max-w-full object-contain'
                   />
                 </motion.div>
               ))}

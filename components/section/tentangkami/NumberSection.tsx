@@ -46,7 +46,7 @@ export default function NumberSection() {
                     <h1 className='font-manrope text-primary  text-5xl md:text-6xl xl:text-7xl font-semibold tracking-tight'>
                       {stat.value}
                     </h1>
-                    <p className='font-manrope text-[#556996] text-base md:text-lg lg:text-2xl font-medium mt-8 text-center'>
+                    <p className='font-manrope text-[#556996] text-base md:text-lg font-medium mt-8 text-center'>
                       {stat.label}
                     </p>
                   </div>

@@ -25,7 +25,7 @@ const CTAButton = ({ url, text, size, variant, onClick, className }: Props) => {
   };
 
   const variants = {
-    primary: 'bg-white text-primary',
+    primary: 'bg-white text-secondary',
     secondary: 'bg-secondary text-white',
     outline: 'border border-primary text-primary bg-transparent',
     'outline-primary': 'border border-primary text-primary bg-transparent',
@@ -53,7 +53,9 @@ const CTAButton = ({ url, text, size, variant, onClick, className }: Props) => {
         className={cn(
           'flex items-center justify-center w-8 h-8 rounded-full transition-all duration-300 group-hover:rotate-45',
           variant === 'secondary' ? 'bg-white' : 'bg-secondary',
-          variant === 'outline' ? 'bg-primary/20 group-hover:bg-primary' : '',
+          variant === 'outline'
+            ? 'bg-secondary/20 group-hover:bg-secondary'
+            : '',
           variant === 'outline-primary'
             ? 'bg-primary/20 group-hover:bg-primary'
             : '',
@@ -69,7 +71,7 @@ const CTAButton = ({ url, text, size, variant, onClick, className }: Props) => {
               ? 'text-primary group-hover:!text-white'
               : '',
             variant === 'outline-white'
-              ? 'text-white group-hover:text-primary'
+              ? 'text-white group-hover:text-secondary'
               : ''
           )}
         />

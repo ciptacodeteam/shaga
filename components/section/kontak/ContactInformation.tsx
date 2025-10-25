@@ -1,61 +1,61 @@
 'use client';
 
-import { useRef, useState } from 'react';
+import { useRef } from 'react';
 
 import { HiOutlineLocationMarker, HiOutlineMail } from 'react-icons/hi';
 import { LuClock3, LuPhone } from 'react-icons/lu';
 
-import {
-  Listbox,
-  ListboxButton,
-  ListboxOption,
-  ListboxOptions,
-} from '@headlessui/react';
+// import {
+//   Listbox,
+//   ListboxButton,
+//   ListboxOption,
+//   ListboxOptions,
+// } from '@headlessui/react';
 
-import { ChevronUpDownIcon } from '@heroicons/react/24/outline';
-import { CheckIcon } from '@heroicons/react/24/solid';
-import { useTranslations } from 'next-intl';
-import { useInView } from 'motion/react';
+// import { ChevronUpDownIcon } from '@heroicons/react/24/outline';
+// import { CheckIcon } from '@heroicons/react/24/solid';
 import { motion } from 'framer-motion';
+import { useInView } from 'motion/react';
+import { useTranslations } from 'next-intl';
 
 // Link not needed here (form uses native submit button)
-const people = [
-  {
-    id: 1,
-    name: 'Wade Cooper',
-  },
-  {
-    id: 2,
-    name: 'Arlene Mccoy',
-  },
-];
+// const people = [
+//   {
+//     id: 1,
+//     name: 'Wade Cooper',
+//   },
+//   {
+//     id: 2,
+//     name: 'Arlene Mccoy',
+//   },
+// ];
 
 export default function ContactInformation() {
   const t = useTranslations('contactPage.contactInformationSection');
 
-  const [selected, setSelected] = useState<any>(null);
-  const [formData, setFormData] = useState({
-    firstName: '',
-    lastName: '',
-    email: '',
-    phone: '',
-    subject: '',
-    message: '',
-  });
+  // const [selected, setSelected] = useState<any>(null);
+  // const [formData, setFormData] = useState({
+  //   firstName: '',
+  //   lastName: '',
+  //   email: '',
+  //   phone: '',
+  //   subject: '',
+  //   message: '',
+  // });
 
-  const handleChange = (
-    e: React.ChangeEvent<
-      HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
-    >
-  ) => {
-    const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
-  };
+  // const handleChange = (
+  //   e: React.ChangeEvent<
+  //     HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
+  //   >
+  // ) => {
+  //   const { name, value } = e.target;
+  //   setFormData({ ...formData, [name]: value });
+  // };
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    console.log(formData);
-  };
+  // const handleSubmit = (e: React.FormEvent) => {
+  //   e.preventDefault();
+  //   console.log(formData);
+  // };
 
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: '-50px' });
@@ -79,34 +79,36 @@ export default function ContactInformation() {
             </p>
           </motion.div>
 
-          <div className='grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12'>
+          <div className='grid grid-cols-1 gap-8 md:gap-12'>
             <div>
-              <div className='mb-6 md:mb-8'>
-                <motion.p
-                  initial={{ opacity: 0, y: 10 }}
-                  animate={
-                    isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 10 }
-                  }
-                  transition={{ duration: 0.8, delay: 0.2 }}
-                  className='font-manrope text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-tight text-primary [&>span]:text-secondary'
-                  dangerouslySetInnerHTML={{
-                    __html: t.raw('title'),
-                  }}
-                ></motion.p>
-              </div>
+              <header className='grid grid-cols-1 lg:grid-cols-2 gap-x-16'>
+                <div className='mb-6 md:mb-8'>
+                  <motion.p
+                    initial={{ opacity: 0, y: 10 }}
+                    animate={
+                      isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 10 }
+                    }
+                    transition={{ duration: 0.8, delay: 0.2 }}
+                    className='font-manrope text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-tight text-primary [&>span]:text-secondary'
+                    dangerouslySetInnerHTML={{
+                      __html: t.raw('title'),
+                    }}
+                  ></motion.p>
+                </div>
 
-              <div>
-                <motion.p
-                  initial={{ opacity: 0, y: 10 }}
-                  animate={
-                    isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 10 }
-                  }
-                  transition={{ duration: 0.8, delay: 0.3 }}
-                  className='font-manrope text-primary mb-6 md:mb-10'
-                >
-                  {t('description')}
-                </motion.p>
-              </div>
+                <div className='lg:max-w-lg lg:ml-auto'>
+                  <motion.p
+                    initial={{ opacity: 0, y: 10 }}
+                    animate={
+                      isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 10 }
+                    }
+                    transition={{ duration: 0.8, delay: 0.3 }}
+                    className='font-manrope text-primary mb-6 md:mb-10'
+                  >
+                    {t('description')}
+                  </motion.p>
+                </div>
+              </header>
 
               <motion.div
                 className='grid grid-cols-1 sm:grid-cols-2 gap-4'
@@ -208,15 +210,18 @@ export default function ContactInformation() {
                       </h1>
                     </div>
                   </div>
-                  <h1 className='font-manrope font-medium text-primary mt-3 md:mt-4 text-base md:text-lg'>
-                    {t('operationalHours')}
-                  </h1>
+                  <h1
+                    className='font-manrope font-medium text-primary mt-3 md:mt-4 text-base md:text-lg'
+                    dangerouslySetInnerHTML={{
+                      __html: t.raw('operationalHours'),
+                    }}
+                  ></h1>
                 </motion.div>
               </motion.div>
             </div>
 
             <div>
-              <div className='border border-[#E0E6F3] p-6 md:p-8 rounded-xl flex flex-col justify-between h-full'>
+              {/* <div className='border border-[#E0E6F3] p-6 md:p-8 rounded-xl flex flex-col justify-between h-full'>
                 <motion.p
                   initial={{ opacity: 0, y: 10 }}
                   animate={
@@ -266,7 +271,6 @@ export default function ContactInformation() {
                     </div>
                   </div>
 
-                  {/* Grid untuk email & phone */}
                   <div className='grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4'>
                     <div>
                       <label className='block text-sm font-medium text-primary font-manrope mb-2'>
@@ -296,7 +300,6 @@ export default function ContactInformation() {
                     </div>
                   </div>
 
-                  {/* Subject */}
                   <div>
                     <Listbox value={selected} onChange={setSelected}>
                       <label className='block text-sm font-medium text-primary font-manrope mb-2'>
@@ -350,7 +353,6 @@ export default function ContactInformation() {
                     </Listbox>
                   </div>
 
-                  {/* Message */}
                   <div>
                     <label className='block text-sm font-medium text-primary font-manrope mb-2'>
                       {t('formMessage.label')}
@@ -365,17 +367,16 @@ export default function ContactInformation() {
                     />
                   </div>
 
-                  {/* Tombol Submit */}
                   <div>
                     <button
                       type='submit'
-                      className='w-full bg-primary text-white py-3 rounded-full transition font-manrope cursor-pointer text-sm md:text-base lg:text-lg font-medium'
+                      className='w-full bg-secondary text-white py-3 rounded-full transition font-manrope cursor-pointer text-sm md:text-base lg:text-lg font-medium'
                     >
                       {t('formSubmitText')}
                     </button>
                   </div>
                 </motion.form>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

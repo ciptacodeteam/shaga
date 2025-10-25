@@ -55,8 +55,8 @@
     }
   ],
   "heroSection": {
-    "title": "Menghubungkan Dunia Lewat Darat, Laut, dan Udara",
-    "subtitle": "Kami menyediakan layanan logistik terpadu yang aman, terpercaya, dan efisien, dengan komitmen tinggi untuk memberikan solusi pengiriman terbaik.",
+    "title": "Menghubungkan Dunia Darat, Laut, dan Udara",
+    "subtitle": "Kami menyediakan layanan logistik terpadu secara aman, terpercaya, dan efisien.",
     "ctaText": "Konsultasi Gratis",
     "ctaLink": "/contact",
     "cta2Text": "Pelajari Lebih Lanjut",
@@ -79,17 +79,17 @@
     "title": "Kami menyediakan <span>layanan logistik</span> untuk pengiriman yang <span>tepat waktu dan aman.</span>",
     "visionNumber": "01",
     "visionTitle": "Visi",
-    "visionDescription": "Menghubungkan dunia melalui industri logistik global dengan kredibilitas dan efisiensi yang disajikan melalui solusi terbaik dan memberi manfaat maksimal bagi semua pihak terkait.",
+    "visionDescription": "Menghubungkan dunia melalui industri logistik global dengan kredibilitas dan efisien yang disajikan melalui solusi terbaik dan memberi manfaat maksimal bagi semua pihak terkait.",
     "missionNumber": "02",
     "missionTitle": "Misi",
-    "missionDescription": "Mendorong pertumbuha pasar global di semua sektor melalui layanan logistik terpadu yang dikerjakan secara profesional dan proporsional."
+    "missionDescription": "Mendorong pertumbuhan pasar global di semua sektor melalui layanan logistik terpadu yang dikerjakan secara profesional dan proposional."
   },
   "solutionSection": {
     "heading": "Solusi Logistik Kami",
-    "title": "Dikelola <span>Secara Profesional</span>, Memberi Manfaat Secara Proporsional.",
+    "title": "Dikelola <span>secara profesional</span>, memberi manfaat secara <span>proposional</span>.",
     "seaShipping": {
       "badge": "Pengiriman Laut",
-      "content": "Perencanaan dan pelaksanaan dengan efisiensi waktu dan biaya yang linier dengan kauntitas dan interval pengiriman melalui kapal kontainer, breakbulk, LCT, RORO, dan lainnya."
+      "content": "Perencanaan dan pelaksanaan dengan efisiensi waktu dan biaya yang linier dengan kuantitas dan interval pengiriman melalui kapal kontainer, breakbulk, LCT, RORO, dan lainnya."
     },
     "landShipping": {
       "badge": "Pengiriman Darat",
@@ -98,7 +98,7 @@
   },
   "valuesSection": {
     "heading": "NILAI-NILAI UTAMA",
-    "title": "Dibangun Atas Dasar <span>Kepercayaan</span> dan <span>Profesionalisme</span>.",
+    "title": "Dibangun atas dasar <span>Kepercayaan</span> dan <span>Profesionalisme</span>.",
     "subtitle": "Kami mengutamakan hubungan kerjasama yang kuat berdasarkan integritas & profesionalitas secara mutual yang bisa berlangsung jangka panjang.",
     "trustItem": {
       "badge": "Terpercaya",
@@ -110,7 +110,7 @@
     },
     "innovationItem": {
       "badge": "Inovasi",
-      "content": "Mendapatkan solusi dengan proses kreatif untuk hasil terbaik."
+      "content": "Mendapatkan solusi dengan proses kreatif untuk hasil yang terbaik."
     },
     "sustainabilityItem": {
       "badge": "Keberlangsungan",
@@ -126,35 +126,42 @@
   "workSection": {
     "heading": "Proses Kerja",
     "title": "Proses Kerja Kami",
-    "subtitle": "Proses kami sederhana namun efektif. Mulai dari konsultasi awal untuk memahami kebutuhan logistik Anda, hingga perencanaan dan pelaksanaan yang matang, kami memastikan setiap detail ditangani dengan presisi.",
+    "subtitle": "Menyederhanakan masalah dengan melalui konsultasi awal, merancang sesuai dengan kebutuhan anda serta merencanakan langkah-langkah terukur terhadap kemungkinan & yang akan terjadi.",
     "steps": [
       {
         "number": "01",
-        "title": "Konsultasi Mendalam",
-        "description": "Penilaian strategis terhadap kebutuhan logistik Anda guna menghadirkan solusi yang optimal dan sesuai dengan tujuan bisnis Anda.",
+        "title": "Konsultasi Menyeluruh",
+        "description": "Menganalisa kebutuhan dan masalah, merancang strategi pelaksanaan dan anggaran biaya, merencanakan langkah-langkah eksekusi dan prevensi.",
         "icon": "/img/1nonactive.webp",
         "iconActive": "/img/1active.webp"
       },
       {
         "number": "02",
-        "title": "Perencanaan Strategis",
-        "description": "Menyusun strategi terpadu guna menjamin proses pengiriman barang yang efektif, efisien, dan tepat waktu.",
+        "title": "Strategi dan Anggaran",
+        "description": "Menyesuaikan rancangan dengan kebutuhan dan tujuan bisnis anda melalui efisiensi di sektor-sektor yang memungkinkan sehingga efektivitas dapat tercapai.",
         "icon": "/img/2nonactive.webp",
         "iconActive": "/img/2active.webp"
       },
       {
         "number": "03",
-        "title": "Eksekusi Efisien",
-        "description": "Mengoordinasikan setiap detail proses pengiriman dengan cermat untuk memastikan pelaksanaan yang lancar dan tepat waktu.",
+        "title": "Eksekusi dan Prevensi",
+        "description": "Dilakukan secara profesional oleh tenaga ahli yang menjaga stabilitas pelaksanaan eksekusi untuk dapat melakukan langkah-langkah prevensi terhadap kemungkinan-kemungkinan yang akan terjadi.",
         "icon": "/img/3nonactive.webp",
         "iconActive": "/img/3active.webp"
       },
       {
         "number": "04",
-        "title": "Pengiriman Tepat Waktu",
-        "description": "Pendekatan mendalam terhadap kebutuhan logistik Anda guna menghadirkan solusi yang paling efektif dan andal.",
+        "title": "Aman dan Tepat Waktu",
+        "description": "Keamanan dan kesiapan baik pelaku, pendukung maupun sarana mobilisasi selalu menjadi prioritas kami untuk menciptakan keutuhan dan keselamatan pengiriman barang anda sampai pada tujuannya.",
         "icon": "/img/4nonactive.webp",
         "iconActive": "/img/4active.webp"
+      },
+      {
+        "number": "05",
+        "title": "Jasa Kepabeanan (PPJK)",
+        "description": "Mempermudah custom clearance impor dan ekspor anda dengan memastikan kelengkapan dokumen yang diperlukan. Update peraturan terbaru dan menjembatani komunikasi yang baik antara semua pihak yang terkait.",
+        "icon": "/img/2nonactive.webp",
+        "iconActive": "/img/2active.webp"
       }
     ]
   },
@@ -164,33 +171,23 @@
     "list": [
       {
         "key": "service-1",
-        "title": "Jasa Kepabeanan",
-        "desc": "Memastikan proses kepabeanan berjalan lancar, sehingga barang Anda dapat melewati perbatasan dengan cepat dan sesuai peraturan."
+        "title": "Manajemen Depot, Pergudangan & Mobilisasi",
+        "desc": "Menyediakan layanan serangkaian rantai kerja untuk mendukung, memudahkan proses mobilisasi terutama untuk daerah yang sulit dijangkau seperti daerah proyek (PLTU, tambang, dll) dengan sarana trailer khusus seperti multi axle, lowbed, flatbed, dolly, goldhofer, logging, dll."
       },
       {
         "key": "service-2",
-        "title": "Pergudangan & Distribusi",
-        "desc": "Solusi penyimpanan yang aman dan distribusi yang efisien untuk menjaga kelancaran alur persediaan Anda."
+        "title": "Lintas Batas",
+        "desc": "Melayani rantai logistik domistik dan internasional untuk beragam muatan."
       },
       {
         "key": "service-3",
-        "title": "Manajemen Rantai Pasok",
-        "desc": "Mengoptimalkan setiap langkah dalam rantai pasok Anda untuk operasi yang lebih efisien dan hemat biaya."
+        "title": "Jenis Layanan",
+        "desc": "Kami siap merancang kebutuhan logistik anda dari dan ke berbagai pelabuhan / port diseluruh wilayah Indonesia dan dunia, dari dan ke semua tujuan spesifik pengiriman barang anda. Layanan kami meliputi jasa door to port, port to port, maupun door to door."
       },
       {
         "key": "service-4",
-        "title": "Solusi Lintas Batas",
-        "desc": "Layanan logistik lintas batas yang lancar untuk menghubungkan bisnis Anda dengan pasar internasional."
-      },
-      {
-        "key": "service-5",
-        "title": "Pengiriman Last-Mile",
-        "desc": "Layanan pengiriman tahap akhir yang andal untuk memastikan produk Anda tiba di depan pintu pelanggan dengan tepat dan akurat."
-      },
-      {
-        "key": "service-6",
         "title": "Penanganan Kargo Proyek",
-        "desc": "Penanganan khusus untuk pengiriman berukuran besar atau kompleks, dengan solusi logistik yang disesuaikan."
+        "desc": "Serumit apapun rencana logistik proyek anda, kami siap berkomitmen untuk menyediakan strategi dan pelaksanaan yang paling efisien dan inovatif. Survei kami melakukan perencanaan untuk memberikan gambaran pelaksanaan yang lebih realistis dan terukur."
       }
     ]
   },
@@ -266,13 +263,13 @@
     "heroSection": {
       "title": "Tentang SHAGA",
       "subtitle": "Mengutamakan pelayanan prima yang profesional untuk mendorong pertumbuhan bersama dengan kerjasama yang baik.",
-      "tagline": "Didukung oleh tim yang yang berdedikasi dan berkomitmen"
+      "tagline": "Didukung oleh tim yang berdedikasi dan berkomitmen"
     },
     "whoAreWeSection": {
       "heading": "Mengenal Kami Lebih Dekat",
-      "title": "Kami Fokus Dalam <span>Layanan Logistik Terpadu</span> Yang Menyeluruh Untuk Memastikan Kelancaran Mobilisasi Sampai ke Tujuan.",
-      "description": "Tim kami yang berkomitmen tinggi, bekerja maksimal untuk mendapatkan solusi terbaik bagi berbagai skala bisnis. Tujuan kami adalah memberikan pelayanan berkualitas dan meminimalisasi resiko di setiap tahap.",
-      "quote": "Kami menyederhanakan proses logistik dengan teknologi canggih, sehingga Anda dapat fokus pada pertumbuhan bisnis",
+      "title": "Layanan logistik terpadu yang <span>menyeluruh</span> untuk memastikan kelancaran mobilisasi <span>sampai ke tujuan</span>.",
+      "description": "Tim kami yang berkomitmen untuk bekerja maksimal dalam mendapatkan solusi terbaik bagi berbagai bisnis dari semua skala. Tujuan kami adalah memberikan pelayanan berkualitas dan meminimalisasi resiko di setiap tahap.",
+      "quote": "Menyederhanakan masalah dengan teknologi, membuat semakin fokus bertumbuh dalam pasar global.",
       "values": {
         "trust": "Dipercaya",
         "customerCentric": "Prioritas",
@@ -283,20 +280,20 @@
     "numberSection": {
       "stats": [
         {
-          "value": "25",
-          "label": "Tahun Pengalaman di Industri"
+          "value": "18",
+          "label": "Tahun pengalaman dalam layanan logistik terpadu baik domestik maupun internasional"
         },
         {
-          "value": "99%",
-          "label": "Tingkat Pengiriman Tepat Waktu"
+          "value": "100%",
+          "label": "Komitmen untuk keamanan dan perngiriman tepat waktu"
         },
         {
           "value": "500+",
-          "label": "Klien Puas di Seluruh Dunia"
+          "label": "Klien puas di seluruh dunia yang mengandalkan layanan kami"
         },
         {
-          "value": "300+",
-          "label": "Karyawan untuk Kesuksesan Anda"
+          "value": "100%",
+          "label": "Koordinasi dan komunikasi warehouse atau gudang untuk kepuasan pelanggan"
         }
       ]
     },
@@ -305,34 +302,35 @@
       "title": "Sejarah Kami Sejak Awal Berdiri",
       "years": [
         {
-          "year": "1999",
-          "description": "Shaga didirikan dengan visi untuk menyediakan solusi logistik regional yang efisien"
-        },
-        {
-          "year": "2005",
-          "description": "Memperluas layanan untuk mencakup pengiriman internasional dan solusi lintas batas"
-        },
-        {
-          "year": "2012",
-          "description": "Membuka kantor baru di berbagai pusat perdagangan global utama, memperkuat jangkauan internasional"
+          "year": "2007",
+          "description": "Berdiri sebagai PT. Geubrina Usaha, fokus pada layanan logistik"
         },
         {
           "year": "2018",
-          "description": "Meluncurkan teknologi pelacakan milik kami sendiri untuk visibilitas pengiriman secara real-time"
+          "description": "Sebagi vendor proyek PLTA di Sumatera Utara (Indonesia Barat)"
         },
         {
-          "year": "2023",
-          "description": "Mencapai tingkat pengiriman tepat waktu 99%, menetapkan posisi sebagai pemimpin industri yang tepercaya"
+          "year": "2022",
+          "description": "Bermitra dengan Fright Forwarder di berbagai port utama di Indonesia dan Global"
+        },
+        {
+          "year": "2024",
+          "description": "Bertransformasi nama menjadi SHAGA untuk mencerminkan visi dan misi perusahaan yang lebih luas"
+        },
+        {
+          "year": "2025",
+          "description": "Sebagai salah satu vendor PMA, PLTA di Indonesia Timur"
         }
       ]
     },
     "gallerySection": {
       "heading": "Armada Kami",
       "title": "<span>Perjalanan</span> Logistik Kami",
-      "description": "Mengantarkan Anda menyusuri perjalanan armada kami, di mana setiap langkah dikelola dengan presisi, kecepatan, dan keandalan, memastikan pengiriman tepat waktu dan logistik tanpa hambatan dari awal hingga akhir."
+      "description": "Mengantarkan Anda menyusuri perjalanan armada kami, di mana setiap langkah dikelola dengan presisi, kecepatan, dan keandalan, memastikan pengiriman tepat waktu dan logistik tanpa hambatan dari awal hingga akhir.",
+      "footerText": "Didukung oleh tim driver yang ahli di berbagai medan perjalanan dengan tingkat kesulitan dengan berbagai armada trailer, trucktor head (highbed / flatbed, lowbed, dolly, sliding axle, multi axle, dll) yang dioperasikan oleh tenaga besar. Kami selalu mengutamakan keselamatan dan keamanan kerja dengan ketelitian dan kebaktian dalam perjalanan. <br/>  <br/>Kami juga melayani berbagai kegiatan pendukung seperti stripping cargo, pergudangan sampai mobilisasi ke berbagai daerah dengan armada yang lebih kecil. <br/>Demikian juga dengan pelayanan bongkar muat kapal / stevedoring untuk kargo dengan kapal breakbulk / LCT."
     },
     "ctaSection": {
-      "title": "Percayakan kargo Anda kepada tim kami",
+      "title": "Kargo anda aman bersama kami di setiap proses dan tahap pengiriman.",
       "description": "Tim berpengalaman kami memastikan kago Anda ditangani dengan sangat hati-hati, menghadirkan pengiriman yang aman dan tepat waktu di setiap tahap prosesnya.",
       "ctaText": "Konsultasi Gratis",
       "ctaLink": "/contact"
@@ -340,7 +338,7 @@
   },
   "contactPage": {
     "heroSection": {
-      "title": "Hubungi Shaga",
+      "title": "Hubungi SHAGA",
       "subtitle": "Kami siap mendukung kebutuhan logistik Anda. Hubungi kami untuk pertanyaan, penawaran, atau bantuan.",
       "tagline": "Mendukung Bisnis di Seluruh Dunia"
     },
@@ -352,7 +350,7 @@
       "emailLabel": "Email",
       "addressLabel": "Alamat",
       "operationalLabel": "Jam Operasional",
-      "operationalHours": "Senin - Sabtu: 08.30 - 17.00 WIB",
+      "operationalHours": "Senin - Jumat: 09.30 - 17.00 WIB <br/> Sabtu: 08.30 - 12.00 WIB",
       "formTitle": "Silakan isi formulir di bawah ini, dan tim kami akan segera menghubungi Anda.",
       "formFirstName": {
         "label": "Nama Depan",
@@ -371,7 +369,7 @@
         "placeholder": "Masukkan nomor kamu"
       },
       "formService": {
-        "label": "Layanan Shaga",
+        "label": "Layanan SHAGA",
         "placeholder": "Pilih layanan"
       },
       "formMessage": {
@@ -383,7 +381,7 @@
     "findUsSection": {
       "heading": "Temukan Kami",
       "title": "Terletak strategis untuk akses mudah ke semua jalur logistik utama",
-      "ctaText": "Jalan Menuju Shaga",
+      "ctaText": "Jalan Menuju SHAGA",
       "ctaLink": "https://maps.app.goo.gl/6MjZsWsgTunc4GGd9"
     },
     "faqSection": {
@@ -391,16 +389,16 @@
       "title": " <span>Pertanyaan</span> Tentang Layanan Kami.",
       "faqs": [
         {
-          "question": "Layanan logistik apa saja yang ditawarkan Shaga?",
-          "answer": "Shaga menawarkan berbagai layanan logistik termasuk pengiriman darat, laut, jasa kepabeanan, pergudangan & distribusi, manajemen rantai pasok, solusi lintas batas, pengiriman last-mile, dan penanganan kargo proyek."
+          "question": "Layanan logistik apa saja yang ditawarkan SHAGA?",
+          "answer": "SHAGA menawarkan berbagai layanan logistik termasuk pengiriman darat, laut, jasa kepabeanan, pergudangan & distribusi, manajemen rantai pasok, solusi lintas batas, pengiriman last-mile, dan penanganan kargo proyek."
         },
         {
           "question": "Bagaimana cara melacak pengiriman saya?",
           "answer": "Anda dapat melacak pengiriman Anda melalui fitur pelacakan di situs web kami dengan memasukkan nomor pelacakan yang diberikan saat pengiriman dikonfirmasi."
         },
         {
-          "question": "Apakah Shaga menyediakan layanan internasional?",
-          "answer": "Ya, Shaga menyediakan layanan logistik internasional yang mencakup pengiriman lintas batas dan solusi kepabeanan untuk membantu bisnis mengakses pasar global."
+          "question": "Apakah SHAGA menyediakan layanan internasional?",
+          "answer": "Ya, SHAGA menyediakan layanan logistik internasional yang mencakup pengiriman lintas batas dan solusi kepabeanan untuk membantu bisnis mengakses pasar global."
         },
         {
           "question": "Bagaimana cara mendapatkan penawaran untuk kebutuhan logistik saya?",
@@ -485,31 +483,37 @@
     "workProcessSection": {
       "heading": "Proses Kerja",
       "title": "<span>Proses Teruji</span> Kami untuk Meraih Keunggulan",
-      "description": "Proses kami sederhana namun efektif. Setiap proyek memang berbeda, tetapi kami telah menangani ribuan proyek sejak pertama kali berdiri. Pengalaman kami adalah aset berharga bagi Anda.",
+      "description": "Menyederhanakan masalah dengan melalui konsultasi awal, merancang sesuai dengan kebutuhan anda serta merencanakan langkah-langkah terukur terhadap kemungkinan & yang akan terjadi.",
       "steps": [
         {
           "number": "01",
-          "title": "Konsultasi Mendalam",
-          "description": "Penilaian strategis terhadap kebutuhan logistik Anda guna menghadirkan solusi yang optimal dan sesuai dengan tujuan bisnis Anda.",
+          "title": "Konsultasi Menyeluruh",
+          "description": "Menganalisa kebutuhan dan masalah, merancang strategi pelaksanaan dan anggaran biaya, merencanakan langkah-langkah eksekusi dan prevensi.",
           "image": "/img/1active.webp"
         },
         {
           "number": "02",
-          "title": "Perencanaan Strategis",
-          "description": "Menyusun strategi terpadu guna menjamin proses pengiriman barang yang efektif, efisien, dan tepat waktu.",
+          "title": "Strategi dan Anggaran",
+          "description": "Menyesuaikan rancangan dengan kebutuhan dan tujuan bisnis anda melalui efisiensi di sektor-sektor yang memungkinkan sehingga efektivitas dapat tercapai.",
           "image": "/img/2active.webp"
         },
         {
           "number": "03",
-          "title": "Eksekusi Efisien",
-          "description": "Mengoordinasikan setiap detail proses pengiriman dengan cermat untuk memastikan pelaksanaan yang lancar dan tepat waktu.",
+          "title": "Eksekusi dan Prevensi",
+          "description": "Dilakukan secara profesional oleh tenaga ahli yang menjaga stabilitas pelaksanaan eksekusi untuk dapat melakukan langkah-langkah prevensi terhadap kemungkinan-kemungkinan yang akan terjadi.",
           "image": "/img/3active.webp"
         },
         {
           "number": "04",
-          "title": "Pengiriman Tepat Waktu",
-          "description": "Pendekatan mendalam terhadap kebutuhan logistik Anda guna menghadirkan solusi yang paling efektif dan andal.",
+          "title": "Aman dan Tepat Waktu",
+          "description": "Keamanan dan kesiapan baik pelaku, pendukung maupun sarana mobilisasi selalu menjadi prioritas kami untuk menciptakan keutuhan dan keselamatan pengiriman barang anda sampai pada tujuannya.",
           "image": "/img/4active.webp"
+        },
+        {
+          "number": "05",
+          "title": "Jasa Kepabeanan (PPJK)",
+          "description": "Mempermudah custom clearance impor dan ekspor anda dengan memastikan kelengkapan dokumen yang diperlukan. Update peraturan terbaru dan menjembatani komunikasi yang baik antara semua pihak yang terkait.",
+          "image": "/img/2active.webp"
         }
       ]
     },

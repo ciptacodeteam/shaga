@@ -1,13 +1,10 @@
-import { locales } from '@/i18n/routing';
 import GetInTouch from '@/components/section/beranda/GetInTouchSection';
 import HeroSection from '@/components/section/beranda/HeroSection';
 import PartnerClient from '@/components/section/beranda/PartnerClient';
-import ServicesSection from '@/components/section/beranda/ServiceSection';
 import SolutionSection from '@/components/section/beranda/SolutionSection';
-import TransformSection from '@/components/section/beranda/TransformingSection';
 import ValueSection from '@/components/section/beranda/ValuesSection';
 import VisionMissionSection from '@/components/section/beranda/VisionMisionSection';
-import WorkSection from '@/components/section/beranda/WorkSection';
+import { locales } from '@/i18n/routing';
 
 export async function generateStaticParams() {
   const params: { locale: string }[] = [];
@@ -25,8 +22,8 @@ export default function HomePage() {
       <VisionMissionSection />
       <SolutionSection />
       <ValueSection />
-      <TransformSection />
-      {/* <WorkSection /> */}
+      {/* <TransformSection />
+      <WorkSection /> */}
       {/* <ServicesSection /> */}
       <PartnerClient />
       <GetInTouch />

@@ -218,9 +218,9 @@ export default function FooterSection() {
                 visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
               }}
             >
-              <p className='font-manrope text-white text-sm mt-8'>
-                © {new Date().getFullYear()} Shaga. All Rights Reserved.
-                <span className='hidden lg:block'>
+              <p className='font-manrope text-white text-sm mt-8 '>
+                © {new Date().getFullYear()} SHAGA. All Rights Reserved.{' '}
+                <span className='hidden lg:inline-block'>
                   Designed & Developed by{' '}
                   <Link
                     href={'https://ciptacode.id'}

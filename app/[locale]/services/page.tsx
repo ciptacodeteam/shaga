@@ -4,6 +4,8 @@ import GetinQuote from '@/components/section/layanankami/GetinQuote';
 import HeroService from '@/components/section/layanankami/HeroService';
 import LogisticService from '@/components/section/layanankami/LogisticService';
 import WorkProcess from '@/components/section/layanankami/WorkProcess';
+import TransformSection from '@/components/section/beranda/TransformingSection';
+import WorkSection from '@/components/section/beranda/WorkSection';
 
 export async function generateStaticParams() {
   const params: { locale: string }[] = [];
@@ -20,6 +22,8 @@ export default function LayananKami() {
       <HeroService />
       <CommunitySection />
       <LogisticService />
+      <TransformSection />
+      <WorkSection />
       <WorkProcess />
       <GetinQuote />
     </>

@@ -11,7 +11,7 @@ export default function GallerySection() {
   const images = [
     '/img/trucks/truck-1.webp',
     '/img/trucks/truck-2.webp',
-    '/img/trucks/truck-3.webp',
+    // '/img/trucks/truck-3.webp',
     '/img/trucks/truck-4.webp',
     '/img/trucks/truck-5.webp',
     '/img/trucks/truck-6.webp',
@@ -99,6 +99,15 @@ export default function GallerySection() {
               </motion.div>
             ))}
           </motion.div>
+
+          <footer className='py-6 mt-10 border-t border-[#E0E6F3]'>
+            <p
+              className='text-[#556996] font-manrope'
+              dangerouslySetInnerHTML={{
+                __html: t.raw('footerText'),
+              }}
+            ></p>
+          </footer>
         </div>
       </section>
     </>
