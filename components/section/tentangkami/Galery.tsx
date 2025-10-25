@@ -99,6 +99,15 @@ export default function GallerySection() {
               </motion.div>
             ))}
           </motion.div>
+
+          <footer className='py-6 mt-10 border-t border-[#E0E6F3]'>
+            <p
+              className='text-[#556996] font-manrope'
+              dangerouslySetInnerHTML={{
+                __html: t.raw('footerText'),
+              }}
+            ></p>
+          </footer>
         </div>
       </section>
     </>

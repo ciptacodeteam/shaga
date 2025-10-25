@@ -210,9 +210,12 @@ export default function ContactInformation() {
                       </h1>
                     </div>
                   </div>
-                  <h1 className='font-manrope font-medium text-primary mt-3 md:mt-4 text-base md:text-lg'>
-                    {t('operationalHours')}
-                  </h1>
+                  <h1
+                    className='font-manrope font-medium text-primary mt-3 md:mt-4 text-base md:text-lg'
+                    dangerouslySetInnerHTML={{
+                      __html: t.raw('operationalHours'),
+                    }}
+                  ></h1>
                 </motion.div>
               </motion.div>
             </div>

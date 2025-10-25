@@ -55,8 +55,8 @@
     }
   ],
   "heroSection": {
-    "title": "陆、海、空，通达全球",
-    "subtitle": "我们通过陆路、海运和空运提供物流解决方案，确保每一批货物准时、安全、优质服务送达。",
+    "title": "连接陆运、海运与空运",
+    "subtitle": "我们提供安全、可靠且高效的综合物流服务。",
     "ctaText": "免费咨询",
     "ctaLink": "/contact",
     "cta2Text": "了解更多",
@@ -76,121 +76,118 @@
   },
   "visionMissionSection": {
     "heading": "SHAGA 随时为您服务",
-    "title": "我们提供<span>物流服务</span>，确保<span>准时且安全</span>的运输。",
+    "title": "我们提供<span>物流服务</span>，确保<span>安全且准时</span>交付。",
     "visionNumber": "01",
     "visionTitle": "愿景",
-    "visionDescription": "成为全球物流行业的领导者，提供顺畅、可靠和创新的解决方案，助力全球企业实现成功与可持续增长。",
+    "visionDescription": "通过全球物流行业连接世界，以信誉和效率提供最佳解决方案，为所有相关方带来最大价值。",
     "missionNumber": "02",
     "missionTitle": "使命",
-    "missionDescription": "我们通过创新且负责任的物流解决方案，将企业与高效、集成的供应链连接起来，提升运营绩效，降低成本，并推动在充满活力的全球市场中实现增长。"
+    "missionDescription": "通过专业且恰当执行的综合物流服务，推动各行业的全球市场增长。"
   },
   "solutionSection": {
     "heading": "我们的物流解决方案",
-    "title": "从运输到仓储，<span>专业管理</span>。",
+    "title": "专业管理，提供相称的收益。",
     "seaShipping": {
       "badge": "海运",
-      "content": "为大量货物提供经济高效的港口运输解决方案。"
+      "content": "通过集装箱船、散货、LCT、RORO 等方式，根据数量与航期进行兼顾时间与成本的高效规划与实施。"
     },
     "landShipping": {
       "badge": "陆运",
-      "content": "为区域运输提供高效且灵活的运输安排。"
+      "content": "覆盖工业区、城市仓储与偏远地区，凭借经验丰富的专业团队提供富有创意且多样化的解决方案。"
     }
   },
   "valuesSection": {
-    "heading": "核心价值观",
-    "title": "建立在<span>信任</span>和<span>卓越</span>之上。",
-    "subtitle": "我们以诚信、质量和责任为核心价值，建立牢固的合作关系。",
+    "heading": "核心价值",
+    "title": "以<span>信任</span>与<span>专业</span>为基石。",
+    "subtitle": "我们优先基于相互诚信与专业精神建立稳固协作，以实现长期合作关系。",
     "trustItem": {
-      "badge": "信任",
-      "content": "我们确保每一次运输从始至终都符合我们的高标准。"
+      "badge": "值得信赖",
+      "content": "以诚信与责任心彻底执行。"
     },
     "customerCentricItem": {
-      "badge": "优先",
-      "content": "您的需求在每一步都被我们优先考虑。"
+      "badge": "以客户为先",
+      "content": "平衡并优先考虑互惠利益，以达成最佳成果。"
     },
     "innovationItem": {
       "badge": "创新",
-      "content": "采用最新技术，带来顺畅的物流体验。"
+      "content": "通过创造性流程寻找最佳解决方案。"
     },
     "sustainabilityItem": {
-      "badge": "可持续",
-      "content": "我们承诺在服务的每个环节践行环保理念。"
+      "badge": "可持续发展",
+      "content": "保持良好沟通，确保每一项持续进行的流程得以维持。"
     }
   },
   "transformingSection": {
-    "title": "我们在物流领域引入战略性创新，支持可持续的市场增长。",
-    "content": "通过先进技术和数据驱动的策略，创新物流解决方案，实现效率提升、成本降低，并满足不断变化的市场需求。",
+    "title": "作为全球市场增长的一部分，我们在每一个战略步骤中均有参与。",
+    "content": "通过数据与技术在物流领域提供支持、创新与变革，推动更好的增长。",
     "ctaText": "了解更多",
     "ctaLink": "/about-us"
   },
   "workSection": {
     "heading": "工作流程",
     "title": "我们的工作流程",
-    "subtitle": "我们的流程简单高效。从初步咨询了解您的物流需求，到详细规划和执行，我们确保每一个细节都精准处理。",
+    "subtitle": "通过初步咨询简化问题，根据您的需求进行设计，并规划可衡量的步骤以实现预期结果。",
     "steps": [
       {
         "number": "01",
-        "title": "深入咨询",
-        "description": "对您的物流需求进行战略评估，提供最优且符合业务目标的解决方案。",
+        "title": "全面咨询",
+        "description": "分析需求与问题，制定执行策略与预算，规划执行与预防步骤。",
         "icon": "/img/1nonactive.webp",
         "iconActive": "/img/1active.webp"
       },
       {
         "number": "02",
-        "title": "战略规划",
-        "description": "制定综合策略，确保货物运输高效、及时且有序。",
+        "title": "策略与预算",
+        "description": "根据贵司的业务需求与目标调整方案，通过优化相关环节以提高效率并实现最佳效果。",
         "icon": "/img/2nonactive.webp",
         "iconActive": "/img/2active.webp"
       },
       {
         "number": "03",
-        "title": "高效执行",
-        "description": "精心协调每个运输环节，确保流程顺畅、准时完成。",
+        "title": "执行与预防",
+        "description": "由专业团队执行，保持执行稳定性并采取预防措施以应对潜在风险。",
         "icon": "/img/3nonactive.webp",
         "iconActive": "/img/3active.webp"
       },
       {
         "number": "04",
-        "title": "准时交付",
-        "description": "深入了解您的物流需求，提供最有效、最可靠的解决方案。",
+        "title": "安全且准时",
+        "description": "人员、支持与运输设施的安全与准备始终是我们的优先事项，确保货物在到达目的地前的完整与安全。",
         "icon": "/img/4nonactive.webp",
         "iconActive": "/img/4active.webp"
+      },
+      {
+        "number": "05",
+        "title": "报关服务（PPJK）",
+        "description": "简化您的进出口报关流程，确保所需文件齐全、更新最新法规并协调相关各方的沟通。",
+        "icon": "/img/2nonactive.webp",
+        "iconActive": "/img/2active.webp"
       }
     ]
   },
   "servicesSection": {
     "heading": "我们的物流服务",
-    "title": "满足您<span>需求</span>的<span>全面</span>物流服务。",
+    "title": "综合 <span>物流服务</span>，满足您的<span>需求</span>。",
     "list": [
       {
         "key": "service-1",
-        "title": "报关服务",
-        "desc": "确保通关流程顺畅，让您的货物快速且合规地通过边境。"
+        "title": "仓库、仓储与动员管理",
+        "desc": "提供一系列工作流程服务以支持并便于动员，尤其针对项目现场（发电厂、采矿等）等难以到达的区域，使用多轴、低板、平板、拖车、Goldhofer 等特殊运输工具。"
       },
       {
         "key": "service-2",
-        "title": "仓储与分销",
-        "desc": "安全的仓储解决方案和高效的分销服务，保障您的供应链畅通无阻。"
+        "title": "跨境",
+        "desc": "为各种类型货物提供国内与国际物流链服务。"
       },
       {
         "key": "service-3",
-        "title": "供应链管理",
-        "desc": "优化供应链每一步，实现更高效和更具成本效益的运营。"
+        "title": "服务类型",
+        "desc": "我们准备为您设计往返印尼及全球各港口的物流方案，覆盖所有特定运输目的地。我们的服务包括门到港、港到港与门到门解决方案。"
       },
       {
         "key": "service-4",
-        "title": "跨境解决方案",
-        "desc": "顺畅的跨境物流服务，助力您的业务连接国际市场。"
-      },
-      {
-        "key": "service-5",
-        "title": "末端配送",
-        "desc": "可靠的最后一公里配送服务，确保您的产品准确及时送达客户门前。"
-      },
-      {
-        "key": "service-6",
         "title": "项目货物处理",
-        "desc": "针对大型或复杂货物的专属处理，提供定制化物流解决方案。"
+        "desc": "无论您的项目物流计划多复杂，我们致力于提供最有效且创新的策略与执行。我们的勘察规划提供更现实且可衡量的实施概览。"
       }
     ]
   },
@@ -265,16 +262,16 @@
   "aboutPage": {
     "heroSection": {
       "title": "关于 SHAGA",
-      "subtitle": "通过定制化的物流解决方案提供卓越，推动效率、创新与客户满意度。",
-      "tagline": "由才华横溢的团队推动"
+      "subtitle": "优先提供卓越专业服务，通过紧密协作推动共同成长。",
+      "tagline": "由一支敬业且富有责任感的团队支持"
     },
     "whoAreWeSection": {
-      "heading": "更深入地了解我们",
-      "title": "我们专注于<span>全面的物流服务</span>，确保准时且安全的交付。",
-      "description": "我们的专职团队不懈努力，为各类规模的企业提供定制化解决方案，帮助您轻松且可靠地实现目标。从报关服务到末端配送，我们在每项服务中坚持质量与精细化管理。",
-      "quote": "我们通过先进技术简化物流流程，让您能够专注于业务增长。",
+      "heading": "更好地了解我们",
+      "title": "综合一体化物流服务，确保顺利动员并将货物<span>送达目的地</span>。",
+      "description": "我们的团队致力于为各类企业提供最佳解决方案。我们的目标是在每个环节提供优质服务并将风险降到最低。",
+      "quote": "以技术简化问题，使您能更专注于全球市场的增长。",
       "values": {
-        "trust": "信任",
+        "trust": "值得信赖",
         "customerCentric": "以客户为先",
         "innovation": "创新",
         "sustainability": "可持续发展"
@@ -283,57 +280,58 @@
     "numberSection": {
       "stats": [
         {
-          "value": "25",
-          "label": "年行业经验"
+          "value": "18",
+          "label": "在国内和国际一体化物流服务方面拥有18年经验"
         },
         {
-          "value": "99%",
-          "label": "准点交付率"
+          "value": "100%",
+          "label": "致力于安全与准时交付"
         },
         {
           "value": "500+",
-          "label": "全球满意客户"
+          "label": "全球满意客户，信赖我们的服务"
         },
         {
-          "value": "300+",
-          "label": "为您成功而付出的员工"
+          "value": "100%",
+          "label": "仓储协调与沟通，确保客户满意"
         }
       ]
     },
     "milestoneSection": {
-      "heading": "公司发展历程",
-      "title": "我们的历史",
+      "heading": "公司进展",
+      "title": "自成立以来的历史",
       "years": [
         {
-          "year": "1999",
-          "description": "SHAGA 成立，旨在提供高效的区域物流解决方案。"
-        },
-        {
-          "year": "2005",
-          "description": "扩展服务至国际运输与跨境解决方案。"
-        },
-        {
-          "year": "2012",
-          "description": "在多个全球主要贸易中心开设新办事处，强化国际覆盖范围。"
+          "year": "2007",
+          "description": "成立为 PT. Geubrina Usaha，专注于物流服务"
         },
         {
           "year": "2018",
-          "description": "推出自主追踪技术，实现运输的实时可视化。"
+          "description": "作为北苏门答腊（印度尼西亚西部）一处水电站（PLTA）项目的供应商"
         },
         {
-          "year": "2023",
-          "description": "实现 99% 的准时交付率，确立作为值得信赖的行业领导者的地位。"
+          "year": "2022",
+          "description": "与印度尼西亚及全球主要港口的货运代理建立合作"
+        },
+        {
+          "year": "2024",
+          "description": "于2024年更名为 SHAGA，以契合公司更广阔的愿景与使命"
+        },
+        {
+          "year": "2025",
+          "description": "成为东印度尼西亚水电项目的 PMA 供应商之一"
         }
       ]
     },
     "gallerySection": {
       "heading": "我们的车队",
-      "title": "<span>物流</span> 之旅",
-      "description": "带您回顾我们的车队与运营旅程，每一步都以精准、速度与可靠性管理，确保从始至终的准时交付与无缝物流体验。"
+      "title": "<span>我们的</span> 物流旅程",
+      "description": "探索我们的车队旅程，每一步都以精确、迅速与可靠进行管理，确保准时交付与无缝衔接的物流从始至终。",
+      "footerText": "由一支司机团队支持，具备在各种地形与难度等级下操作多种挂车与牵引车（高板/平板、低板、拖车、滑轴、多轴等）的技能与经验。我们始终以勤勉与敬业确保每次运输的安全与保障。 <br/>  <br/>我们还提供诸如拆箱、仓储与小型车队到各地区动员等配套服务。<br/>我们亦提供散货/ LCT 运输船的装卸服务。"
     },
     "ctaSection": {
-      "title": "将您的货物托付给我们的团队",
-      "description": "我们的资深团队确保您的货物在每一环节都被细心处理，提供安全且准时的交付服务。",
+      "title": "您的货物在我们手中于每个流程与运输阶段都能获得安全保障。",
+      "description": "我们的经验团队确保对货物细致照管，在每个阶段都实现安全且准时的交付。",
       "ctaText": "免费咨询",
       "ctaLink": "/contact"
     }
@@ -341,75 +339,75 @@
   "contactPage": {
     "heroSection": {
       "title": "联系 SHAGA",
-      "subtitle": "我们随时准备支持您的物流需求。如有疑问、报价或需要帮助，请联系我们。",
-      "tagline": "支持全球业务"
+      "subtitle": "我们随时准备支持您的物流需求。如有咨询、报价或需要帮助，请与我们联系。",
+      "tagline": "为全球企业提供支持"
     },
     "contactInformationSection": {
-      "heading": "联系信息",
-      "title": "立即<span>与我们联系</span>，我们将<span>助力您的业务</span>",
-      "description": "准备将您的物流提升到新的水平吗？今天就联系我们，了解我们的定制解决方案与专业如何转型您的供应链。",
+      "heading": "联系方式",
+      "title": "<span>联系我们</span>，我们将<span>支持您的业务</span>",
+      "description": "准备将您的物流提升到新水平？今天就联系我们，了解我们的定制化解决方案与专业如何改变您的供应链。",
       "phoneLabel": "电话",
-      "emailLabel": "电子邮件",
+      "emailLabel": "邮箱",
       "addressLabel": "地址",
       "operationalLabel": "营业时间",
-      "operationalHours": "周一 - 周六：08:30 - 17:00（WIB）",
-      "formTitle": "请填写以下表格，我们的团队会尽快与您联系。",
+      "operationalHours": "周一 - 周五：09:30 - 17:00 WIB <br/> 周六：08:30 - 12:00 WIB",
+      "formTitle": "请填写以下表单，我们的团队会尽快与您联系。",
       "formFirstName": {
         "label": "名",
-        "placeholder": "请输入名"
+        "placeholder": "输入名"
       },
       "formLastName": {
         "label": "姓",
-        "placeholder": "请输入姓"
+        "placeholder": "输入姓"
       },
       "formEmail": {
-        "label": "电子邮箱地址",
-        "placeholder": "请输入邮箱地址"
+        "label": "电子邮箱",
+        "placeholder": "输入您的邮箱"
       },
       "formPhone": {
         "label": "电话号码",
-        "placeholder": "请输入电话号码"
+        "placeholder": "输入您的电话号码"
       },
       "formService": {
         "label": "SHAGA 服务",
-        "placeholder": "请选择服务"
+        "placeholder": "选择服务"
       },
       "formMessage": {
         "label": "留言",
-        "placeholder": "在此输入您的留言"
+        "placeholder": "在此填写您的留言"
       },
       "formSubmitText": "联系我们"
     },
     "findUsSection": {
-      "heading": "找到我们",
-      "title": "地理位置优越，便于通达所有主要物流路线",
-      "ctaText": "前往 SHAGA 的路线",
+      "heading": "查找我们",
+      "title": "地理位置优越，便于连接所有主要物流路线",
+      "ctaText": "获取路线",
       "ctaLink": "https://maps.app.goo.gl/6MjZsWsgTunc4GGd9"
     },
     "faqSection": {
       "heading": "常见问题",
-      "title": "<span>常见问题</span> 关于我们的服务。",
+      "title": "关于我们服务的<span>常见问题</span>",
       "faqs": [
         {
           "question": "SHAGA 提供哪些物流服务？",
-          "answer": "SHAGA 提供多种物流服务，包括陆运、海运、报关服务、仓储与分销、供应链管理、跨境解决方案、末端配送及项目货物处理。"
+          "answer": "SHAGA 提供多种物流服务，包括陆运与海运、报关服务、仓储与分销、供应链管理、跨境解决方案、末端配送和项目货物处理。"
         },
         {
-          "question": "我如何追踪我的货物？",
-          "answer": "您可以通过我们网站的跟踪功能，使用发货确认时提供的追踪编号来查询货物状态。"
+          "question": "如何跟踪我的货运？",
+          "answer": "您可以在我们的网站上使用跟踪功能，通过输入货运确认时提供的追踪编号来跟踪货运。"
         },
         {
-          "question": "SHAGA 提供国际服务吗？",
-          "answer": "是的，SHAGA 提供国际物流服务，涵盖跨境运输和报关解决方案，帮助企业进入全球市场。"
+          "question": "SHAGA 是否提供国际服务？",
+          "answer": "是的，SHAGA 提供国际物流服务，包括跨境运输与报关解决方案，助力企业进入全球市场。"
         },
         {
-          "question": "如何获得针对我物流需求的报价？",
-          "answer": "您可以通过网站上的联系表单联系销售团队，或直接通过电话或电子邮件联系我们，以获取根据您需求定制的报价。"
+          "question": "如何获得物流报价？",
+          "answer": "您可以通过网站上的联系表单联系我们的销售团队，或直接通过电话或邮件与我们联系，以获取针对您物流需求的定制报价。"
         }
       ]
     },
     "discussionCtaSection": {
-      "title": "联系我们，讨论我们的服务如何支持您的业务并简化物流需求。",
+      "title": "联系我们，讨论我们的服务如何支持您的业务。",
       "ctaText": "联系我们",
       "ctaLink": "/contact#contact-form"
     }
@@ -417,99 +415,105 @@
   "servicePage": {
     "heroSection": {
       "title": "物流服务",
-      "subtitle": "我们的综合物流解决方案旨在优化您的供应链并提升业务运营效率。",
-      "tagline": "为每种需求提供定制解决方案"
+      "subtitle": "我们的综合物流解决方案旨在优化您的供应链并提升业务运营。",
+      "tagline": "为每一种需求定制解决方案"
     },
     "communitySection": {
       "heading": "我们的社区",
-      "title": "加入我们的<span>商业伙伴与物流社区</span>，共同成长",
-      "description": "加入由企业和物流合作伙伴组成的活跃社区，共同优化供应链并推动业务增长。",
+      "title": "加入 <span>业务合作伙伴</span> 与日益壮大的物流社区",
+      "description": "加入一个由企业与物流合作伙伴组成的充满活力的社区，共同优化供应链并推动增长。",
       "ctaText": "了解更多",
       "ctaLink": "/about-us",
       "stats": [
         {
-          "value": "25",
-          "label": "年行业经验"
+          "value": "18",
+          "label": "在国内和国际一体化物流服务方面拥有18年经验"
         },
         {
-          "value": "300+",
-          "label": "为您成功而付出的员工"
+          "value": "100%",
+          "label": "致力于安全与准时交付"
         },
         {
           "value": "500+",
-          "label": "全球满意客户"
+          "label": "全球满意客户，信赖我们的服务"
         },
         {
-          "value": "99%",
-          "label": "准时交付率"
+          "value": "100%",
+          "label": "仓储协调与沟通，确保客户满意"
         }
       ]
     },
     "logisticServiceSection": {
       "heading": "物流服务",
-      "title": "<span>综合物流服务</span>，为<span>满足需求</span>量身定制。",
-      "description": "我们的愿景是成为领先的物流合作伙伴，以供应链管理、创新与客户满意度为核心，超越期望，推动客户在全球范围内取得成功。",
+      "title": "综合 <span>物流服务</span>，满足您的<span>需求</span>。",
+      "description": "我们的愿景是成为领先的物流合作伙伴，以卓越的供应链管理、创新和客户满意度著称，超越期望并推动客户在全球范围内的成功。",
       "list": [
         {
           "key": "service-1",
           "title": "报关服务",
-          "desc": "确保报关流程顺畅，使您的货物快速且合规通过边境。"
+          "desc": "确保报关流程顺畅，使您的货物能快速通关并符合法规。"
         },
         {
           "key": "service-2",
           "title": "仓储与分销",
-          "desc": "安全的储存解决方案与高效的分销服务，保障库存流通顺畅。"
+          "desc": "安全的存储解决方案与高效的分销，确保库存顺畅流转。"
         },
         {
           "key": "service-3",
           "title": "供应链管理",
-          "desc": "优化供应链的各个环节，实现更高效、更具成本效益的运营。"
+          "desc": "优化供应链的每一步，实现更高效、更具成本效益的运营。"
         },
         {
           "key": "service-4",
           "title": "跨境解决方案",
-          "desc": "顺畅的跨境物流服务，助力您的业务连接国际市场。"
+          "desc": "无缝的跨境物流服务，将您的业务连接到国际市场。"
         },
         {
           "key": "service-5",
           "title": "末端配送",
-          "desc": "可靠的最后一公里配送服务，确保产品准时且准确地送达客户门前。"
+          "desc": "可靠的最后一公里配送服务，确保您的产品准确且按时送达客户门口。"
         },
         {
           "key": "service-6",
           "title": "项目货物处理",
-          "desc": "针对大型或复杂货物的专属处理，提供定制化物流解决方案。"
+          "desc": "针对超大或复杂货物的专业处理，提供量身定制的物流解决方案。"
         }
       ]
     },
     "workProcessSection": {
       "heading": "工作流程",
-      "title": "<span>经过验证的流程</span>，助您实现卓越",
-      "description": "我们的流程简洁却高效。每个项目都有所不同，但自成立以来我们已处理过数千个项目。我们的经验是您宝贵的资产。",
+      "title": "<span>经过验证的</span> 流程以实现卓越",
+      "description": "通过初步咨询简化挑战，根据您的需求进行设计，并规划可衡量的步骤以实现预期结果。",
       "steps": [
         {
           "number": "01",
-          "title": "深入咨询",
-          "description": "对您的物流需求进行战略评估，提供最优且符合业务目标的解决方案。",
+          "title": "全面咨询",
+          "description": "分析需求与问题，设计实施策略与预算，并规划执行与预防措施。",
           "image": "/img/1active.webp"
         },
         {
           "number": "02",
-          "title": "战略规划",
-          "description": "制定综合策略，确保货物运输高效、及时且有序。",
+          "title": "策略与预算",
+          "description": "根据您的业务需求与目标调整方案，通过优化相关环节以提高效率并实现最佳效果。",
           "image": "/img/2active.webp"
         },
         {
           "number": "03",
-          "title": "高效执行",
-          "description": "精心协调每个运输环节，确保流程顺畅并按时完成。",
+          "title": "执行与预防",
+          "description": "由专业人员执行，保持执行稳定性并实施防范措施以应对潜在风险。",
           "image": "/img/3active.webp"
         },
         {
           "number": "04",
-          "title": "准时交付",
-          "description": "深入了解您的物流需求，提供最有效且可靠的解决方案。",
+          "title": "安全且准时",
+          "description": "人员、支持与运输资产的安全与准备始终是我们的优先事项，确保货物在到达目的地前的完整与安全。",
           "image": "/img/4active.webp"
+        },
+        {
+          "number": "05",
+          "title": "报关服务（PPJK）",
+          "description": "通过确保所需文件齐备、更新最新法规并促进相关方之间的清晰沟通，简化您的进出口报关流程。",
+          "image": "/img/2active.webp"
         }
       ]
     },

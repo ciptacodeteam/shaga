@@ -57,7 +57,7 @@ const CTAButton = ({ url, text, size, variant, onClick, className }: Props) => {
             ? 'bg-secondary/20 group-hover:bg-secondary'
             : '',
           variant === 'outline-primary'
-            ? 'bg-secondary/20 group-hover:bg-secondary'
+            ? 'bg-primary/20 group-hover:bg-primary'
             : '',
           variant === 'outline-white' ? 'bg-white/20 group-hover:bg-white' : ''
         )}
