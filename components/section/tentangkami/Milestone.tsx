@@ -50,7 +50,7 @@ export default function MilestoneSection() {
                 transition={{ duration: 0.8, delay: 0.2 }}
                 className='mt-4 md:mt-8'
               >
-                <h1 className='font-manrope text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-tight text-white'>
+                <h1 className='font-manrope text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-tight text-white capitalize'>
                   {t('title')}
                 </h1>
               </motion.div>

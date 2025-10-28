@@ -43,7 +43,7 @@ export default function WorkProcess() {
 
           <div className='mb-6 lg:mb-10'>
             <p
-              className='font-manrope text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-tight text-primary [&>span]:text-secondary'
+              className='font-manrope text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-tight text-primary [&>span]:text-secondary capitalize'
               dangerouslySetInnerHTML={{
                 __html: t.raw('title'),
               }}

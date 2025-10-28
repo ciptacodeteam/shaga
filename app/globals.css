@@ -1,14 +1,15 @@
-@import "tailwindcss";
+@import 'tailwindcss';
+@import 'swiper/css';
+@import 'swiper/css/pagination';
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-manrope: var(--font-manrope);
 
-  --color-primary: #0B55A7;
-  --color-secondary: #02A750;
+  --color-primary: #0b55a7;
+  --color-secondary: #02a750;
 }
-
 
 /* ====== TEXT COLORS ====== */
 .text-primary {
@@ -36,13 +37,13 @@
 .swiper-section-2 .swiper-pagination-bullet {
   width: 40px !important;
   height: 6px !important;
-  background-color: #808EB0 !important;
+  background-color: #808eb0 !important;
   border-radius: 4px !important;
   transition: all 0.3s ease !important;
 }
 
 .swiper-section-2 .swiper-pagination-bullet-active {
-  background-color: #0B55A7 !important;
+  background-color: #0b55a7 !important;
 }
 
 /* bullet3 */
@@ -59,5 +60,5 @@
 }
 
 .swiper-section-3 .swiper-pagination-bullet-active {
-  background-color: #E0E6F3 !important;
+  background-color: #e0e6f3 !important;
 }

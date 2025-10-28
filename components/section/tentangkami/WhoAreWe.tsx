@@ -49,7 +49,7 @@ export default function WhoAreWeSection() {
                 className='mb-4 md:mb-8'
               >
                 <p
-                  className='font-manrope text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-tight text-primary [&>span]:text-secondary'
+                  className='font-manrope text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-tight text-primary [&>span]:text-secondary capitalize'
                   dangerouslySetInnerHTML={{
                     __html: t.raw('title'),
                   }}

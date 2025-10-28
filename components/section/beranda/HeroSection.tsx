@@ -38,7 +38,7 @@ export default function HeroSection() {
               initial='hidden'
               whileInView='visible'
               viewport={{ once: true, amount: 0.2 }}
-              className='text-2xl sm:text-3xl md:text-5xl lg:text-6xl leading-tight font-medium mb-4 font-manrope max-w-xs sm:max-w-none'
+              className='text-2xl sm:text-3xl md:text-5xl lg:text-6xl leading-tight font-medium mb-4 font-manrope max-w-xs sm:max-w-none capitalize'
             >
               {t('heroSection.title')}
             </motion.h1>
@@ -248,7 +248,7 @@ export default function HeroSection() {
       <div className='block lg:hidden mt-6 lg:mt-0'>
         <div className='px-4 md:px-8 lg:px-6 xl:px-0'>
           <div className='max-w-xl md:max-w-2xl'>
-            <h1 className='text-4xl md:text-5xl lg:text-6xl leading-tight font-medium mb-6 font-manrope max-w-xs sm:max-w-none text-primary'>
+            <h1 className='text-4xl md:text-5xl lg:text-6xl leading-tight font-medium mb-6 font-manrope max-w-xs sm:max-w-none text-primary capitalize'>
               {t('heroSection.title')}
             </h1>
             <p className='text-primary font-manrope'>

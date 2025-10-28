@@ -35,7 +35,7 @@ export default function GetInTouch() {
               transition={{ duration: 0.6, ease: 'easeOut', delay: 0.1 }}
             >
               <motion.h1
-                className='text-white font-manrope text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium max-w-full md:max-w-xl leading-tight mb-6 md:mb-10 z-10'
+                className='text-white font-manrope text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium max-w-full md:max-w-xl leading-tight mb-6 md:mb-10 z-10 capitalize'
                 initial={{ opacity: 0, y: 18 }}
                 animate={isInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.6, delay: 0.18 }}

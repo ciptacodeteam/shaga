@@ -36,7 +36,7 @@ export default function GetinQuote() {
                 transition={{ duration: 0.6, delay: 0.05, ease: 'easeOut' }}
               >
                 <motion.p
-                  className='font-manrope text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-tight font-medium text-white capitalize'
+                  className='font-manrope text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-tight font-medium text-white capitalize '
                   initial={{ opacity: 0, y: 8 }}
                   animate={
                     isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 8 }

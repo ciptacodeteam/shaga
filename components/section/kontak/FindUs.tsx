@@ -59,7 +59,7 @@ export default function FindUsSection() {
                   transition={{ duration: 0.5, delay: 0.3, ease: 'easeOut' }}
                   className='mb-6 md:mb-8'
                 >
-                  <p className='font-manrope text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-tight text-white'>
+                  <p className='font-manrope text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-tight text-white capitalize'>
                     {t('title')}
                   </p>
                 </motion.div>

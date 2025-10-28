@@ -60,7 +60,7 @@ export default function ServicesSection() {
               className='mb-16  px-4 md:px-0'
             >
               <p
-                className='font-manrope text-2xl sm:text-3xl lg:text-4xl xl:text-5xl leading-relaxed lg:leading-tight text-primary mx-auto md:max-w-3/4 [&>span]:text-secondary'
+                className='font-manrope text-2xl sm:text-3xl lg:text-4xl xl:text-5xl leading-relaxed lg:leading-tight text-primary mx-auto md:max-w-3/4 [&>span]:text-secondary capitalize'
                 dangerouslySetInnerHTML={{
                   __html: t.raw('servicesSection.title'),
                 }}

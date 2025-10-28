@@ -45,7 +45,7 @@ export default function CommunitySection() {
                     isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 10 }
                   }
                   transition={{ duration: 0.8, delay: 0.2 }}
-                  className='font-manrope text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-tight text-primary [&>span]:text-secondary'
+                  className='font-manrope text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-tight text-primary [&>span]:text-secondary capitalize'
                   dangerouslySetInnerHTML={{
                     __html: t.raw('title'),
                   }}
