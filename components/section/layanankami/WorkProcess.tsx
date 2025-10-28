@@ -25,7 +25,7 @@ export default function WorkProcess() {
   return (
     <>
       <section ref={ref}>
-        <div className='max-w-7xl mx-auto mb-12 lg:mb-30 px-4 md:px-6 xl:px-0'>
+        <div className='max-w-7xl mx-auto mb-12 lg:mb-30 px-4 md:px-8 lg:px-6 xl:px-0'>
           <motion.div
             initial={{ opacity: 0, x: -4 }}
             animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -4 }}

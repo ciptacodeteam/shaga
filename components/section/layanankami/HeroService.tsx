@@ -17,7 +17,7 @@ export default function HeroService() {
         initial={{ opacity: 0 }}
         animate={isInView ? { opacity: 1 } : { opacity: 0 }}
         transition={{ duration: 0.6 }}
-        className='relative mb-16 md:mb-20'
+        className='relative mb-16 lg:mb-20'
       >
         <motion.div
           initial={{ scale: 0.99 }}

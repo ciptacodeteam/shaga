@@ -67,7 +67,7 @@ export default function SolutionSection() {
                   },
                 }}
                 whileHover={{ scale: 1.02 }}
-                className='w-full h-[380px] md:h-[450px] relative rounded-xl overflow-hidden p-8 md:p-12 group'
+                className='w-full h-[380px] md:h-[450px] relative rounded-xl overflow-hidden p-8 lg:p-12 group'
               >
                 <div className="absolute inset-0 bg-[url('/img/sea.webp')] bg-cover bg-center z-0 transition-transform duration-700 ease-out group-hover:scale-110"></div>
 
@@ -97,7 +97,7 @@ export default function SolutionSection() {
                   },
                 }}
                 whileHover={{ scale: 1.02 }}
-                className='w-full h-[380px] md:h-[450px] relative rounded-xl overflow-hidden p-8 md:p-12 group'
+                className='w-full h-[380px] md:h-[450px] relative rounded-xl overflow-hidden p-8 lg:p-12 group'
               >
                 <div className="absolute inset-0 bg-[url('/img/road.webp')] bg-cover bg-center z-0 transition-transform duration-700 ease-out group-hover:scale-110"></div>
 

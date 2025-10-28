@@ -19,7 +19,7 @@ export default function TransformSection() {
           <div className='absolute inset-0 bg-gradient-to-t from-[#001E62] to-transparent'></div>
 
           {/* Content */}
-          <div className='relative max-w-7xl mx-auto px-4 md:px-6 xl:px-0'>
+          <div className='relative max-w-7xl mx-auto px-4 md:px-8 lg:px-6 xl:px-0'>
             <motion.div
               initial={{ opacity: 0, y: 10 }}
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 10 }}

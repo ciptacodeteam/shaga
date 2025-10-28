@@ -1,6 +1,6 @@
 'use client';
 
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
 
 import { HiOutlineLocationMarker, HiOutlineMail } from 'react-icons/hi';
 import { LuClock3, LuPhone } from 'react-icons/lu';
@@ -18,7 +18,7 @@ import { motion } from 'framer-motion';
 import { useInView } from 'motion/react';
 import { useTranslations } from 'next-intl';
 
-// Link not needed here (form uses native submit button)
+// // Link not needed here (form uses native submit button)
 // const people = [
 //   {
 //     id: 1,
@@ -34,28 +34,28 @@ export default function ContactInformation() {
   const t = useTranslations('contactPage.contactInformationSection');
 
   // const [selected, setSelected] = useState<any>(null);
-  // const [formData, setFormData] = useState({
-  //   firstName: '',
-  //   lastName: '',
-  //   email: '',
-  //   phone: '',
-  //   subject: '',
-  //   message: '',
-  // });
+  const [formData, setFormData] = useState({
+    firstName: '',
+    lastName: '',
+    email: '',
+    phone: '',
+    subject: '',
+    message: '',
+  });
 
-  // const handleChange = (
-  //   e: React.ChangeEvent<
-  //     HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
-  //   >
-  // ) => {
-  //   const { name, value } = e.target;
-  //   setFormData({ ...formData, [name]: value });
-  // };
+  const handleChange = (
+    e: React.ChangeEvent<
+      HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
+    >
+  ) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
 
-  // const handleSubmit = (e: React.FormEvent) => {
-  //   e.preventDefault();
-  //   console.log(formData);
-  // };
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    console.log(formData);
+  };
 
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: '-50px' });
@@ -63,7 +63,7 @@ export default function ContactInformation() {
   return (
     <>
       <section id='contact-form' ref={ref}>
-        <div className='max-w-7xl mx-auto mb-20 lg:mb-30 px-4 md:px-6 xl:px-0'>
+        <div className='max-w-7xl mx-auto mb-20 lg:mb-30 px-4 md:px-8 lg:px-6 xl:px-0'>
           <motion.div
             initial={{ opacity: 0, x: -4 }}
             animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -4 }}
@@ -79,9 +79,9 @@ export default function ContactInformation() {
             </p>
           </motion.div>
 
-          <div className='grid grid-cols-1 gap-8 md:gap-12'>
+          <div className='grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12'>
             <div>
-              <header className='grid grid-cols-1 lg:grid-cols-2 gap-x-16'>
+              <header>
                 <div className='mb-6 md:mb-8'>
                   <motion.p
                     initial={{ opacity: 0, y: 10 }}
@@ -96,18 +96,16 @@ export default function ContactInformation() {
                   ></motion.p>
                 </div>
 
-                <div className='lg:max-w-lg lg:ml-auto'>
-                  <motion.p
-                    initial={{ opacity: 0, y: 10 }}
-                    animate={
-                      isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 10 }
-                    }
-                    transition={{ duration: 0.8, delay: 0.3 }}
-                    className='font-manrope text-primary mb-6 md:mb-10'
-                  >
-                    {t('description')}
-                  </motion.p>
-                </div>
+                <motion.p
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={
+                    isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 10 }
+                  }
+                  transition={{ duration: 0.8, delay: 0.3 }}
+                  className='font-manrope text-primary mb-6 md:mb-10'
+                >
+                  {t('description')}
+                </motion.p>
               </header>
 
               <motion.div
@@ -221,7 +219,7 @@ export default function ContactInformation() {
             </div>
 
             <div>
-              {/* <div className='border border-[#E0E6F3] p-6 md:p-8 rounded-xl flex flex-col justify-between h-full'>
+              <div className='border border-[#E0E6F3] p-6 md:p-8 rounded-xl flex flex-col justify-between h-full'>
                 <motion.p
                   initial={{ opacity: 0, y: 10 }}
                   animate={
@@ -271,36 +269,34 @@ export default function ContactInformation() {
                     </div>
                   </div>
 
-                  <div className='grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4'>
-                    <div>
-                      <label className='block text-sm font-medium text-primary font-manrope mb-2'>
-                        {t('formEmail.label')}
-                      </label>
-                      <input
-                        type='email'
-                        name='email'
-                        placeholder={t('formEmail.placeholder')}
-                        value={formData.email}
-                        onChange={handleChange}
-                        className='w-full rounded-md border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-primary placeholder:text-gray-400 placeholder:font-manrope font-manrope'
-                      />
-                    </div>
-                    <div>
-                      <label className='block text-sm font-medium text-primary font-manrope mb-2'>
-                        {t('formPhone.label')}
-                      </label>
-                      <input
-                        type='tel'
-                        name='phone'
-                        placeholder={t('formPhone.placeholder')}
-                        value={formData.phone}
-                        onChange={handleChange}
-                        className='w-full rounded-md border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-primary placeholder:text-gray-400 placeholder:font-manrope font-manrope'
-                      />
-                    </div>
+                  <div>
+                    <label className='block text-sm font-medium text-primary font-manrope mb-2'>
+                      {t('formEmail.label')}
+                    </label>
+                    <input
+                      type='email'
+                      name='email'
+                      placeholder={t('formEmail.placeholder')}
+                      value={formData.email}
+                      onChange={handleChange}
+                      className='w-full rounded-md border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-primary placeholder:text-gray-400 placeholder:font-manrope font-manrope'
+                    />
+                  </div>
+                  <div>
+                    <label className='block text-sm font-medium text-primary font-manrope mb-2'>
+                      {t('formPhone.label')}
+                    </label>
+                    <input
+                      type='tel'
+                      name='phone'
+                      placeholder={t('formPhone.placeholder')}
+                      value={formData.phone}
+                      onChange={handleChange}
+                      className='w-full rounded-md border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-primary placeholder:text-gray-400 placeholder:font-manrope font-manrope'
+                    />
                   </div>
 
-                  <div>
+                  {/* <div>
                     <Listbox value={selected} onChange={setSelected}>
                       <label className='block text-sm font-medium text-primary font-manrope mb-2'>
                         {t('formService.label')}
@@ -351,7 +347,7 @@ export default function ContactInformation() {
                         </ListboxOptions>
                       </div>
                     </Listbox>
-                  </div>
+                  </div> */}
 
                   <div>
                     <label className='block text-sm font-medium text-primary font-manrope mb-2'>
@@ -376,7 +372,7 @@ export default function ContactInformation() {
                     </button>
                   </div>
                 </motion.form>
-              </div> */}
+              </div>
             </div>
           </div>
         </div>

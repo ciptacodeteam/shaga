@@ -4,6 +4,7 @@ import { useInView } from 'motion/react';
 import { useMessages } from 'next-intl';
 import { useRef } from 'react';
 import { motion } from 'framer-motion';
+import AnimatedNumber from '@/components/AnimatedNumber';
 
 export default function NumberSection() {
   const messages = useMessages();
@@ -20,11 +21,16 @@ export default function NumberSection() {
         animate={isInView ? { opacity: 1 } : { opacity: 0 }}
         transition={{ staggerChildren: 0.12 }}
       >
-        <div className='max-w-7xl mx-auto mb-20 md:mb-32'>
-          <div className='grid grid-cols-2 md:grid-cols-4 gap-4 lg:gap-10 px-4 md:px-6 xl:px-0'>
+        <div className='max-w-7xl mx-auto mb-20 lg:mb-32'>
+          <div className='grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-10 px-4 md:px-8 lg:px-6 xl:px-0'>
             {statList.map(
               (
-                stat: { id: string; value: string; label: string },
+                stat: {
+                  id: string;
+                  value: number;
+                  label: string;
+                  surfix?: string;
+                },
                 i: number
               ) => (
                 <motion.div
@@ -43,10 +49,11 @@ export default function NumberSection() {
                   }}
                 >
                   <div className='flex flex-col items-center justify-center'>
-                    <h1 className='font-manrope text-primary  text-5xl md:text-6xl xl:text-7xl font-semibold tracking-tight'>
-                      {stat.value}
+                    <h1 className='font-manrope text-primary  text-5xl lg:text-6xl font-semibold tracking-tight'>
+                      <AnimatedNumber value={stat.value} />
+                      {stat.surfix}
                     </h1>
-                    <p className='font-manrope text-[#556996] text-base md:text-lg font-medium mt-8 text-center'>
+                    <p className='font-manrope text-[#556996] text-base font-medium mt-8 text-center'>
                       {stat.label}
                     </p>
                   </div>

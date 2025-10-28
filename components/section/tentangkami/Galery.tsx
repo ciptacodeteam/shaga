@@ -24,7 +24,7 @@ export default function GallerySection() {
   return (
     <>
       <section ref={ref}>
-        <div className='max-w-7xl mx-auto mb-20 md:mb-24 px-4 md:px-6 xl:px-0'>
+        <div className='max-w-7xl mx-auto mb-20 md:mb-24 px-4 md:px-8 lg:px-6 xl:px-0'>
           <motion.div
             initial={{ opacity: 0, y: 10 }}
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 10 }}

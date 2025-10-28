@@ -41,7 +41,7 @@ export default function FooterSection() {
         }}
       >
         <div className='bg-primary'>
-          <div className='max-w-7xl mx-auto pt-12 md:pt-20 pb-8 px-4 xl:px-0'>
+          <div className='max-w-7xl mx-auto pt-12 md:pt-20 pb-8 px-4 md:px-8 xl:px-0'>
             <motion.div
               className='grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-0 items-start md:items-center'
               variants={{ hidden: {}, visible: {} }}
@@ -62,14 +62,14 @@ export default function FooterSection() {
                   visible: { opacity: 1, x: 0, transition: { duration: 0.6 } },
                 }}
               >
-                <h1 className='font-manrope text-2xl md:text-4xl text-white font-medium text-center md:text-right max-w-lg leading-tight my-4 md:my-0 px-4 md:px-0'>
+                <h1 className='font-manrope text-2xl md:text-3xl xl:text-4xl text-white font-medium text-center md:text-right max-w-lg leading-tight my-4 md:my-0 px-4 md:px-0'>
                   {t('footerSection.tagline')}
                 </h1>
               </motion.div>
             </motion.div>
 
             <div className='mt-12 md:mt-24'>
-              <div className='grid grid-cols-1 md:grid-cols-2 gap-8'>
+              <div className='grid grid-cols-1 lg:grid-cols-2 gap-8'>
                 <motion.div
                   className=''
                   variants={{
@@ -81,7 +81,7 @@ export default function FooterSection() {
                     },
                   }}
                 >
-                  <h1 className='font-manrope text-white text-2xl font-medium'>
+                  <h1 className='font-manrope text-white text-xl xl:text-2xl font-medium'>
                     {t('footerSection.stayConnected')}
                   </h1>
 
@@ -102,7 +102,7 @@ export default function FooterSection() {
                 </motion.div>
 
                 <motion.div
-                  className='mt-6 md:mt-0 flex justify-start md:justify-end'
+                  className='mt-6 lg:mt-0 flex justify-start lg:justify-end'
                   variants={{
                     hidden: { opacity: 0, y: 12 },
                     visible: {
@@ -123,7 +123,7 @@ export default function FooterSection() {
                         },
                       }}
                     >
-                      <h1 className='font-manrope text-white text-xl md:text-2xl font-semibold mb-6 md:mb-10'>
+                      <h1 className='font-manrope text-white text-lg md:text-xl lg:text-2xl font-semibold mb-6 md:mb-10'>
                         {t('footerSection.companyNavList.heading')}
                       </h1>
 
@@ -152,7 +152,7 @@ export default function FooterSection() {
                         },
                       }}
                     >
-                      <h1 className='font-manrope text-white text-xl md:text-2xl font-semibold mb-6 md:mb-10'>
+                      <h1 className='font-manrope text-white text-lg md:text-xl lg:text-2xl font-semibold mb-6 md:mb-10'>
                         {t('footerSection.supportNavList.heading')}
                       </h1>
 
@@ -181,7 +181,7 @@ export default function FooterSection() {
                         },
                       }}
                     >
-                      <h1 className='font-manrope text-white text-xl md:text-2xl font-semibold mb-6 md:mb-10'>
+                      <h1 className='font-manrope text-white text-lg md:text-xl lg:text-2xl font-semibold mb-6 md:mb-10'>
                         {t('footerSection.servicesNavList.heading')}
                       </h1>
 

@@ -15,7 +15,10 @@ export default function GetinQuote() {
 
   return (
     <>
-      <div className='max-w-7xl mx-auto mb-12 px-4 md:px-6 xl:px-0' ref={ref}>
+      <div
+        className='max-w-7xl mx-auto mb-12 px-4 md:px-8 lg:px-6 xl:px-0'
+        ref={ref}
+      >
         <div className="bg-primary relative bg-[url('/img/map.webp')] bg-blend-overlay bg-cover bg-no-repeat p-6 sm:p-8 md:p-12 rounded-xl">
           <div className='p-6 sm:p-8 md:p-0 rounded-lg md:rounded-none'>
             <motion.div
@@ -33,7 +36,7 @@ export default function GetinQuote() {
                 transition={{ duration: 0.6, delay: 0.05, ease: 'easeOut' }}
               >
                 <motion.p
-                  className='font-manrope text-2xl sm:text-3xl md:text-5xl leading-tight font-medium text-white capitalize'
+                  className='font-manrope text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-tight font-medium text-white capitalize'
                   initial={{ opacity: 0, y: 8 }}
                   animate={
                     isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 8 }
