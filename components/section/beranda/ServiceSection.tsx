@@ -36,7 +36,7 @@ export default function ServicesSection() {
   return (
     <>
       <section ref={ref}>
-        <div className='max-w-7xl mx-auto mb-24 md:mb-36 px-4 md:px-6 xl:px-0'>
+        <div className='max-w-7xl mx-auto mb-24 md:mb-36 px-4 md:px-8 lg:px-6 xl:px-0'>
           <div className='flex flex-col justify-center items-center text-center'>
             <motion.div
               initial={{ opacity: 0, x: -4 }}

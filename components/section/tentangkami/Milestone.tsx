@@ -124,13 +124,13 @@ export default function MilestoneSection() {
                           ? { opacity: 1, scaleX: 1 }
                           : { opacity: 0, scaleX: 0 }
                       }
-                      transition={{ duration: 0.6, ease: 'easeOut' }}
+                      transition={{ duration: 0.3, ease: 'easeOut' }}
                     />
 
                     {/* Garis dotted horizontal (nyambung dari titik pertama ↔ terakhir) */}
                     <motion.div
                       aria-hidden
-                      className='absolute top-16 h-1'
+                      className='absolute top-[62px] h-1'
                       style={{
                         left: sidePad,
                         right: sidePad,
@@ -149,6 +149,28 @@ export default function MilestoneSection() {
                         duration: 0.6,
                         delay: 0.1,
                         ease: 'easeOut',
+                      }}
+                    />
+
+                    {/* Dotted Line (kanan) */}
+                    <motion.div
+                      className='absolute top-[62px] right-26 h-1'
+                      style={{
+                        width: '10%',
+                        transformOrigin: 'right',
+                        background:
+                          'repeating-linear-gradient(to right, #E0E6F3 0 6px, transparent 6px 12px)',
+                      }}
+                      initial={{ opacity: 0, scaleX: 0 }}
+                      animate={
+                        isInView
+                          ? { opacity: 1, scaleX: -1 }
+                          : { opacity: 0, scaleX: 0 }
+                      }
+                      transition={{
+                        duration: 0.15,
+                        ease: 'easeOut',
+                        delay: 0.6,
                       }}
                     />
 

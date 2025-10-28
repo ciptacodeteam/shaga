@@ -37,7 +37,7 @@ export default function LogisticService() {
     <>
       <section>
         <div className='max-w-7xl mx-auto mb-24 md:mb-42'>
-          <div className='flex flex-col justify-center items-center text-center px-4 md:px-6 xl:px-0'>
+          <div className='flex flex-col justify-center items-center text-center px-4 md:px-8 lg:px-6 xl:px-0'>
             <motion.div
               initial={{ opacity: 0, x: -4 }}
               animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -4 }}
@@ -60,7 +60,7 @@ export default function LogisticService() {
               className='mb-4'
             >
               <p
-                className='font-manrope text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-tight text-primary mx-auto max-w-full sm:max-w-3xl md:max-w-3/4 [&>span]:text-secondary'
+                className='font-manrope text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-tight text-primary mx-auto max-w-full sm:max-w-3xl lg:max-w-3/4 [&>span]:text-secondary'
                 dangerouslySetInnerHTML={{
                   __html: t.raw('title'),
                 }}
@@ -83,7 +83,7 @@ export default function LogisticService() {
 
           <motion.div
             ref={ref}
-            className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-12 lg:mt-16 gap-6 lg:gap-8 px-4 md:px-6 xl:px-0'
+            className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-12 lg:mt-16 gap-6 lg:gap-8 px-4 md:px-8 lg:px-6 xl:px-0'
           >
             {services.map((service, index) => (
               <motion.div

@@ -56,7 +56,7 @@
   ],
   "heroSection": {
     "title": "Connecting Land, Sea, and Air",
-    "subtitle": "We provide integrated logistics services that are safe, reliable, and efficient.",
+    "subtitle": "We provide integrated logistics services that are safe, reliable, and efficient, ensuring every shipment arrives on time and in optimal condition.",
     "ctaText": "Free Consultation",
     "ctaLink": "/contact",
     "cta2Text": "Learn More",
@@ -281,19 +281,23 @@
       "stats": [
         {
           "value": "18",
-          "label": "Years of experience in integrated logistics services both domestic and international"
+          "label": "Years of experience in integrated logistics services both domestic and international",
+          "surfix": null
         },
         {
-          "value": "100%",
-          "label": "Commitment to safety and on-time delivery"
+          "value": "100",
+          "label": "Commitment to safety and on-time delivery",
+          "surfix": "%"
         },
         {
-          "value": "500+",
-          "label": "Satisfied clients worldwide relying on our services"
+          "value": "500",
+          "label": "Satisfied clients worldwide relying on our services",
+          "surfix": "+"
         },
         {
-          "value": "100%",
-          "label": "Warehouse coordination and communication for customer satisfaction"
+          "value": "100",
+          "label": "Warehouse coordination and communication for customer satisfaction",
+          "surfix": "%"
         }
       ]
     },
@@ -426,20 +430,24 @@
       "ctaLink": "/about-us",
       "stats": [
         {
-          "value": "18",
-          "label": "Years of experience in integrated logistics services both domestic and international"
+          "value": "25",
+          "label": "Years of experience in the industry",
+          "surfix": null
         },
         {
-          "value": "100%",
-          "label": "Commitment to safety and on-time delivery"
+          "value": "300",
+          "label": "Employees supporting your success",
+          "surfix": "+"
         },
         {
-          "value": "500+",
-          "label": "Satisfied clients worldwide relying on our services"
+          "value": "500",
+          "label": "Satisfied clients worldwide",
+          "surfix": "+"
         },
         {
-          "value": "100%",
-          "label": "Warehouse coordination and communication for customer satisfaction"
+          "value": "99",
+          "label": "On-time delivery rate",
+          "surfix": "%"
         }
       ]
     },

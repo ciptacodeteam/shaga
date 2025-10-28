@@ -16,7 +16,7 @@ const DiscussionCtaSection = () => {
 
   return (
     <section
-      className='relative my-8 md:my-16 max-w-7xl mx-auto px-4 md:px-6 xl:px-0'
+      className='relative my-8 md:my-16 max-w-7xl mx-auto px-4 md:px-8 lg:px-6 xl:px-0'
       ref={ref}
     >
       <div className='relative rounded-xl overflow-hidden z-0'>
@@ -24,13 +24,13 @@ const DiscussionCtaSection = () => {
 
         <div className='absolute inset-0 bg-[#0B55A7]/80 z-10' />
 
-        <div className='relative z-20 flex flex-col items-center md:items-start gap-6 md:gap-8 px-6 py-10 md:py-14 md:px-16'>
-          <div className='w-full md:w-2/3 text-white'>
+        <div className='relative z-20 flex flex-col items-center md:items-start gap-6 md:gap-8  p-6 md:p-10 lg:p-16'>
+          <div className='w-full lg:w-2/3 text-white'>
             <motion.h3
               initial={{ opacity: 0, x: -10 }}
               animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -10 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className='mb-6 text-left font-manrope text-2xl sm:text-3xl md:text-5xl leading-tight font-medium text-white capitalize'
+              className='mb-6 text-left font-manrope text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-tight font-medium text-white capitalize'
             >
               {t('title')}
             </motion.h3>

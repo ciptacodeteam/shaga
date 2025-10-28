@@ -15,7 +15,7 @@ export default function FindUsSection() {
   return (
     <section ref={ref}>
       <div className="bg-primary py-10 md:py-20 mb-16 md:mb-30 inset-0 bg-[url('/img/map.webp')] bg-blend-multiply bg-cover bg-no-repeat">
-        <div className='max-w-7xl mx-auto px-4 md:px-6 xl:px-0'>
+        <div className='max-w-7xl mx-auto px-4 md:px-8 lg:px-6 xl:px-0'>
           <div className='grid grid-cols-1 xl:grid-cols-2 gap-8 lg:gap-10 items-center'>
             <motion.div
               className='w-full'

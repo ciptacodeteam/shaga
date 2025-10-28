@@ -19,10 +19,10 @@ export default function WhoAreWeSection() {
 
   return (
     <>
-      <section className='relative mb-16 md:mb-30' ref={ref}>
-        <div className='max-w-7xl mx-auto px-4 md:px-6 xl:px-0'>
-          <div className='flex flex-col md:flex-row gap-8 md:gap-16 items-start'>
-            <div className='w-full md:w-3/5 flex flex-col justify-center'>
+      <section className='relative mb-16 lg:mb-30' ref={ref}>
+        <div className='max-w-7xl mx-auto px-4 md:px-8 xl:px-0'>
+          <div className='grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-16'>
+            <div className='w-full flex flex-col justify-center'>
               <motion.div
                 initial={{ opacity: 0, x: -4 }}
                 animate={
@@ -83,10 +83,10 @@ export default function WhoAreWeSection() {
               </motion.div>
             </div>
 
-            <div className='w-full md:w-2/5 relative'>
+            <div className='w-full lg:max-w-5/6 lg:ml-auto h-[450px] lg:h-full relative'>
               {/* Ensure the immediate parent of the Image has an explicit height */}
               <motion.div
-                className='h-[450px] md:h-96 lg:h-[570px] w-full relative rounded-xl overflow-hidden'
+                className='h-[450px] md:h-full w-full relative rounded-xl overflow-hidden'
                 initial={{ opacity: 0, y: 20 }}
                 animate={
                   isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }

@@ -33,8 +33,11 @@ export default function WorkSection() {
   const isInView = useInView(ref, { once: true, margin: '-100px' });
 
   return (
-    <section className='bg-[#001E62] py-12 md:py-10 md:mb-30 mb-24' ref={ref}>
-      <div className='max-w-7xl mx-auto px-4 md:px-6 xl:px-0'>
+    <section
+      className='bg-[#001E62] py-12 md:py-10 md:mb-30 mb-24 -mt-px'
+      ref={ref}
+    >
+      <div className='max-w-7xl mx-auto px-4 md:px-8 lg:px-6 xl:px-0'>
         <div className='mb-10 md:mb-16'>
           <motion.div
             initial={{ opacity: 0, x: -4 }}

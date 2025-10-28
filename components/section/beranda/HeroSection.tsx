@@ -16,7 +16,7 @@ export default function HeroSection() {
   return (
     <section className='relative mb-12 lg:mb-20'>
       {/*Desktop Hero Section */}
-      <div className='mx-4 md:mx-8 relative min-h-[420px] md:h-[600px] lg:h-[700px] rounded-xl overflow-hidden z-0 hidden sm:block'>
+      <div className='mx-4 md:mx-8 relative min-h-[420px] md:h-[600px] lg:h-[650px] rounded-xl overflow-hidden z-0 hidden lg:block'>
         {/* Gambar Background */}
         <div className="absolute inset-0 bg-[url('/img/imghero.webp')] bg-cover bg-center"></div>
 
@@ -61,7 +61,7 @@ export default function HeroSection() {
           </div>
 
           {/* Tombol CTA */}
-          <div className='flex flex-col lg:flex-row lg:justify-between gap-4 lg:items-end'>
+          <div className='flex flex-col xl:flex-row xl:justify-between gap-4 lg:gap-y-10 xl:items-end'>
             <div className='flex gap-3 sm:gap-6 mt-4 md:mt-0'>
               <motion.div
                 variants={{
@@ -171,7 +171,7 @@ export default function HeroSection() {
           </div>
         </div>
 
-        <div className='absolute right-4 md:right-8 lg:right-20 top-8 md:top-8 lg:top-16 z-10'>
+        <div className='absolute right-4 lg:right-8 xl:right-20 top-8 md:top-8 lg:top-16 z-10'>
           <div className='flex gap-2'>
             <motion.div
               variants={{
@@ -185,7 +185,7 @@ export default function HeroSection() {
               initial='hidden'
               whileInView='visible'
               viewport={{ once: true, amount: 0.2 }}
-              className='flex items-center justify-center w-10 h-10 rounded-full bg-white transition-transform duration-300 group-hover:rotate-45'
+              className=' items-center justify-center w-10 h-10 rounded-full bg-white transition-transform duration-300 group-hover:rotate-45 hidden xl:flex'
             >
               <BiMapPin className='text-primary w-5 h-5 transition-colors duration-300' />
             </motion.div>
@@ -201,7 +201,7 @@ export default function HeroSection() {
               initial='hidden'
               whileInView='visible'
               viewport={{ once: true, amount: 0.2 }}
-              className='bg-white font-manrope text-primary h-10 rounded-full font-semibold items-center px-4 hidden lg:flex'
+              className='bg-white font-manrope text-primary h-10 rounded-full font-semibold items-center px-4 hidden xl:flex'
             >
               {t('heroSection.locationMapText')}
             </motion.div>
@@ -221,7 +221,7 @@ export default function HeroSection() {
                 alt={t('heroSection.locationMarker1Image.alt')}
                 width={400}
                 height={200}
-                className='absolute top-32 right-24 lg:right-64 w-44 h-44 lg:w-52 lg:h-52 mb-4 mr-4 z-10'
+                className='absolute xl:top-[40%] xl:right-[25%] w-44 h-44 lg:w-52 lg:h-52 mb-4 mr-4 z-10'
               />
             </div>
           </motion.div>
@@ -237,7 +237,7 @@ export default function HeroSection() {
                 alt={t('heroSection.locationMarker2Image.alt')}
                 width={400}
                 height={200}
-                className='absolute top-72 right-40 lg:right-96 w-44 h-44 lg:w-52 lg:h-52 mb-4 mr-4 z-10 xl:right-[420px] xl:top-[250px]'
+                className='absolute  w-44 h-44 lg:w-52 lg:h-52 mb-4 mr-4 z-10 xl:top-[18%] xl:right-[20%]'
               />
             </div>
           </motion.div>
@@ -245,8 +245,8 @@ export default function HeroSection() {
       </div>
 
       {/*Mobile Hero Section */}
-      <div className='block sm:hidden'>
-        <div className='px-4 md:px-6 xl:px-0'>
+      <div className='block lg:hidden mt-6 lg:mt-0'>
+        <div className='px-4 md:px-8 lg:px-6 xl:px-0'>
           <div className='max-w-xl md:max-w-2xl'>
             <h1 className='text-4xl md:text-5xl lg:text-6xl leading-tight font-medium mb-6 font-manrope max-w-xs sm:max-w-none text-primary'>
               {t('heroSection.title')}
@@ -327,7 +327,7 @@ export default function HeroSection() {
                   alt={t('heroSection.locationMarker1Image.alt')}
                   width={400}
                   height={200}
-                  className='absolute top-28 right-5 w-44 h-44 mb-4 mr-4 z-10'
+                  className='absolute top-[16%] right-[8%] w-44 h-44 mb-4 mr-4 z-10'
                 />
               </div>
 
@@ -337,12 +337,12 @@ export default function HeroSection() {
                   alt={t('heroSection.locationMarker2Image.alt')}
                   width={400}
                   height={200}
-                  className='absolute top-62 right-32 w-44 h-44 mb-4 mr-4 z-10'
+                  className='absolute top-[38%] right-[20%] w-44 h-44 mb-4 mr-4 z-10'
                 />
               </div>
             </div>
 
-            <div className='bg-white rounded-lg py-4 px-5 flex items-center gap-4 w-[90%] sm:w-[400px] h-auto mt-8 lg:mt-0 absolute bottom-14 left-1/2 -translate-x-1/2 z-10'>
+            <div className='bg-white rounded-lg py-4 px-5 flex items-center gap-4 w-[90%] sm:w-[400px] h-auto mt-8 lg:mt-0 absolute bottom-14 left-1/2 -translate-x-1/2 sm:left-8 sm:translate-x-0 z-10'>
               <div className='md:w-1/2 w-2/3'>
                 <div className='mb-4'>
                   <p

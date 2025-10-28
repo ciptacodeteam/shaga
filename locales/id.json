@@ -56,7 +56,7 @@
   ],
   "heroSection": {
     "title": "Menghubungkan Dunia Darat, Laut, dan Udara",
-    "subtitle": "Kami menyediakan layanan logistik terpadu secara aman, terpercaya, dan efisien.",
+    "subtitle": "Kami menyediakan layanan logistik terpadu yang aman, terpercaya, dan efisien, memastikan setiap pengiriman tiba tepat waktu dan dalam kondisi terbaik.",
     "ctaText": "Konsultasi Gratis",
     "ctaLink": "/contact",
     "cta2Text": "Pelajari Lebih Lanjut",
@@ -281,19 +281,23 @@
       "stats": [
         {
           "value": "18",
-          "label": "Tahun pengalaman dalam layanan logistik terpadu baik domestik maupun internasional"
+          "label": "Tahun pengalaman dalam layanan logistik terpadu baik domestik maupun internasional",
+          "surfix": null
         },
         {
-          "value": "100%",
-          "label": "Komitmen untuk keamanan dan perngiriman tepat waktu"
+          "value": "100",
+          "label": "Komitmen untuk keamanan dan perngiriman tepat waktu",
+          "surfix": "%"
         },
         {
-          "value": "500+",
-          "label": "Klien puas di seluruh dunia yang mengandalkan layanan kami"
+          "value": "500",
+          "label": "Klien puas di seluruh dunia yang mengandalkan layanan kami",
+          "surfix": "+"
         },
         {
-          "value": "100%",
-          "label": "Koordinasi dan komunikasi warehouse atau gudang untuk kepuasan pelanggan"
+          "value": "100",
+          "label": "Koordinasi dan komunikasi warehouse atau gudang untuk kepuasan pelanggan",
+          "surfix": "%"
         }
       ]
     },
@@ -427,19 +431,23 @@
       "stats": [
         {
           "value": "25",
-          "label": "Tahun Pengalaman di Industri"
+          "label": "Tahun Pengalaman di Industri",
+          "surfix": null
         },
         {
-          "value": "300+",
-          "label": "Karyawan untuk Kesuksesan Anda"
+          "value": "300",
+          "label": "Karyawan untuk Kesuksesan Anda",
+          "surfix": "+"
         },
         {
-          "value": "500+",
-          "label": "Klien Puas di Seluruh Dunia"
+          "value": "500",
+          "label": "Klien Puas di Seluruh Dunia",
+          "surfix": "+"
         },
         {
           "value": "99%",
-          "label": "Tingkat Pengiriman Tepat Waktu"
+          "label": "Tingkat Pengiriman Tepat Waktu",
+          "surfix": "%"
         }
       ]
     },

@@ -16,7 +16,7 @@ export default function VisionMissionSection() {
   return (
     <>
       <section
-        className='relative mb-[450px] md:mb-[600px] lg:mb-38 lg:min-h-[400px] xl:min-h-[450px]'
+        className='relative mb-[450px] md:mb-[700px] lg:mb-38 lg:min-h-[400px] xl:min-h-[450px]'
         ref={ref}
       >
         <div className='max-w-7xl mx-auto'>
@@ -135,7 +135,7 @@ export default function VisionMissionSection() {
                 <Image
                   alt='Truck logistics image'
                   src={truck}
-                  className='w-[400px] md:w-[600px] lg:w-[500px] xl:w-[650px] h-auto object-contain'
+                  className='w-[400px] md:w-[700px] lg:w-[500px] xl:w-[650px] h-auto object-contain'
                 />
               </motion.div>
             </div>

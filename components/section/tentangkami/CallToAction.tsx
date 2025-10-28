@@ -18,35 +18,39 @@ export default function CtaSection() {
 
   return (
     <>
-      <div className='max-w-7xl mx-auto mb-16 px-4 md:px-6 xl:px-0' ref={ref}>
+      <div
+        className='max-w-7xl mx-auto mb-16 px-4 md:px-8 lg:px-6 xl:px-0'
+        ref={ref}
+      >
         <motion.div
           initial={{ opacity: 0, y: 10 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 10 }}
           transition={{ duration: 0.8, delay: 0.2 }}
           className='bg-primary p-6 sm:p-12 rounded-xl'
         >
-          <div className='flex flex-col md:flex-row gap-6 md:gap-12 items-center'>
+          <div className='grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-12'>
             {/* Image: on small screens it sits on top, use a fixed aspect container for Image fill */}
-            <div className='w-full md:w-2/5'>
+            <div className='w-full flex justify-center md:justify-start'>
               <motion.div
                 initial={{ opacity: 0, y: 10 }}
                 animate={
                   isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 10 }
                 }
                 transition={{ duration: 0.8, delay: 0.2 }}
-                className='relative w-full aspect-video md:w-full md:h-[300px] rounded-lg overflow-hidden'
+                className='relative rounded-lg overflow-hidden w-full h-64 sm:h-[320px]'
               >
                 <Image
                   src={sea}
                   alt='Sea background'
-                  fill
-                  className='object-cover'
-                  sizes='(max-width: 768px) 100vw, 40vw'
+                  width={500}
+                  height={300}
+                  className='object-cover w-full h-full'
+                  sizes='(max-width: 768px) 100vw, 50vw'
                 />
               </motion.div>
             </div>
 
-            <div className='w-full md:w-3/5 flex flex-col justify-center md:text-left'>
+            <div className='w-full flex flex-col justify-center md:text-left h-fit'>
               <div className='mb-6'>
                 <motion.p
                   initial={{ opacity: 0, y: 10 }}
@@ -54,7 +58,7 @@ export default function CtaSection() {
                     isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 10 }
                   }
                   transition={{ duration: 0.8, delay: 0.3 }}
-                  className='font-manrope text-2xl sm:text-3xl lg:text-5xl leading-tight font-medium text-white capitalize'
+                  className='font-manrope text-2xl lg:text-4xl leading-tight font-medium text-white capitalize'
                 >
                   {t('title')}
                 </motion.p>

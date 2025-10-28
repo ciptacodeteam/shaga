@@ -20,7 +20,7 @@ const FaqSection = () => {
 
   return (
     <section
-      className='max-w-4xl mx-auto px-4 md:px-6 xl:px-0 py-16 pt-5'
+      className='max-w-4xl mx-auto px-4 md:px-8 lg:px-6 xl:px-0 py-16 pt-5'
       id='faq-section'
       ref={ref}
     >

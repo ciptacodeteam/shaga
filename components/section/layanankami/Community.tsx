@@ -5,6 +5,7 @@ import { useInView } from 'motion/react';
 import { useMessages, useTranslations } from 'next-intl';
 import { useRef } from 'react';
 import { motion } from 'framer-motion';
+import AnimatedNumber from '@/components/AnimatedNumber';
 
 export default function CommunitySection() {
   const t = useTranslations('servicePage.communitySection');
@@ -17,10 +18,10 @@ export default function CommunitySection() {
 
   return (
     <>
-      <section className='relative mb-24 md:mb-32' ref={ref}>
-        <div className='max-w-7xl mx-auto px-4 md:px-6 xl:px-0'>
-          <div className='flex flex-col md:flex-row gap-10 md:gap-16 items-start md:items-center'>
-            <div className='w-full md:w-1/2 flex flex-col justify-center'>
+      <section className='relative mb-24 lg:mb-32' ref={ref}>
+        <div className='max-w-7xl mx-auto px-4 md:px-8 lg:px-6 xl:px-0'>
+          <div className='grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-16 items-start md:items-center'>
+            <div className='w-full flex flex-col justify-center'>
               <motion.div
                 initial={{ opacity: 0, x: -4 }}
                 animate={
@@ -79,7 +80,7 @@ export default function CommunitySection() {
                 />
               </motion.div>
             </div>
-            <div className='w-full md:w-1/2 relative'>
+            <div className='w-full relative'>
               <motion.div
                 className='grid grid-cols-2 gap-4'
                 initial={{ opacity: 0 }}
@@ -97,8 +98,9 @@ export default function CommunitySection() {
                     transition={{ duration: 0.6, delay: 0.12 * index + 0.08 }}
                   >
                     <div className='flex flex-col items-center justify-center'>
-                      <h1 className='font-manrope text-primary text-5xl sm:text-6xl md:text-7xl font-semibold tracking-tight'>
-                        {stat.value}
+                      <h1 className='font-manrope text-primary text-5xl sm:text-6xl font-semibold tracking-tight'>
+                        <AnimatedNumber value={stat.value} />
+                        {stat.surfix}
                       </h1>
                       <p className='font-manrope text-[#556996] text-base md:text-lg font-medium mt-6 text-center'>
                         {stat.label}

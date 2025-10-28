@@ -56,7 +56,7 @@ export default function NavigationBar() {
         visible ? 'translate-y-0' : '-translate-y-full'
       )}
     >
-      <div className='max-w-7xl mx-auto py-4 px-4 md:px-6 xl:px-0'>
+      <div className='max-w-7xl mx-auto py-4 px-4 md:px-8 lg:px-6 xl:px-0'>
         <div className='flex items-center justify-between'>
           {/* Logo */}
           <div>
@@ -66,8 +66,9 @@ export default function NavigationBar() {
                 alt='Logo'
                 className='w-32 md:w-42'
                 priority
-                width={300}
-                height={100}
+                width={800}
+                height={800}
+                unoptimized
               />
             </Link>
           </div>
@@ -116,12 +117,20 @@ export default function NavigationBar() {
 
             <div className='flex gap-3 items-center justify-end'>
               {locales.map((locale) => {
-                const localePath =
-                  locale === t('metadata.locale') ? '/' : `/${locale}`;
+                const currentPath = pathname ?? '/';
+                const segments = currentPath.split('/').filter(Boolean);
+                // remove existing locale prefix (if any)
+                const hasLocalePrefix =
+                  segments.length > 0 && locales.includes(segments[0]);
+                const rest = hasLocalePrefix ? segments.slice(1) : segments;
+                // build new path by prefixing the selected locale
+                const localizedPath = `/${[locale, ...rest]
+                  .filter(Boolean)
+                  .join('/')}`;
                 return (
                   <NextLink
                     key={locale}
-                    href={localePath}
+                    href={localizedPath}
                     prefetch
                     className={cn(
                       'font-manrope font-bold transition-colors duration-200 bg-gray-100 px-3 py-1 rounded-full text-xs',
@@ -329,13 +338,16 @@ export default function NavigationBar() {
 
           <div className='flex gap-4 items-center justify-end absolute bottom-10 right-8'>
             {locales.map((locale) => {
-              const localePath =
-                locale === t('metadata.locale') ? '/' : `/${locale}`;
-              const localizedPath =
-                pathname.replace(
-                  `/${t('metadata.locale')}`,
-                  localePath === '/' ? '' : localePath
-                ) || localePath;
+              const currentPath = pathname ?? '/';
+              const segments = currentPath.split('/').filter(Boolean);
+              // remove existing locale prefix (if any)
+              const hasLocalePrefix =
+                segments.length > 0 && locales.includes(segments[0]);
+              const rest = hasLocalePrefix ? segments.slice(1) : segments;
+              // build new path by prefixing the selected locale
+              const localizedPath = `/${[locale, ...rest]
+                .filter(Boolean)
+                .join('/')}`;
               return (
                 <NextLink
                   key={locale}

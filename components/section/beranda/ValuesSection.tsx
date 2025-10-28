@@ -17,9 +17,9 @@ export default function ValueSection() {
   return (
     <>
       <section ref={ref}>
-        <div className='max-w-7xl mx-auto mb-64 md:mb-36 px-4 md:px-6 xl:px-0'>
-          <div className='flex flex-col md:flex-row gap-8 md:gap-12'>
-            <div className='w-full md:w-1/3'>
+        <div className='max-w-7xl mx-auto mb-64 md:mb-36 px-4 md:px-8 lg:px-6 xl:px-0'>
+          <div className='flex flex-col lg:flex-row gap-8 md:gap-12'>
+            <div className='w-full lg:w-1/3'>
               <div className='flex flex-col'>
                 <motion.div
                   initial={{ opacity: 0, x: -4 }}
@@ -67,9 +67,9 @@ export default function ValueSection() {
               </div>
             </div>
 
-            <motion.div className='w-full md:w-2/3'>
+            <motion.div className='w-full lg:w-2/3'>
               <motion.div
-                className='grid grid-flow-row grid-cols-1 md:grid-cols-2 gap-6 h-[700px]'
+                className='grid grid-flow-row grid-cols-1 md:grid-cols-2 gap-6 h-[550px]'
                 initial='hidden'
                 animate={isInView ? 'show' : 'hidden'}
                 variants={{
@@ -110,7 +110,7 @@ export default function ValueSection() {
                   }}
                   transition={{ duration: 0.6 }}
                   whileHover={{ scale: 1.02 }}
-                  className='row-span-2 border border-[#E0E6F3] p-6 rounded-xl flex flex-col justify-between h-full'
+                  className='row-span-2 border border-[#E0E6F3]  p-6 rounded-xl flex flex-col justify-between h-full'
                 >
                   <div className='flex items-start justify-between text-sm'>
                     <div className='bg-[#E0E6F3] rounded-full p-3 flex-shrink-0 flex items-center justify-center'>
@@ -132,7 +132,7 @@ export default function ValueSection() {
                   }}
                   transition={{ duration: 0.6 }}
                   whileHover={{ scale: 1.02 }}
-                  className='row-span-2 border border-[#E0E6F3] p-6 rounded-xl flex flex-col justify-between h-full'
+                  className='row-span-2 border border-[#E0E6F3] lg:h-fit lg:min-h-64  p-6 rounded-xl flex flex-col justify-between'
                 >
                   <div className='flex items-start justify-between text-sm'>
                     <div className='bg-[#E0E6F3] rounded-full p-3 flex-shrink-0 flex items-center justify-center'>
@@ -154,7 +154,7 @@ export default function ValueSection() {
                   }}
                   transition={{ duration: 0.6 }}
                   whileHover={{ scale: 1.02 }}
-                  className='col-span-1 border border-[#E0E6F3] p-6 rounded-xl flex flex-col justify-between h-full'
+                  className='col-span-1 border border-[#E0E6F3]  p-6 rounded-xl flex flex-col justify-between h-full'
                 >
                   <div className='flex items-start justify-between text-sm'>
                     <div className='bg-[#E0E6F3] rounded-full p-3 flex-shrink-0 flex items-center justify-center'>

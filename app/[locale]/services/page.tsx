@@ -1,11 +1,10 @@
-import { locales } from '@/i18n/routing';
+import TransformSection from '@/components/section/beranda/TransformingSection';
+import WorkSection from '@/components/section/beranda/WorkSection';
 import CommunitySection from '@/components/section/layanankami/Community';
 import GetinQuote from '@/components/section/layanankami/GetinQuote';
 import HeroService from '@/components/section/layanankami/HeroService';
 import LogisticService from '@/components/section/layanankami/LogisticService';
-import WorkProcess from '@/components/section/layanankami/WorkProcess';
-// import TransformSection from '@/components/section/beranda/TransformingSection';
-// import WorkSection from '@/components/section/beranda/WorkSection';
+import { locales } from '@/i18n/routing';
 
 export async function generateStaticParams() {
   const params: { locale: string }[] = [];
@@ -21,10 +20,10 @@ export default function LayananKami() {
     <>
       <HeroService />
       <CommunitySection />
+      <TransformSection />
+      <WorkSection />
       <LogisticService />
-      {/* <TransformSection /> */}
-      {/* <WorkSection /> */}
-      <WorkProcess />
+      {/* <WorkProcess /> */}
       <GetinQuote />
     </>
   );
