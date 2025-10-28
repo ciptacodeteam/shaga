@@ -34,7 +34,7 @@ export default function NumberSection() {
                 i: number
               ) => (
                 <motion.div
-                  className='border border-[#E0E6F3] p-8 rounded-xl'
+                  className='border border-[#E0E6F3] p-6 sm:p-8  rounded-xl'
                   key={i}
                   initial={{ opacity: 0, y: 20, scale: 0.98 }}
                   animate={
@@ -53,7 +53,7 @@ export default function NumberSection() {
                       <AnimatedNumber value={stat.value} />
                       {stat.surfix}
                     </h1>
-                    <p className='font-manrope text-[#556996] text-base font-medium mt-8 text-center'>
+                    <p className='font-manrope text-[#556996] text-sm sm:text-base md:text-lg font-medium mt-8 text-center'>
                       {stat.label}
                     </p>
                   </div>

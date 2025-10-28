@@ -102,7 +102,7 @@ export default function CommunitySection() {
                         <AnimatedNumber value={stat.value} />
                         {stat.surfix}
                       </h1>
-                      <p className='font-manrope text-[#556996] text-base md:text-lg font-medium mt-6 text-center'>
+                      <p className='font-manrope text-[#556996] text-sm sm:text-base md:text-lg font-medium mt-6 text-center'>
                         {stat.label}
                       </p>
                     </div>
