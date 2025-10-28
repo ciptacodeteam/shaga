@@ -39,7 +39,7 @@ export default function HeroService() {
               initial={{ opacity: 0, y: 10 }}
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 10 }}
               transition={{ duration: 0.6, delay: 0.18 }}
-              className='text-3xl sm:text-4xl md:text-6xl lg:text-7xl xl:text-8xl font-medium mb-6 md:mb-8 font-manrope'
+              className='text-3xl sm:text-4xl md:text-6xl lg:text-7xl xl:text-8xl font-medium mb-6 md:mb-8 font-manrope capitalize'
             >
               {t('title')}
             </motion.h1>

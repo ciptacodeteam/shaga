@@ -60,7 +60,7 @@ export default function LogisticService() {
               className='mb-4'
             >
               <p
-                className='font-manrope text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-tight text-primary mx-auto max-w-full sm:max-w-3xl lg:max-w-3/4 [&>span]:text-secondary'
+                className='font-manrope text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-tight text-primary mx-auto max-w-full sm:max-w-3xl lg:max-w-3/4 [&>span]:text-secondary capitalize'
                 dangerouslySetInnerHTML={{
                   __html: t.raw('title'),
                 }}

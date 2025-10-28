@@ -47,7 +47,7 @@ export default function VisionMissionSection() {
                 className='mb-12'
               >
                 <p
-                  className='font-manrope md:text-3xl  text-xl leading-relaxed xl:text-5xl lg:leading-tight text-primary [&>span]:text-secondary'
+                  className='font-manrope md:text-3xl  text-xl leading-relaxed xl:text-5xl lg:leading-tight text-primary [&>span]:text-secondary capitalize'
                   dangerouslySetInnerHTML={{
                     __html: t.raw('visionMissionSection.title'),
                   }}

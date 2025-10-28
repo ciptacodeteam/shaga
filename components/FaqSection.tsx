@@ -48,7 +48,7 @@ const FaqSection = () => {
           className='mb-4 w-full'
         >
           <p
-            className='font-manrope text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-tight text-primary mx-auto max-w-full sm:max-w-3xl md:max-w-4xl [&>span]:text-secondary'
+            className='font-manrope text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-tight text-primary mx-auto max-w-full sm:max-w-3xl md:max-w-4xl [&>span]:text-secondary capitalize'
             dangerouslySetInnerHTML={{
               __html: t.raw('title'),
             }}

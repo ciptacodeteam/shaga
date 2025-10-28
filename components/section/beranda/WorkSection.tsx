@@ -1,8 +1,5 @@
 'use client';
 
-import 'swiper/css';
-import 'swiper/css/pagination';
-
 import { useEffect, useRef } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination } from 'swiper/modules';
@@ -59,7 +56,7 @@ export default function WorkSection() {
               initial={{ opacity: 0, y: 10 }}
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 10 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className='font-manrope text-2xl md:text-4xl lg:text-5xl text-white'
+              className='font-manrope text-2xl md:text-4xl lg:text-5xl text-white capitalize'
             >
               {t('workSection.title')}
             </motion.h1>
@@ -75,7 +72,7 @@ export default function WorkSection() {
         </div>
       </div>
 
-      <div className='relative w-screen left-1/2 right-1/2 -ml-[50vw] -mr-[50vw]'>
+      <div className='relative w-screen left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] pb-10'>
         <Swiper
           modules={[Pagination]}
           pagination={{ clickable: true }}
@@ -88,16 +85,14 @@ export default function WorkSection() {
             1024: { slidesPerView: 2.6 },
           }}
           onSwiper={(swiper) => (swiperRef.current = swiper)}
-          className='px-6 md:px-16 !pb-20 swiper-section-3'
+          className='px-6 md:px-16 swiper-section-3'
         >
           {steps.map((step) => (
             <SwiperSlide key={step.number}>
               {({ isActive }) => (
                 <div
-                  role='button'
-                  tabIndex={0}
                   className={cn(
-                    `transition-all duration-300 rounded-xl p-6 md:p-8 flex flex-col justify-between text-left cursor-pointer focus:outline-none focus:ring-2 min-h-[450px] sm:min-h-[550px] lg:min-h-[580px] focus:ring-offset-2 focus:ring-green-300`,
+                    `transition-all duration-300 rounded-xl p-6 md:p-8 flex flex-col justify-between text-left cursor-pointer focus:outline-none focus:ring-2 min-h-[450px] sm:min-h-[550px] lg:min-h-[580px] focus:ring-offset-2 focus:ring-green-300 mb-20 max-h-[600px]`,
                     isActive ? 'bg-[#E0E6F3]' : 'bg-primary'
                   )}
                 >

@@ -25,7 +25,7 @@ export default function TransformSection() {
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 10 }}
               transition={{ duration: 0.8 }}
             >
-              <p className='text-white font-manrope text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-relaxed md:leading-tight w-full md:w-5/6'>
+              <p className='text-white font-manrope text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-relaxed md:leading-tight w-full md:w-5/6 capitalize'>
                 {t('transformingSection.title')}
               </p>
             </motion.div>
