@@ -67,7 +67,7 @@ export default function HeroAbout() {
                 initial={{ opacity: 0 }}
                 animate={isInView ? { opacity: 1 } : { opacity: 0 }}
                 transition={{ duration: 0.5, delay: 0.58 }}
-                className='text-sm font-medium text-white uppercase font-manrope'
+                className='text-xs font-medium text-white uppercase font-manrope'
               >
                 {t('tagline')}
               </motion.p>
