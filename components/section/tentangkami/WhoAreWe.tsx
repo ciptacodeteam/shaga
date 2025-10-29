@@ -83,7 +83,7 @@ export default function WhoAreWeSection() {
               </motion.div>
             </div>
 
-            <div className='w-full lg:max-w-5/6 lg:ml-auto h-[450px] lg:h-full relative'>
+            <div className='w-full lg:max-w-full lg:ml-auto h-[450px] lg:h-full relative'>
               {/* Ensure the immediate parent of the Image has an explicit height */}
               <motion.div
                 className='h-[450px] md:h-full w-full relative rounded-xl overflow-hidden'
