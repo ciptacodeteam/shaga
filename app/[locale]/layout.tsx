@@ -1,3 +1,4 @@
+import FloatingWhatsApps from '@/components/FloatingWhatsApp';
 import FooterSection from '@/components/footer';
 import NavigationBar from '@/components/navigation';
 import { routing } from '@/i18n/routing';
@@ -5,6 +6,7 @@ import set from 'lodash/set';
 import { NextIntlClientProvider, hasLocale } from 'next-intl';
 import { getMessages, setRequestLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
+import { FloatingWhatsApp } from 'react-floating-whatsapp';
 
 function transformMessages(messages: Record<string, unknown>) {
   const transformed: Record<string, unknown> = {};
@@ -40,6 +42,7 @@ export default async function LocaleLayout({
         <main className='relative'>
           <div className='pt-24' />
           {children}
+          <FloatingWhatsApps />
           {/* <FloatingLanguageSelector /> */}
         </main>
         <FooterSection />

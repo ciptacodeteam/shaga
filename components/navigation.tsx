@@ -103,7 +103,7 @@ export default function NavigationBar() {
             </ul>
 
             {/* Tombol Kontak (desktop) */}
-            <div>
+            {/* <div>
               <CTAButton
                 text={t('contactCtaText')}
                 url={getWhatsappMessageUrl(
@@ -113,7 +113,7 @@ export default function NavigationBar() {
                 size='md'
                 variant='secondary'
               />
-            </div>
+            </div> */}
 
             <div className='flex gap-3 items-center justify-end'>
               {locales.map((locale) => {
@@ -314,7 +314,7 @@ export default function NavigationBar() {
           </motion.ul>
 
           {/* CTA - reveal slightly after menu items */}
-          <motion.div
+          {/* <motion.div
             className='absolute bottom-8 left-2 transform px-8 max-w-md mr-auto'
             variants={{
               closed: { opacity: 0, y: 8 },
@@ -334,9 +334,9 @@ export default function NavigationBar() {
               onClick={() => setMobileOpen(false)}
               variant='secondary'
             />
-          </motion.div>
+          </motion.div> */}
 
-          <div className='flex gap-4 items-center justify-end absolute bottom-10 right-8'>
+          <div className='flex gap-4  absolute bottom-10 px-8'>
             {locales.map((locale) => {
               const currentPath = pathname ?? '/';
               const segments = currentPath.split('/').filter(Boolean);

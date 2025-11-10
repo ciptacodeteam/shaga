@@ -1,46 +1,24 @@
-'use client';
+"use client";
 
-import { useRef, useState } from 'react';
+import { useRef, useState } from "react";
 
-import { HiOutlineLocationMarker, HiOutlineMail } from 'react-icons/hi';
-import { LuClock3, LuPhone } from 'react-icons/lu';
-
-// import {
-//   Listbox,
-//   ListboxButton,
-//   ListboxOption,
-//   ListboxOptions,
-// } from '@headlessui/react';
-
-// import { ChevronUpDownIcon } from '@heroicons/react/24/outline';
-// import { CheckIcon } from '@heroicons/react/24/solid';
-import { motion } from 'framer-motion';
-import { useInView } from 'motion/react';
-import { useTranslations } from 'next-intl';
-
-// // Link not needed here (form uses native submit button)
-// const people = [
-//   {
-//     id: 1,
-//     name: 'Wade Cooper',
-//   },
-//   {
-//     id: 2,
-//     name: 'Arlene Mccoy',
-//   },
-// ];
+import { HiOutlineLocationMarker, HiOutlineMail } from "react-icons/hi";
+import { LuClock3, LuPhone } from "react-icons/lu";
+import { motion } from "framer-motion";
+import { useInView } from "motion/react";
+import { useTranslations } from "next-intl";
 
 export default function ContactInformation() {
-  const t = useTranslations('contactPage.contactInformationSection');
+  const t = useTranslations("contactPage.contactInformationSection");
 
   // const [selected, setSelected] = useState<any>(null);
   const [formData, setFormData] = useState({
-    firstName: '',
-    lastName: '',
-    email: '',
-    phone: '',
-    subject: '',
-    message: '',
+    firstName: "",
+    lastName: "",
+    email: "",
+    phone: "",
+    subject: "",
+    message: "",
   });
 
   const handleChange = (
@@ -52,46 +30,70 @@ export default function ContactInformation() {
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log(formData);
+
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (!res.ok) throw new Error("Gagal mengirim pesan.");
+
+      alert("Pesan berhasil dikirim! ✅");
+      setFormData({
+        firstName: "",
+        lastName: "",
+        email: "",
+        phone: "",
+        subject: "",
+        message: "",
+      });
+    } catch (error) {
+      console.error(error);
+      alert("Terjadi kesalahan. Coba lagi nanti.");
+    }
   };
 
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: '-50px' });
+  const isInView = useInView(ref, { once: true, margin: "-50px" });
 
   return (
     <>
-      <section id='contact-form' ref={ref}>
-        <div className='max-w-7xl mx-auto mb-20 lg:mb-30 px-4 md:px-8 lg:px-6 xl:px-0'>
+      <section id="contact-form" ref={ref}>
+        <div className="max-w-7xl mx-auto mb-20 lg:mb-30 px-4 md:px-8 lg:px-6 xl:px-0">
           <motion.div
             initial={{ opacity: 0, x: -4 }}
             animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -4 }}
             transition={{ duration: 0.8 }}
-            className='flex items-center gap-2 mb-3'
+            className="flex items-center gap-2 mb-3"
           >
-            <span className='relative flex'>
-              <span className='absolute inline-flex size-3 animate-ping rounded-full bg-secondary opacity-75'></span>
-              <span className='relative inline-flex size-3 rounded-full bg-secondary'></span>
+            <span className="relative flex">
+              <span className="absolute inline-flex size-3 animate-ping rounded-full bg-secondary opacity-75"></span>
+              <span className="relative inline-flex size-3 rounded-full bg-secondary"></span>
             </span>
-            <p className='text-sm font-medium text-primary uppercase font-manrope'>
-              {t('heading')}
+            <p className="text-sm font-medium text-primary uppercase font-manrope">
+              {t("heading")}
             </p>
           </motion.div>
 
-          <div className='grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12'>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12">
             <div>
               <header>
-                <div className='mb-6 md:mb-8'>
+                <div className="mb-6 md:mb-8">
                   <motion.p
                     initial={{ opacity: 0, y: 10 }}
                     animate={
                       isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 10 }
                     }
                     transition={{ duration: 0.8, delay: 0.2 }}
-                    className='font-manrope text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-tight text-primary [&>span]:text-secondary capitalize'
+                    className="font-manrope text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-tight text-primary [&>span]:text-secondary capitalize"
                     dangerouslySetInnerHTML={{
-                      __html: t.raw('title'),
+                      __html: t.raw("title"),
                     }}
                   ></motion.p>
                 </div>
@@ -102,14 +104,14 @@ export default function ContactInformation() {
                     isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 10 }
                   }
                   transition={{ duration: 0.8, delay: 0.3 }}
-                  className='font-manrope text-primary mb-6 md:mb-10'
+                  className="font-manrope text-primary mb-6 md:mb-10"
                 >
-                  {t('description')}
+                  {t("description")}
                 </motion.p>
               </header>
 
               <motion.div
-                className='grid grid-cols-1 sm:grid-cols-2 gap-4'
+                className="grid grid-cols-1 sm:grid-cols-2 gap-4"
                 initial={{ opacity: 0, y: 10 }}
                 animate={
                   isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 10 }
@@ -117,101 +119,101 @@ export default function ContactInformation() {
                 transition={{ duration: 0.8 }}
               >
                 <motion.div
-                  className='border border-[#E0E6F3] p-4 md:p-6 rounded-xl flex flex-col justify-between h-full'
+                  className="border border-[#E0E6F3] p-4 md:p-6 rounded-xl flex flex-col justify-between h-full"
                   initial={{ opacity: 0, y: 8 }}
                   animate={
                     isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 8 }
                   }
                   transition={{ duration: 0.6, delay: 0.15 }}
                 >
-                  <div className='flex items-center gap-3 lg:gap-4'>
-                    <div className='bg-[#E0E6F3] rounded-full p-2 md:p-3 flex-shrink-0 flex items-center justify-center'>
-                      <LuPhone className='text-primary w-5 h-5 md:w-6 md:h-6' />
+                  <div className="flex items-center gap-3 lg:gap-4">
+                    <div className="bg-[#E0E6F3] rounded-full p-2 md:p-3 flex-shrink-0 flex items-center justify-center">
+                      <LuPhone className="text-primary w-5 h-5 md:w-6 md:h-6" />
                     </div>
 
                     <div>
-                      <h1 className='font-manrope font-medium text-[#556996]'>
-                        {t('phoneLabel')}
+                      <h1 className="font-manrope font-medium text-[#556996]">
+                        {t("phoneLabel")}
                       </h1>
                     </div>
                   </div>
-                  <h1 className='font-manrope font-medium text-primary mt-3 md:mt-4 text-base md:text-lg'>
+                  <h1 className="font-manrope font-medium text-primary mt-3 md:mt-4 text-base md:text-lg">
                     +62 811 6383 887
                   </h1>
                 </motion.div>
 
                 <motion.div
-                  className='border border-[#E0E6F3] p-4 md:p-6 rounded-xl flex flex-col justify-between h-full'
+                  className="border border-[#E0E6F3] p-4 md:p-6 rounded-xl flex flex-col justify-between h-full"
                   initial={{ opacity: 0, y: 8 }}
                   animate={
                     isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 8 }
                   }
                   transition={{ duration: 0.6, delay: 0.25 }}
                 >
-                  <div className='flex items-center gap-3 md:gap-4'>
-                    <div className='bg-[#E0E6F3] rounded-full p-2 md:p-3 flex-shrink-0 flex items-center justify-center'>
-                      <HiOutlineMail className='text-primary size-5 md:size-6' />
+                  <div className="flex items-center gap-3 md:gap-4">
+                    <div className="bg-[#E0E6F3] rounded-full p-2 md:p-3 flex-shrink-0 flex items-center justify-center">
+                      <HiOutlineMail className="text-primary size-5 md:size-6" />
                     </div>
 
                     <div>
-                      <h1 className='font-manrope font-medium text-[#556996]'>
-                        {t('emailLabel')}
+                      <h1 className="font-manrope font-medium text-[#556996]">
+                        {t("emailLabel")}
                       </h1>
                     </div>
                   </div>
-                  <h1 className='font-manrope font-medium text-primary mt-3 md:mt-4 text-base md:text-lg'>
+                  <h1 className="font-manrope font-medium text-primary mt-3 md:mt-4 text-base md:text-lg">
                     shaga3729@gmail.com
                   </h1>
                 </motion.div>
 
                 <motion.div
-                  className='col-span-1 sm:col-span-2 border border-[#E0E6F3] p-4 md:p-6 rounded-xl flex flex-col justify-between h-full'
+                  className="col-span-1 sm:col-span-2 border border-[#E0E6F3] p-4 md:p-6 rounded-xl flex flex-col justify-between h-full"
                   initial={{ opacity: 0, y: 8 }}
                   animate={
                     isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 8 }
                   }
                   transition={{ duration: 0.6, delay: 0.35 }}
                 >
-                  <div className='flex items-center gap-3'>
-                    <div className='bg-[#E0E6F3] rounded-full p-2 md:p-3 flex-shrink-0 flex items-center justify-center'>
-                      <HiOutlineLocationMarker className='text-primary w-5 h-5 md:w-6 md:h-6' />
+                  <div className="flex items-center gap-3">
+                    <div className="bg-[#E0E6F3] rounded-full p-2 md:p-3 flex-shrink-0 flex items-center justify-center">
+                      <HiOutlineLocationMarker className="text-primary w-5 h-5 md:w-6 md:h-6" />
                     </div>
 
                     <div>
-                      <h1 className='font-manrope font-medium text-[#556996]'>
-                        {t('addressLabel')}
+                      <h1 className="font-manrope font-medium text-[#556996]">
+                        {t("addressLabel")}
                       </h1>
                     </div>
                   </div>
-                  <h1 className='font-manrope font-medium text-primary mt-3 md:mt-4 text-base md:text-lg'>
+                  <h1 className="font-manrope font-medium text-primary mt-3 md:mt-4 text-base md:text-lg">
                     Jl. Mengkara No.2, Petisah Tengah, Kec. Medan Petisah, Kota
                     Medan, Sumatera Utara 20111
                   </h1>
                 </motion.div>
 
                 <motion.div
-                  className='col-span-1 sm:col-span-2 border border-[#E0E6F3] p-4 md:p-6 rounded-xl flex flex-col justify-between h-full'
+                  className="col-span-1 sm:col-span-2 border border-[#E0E6F3] p-4 md:p-6 rounded-xl flex flex-col justify-between h-full"
                   initial={{ opacity: 0, y: 8 }}
                   animate={
                     isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 8 }
                   }
                   transition={{ duration: 0.6, delay: 0.45 }}
                 >
-                  <div className='flex items-center gap-3'>
-                    <div className='bg-[#E0E6F3] rounded-full p-2 md:p-3 flex-shrink-0 flex items-center justify-center'>
-                      <LuClock3 className='text-primary w-5 h-5 md:w-6 md:h-6' />
+                  <div className="flex items-center gap-3">
+                    <div className="bg-[#E0E6F3] rounded-full p-2 md:p-3 flex-shrink-0 flex items-center justify-center">
+                      <LuClock3 className="text-primary w-5 h-5 md:w-6 md:h-6" />
                     </div>
 
                     <div>
-                      <h1 className='font-manrope font-medium text-[#556996]'>
-                        {t('operationalLabel')}
+                      <h1 className="font-manrope font-medium text-[#556996]">
+                        {t("operationalLabel")}
                       </h1>
                     </div>
                   </div>
                   <h1
-                    className='font-manrope font-medium text-primary mt-3 md:mt-4 text-base md:text-lg'
+                    className="font-manrope font-medium text-primary mt-3 md:mt-4 text-base md:text-lg"
                     dangerouslySetInnerHTML={{
-                      __html: t.raw('operationalHours'),
+                      __html: t.raw("operationalHours"),
                     }}
                   ></h1>
                 </motion.div>
@@ -219,16 +221,16 @@ export default function ContactInformation() {
             </div>
 
             <div>
-              <div className='border border-[#E0E6F3] p-6 md:p-8 rounded-xl flex flex-col justify-between h-full'>
+              <div className="border border-[#E0E6F3] p-6 md:p-8 rounded-xl flex flex-col justify-between h-full">
                 <motion.p
                   initial={{ opacity: 0, y: 10 }}
                   animate={
                     isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 10 }
                   }
                   transition={{ duration: 0.8, delay: 0.2 }}
-                  className='font-manrope text-[#556996] text-xl md:text-2xl lg:text-3xl xl:text-4xl leading-tight mb-4'
+                  className="font-manrope text-[#556996] text-xl md:text-2xl lg:text-3xl xl:text-4xl leading-tight mb-4"
                 >
-                  {t('formTitle')}
+                  {t("formTitle")}
                 </motion.p>
 
                 <motion.form
@@ -238,61 +240,61 @@ export default function ContactInformation() {
                   }
                   transition={{ duration: 0.6, delay: 0.35 }}
                   onSubmit={handleSubmit}
-                  className='mt-6 space-y-6'
+                  className="mt-6 space-y-6"
                 >
-                  <div className='grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4'>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4">
                     <div>
-                      <label className='block text-sm font-medium text-primary font-manrope mb-2'>
-                        {t('formFirstName.label')}
+                      <label className="block text-sm font-medium text-primary font-manrope mb-2">
+                        {t("formFirstName.label")}
                       </label>
                       <input
-                        type='text'
-                        name='firstName'
-                        placeholder={t('formFirstName.placeholder')}
+                        type="text"
+                        name="firstName"
+                        placeholder={t("formFirstName.placeholder")}
                         value={formData.firstName}
                         onChange={handleChange}
-                        className='w-full rounded-md border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-primary placeholder:text-gray-400 placeholder:font-manrope font-manrope'
+                        className="w-full rounded-md border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-primary placeholder:text-gray-400 placeholder:font-manrope font-manrope"
                       />
                     </div>
                     <div>
-                      <label className='block text-sm font-medium text-primary font-manrope mb-2'>
-                        {t('formLastName.label')}
+                      <label className="block text-sm font-medium text-primary font-manrope mb-2">
+                        {t("formLastName.label")}
                       </label>
                       <input
-                        type='text'
-                        name='lastName'
-                        placeholder={t('formLastName.placeholder')}
+                        type="text"
+                        name="lastName"
+                        placeholder={t("formLastName.placeholder")}
                         value={formData.lastName}
                         onChange={handleChange}
-                        className='w-full rounded-md border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-primary placeholder:text-gray-400 placeholder:font-manrope font-manrope'
+                        className="w-full rounded-md border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-primary placeholder:text-gray-400 placeholder:font-manrope font-manrope"
                       />
                     </div>
                   </div>
 
                   <div>
-                    <label className='block text-sm font-medium text-primary font-manrope mb-2'>
-                      {t('formEmail.label')}
+                    <label className="block text-sm font-medium text-primary font-manrope mb-2">
+                      {t("formEmail.label")}
                     </label>
                     <input
-                      type='email'
-                      name='email'
-                      placeholder={t('formEmail.placeholder')}
+                      type="email"
+                      name="email"
+                      placeholder={t("formEmail.placeholder")}
                       value={formData.email}
                       onChange={handleChange}
-                      className='w-full rounded-md border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-primary placeholder:text-gray-400 placeholder:font-manrope font-manrope'
+                      className="w-full rounded-md border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-primary placeholder:text-gray-400 placeholder:font-manrope font-manrope"
                     />
                   </div>
                   <div>
-                    <label className='block text-sm font-medium text-primary font-manrope mb-2'>
-                      {t('formPhone.label')}
+                    <label className="block text-sm font-medium text-primary font-manrope mb-2">
+                      {t("formPhone.label")}
                     </label>
                     <input
-                      type='tel'
-                      name='phone'
-                      placeholder={t('formPhone.placeholder')}
+                      type="tel"
+                      name="phone"
+                      placeholder={t("formPhone.placeholder")}
                       value={formData.phone}
                       onChange={handleChange}
-                      className='w-full rounded-md border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-primary placeholder:text-gray-400 placeholder:font-manrope font-manrope'
+                      className="w-full rounded-md border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-primary placeholder:text-gray-400 placeholder:font-manrope font-manrope"
                     />
                   </div>
 
@@ -350,25 +352,25 @@ export default function ContactInformation() {
                   </div> */}
 
                   <div>
-                    <label className='block text-sm font-medium text-primary font-manrope mb-2'>
-                      {t('formMessage.label')}
+                    <label className="block text-sm font-medium text-primary font-manrope mb-2">
+                      {t("formMessage.label")}
                     </label>
                     <textarea
-                      name='message'
-                      placeholder={t('formMessage.placeholder')}
+                      name="message"
+                      placeholder={t("formMessage.placeholder")}
                       rows={5}
                       value={formData.message}
                       onChange={handleChange}
-                      className='w-full rounded-md border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-primary placeholder:text-gray-400 placeholder:font-manrope font-manrope resize-none'
+                      className="w-full rounded-md border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-primary placeholder:text-gray-400 placeholder:font-manrope font-manrope resize-none"
                     />
                   </div>
 
                   <div>
                     <button
-                      type='submit'
-                      className='w-full bg-secondary text-white py-3 rounded-full transition font-manrope cursor-pointer text-sm md:text-base lg:text-lg font-medium'
+                      type="submit"
+                      className="w-full bg-secondary text-white py-3 rounded-full transition font-manrope cursor-pointer text-sm md:text-base lg:text-lg font-medium"
                     >
-                      {t('formSubmitText')}
+                      {t("formSubmitText")}
                     </button>
                   </div>
                 </motion.form>
