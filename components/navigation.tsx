@@ -5,7 +5,7 @@ import { Link } from '@/i18n/navigation';
 import NextLink from 'next/link';
 import { PHONE_NUMBER } from '@/lib/constant';
 import { cn, getWhatsappMessageUrl } from '@/lib/utils';
-import logo from '@/public/svg/logo.svg';
+import logo from '@/public/img/logo.webp';
 import { motion } from 'framer-motion';
 import { useMessages, useTranslations } from 'next-intl';
 import Image from 'next/image';
