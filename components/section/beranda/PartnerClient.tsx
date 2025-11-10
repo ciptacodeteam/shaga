@@ -106,8 +106,8 @@ export default function PartnerClient() {
     },
     {
       id: 20,
-      name: "imi",
-      logo: "/img/logo/imi.webp",
+      name: "imiP",
+      logo: "/img/logo/imiP.webp",
     },
   ];
 
