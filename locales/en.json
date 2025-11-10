@@ -55,8 +55,8 @@
     }
   ],
   "heroSection": {
-    "title": "Connecting Land, Sea, and Air",
-    "subtitle": "We provide integrated logistics services that are safe, reliable, and efficient, ensuring every shipment arrives on time and in optimal condition.",
+    "title": "Connecting The World Land, Sea, and Air",
+    "subtitle": "We cover worldwide shipping. Experience timely & secure shipping with our expert logistic solutions.",
     "ctaText": "Free Consultation",
     "ctaLink": "/contact",
     "cta2Text": "Learn More",
@@ -79,27 +79,27 @@
     "title": "We provide <span>logistics services</span> for <span>safe and on-time</span> deliveries.",
     "visionNumber": "01",
     "visionTitle": "Vision",
-    "visionDescription": "Connecting the world through the global logistics industry with credibility and efficiency, delivering the best solutions and maximum benefits for all related parties.",
+    "visionDescription": "Connecting the world through global logistics, we deliver the highest credibility and efficiency with cutting-edge solutions that maximize benefits for all stakeholders.",
     "missionNumber": "02",
     "missionTitle": "Mission",
-    "missionDescription": "Driving global market growth in all sectors through integrated logistics services executed professionally and proportionally."
+    "missionDescription": "Committed to advancing the global market across all sectors, by delivering seamlessly integrated logistics services with the highest levels of professionalism and accountability."
   },
   "solutionSection": {
     "heading": "Our Logistics Solutions",
-    "title": "Managed <span>professionally</span>, providing <span>proportional</span> benefits.",
+    "title": "<span>Professionally Managed</span>. Proportionally Rewarding.",
     "seaShipping": {
       "badge": "Sea Freight",
-      "content": "Planning and implementation with time and cost efficiency in line with quantity and shipping intervals through container ships, breakbulk, LCT, RORO, and others."
+      "content": "Customized logistics planning for optimal time and cost efficiency, scaled to your specific volume and delivery schedule. Services include Container Vessels, Breakbulk, RORO, and other specialized sea transports."
     },
     "landShipping": {
       "badge": "Land Freight",
-      "content": "Reaching industrial areas, urban warehouses, and remote regions with creative and diverse solutions carried out by experienced professionals."
+      "content": "Delivering to the Last Mile: From city centers to remote areas, we provide tailored, innovative solutions powered by seasoned professionals."
     }
   },
   "valuesSection": {
     "heading": "CORE VALUES",
     "title": "Built on <span>Trust</span> and <span>Professionalism</span>.",
-    "subtitle": "We prioritize strong collaboration based on mutual integrity and professionalism for long-term relationships.",
+    "subtitle": "We prioritize strong, long-term partnerships built on mutual integrity and professional excellence.",
     "trustItem": {
       "badge": "Trustworthy",
       "content": "Executed thoroughly with integrity and accountability."
@@ -124,9 +124,9 @@
     "ctaLink": "/about-us"
   },
   "workSection": {
-    "heading": "Work Process",
-    "title": "Our Work Process",
-    "subtitle": "Simplifying problems through initial consultation, designing according to your needs, and planning measurable steps for possible outcomes.",
+    "heading": "Workflow",
+    "title": "Our Process in Action",
+    "subtitle": "Through initial consultation, we custom-engineer your logistics plan and proactively map out measurable steps to mitigate all potential and anticipated risks.",
     "steps": [
       {
         "number": "01",
@@ -193,11 +193,11 @@
   },
   "partnerClient": {
     "heading": "Partners & Clients",
-    "title": "Partnering with <span>trusted clients</span> to deliver the <span>best services</span>."
+    "title": "<span>Trusted partnerships</span>. Superior service delivery</span>."
   },
   "getInTouchSection": {
-    "title": "Simplify Your Logistics Process Today!",
-    "content": "Discover a world of easy and seamless logistics ready to transform the way you move forward.",
+    "title": "Start Streamlining Your Logistics Now!",
+    "content": "Step into a world of seamless, barrier-free logistics, designed to propel your business forward.",
     "ctaText": "Free Consultation",
     "ctaLink": "/contact"
   },
@@ -238,10 +238,6 @@
         {
           "text": "Customer Support",
           "link": "/contact#contact-form"
-        },
-        {
-          "text": "Tracking",
-          "link": "/contact#contact-form"
         }
       ]
     },
@@ -262,12 +258,12 @@
   "aboutPage": {
     "heroSection": {
       "title": "About SHAGA",
-      "subtitle": "Prioritizing excellent professional service to drive shared growth through strong collaboration.",
-      "tagline": "Supported by a dedicated and committed team"
+      "subtitle": "Prioritizing professional, premium service to drive mutual growth through strong collaboration.",
+      "tagline": "Driven by our dedicated team of committed logistics professionals"
     },
     "whoAreWeSection": {
       "heading": "Get to Know Us Better",
-      "title": "Comprehensive integrated logistics services to ensure smooth mobilization <span>to the destination</span>.",
+      "title": "<span>Seamless mobilization</span>. Guaranteed delivery. Our integrated <span>logistics solutions</span> cover everything.",
       "description": "Our team is committed to delivering the best solutions for businesses of all sizes. Our goal is to provide quality service and minimize risk at every stage.",
       "quote": "Simplifying problems with technology, enabling greater focus on growth in the global market.",
       "values": {
@@ -307,30 +303,30 @@
       "years": [
         {
           "year": "2007",
-          "description": "Founded as PT. Geubrina Usaha, focusing on logistics services"
+          "description": "FFounded as PT. Geubrina Usaha, with a core focus on logistics services"
         },
         {
           "year": "2018",
-          "description": "Served as a project vendor for a hydroelectric power plant (PLTA) in North Sumatra (Western Indonesia)"
+          "description": "Served as a project vendor for a Hydroelectric Power Plant in Western Indonesia"
         },
         {
           "year": "2022",
-          "description": "Partnered with freight forwarders at major ports in Indonesia and globally"
+          "description": "Leveraging strategic alliances with Freight Forwarders across key Indonesian and global port hubs"
         },
         {
           "year": "2024",
-          "description": "Rebranded as SHAGA to reflect the company's broader vision and mission"
+          "description": "Rebranded as SHAGA to embody an expanded corporate vision and mission"
         },
         {
           "year": "2025",
-          "description": "Became one of the PMA vendors for hydroelectric projects in Eastern Indonesia"
+          "description": "Acted as a key logistics vendor for Foreign Investment and Hydroelectric Power Plant projects in Eastern Indonesia"
         }
       ]
     },
     "gallerySection": {
       "heading": "Our Fleet",
-      "title": "<span>Our</span> Logistics Journey",
-      "description": "Explore our fleet's journey, where every step is managed with precision, speed, and reliability, ensuring on-time delivery and seamless logistics from start to finish.",
+      "title": "<span>Our</span> Tractor Heads",
+      "description": "Experience the journey of your shipment across our fleet, where every step is managed with precision, speed, and reliability. We ensure on-time delivery and seamless, end-to-end logistics.",
       "footerText": "Supported by a team of drivers skilled across various terrains and levels of difficulty with a range of trailer fleets and tractor heads (highbed / flatbed, lowbed, dolly, sliding axle, multi-axle, etc.) operated by experienced personnel. We always prioritize safety and security with diligence and dedication in every trip. <br/>  <br/>We also provide supporting activities such as cargo stripping, warehousing, and mobilization to various regions with smaller fleets. <br/>We also offer stevedoring services for breakbulk / LCT vessel cargo."
     },
     "ctaSection": {
@@ -342,14 +338,14 @@
   },
   "contactPage": {
     "heroSection": {
-      "title": "Contact SHAGA",
-      "subtitle": "We are ready to support your logistics needs. Contact us for inquiries, quotes, or assistance.",
+      "title": "Contact Us",
+      "subtitle": "Let us support your logistics requirements. Get in touch with our experts for collaboration opportunities, competitive pricing, and dedicated support.",
       "tagline": "Supporting Businesses Worldwide"
     },
     "contactInformationSection": {
       "heading": "Contact Information",
       "title": "<span>Connect</span> with us today and we will <span>support your business</span>",
-      "description": "Ready to take your logistics to the next level? Contact us today to learn how our tailored solutions and expertise can transform your supply chain.",
+      "description": "Please fill out the form below and our team will contact you immediately.",
       "phoneLabel": "Phone",
       "emailLabel": "Email",
       "addressLabel": "Address",
@@ -424,7 +420,7 @@
     },
     "communitySection": {
       "heading": "Our Community",
-      "title": "Join the <span>Business Partner</span> and Growing Logistics Community",
+      "title": "Become a Part of an Expanding Network of <span>Trusted Logistics and Business Partners</span>.",
       "description": "Join a dynamic community of businesses and logistics partners to optimize supply chains and drive growth.",
       "ctaText": "Learn More",
       "ctaLink": "/about-us",

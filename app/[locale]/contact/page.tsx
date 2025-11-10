@@ -21,7 +21,6 @@ export default function Kontak() {
       <ContactInformation />
       <FindUsSection />
       <FaqSection />
-      <DiscussionCtaSection />
     </>
   );
 }
