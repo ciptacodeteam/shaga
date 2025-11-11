@@ -11,103 +11,103 @@ export default function PartnerClient() {
   const partners = [
     {
       id: 1,
-      name: "liqui",
-      logo: "/img/logo/liquimoly.webp",
-    },
-    {
-      id: 2,
-      name: "kirana",
-      logo: "/img/logo/kirana.webp",
-    },
-    {
-      id: 3,
-      name: "cocacola",
-      logo: "/img/logo/cocacola.webp",
-    },
-    {
-      id: 4,
-      name: "hudaya",
-      logo: "/img/logo/hudaya.webp",
-    },
-    {
-      id: 5,
-      name: "giant",
-      logo: "/img/logo/gianttrasporter.png",
-    },
-    {
-      id: 6,
-      name: "wika",
-      logo: "/img/logo/wika.webp",
-    },
-    {
-      id: 7,
-      name: "kawanlama",
-      logo: "/img/logo/kawanlama.webp",
-    },
-    {
-      id: 8,
-      name: "pixco",
-      logo: "/img/logo/pixco.png",
-    },
-    {
-      id: 9,
-      name: "yongsun",
-      logo: "/img/logo/youngsun.webp",
-    },
-    {
-      id: 10,
-      name: "alltech",
-      logo: "/img/logo/alltech1.webp",
-    },
-    {
-      id: 11,
-      name: "sti",
-      logo: "/img/logo/sti1.png",
-    },
-    {
-      id: 12,
-      name: "realstrong",
-      logo: "/img/logo/realstrong.png",
-    },
-    {
-      id: 13,
-      name: "samudera",
-      logo: "/img/logo/samudera.webp",
-    },
-    {
-      id: 14,
-      name: "adhi",
-      logo: "/img/logo/adhi.webp",
-    },
-    {
-      id: 15,
-      name: "camce",
-      logo: "/img/logo/camce.webp",
-    },
-    {
-      id: 16,
-      name: "camc",
-      logo: "/img/logo/camc.webp",
-    },
-    {
-      id: 17,
       name: "sinohydro",
       logo: "/img/logo/sinohydro.webp",
     },
     {
-      id: 18,
-      name: "meulaboh",
-      logo: "/img/logo/meulaboh.webp",
+      id: 2,
+      name: "samudera",
+      logo: "/img/logo/samudera.webp",
     },
     {
-      id: 19,
+      id: 3,
+      name: "pixco",
+      logo: "/img/logo/pixco.png",
+    },
+    {
+      id: 4,
+      name: "cocacola",
+      logo: "/img/logo/cocacola.webp",
+    },
+    {
+      id: 5,
+      name: "realstrong",
+      logo: "/img/logo/realstrong.png",
+    },
+    {
+      id: 6,
+      name: "camce",
+      logo: "/img/logo/camce.webp",
+    },
+    {
+      id: 7,
+      name: "camc",
+      logo: "/img/logo/camc.webp",
+    },
+    {
+      id: 8,
+      name: "yongsun",
+      logo: "/img/logo/youngsun.webp",
+    },
+    {
+      id: 9,
       name: "mru",
       logo: "/img/logo/mru.webp",
     },
     {
-      id: 20,
+      id: 10,
+      name: "adhi",
+      logo: "/img/logo/adhi.webp",
+    },
+    {
+      id: 11,
+      name: "wika",
+      logo: "/img/logo/wika.webp",
+    },
+    {
+      id: 12,
       name: "imi",
       logo: "/img/logo/imi.webp",
+    },
+    {
+      id: 13,
+      name: "meulaboh",
+      logo: "/img/logo/meulaboh.webp",
+    },
+    {
+      id: 14,
+      name: "nhse",
+      logo: "/img/logo/nhse.webp",
+    },
+    {
+      id: 15,
+      name: "nusira",
+      logo: "/img/logo/nusira.webp",
+    },
+    {
+      id: 16,
+      name: "kirana",
+      logo: "/img/logo/kirana.webp",
+    },
+    {
+      id: 17,
+      name: "mmi",
+      logo: "/img/logo/mmi.webp",
+    },
+    {
+      id: 18,
+      name: "finnlon",
+      logo: "/img/logo/finnlon.webp",
+    },
+    {
+      id: 19,
+      name: "medanbeton",
+      logo: "/img/logo/medanbeton.webp",
+    },
+    {
+      id: 20,
+      name: "eve",
+      logo: "/img/logo/eve.webp",
     },
   ];
 
