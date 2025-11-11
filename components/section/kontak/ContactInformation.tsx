@@ -10,6 +10,7 @@ import { useTranslations } from "next-intl";
 
 export default function ContactInformation() {
   const t = useTranslations("contactPage.contactInformationSection");
+  const [loading, setLoading] = useState(false);
 
   // const [selected, setSelected] = useState<any>(null);
   const [formData, setFormData] = useState({
@@ -32,6 +33,7 @@ export default function ContactInformation() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setLoading(true); // aktifkan loading di awal
 
     try {
       const res = await fetch("/api/contact", {
@@ -56,6 +58,8 @@ export default function ContactInformation() {
     } catch (error) {
       console.error(error);
       alert("Terjadi kesalahan. Coba lagi nanti.");
+    } finally {
+      setLoading(false); // pastikan loading dimatikan lagi setelah selesai
     }
   };
 
@@ -368,9 +372,14 @@ export default function ContactInformation() {
                   <div>
                     <button
                       type="submit"
-                      className="w-full bg-secondary text-white py-3 rounded-full transition font-manrope cursor-pointer text-sm md:text-base lg:text-lg font-medium"
+                      disabled={loading}
+                      className={`w-full py-3 rounded-full font-manrope text-white font-medium text-base transition-all ${
+                        loading
+                          ? "bg-secondary/70 cursor-not-allowed"
+                          : "bg-secondary hover:bg-secondary/90"
+                      }`}
                     >
-                      {t("formSubmitText")}
+                      {loading ? "Mengirim..." : "Hubungi Kami"}
                     </button>
                   </div>
                 </motion.form>
