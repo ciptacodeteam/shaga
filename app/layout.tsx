@@ -10,12 +10,14 @@ const manrope = Manrope({
 export const metadata: Metadata = {
   title: {
     default:
-      "PT. Shaktinagara Ganda Arthatentram Makmurjaya - Jasa Logistik & Kepabeanan",
+      "SHAGA LOGISTICS - PPJK | EMKL | Trucking | Warehousing",
     template: "%s | PT. Shaktinagara Ganda Arthatentram Makmurjaya",
   },
   description:
-    "PT. Shaktinagara Ganda Arthatentram Makmurjaya adalah penyedia jasa logistik terpercaya, meliputi custom clearance, transportasi darat, laut & udara, serta bongkar muat (stevedoring) untuk kelancaran distribusi barang Anda.",
+    "SHAGA Logistics berdiri sejak 2007. Jl. Mengkara No.2, Petisah Tengah, Kec. Medan Petisah, Kota Medan, Sumatera Utara 20111. Phone: 0811 6383 887. Email: shaga3729@gmail.com",
   keywords: [
+    "PT shaga",
+    "shaga",
     "PT Shaktinagara Ganda Arthatentram Makmurjaya",
     "jasa logistik laut",
     "jasa logistik darat",
@@ -24,11 +26,9 @@ export const metadata: Metadata = {
     "jasa logistik",
     "jasa darat",
     "jasa kepabeanan",
-    "custom clearance",
     "transportasi laut",
     "transportasi udara",
     "transportasi darat",
-    "stevedoring",
   ],
   authors: [{ name: "PT. Shaktinagara Ganda Arthatentram Makmurjaya" }],
   creator: "PT. Shaktinagara Ganda Arthatentram Makmurjaya",
