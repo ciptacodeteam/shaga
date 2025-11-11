@@ -112,6 +112,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="id">
+      <meta name="google-site-verification" content="AQojUHUZankhYZIwjvSQ36gXhavzXhKfYJ4D8-V4TDQ" />
       <body
         className={`${manrope.variable} antialiased`}
         suppressHydrationWarning={true}
