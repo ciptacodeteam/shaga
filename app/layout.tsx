@@ -42,9 +42,9 @@ export const metadata: Metadata = {
     locale: "id_ID",
     url: "https://shagalogistics.com",
     siteName: "PT. Shaktinagara Ganda Arthatentram Makmurjaya",
-    title: "Jasa Logistik & Kepabeanan Terpercaya di Indonesia",
+    title: "SHAGA LOGISTICS - PPJK | EMKL | Trucking | Warehousing",
     description:
-      "Kami melayani jasa logistik, kepabeanan, transportasi laut, udara & darat dengan layanan profesional dan terpercaya.",
+      "SHAGA Logistics berdiri sejak 2007. Jl. Mengkara No.2, Petisah Tengah, Kec. Medan Petisah, Kota Medan, Sumatera Utara 20111. Phone: 0811 6383 887. Email: shaga3729@gmail.com",
     images: [
       {
         url: "/img/avatar.png",
