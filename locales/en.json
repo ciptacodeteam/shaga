@@ -273,6 +273,24 @@
         "sustainability": "Sustainability"
       }
     },
+    "featureSection": {
+      "title": "We Have <span>Collaborated</span> Across Various Industry Sectors",
+      "subtitle": "Contact us now to get logistics solutions tailored to your business needs.",
+      "industries": {
+        "Automotive": "Automotive",
+        "Aerospace": "Aerospace",
+        "Chemical": "Chemical",
+        "Construction": "Construction",
+        "Cosmetics": "Cosmetics",
+        "Energy": "Energy",
+        "Electronics": "Electronics",
+        "Food and Beverage": "Food and Beverage",
+        "Industrial": "Industrial",
+        "Plastics and Rubber": "Plastics and Rubber",
+        "Retail": "Retail",
+        "Semiconductor": "Semiconductor"
+      }
+    },
     "numberSection": {
       "stats": [
         {

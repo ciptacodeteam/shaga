@@ -5,6 +5,7 @@ import HeroAbout from '@/components/section/tentangkami/HeroAbout';
 import MilestoneSection from '@/components/section/tentangkami/Milestone';
 import NumberSection from '@/components/section/tentangkami/NumberSection';
 import WhoAreWeSection from '@/components/section/tentangkami/WhoAreWe';
+import FeatureSection from '@/components/section/tentangkami/Feature';
 
 export async function generateStaticParams() {
   const params: { locale: string }[] = [];
@@ -21,6 +22,7 @@ export default function TentangKami() {
       <HeroAbout />
       <WhoAreWeSection />
       <NumberSection />
+      <FeatureSection />
       <MilestoneSection />
       <GallerySection />
       <CtaSection />

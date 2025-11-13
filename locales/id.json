@@ -273,6 +273,24 @@
         "sustainability": "Keberlanjutan"
       }
     },
+    "featureSection": {
+      "title": "Kami Telah <span>Bekerja Sama</span> di Berbagai Sektor Industri",
+      "subtitle": "Hubungi kami sekarang untuk mendapatkan solusi logistik yang disesuaikan dengan kebutuhan bisnis Anda.",
+      "industries": {
+        "Automotive": "Otomotif",
+        "Aerospace": "Dirgantara",
+        "Chemical": "Kimia",
+        "Construction": "Konstruksi",
+        "Cosmetics": "Kosmetika",
+        "Energy": "Energi",
+        "Electronics": "Elektronik",
+        "Food and Beverage": "Makanan dan Minuman",
+        "Industrial": "Industri",
+        "Plastics and Rubber": "Plastik dan Karet",
+        "Retail": "Ritel",
+        "Semiconductor": "Semikonduktor"
+      }
+    },
     "numberSection": {
       "stats": [
         {

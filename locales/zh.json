@@ -273,6 +273,24 @@
         "sustainability": "可持续发展"
       }
     },
+    "featureSection": {
+      "title": "我们已在各个<span>行业领域</span>开展合作",
+      "subtitle": "立即联系我们，为您的企业量身定制物流解决方案。",
+      "industries": {
+        "Automotive": "汽车",
+        "Aerospace": "航空航天",
+        "Chemical": "化工",
+        "Construction": "建筑",
+        "Cosmetics": "化妆品",
+        "Energy": "能源",
+        "Electronics": "电子",
+        "Food and Beverage": "食品和饮料",
+        "Industrial": "工业",
+        "Plastics and Rubber": "塑料和橡胶",
+        "Retail": "零售",
+        "Semiconductor": "半导体"
+      }
+    },
     "numberSection": {
       "stats": [
         {

@@ -1,6 +1,7 @@
 import TransformSection from '@/components/section/beranda/TransformingSection';
 import WorkSection from '@/components/section/beranda/WorkSection';
 import CommunitySection from '@/components/section/layanankami/Community';
+import FeatureSection from '@/components/section/tentangkami/Feature';
 import GetinQuote from '@/components/section/layanankami/GetinQuote';
 import HeroService from '@/components/section/layanankami/HeroService';
 import LogisticService from '@/components/section/layanankami/LogisticService';
